@@ -1,0 +1,85 @@
+# Leer e informar resultados en APA 7 {#sec-apa}
+
+::: {.callout-tip}
+## La idea en una línea
+Informar un resultado en APA no es copiar la tabla de jamovi: es traducir esos números a una frase que dice qué se comparó, cuánto y con qué certeza, en un formato que cualquier lector de la disciplina reconoce sin ambigüedad.
+:::
+
+## Qué va en un párrafo de resultados y qué sobra
+
+Un párrafo de resultados responde, en este orden, cuatro preguntas: ¿qué se comparó?, ¿cuánto dio?, ¿es distinguible del azar? y ¿qué tan grande es la diferencia o la relación? Las cuatro tienen que estar. Lo que sobra es la narración del proceso: no hace falta contar que "primero se abrió jamovi" o que "se tildó la opción de effect size". El lector no necesita reconstruir tus clics; necesita poder citar tu resultado sin volver a correr el análisis.
+
+Fijate en la frase que ya armaste para la t de muestras independientes del @sec-dos-grupos:
+
+> Los estudiantes que trabajan presentaron mayor procrastinación (*M* = 34.24, *DE* = 3.70) que los que no trabajan (*M* = 31.49, *DE* = 4.79), *t*(68) = 2.70, *p* = .009, IC 95 % [0.72, 4.79], *d* = 0.65.
+
+Ahí están las cuatro preguntas: qué se comparó (procrastinación entre quienes trabajan y quienes no), cuánto dio (los promedios y la diferencia), si es distinguible del azar (*p* = .009) y qué tan grande es (*d* = 0.65). Ninguna parte es decorativa: sacá el tamaño de efecto y el lector no puede juzgar si la diferencia importa: sacá los descriptivos y no puede juzgar la dirección con sus propios ojos.
+
+## Los símbolos: cursiva, decimales y el valor de *p*
+
+APA 7 diferencia dos familias de símbolos. Los estadísticos que se escriben con letras latinas van en cursiva: *M*, *DE*, *N*, *n*, *t*, *F*, *r*, *d*, *p*. Los símbolos griegos no llevan cursiva: η² y χ² se escriben en redonda, tal como los usaron los capítulos anteriores. Confundir esta regla es uno de los errores más visibles de un texto que por lo demás está bien pensado.
+
+Tres convenciones más, sin excepción en este libro:
+
+- Los descriptivos y los tamaños de efecto se informan con dos decimales.
+- El valor de *p* se informa exacto, con tres decimales (*p* = .009), salvo que sea menor a .001: ahí se escribe "*p* < .001" y no un número redondeado a cero.
+- Ninguna cifra lleva un cero a la izquierda del punto en valores que no pueden superar 1 (se escribe *p* = .415, no *p* = 0.415).
+
+## Un molde por análisis, la misma anatomía siempre
+
+Cada capítulo de la Parte II te dejó un párrafo modelo con esta misma anatomía, adaptado al análisis correspondiente:
+
+| Análisis | Dónde está el párrafo modelo |
+|---|---|
+| t de una muestra | @sec-t-una-muestra |
+| t de muestras independientes y pareada | @sec-dos-grupos |
+| ANOVA de un factor | @sec-anova |
+| Correlación | @sec-correlacion |
+| Chi-cuadrado de independencia | @sec-chi |
+
+No memorices seis moldes distintos: memorizá las cuatro preguntas de la sección anterior y completalas con el estadístico que corresponda. El [molde de frases con huecos](plantillas/frases-de-reporte-apa.md) resume los seis en un solo documento para tenerlo a mano mientras escribís.
+
+Una diferencia entre análisis merece atención aparte: cuando el resultado global tiene comparaciones posteriores —como Tukey después de un ANOVA significativo—, el párrafo mantiene dos niveles. Primero el resultado global, después los pares que lo explican, nunca al revés. El @sec-anova ya lo mostró: nombrar "hubo diferencias significativas" sin decir entre qué turnos y en qué dirección deja al lector con más preguntas que respuestas.
+
+## De la tabla de jamovi a una tabla APA
+
+Un párrafo no reemplaza una tabla cuando hay más de dos o tres grupos, o cuando el lector necesita comparar varios estadísticos a la vez. La tabla de **Descriptives** que jamovi genera ya viene sin líneas verticales, que es la mitad del trabajo: APA no usa cuadrícula completa, solo líneas horizontales que separan el encabezado del cuerpo y cierran la tabla.
+
+Lo que jamovi no pone y vos tenés que agregar:
+
+1. Un número y un título en cursiva arriba de la tabla (`Tabla 1`, seguido en la línea siguiente por *Procrastinación según situación laboral*, en cursiva).
+2. Encabezados de columna con el símbolo correspondiente en cursiva (*n*, *M*, *DE*), no el nombre completo de la variable.
+3. Una nota debajo, si hace falta aclarar una abreviatura o el *n* total.
+
+| Grupo | *n* | *M* | *DE* |
+|---|---:|---:|---:|
+| Trabaja | 36 | 34.24 | 3.70 |
+| No trabaja | 34 | 31.49 | 4.79 |
+
+*Nota.* Dos casos con `trabaja` sin declarar quedaron fuera de la tabla.
+
+Copiá los números tal como los generó jamovi: una tabla no es el lugar para redondear distinto de lo que ya informaste en el párrafo. Si el párrafo dice *M* = 34.24, la tabla no puede decir 34.2.
+
+## Errores frecuentes al informar
+
+- Escribir "no hubo diferencia" para un resultado no significativo, en vez de reportar el estadístico completo: un resultado no significativo también se informa con *t* (o *F*, o *r*, o χ²), *p* e intervalo, como hizo el @sec-t-una-muestra.
+- Omitir el tamaño de efecto porque "ya está el *p*": el *p* dice si hay evidencia de una diferencia, no cuán grande es. Los dos números responden preguntas distintas.
+- Poner η² o χ² en cursiva, o dejar *M*, *DE* o *p* en redonda.
+- Redondear un *p* muy chico a "*p* = .000": no existe un *p* de cero exacto; se escribe "*p* < .001".
+- Informar un χ² o una *r* sin el *N* o los grados de libertad entre paréntesis: el lector no puede evaluar la prueba sin saber sobre cuántos casos se calculó.
+- Convertir "se relacionó" o "no se asoció de manera concluyente" en "causó" o "demostró que no hay relación", algo que el @sec-correlacion y el @sec-chi ya advirtieron cada uno para su análisis.
+
+## Autochequeo
+
+1. ¿Tu párrafo responde las cuatro preguntas —qué se comparó, cuánto dio, si es distinguible del azar y qué tan grande es— sin que falte ninguna?
+2. ¿Usaste cursiva en los símbolos latinos y redonda en los griegos?
+3. Si tu resultado no fue significativo, ¿igual escribiste la frase completa con estadístico, *p* e intervalo?
+4. Si armaste una tabla, ¿los números coinciden exactamente con los que ya informaste en el párrafo?
+
+## Plantilla para llevar
+
+📄 **Plantilla para llevar:** [Frases de reporte APA con huecos](plantillas/frases-de-reporte-apa.md) — los seis moldes de este capítulo, listos para completar con tu propio output.
+
+## Referencias
+
+American Psychological Association. (2020). *Publication manual of the American Psychological Association* (7.ª ed.). https://doi.org/10.1037/0000165-000

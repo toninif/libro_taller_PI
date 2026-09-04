@@ -1,0 +1,70 @@
+# El diccionario de datos
+
+::: {.callout-tip}
+## La idea en una línea
+El diccionario de datos es la hoja que permite entender una base sin adivinar: deja escrito qué significa cada variable, cómo se midió y cómo se codificó.
+:::
+
+## La memoria que una base no tiene
+
+Una base guarda valores, pero no guarda por sí sola las decisiones que los produjeron. Dentro de seis semanas, `trabaja = 1` puede parecer obvio; dentro de seis meses quizá nadie recuerde si significa “tiene empleo”, “trabaja diez horas o más” o “respondió sí alguna vez”. El diccionario evita que cada persona reconstruya esas decisiones a partir de nombres incompletos.
+
+No es burocracia para entregar al final. Es una herramienta de diseño: te obliga a decidir antes cómo se llamará una variable, qué valores acepta y qué vas a hacer con una respuesta faltante. Si esas respuestas todavía no están claras, la medición tampoco lo está.
+
+## Una fila por variable
+
+El diccionario se organiza como una tabla donde cada fila describe una columna de la base. No tiene que ser elegante; tiene que alcanzar para que otra persona pueda abrir el archivo, interpretarlo y usarlo sin preguntarte qué quisiste decir.
+
+Estos son los campos mínimos:
+
+| Campo | Pregunta que responde | Ejemplo |
+|---|---|---|
+| Nombre | ¿Cómo se llama la columna? | `horas_estudio` |
+| Etiqueta | ¿Cómo se llama para quien la lee? | Horas de estudio semanales |
+| Definición | ¿Qué mide exactamente? | Horas dedicadas al estudio fuera de clase en una semana habitual. |
+| Tipo y medida | ¿Es texto, número, nominal, ordinal o continua? | Número decimal; continua. |
+| Valores y etiquetas | ¿Qué respuestas son válidas? | 0 a 60 horas. |
+| Faltantes | ¿Cómo se registra que no hay respuesta? | `-99` = no respondió. |
+| Rol | ¿Para qué puede servir en el análisis? | Variable de resultado. |
+| Notas | ¿Hay un cálculo, filtro o decisión especial? | Revisar valores mayores a 60. |
+
+No todas las variables necesitan el mismo nivel de detalle. Una variable continua suele requerir rango, unidad y forma de cálculo. Una categórica necesita, además, que cada código quede traducido. Lo importante es que no haya valores misteriosos.
+
+## Ejemplo: una decisión que hay que dejar escrita
+
+En la encuesta del libro, `horas_trabajo` es una cantidad continua. Pero la pregunta de comparación usa otra variable: `trabaja`. Esa segunda variable se calcula con un criterio previo: “sí” si la persona informó diez o más horas de trabajo remunerado por semana; “no” en caso contrario.
+
+| Nombre | Etiqueta | Valores / regla | Rol | Nota |
+|---|---|---|---|---|
+| `horas_trabajo` | Horas de trabajo semanales | 0 a 70; `-99` = faltante | Insumo | Se informa como cantidad. |
+| `trabaja` | Situación laboral | sí = 10 o más horas; no = menos de 10 | Agrupamiento | Variable calculada desde `horas_trabajo`. |
+| `procrastinacion` | Puntaje de procrastinación | 10 a 50; mayor puntaje = mayor procrastinación | Resultado | Puntaje total de la escala definida por la cátedra. |
+
+La regla de diez horas puede discutirse antes de recolectar; eso es justamente lo que tiene que ocurrir. Una vez iniciada la comparación, cambiarla porque produce grupos “más lindos” sería una decisión tomada mirando los datos. El diccionario deja una huella de esa elección.
+
+## Nombres que ayudan a trabajar
+
+Usá nombres cortos, consistentes y sin espacios para las columnas: `horas_estudio`, `aprobo_parcial`, `organizacion_pre`. Reservá las etiquetas para el nombre largo que verá quien usa la base. Así es más fácil reconocer la variable en jamovi, escribir una fórmula y enlazarla con el plan de análisis.
+
+Evitá nombres como `var1`, `dato_nuevo` o `puntaje_final_final`. También evitá que una sola columna mezcle dos cosas: “trabaja y estudia” no es una variable; son al menos dos. Si cambiás una definición, actualizá el diccionario en el mismo momento. Una base y su diccionario separados terminan siendo dos versiones distintas de la realidad.
+
+## Cuándo completarlo
+
+Empezá el diccionario al diseñar el instrumento, aunque tenga huecos. Actualizalo al importar la base, cuando declares faltantes, recodifiques una variable o crees un puntaje. Antes de analizar, hacé una pasada final: compará cada encabezado de la planilla con el diccionario y comprobá que los valores observados son posibles.
+
+No hace falta llenar columnas que no aportan a tu proyecto. Sí hace falta poder contestar, para cada variable que vas a usar, “¿qué es?”, “¿cómo se obtuvo?”, “¿qué valores admite?” y “¿qué haré si falta?”.
+
+## Plantilla para llevar
+
+Descargá la [plantilla de diccionario de datos](plantillas/diccionario-de-datos.csv). Es un CSV: se abre en Excel, LibreOffice o una planilla similar. Completá una fila por variable y guardalo junto con tu base. Si preferís trabajar desde papel, podés usar las mismas columnas en una tabla de tu informe.
+
+## Autochequeo
+
+Antes de pasar a jamovi, revisá:
+
+1. ¿El nombre de cada columna coincide exactamente con la base?
+2. ¿Los códigos de categorías y faltantes están escritos, no solo “en tu cabeza”?
+3. ¿Las variables calculadas indican de qué columnas salen y con qué regla?
+4. ¿Otra persona podría interpretar la base sin preguntarte nada?
+
+Si la última respuesta es “sí”, ya tenés una base que se puede compartir, revisar y analizar. En el próximo capítulo la vamos a importar a jamovi.

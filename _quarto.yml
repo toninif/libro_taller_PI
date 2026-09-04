@@ -1,0 +1,57 @@
+project:
+  type: book
+  resources:
+    - plantillas/
+    - datos/
+
+lang: es
+
+book:
+  title: "Pensar el análisis antes de los datos"   # título provisorio
+  subtitle: "Análisis de datos con jamovi para Prácticas de Investigación"
+  author:
+    - name: "Dr. Fernando Tonini"
+      orcid: "0000-0001-6435-8923"
+      url: "https://toninif.github.io"
+  date: today
+  site-url: "https://toninif.github.io/libro_practicas/"  # ajustar al nombre final del repo
+  repo-url: "https://github.com/toninif/libro_practicas"  # ajustar
+  sidebar:
+    search: true
+  chapters:
+    - index.qmd
+    - part: "Apertura — Pensar el análisis antes de los datos"
+      chapters:
+        - 01-de-la-pregunta-al-analisis.qmd
+        - 02-plan-de-analisis.qmd
+    - part: "Parte I — Los datos en orden"
+      chapters:
+        - 03-anatomia-de-una-base.qmd
+        - 04-diccionario-de-datos.qmd
+        - 05-jamovi-desde-cero.qmd
+        - 06-preparar-la-base.qmd
+        - 07-describir-y-mostrar.qmd
+    - part: "Parte II — Elegir y ejecutar"
+      chapters:
+        - 08-arbol-de-decision.qmd
+        - 09-supuestos.qmd
+        - 10-t-una-muestra.qmd
+        - 11-dos-grupos.qmd
+        - 12-anova-un-factor.qmd
+        - 13-correlacion.qmd
+        - 14-chi-cuadrado.qmd
+    - part: "Parte III — Comunicar"
+      chapters:
+        - 15-informar-en-apa.qmd
+        - 16-caja-de-herramientas.qmd
+  appendices:
+    - a1-para-ir-mas-lejos.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-depth: 2
+    link-external-newwindow: true
+    lightbox: true

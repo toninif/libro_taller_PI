@@ -1,0 +1,61 @@
+# Describir y mostrar {#sec-describir}
+
+::: {.callout-tip}
+## La idea en una línea
+Antes de testear, describí: los descriptivos y un gráfico simple muestran si tu pregunta tiene sentido con estos datos, antes de gastar un test en confirmarlo.
+:::
+
+## Qué pedir según el tipo de variable
+
+El nivel de medida que fijaste en el @sec-anatomia no es un dato para el diccionario nada más: determina qué estadístico tiene sentido pedir.
+
+| Tipo de variable | Qué pedir | Ejemplo en la base de este libro |
+|---|---|---|
+| Continua | Media, desvío estándar, mínimo, máximo; histograma | `procrastinacion`, `horas_estudio` |
+| Nominal | Frecuencias y porcentajes; gráfico de barras | `turno`, `trabaja`, `aprobo_parcial` |
+
+En jamovi: **Analyses → Exploration → Descriptives**. Movés las variables a la casilla **Variables**, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico correspondiente en la pestaña **Plots**. Pedir una media de una variable nominal —o un gráfico de barras de una continua sin agrupar— no genera un error, pero tampoco genera información: jamovi hace lo que le pedís, no lo que tiene sentido.
+
+## La tabla que ya habías bosquejado
+
+Si en tu plan de análisis (@sec-plan) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que **Descriptives** puede darte antes de correr ningún test: agregá `trabaja` en la casilla **Split by** y jamovi devuelve la media, el desvío y el *n* de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.
+
+Todavía sin tener los números, ya podés anticipar la forma de esa tabla:
+
+| Grupo | *n* | *M* | *DE* |
+|---|---|---|---|
+| Trabaja | | | |
+| No trabaja | | | |
+
+Compará esto con lo que jamovi genera al aplicar **Split by**: mismas filas, mismas columnas. Si tu boceto tiene una fila o una columna de más, es momento de revisar el plan, no de forzar la tabla para que coincida.
+
+Lo mismo vale para el gráfico. Un diagrama de caja (*boxplot*) partido por grupo es el equivalente visual de esa tabla: la línea dentro de la caja marca la mediana, los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. No hace falta calcularlo a mano; alcanza con saber leerlo. La regla para elegir gráfico es la pregunta, no la variedad de opciones que ofrece el menú:
+
+| Tu pregunta es sobre… | Pedí… |
+|---|---|
+| Un grupo comparado con otro | Boxplot por grupo |
+| La relación entre dos variables continuas | Diagrama de dispersión |
+| La forma de una sola variable continua | Histograma |
+| Las frecuencias de una variable categórica | Gráfico de barras |
+
+Un gráfico elegido porque "queda bien" y no porque responde la pregunta es, en el mejor de los casos, una distracción.
+
+## Qué mirar antes de cualquier test
+
+Este repaso no reemplaza los chequeos de supuestos del @sec-supuestos: es previo. Antes de abrir un test, mirá los descriptivos que acabás de pedir y respondé:
+
+- **¿El *n* de cada grupo alcanza?** Un grupo con tres casos no va a sostener ninguna comparación, más allá de lo que diga un test.
+- **¿Los valores mínimo y máximo son posibles?** Contralos contra el rango que anotaste en el diccionario; un `120` en una escala de 10 a 50 es un error de carga, no un dato.
+- **¿La forma de la distribución es razonable?** Un histograma muy asimétrico o con dos picos te avisa antes de que lo haga un supuesto incumplido.
+- **¿Los datos faltantes se concentran en algún grupo?** Un patrón de faltantes que no es parejo entre grupos puede sesgar la comparación antes de que corras un solo test.
+
+Si algo de esto falla, todavía no es momento de testear: es momento de volver a la base.
+
+## Autochequeo
+
+1. ¿Pediste el estadístico que corresponde al tipo de cada variable, no el que aparece primero en el menú?
+2. ¿La tabla partida por grupo que generaste se parece a la que bosquejaste en tu plan de análisis?
+3. ¿Revisaste mínimos y máximos contra tu diccionario de datos?
+4. ¿Elegiste el gráfico según la pregunta, y no según cuál te resultó más atractivo?
+
+Con la base descripta y revisada, en el @sec-arbol vas a elegir, con criterio, qué análisis la responde.

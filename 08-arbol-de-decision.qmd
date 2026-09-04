@@ -1,0 +1,76 @@
+# El árbol de decisión {#sec-arbol}
+
+::: {.callout-tip}
+## La idea en una línea
+No elegís un análisis porque lo conocés o porque aparece primero en jamovi: lo elegís porque responde la pregunta que hiciste con las variables que definiste.
+:::
+
+## El test viene después de la pregunta
+
+Cuando abrís *Analyses*, jamovi ofrece muchas posibilidades. Eso es útil, pero también puede empujarte a una mala pregunta: “¿qué test puedo correr con estas columnas?”. La pregunta correcta va al revés: “¿qué quiero saber y qué tipo de variables tengo?”.
+
+El árbol de decisión no reemplaza lo que aprendiste en estadística. Te ayuda a convertir una pregunta cotidiana en una estructura que jamovi pueda analizar. Antes de usarlo, abrí tu plan de análisis y escribí tres cosas:
+
+1. La pregunta en una oración: ¿quiero comparar, describir o buscar una relación?
+2. La variable de resultado: ¿es continua o categórica?
+3. La otra variable: ¿forma grupos, representa una segunda medida de la misma persona o es otra cantidad?
+
+Si no podés responderlas, volvé al @sec-plan o al diccionario de datos. Un árbol no decide por una variable mal definida.
+
+## Primera bifurcación: ¿comparás o buscás relación?
+
+En el alcance de este libro, la mayoría de las preguntas cae en una de dos familias.
+
+**Comparar** es preguntar si un resultado cambia entre grupos o respecto de un valor. Por ejemplo: “¿la procrastinación difiere entre quienes trabajan y quienes no?” o “¿el promedio de organización difiere del punto medio de la escala?”.
+
+**Buscar una relación** es preguntar si dos variables varían juntas o si dos categorías se asocian. Por ejemplo: “¿a más horas de estudio, menor procrastinación?” o “¿la situación laboral se asocia con aprobar el parcial?”.
+
+No confundas “dos variables” con “relación”. Una comparación entre dos grupos también usa dos variables: una define los grupos y otra es el resultado. Lo que cambia es la pregunta: en una comparación, querés contrastar grupos; en una correlación, querés describir cómo se mueven dos cantidades.
+
+## La tabla maestra
+
+| Si tu pregunta es… | Y tus variables son… | El análisis central es… | Capítulo |
+|---|---|---|---|
+| ¿Un promedio difiere de un valor? | Un resultado continuo y un valor de referencia | t de una muestra | 10 |
+| ¿Dos grupos distintos difieren? | Resultado continuo; agrupamiento con dos categorías | t de muestras independientes | 11 |
+| ¿Las mismas personas cambiaron? | Dos mediciones continuas de cada caso | t de muestras pareadas | 11 |
+| ¿Tres o más grupos difieren? | Resultado continuo; agrupamiento con tres o más categorías | ANOVA de un factor | 12 |
+| ¿Dos cantidades se relacionan? | Dos variables continuas | Correlación | 13 |
+| ¿Dos categorías se asocian? | Dos variables categóricas | Chi-cuadrado de independencia | 14 |
+
+Esa tabla cubre el núcleo de la materia, no todas las preguntas posibles. Si querés predecir un resultado con varias variables, controlar covariables o analizar diseños más complejos, mirá el apéndice cuando ya domines esta lógica.
+
+📄 **Plantilla para llevar:** [Árbol de decisión para análisis básicos](plantillas/arbol-de-decision.md). Imprimilo o tenelo abierto mientras completás tu plan de análisis.
+
+## Un recorrido con el caso del libro
+
+Tomemos la encuesta de estudiantes. La variable `procrastinacion` es continua. Si preguntás si cambia entre `trabaja = sí` y `trabaja = no`, comparás dos grupos distintos: t independiente. Si preguntás si cambia entre `turno = mañana`, `tarde` y `noche`, comparás tres grupos: ANOVA. El resultado es el mismo, pero la cantidad de grupos cambia la herramienta.
+
+Si, en cambio, preguntás si `horas_estudio` se relaciona con `procrastinacion`, ya no separás a las personas en grupos: cada estudiante aporta dos cantidades. La herramienta es una correlación. Y si querés saber si `trabaja` se asocia con `aprobo_parcial`, ambas variables son categorías: armás una tabla de contingencia y usás chi-cuadrado.
+
+El árbol no te pide memorizar nombres raros. Te pide mirar la forma de la pregunta. Por eso una misma base puede dar lugar a varios análisis correctos: la base no elige el análisis; lo elige la pregunta.
+
+## Tres desvíos frecuentes
+
+**Convertir números en grupos por costumbre.** Dividir `horas_estudio` en “pocas” y “muchas” horas para hacer una t puede hacerte perder información. Si la pregunta es por la relación entre horas y procrastinación, empezá por correlación.
+
+**Usar correlación para comparar categorías.** Codificar `trabaja` como 0 y 1 no transforma una comparación de grupos en una pregunta de relación continua. El código es una etiqueta conveniente, no una escala.
+
+**Elegir según el resultado deseado.** No probás t, ANOVA y correlación para quedarte con el `p` que te gusta. La pregunta y el plan indican el análisis antes de mirar el resultado.
+
+## Antes de hacer clic
+
+Elegido el análisis, todavía faltan dos pasos. Primero, revisá que los casos sean los que querés analizar y que los datos faltantes estén declarados. Segundo, consultá los supuestos del capítulo siguiente. Un análisis correcto para la pregunta puede requerir una alternativa si los datos no cumplen ciertas condiciones.
+
+Escribí ahora una línea en tu plan: “Para responder mi pregunta voy a usar ___ porque mi resultado es ___ y mi otra variable es ___”. Si no podés completar esa frase sin nombrar a jamovi, todavía no elegiste el análisis: solo encontraste un menú.
+
+## Autochequeo
+
+Para una pregunta propia, contestá:
+
+1. ¿Quiero comparar, describir o buscar una relación?
+2. ¿Cuál es mi variable de resultado y qué nivel de medida tiene?
+3. ¿Las personas de los grupos son distintas o son las mismas medidas dos veces?
+4. ¿El análisis elegido responde exactamente esa pregunta?
+
+Si las cuatro respuestas son claras, ya podés pasar a los supuestos y luego al capítulo específico de tu análisis.

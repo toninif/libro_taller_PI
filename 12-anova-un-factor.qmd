@@ -1,0 +1,59 @@
+# Tres o más grupos: ANOVA de un factor {#sec-anova}
+
+::: {.callout-tip}
+## La idea en una línea
+ANOVA de un factor compara el promedio de una variable continua entre tres o más grupos distintos. Primero responde si hay alguna diferencia; después, las comparaciones post-hoc muestran entre qué grupos está.
+:::
+
+## Cuándo se usa
+
+Usás ANOVA de un factor cuando una variable categórica forma tres o más grupos independientes y querés comparar su resultado continuo. En este libro, `turno` tiene tres categorías —mañana, tarde y noche— y `procrastinacion` es un puntaje continuo. La pregunta es: ¿el promedio de procrastinación difiere entre turnos?
+
+Si solo tenés dos grupos, la herramienta más directa es la t de muestras independientes del @sec-dos-grupos. Si son las mismas personas medidas tres veces, no es este ANOVA: es un diseño de medidas repetidas, que queda para el apéndice. Y si el resultado es categórico, volvés al árbol: posiblemente necesites chi-cuadrado, no ANOVA.
+
+ANOVA evita hacer muchas t entre pares. Con tres grupos hay tres comparaciones posibles; con cuatro, seis. Cuantas más pruebas hagas, más fácil es encontrar una diferencia “significativa” por azar. ANOVA hace primero una prueba global con una pregunta acotada: ¿hay evidencia de que no todos los promedios son iguales?
+
+## Paso a paso en jamovi
+
+Abrí `Analyses → ANOVA → One-Way ANOVA`. Pasá `procrastinacion` a **Dependent Variable** y `turno` a **Grouping Variable**. Pedí **Descriptives** y un gráfico de medias para ver los grupos antes del test.
+
+En **Assumption Checks**, tildá **Normality test**, gráfico Q-Q y **Equality of variances** (Levene). Para el ANOVA clásico, pedí **Fisher’s**; si las varianzas son claramente desiguales, usá **Welch’s**. En **Post Hoc Tests**, agregá `turno`: Tukey corresponde cuando usás el ANOVA clásico con varianzas razonablemente homogéneas; Games-Howell es la alternativa cuando usás Welch. Pedí también el tamaño de efecto, eta cuadrado (η²).
+
+El orden importa: las comparaciones post-hoc no reemplazan la prueba global. Primero mirás la pregunta general, después examinás pares solo si corresponde. No elegís el par que “se ve más distinto” para correr una t aislada.
+
+## Ejemplo trabajado
+
+Con `encuesta-estudiantes-limpia` (@sec-jamovi), hay 24 estudiantes en cada turno. Los descriptivos muestran una diferencia visible:
+
+| Turno | *n* | *M* | *DE* |
+|---|---:|---:|---:|
+| Mañana | 24 | 29.15 | 4.31 |
+| Tarde | 24 | 33.72 | 3.32 |
+| Noche | 24 | 35.40 | 3.29 |
+
+Levene da *F*(2, 69) = 2.10, *p* = .130. No hay evidencia de varianzas desiguales, así que usamos el ANOVA clásico. La prueba global es significativa, *F*(2, 69) = 18.63, *p* < .001, η² = .35. El resultado no dice que los tres grupos difieren entre sí: dice que al menos uno tiene un promedio distinto.
+
+Tukey aclara dónde están las diferencias. El turno noche presenta mayor procrastinación que mañana, diferencia de medias = 6.25, IC 95 % [3.71, 8.78], *p* < .001. El turno tarde también supera al de mañana, diferencia = 4.57, IC 95 % [2.03, 7.10], *p* < .001. Noche y tarde no difieren de manera concluyente, diferencia = 1.68, IC 95 % [−0.86, 4.22], *p* = .259.
+
+η² = .35 indica que, en estos datos sintéticos, el turno explica cerca del 35 % de la variación observada en procrastinación. No significa que el turno cause esa diferencia: quienes cursan en cada horario pueden diferir en muchas otras características. ANOVA compara promedios; no convierte una comparación observacional en una conclusión causal.
+
+## Cómo leer el output e informarlo en APA
+
+> La procrastinación académica difirió según el turno de cursada, *F*(2, 69) = 18.63, *p* < .001, η² = .35. Las comparaciones de Tukey mostraron puntajes mayores en el turno noche (*M* = 35.40, *DE* = 3.29) y tarde (*M* = 33.72, *DE* = 3.32) que en el turno mañana (*M* = 29.15, *DE* = 4.31), *ps* < .001. No hubo diferencia concluyente entre los turnos tarde y noche, *p* = .259.
+
+El informe mantiene dos niveles: el resultado global de ANOVA y los pares que aclaran ese resultado. No alcanza con decir “hubo diferencias significativas”; el lector necesita saber entre qué grupos y en qué dirección.
+
+### Si las varianzas no son homogéneas
+
+No borres los grupos con más dispersión ni hagas de cuenta que Levene no existe. Usá ANOVA de Welch y comparaciones Games-Howell; ambos toleran mejor varianzas desiguales. Si el problema principal es una distribución muy alejada de lo razonable o valores extremos que cambian la conclusión, revisá primero los datos y el @sec-supuestos. Kruskal-Wallis puede ser una alternativa, pero responde una pregunta sobre rangos/distribuciones y se informa como tal.
+
+## Ejercicios de autochequeo
+
+1. ¿Tu variable de agrupamiento tiene tres o más categorías y tus grupos son personas distintas?
+2. ¿Tu resultado es continuo y tiene una definición previa en el diccionario?
+3. ¿Pediste descriptivos, Levene y el gráfico antes de interpretar el *F*?
+4. Si ANOVA es significativo, ¿usaste una comparación post-hoc coherente con las varianzas en vez de hacer t al azar?
+
+## Plantilla para llevar
+
+📄 **Plantilla para llevar:** [Plan de análisis en una página](plantillas/plan-de-analisis.md). Usá también el [árbol de decisión](plantillas/arbol-de-decision.md) para verificar que tu pregunta realmente compara tres o más grupos. La base del ejemplo está en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv).

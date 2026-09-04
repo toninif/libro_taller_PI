@@ -1,0 +1,53 @@
+# Relación entre dos variables: correlación {#sec-correlacion}
+
+::: {.callout-tip}
+## La idea en una línea
+La correlación describe cuánto y en qué dirección se relacionan dos variables continuas; no dice que una cause a la otra.
+:::
+
+## Cuándo se usa
+
+Usás correlación cuando cada caso aporta dos medidas continuas y tu pregunta es por su relación, no por una diferencia entre grupos. En el ejemplo del libro: ¿a más horas de estudio semanal se observa menor procrastinación académica?
+
+No hay grupos que comparar. Cada estudiante tiene un valor de `horas_estudio` y otro de `procrastinacion`; el análisis mira cómo se mueven esos pares. Si una de tus variables es categórica, volvés al @sec-arbol. Codificar `trabaja` como 0 y 1 no la convierte en una cantidad adecuada para correlacionar con un puntaje.
+
+El coeficiente de Pearson, *r*, va de −1 a 1. Un valor positivo indica que valores altos de una variable tienden a aparecer con valores altos de la otra; uno negativo, que valores altos de una tienden a aparecer con valores bajos de la otra. Un *r* cercano a 0 indica que no hay una relación lineal clara. La magnitud no tiene una etiqueta universal: se interpreta con el tema, la precisión del intervalo y lo que una relación de ese tamaño permite concluir.
+
+## Paso a paso en jamovi
+
+Abrí `Analyses → Regression → Correlation Matrix`. Pasá `horas_estudio` y `procrastinacion` a **Variables**. En **Correlation Coefficients**, dejá tildado **Pearson**; en **Additional Options**, pedí el valor *p*, *N* e intervalo de confianza. Activá el gráfico de correlación o revisá un diagrama de dispersión antes de leer el coeficiente.
+
+El gráfico no es un adorno. Te permite ver si la relación es aproximadamente lineal, si un único caso está empujando el resultado o si hay grupos ocultos. Una nube con forma de U puede tener un *r* cercano a 0 aunque haya una relación clara; Pearson resume una línea, no cualquier patrón posible.
+
+Si los datos son ordinales, si la relación es monótona pero no lineal o si los extremos hacen que Pearson sea poco representativo, considerá Spearman. No lo elijas solo porque da un *p* más conveniente: informá qué coeficiente usaste y por qué, como pide el @sec-supuestos.
+
+## Ejemplo trabajado
+
+En `encuesta-estudiantes-limpia` (@sec-jamovi), los 72 estudiantes tienen horas de estudio y puntaje de procrastinación. Antes del test, los descriptivos ubican los valores: las horas de estudio van de 1.0 a 10.9 por semana (*M* = 6.48), y la procrastinación de 19.4 a 43.7 (*M* = 32.75).
+
+El diagrama de dispersión muestra una nube descendente, sin un caso único que explique toda la forma. Pearson da *r*(70) = −.38, *p* = .001, IC 95 % [−.56, −.16]. Hay evidencia de una relación negativa: en esta muestra, más horas de estudio suelen acompañarse de menor procrastinación.
+
+Elevar *r* al cuadrado da aproximadamente .14. Es una forma útil de dimensionar el resultado: cerca del 14 % de la variación lineal observada se comparte entre estas dos variables. El resto no desaparece; ni esa cifra ni el valor *p* convierten las horas de estudio en la única explicación de la procrastinación.
+
+Tampoco podés invertir la flecha causal. Tal vez estudiar más ayuda a organizarse; tal vez quienes procrastinan menos encuentran más tiempo para estudiar; tal vez una tercera variable influye en ambas. El diseño de esta encuesta no puede separar esas posibilidades. La correlación te permite describir la relación que aparece, no adjudicar una causa.
+
+## Cómo leer el output e informarlo en APA
+
+> Las horas de estudio semanal se relacionaron negativamente con la procrastinación académica, *r*(70) = −.38, *p* = .001, IC 95 % [−.56, −.16]. En esta muestra, quienes informaron más horas de estudio tendieron a presentar menor procrastinación.
+
+La frase incluye dirección, tamaño de la relación, grados de libertad, *p* e intervalo. “Relación negativa significativa” sin el valor de *r* no alcanza: no le dice al lector si el patrón es casi imperceptible o suficientemente marcado como para importar en el contexto.
+
+### Correlación no es predicción ni causalidad
+
+Una correlación de dos variables no ajusta otras explicaciones ni produce una predicción individual confiable. Para eso harían falta preguntas y modelos distintos, como regresión con covariables, que no forman parte del núcleo de este libro. Por ahora, mantené el verbo correcto: las variables *se relacionan*, *se asocian* o *varían juntas*; no digas que una “produce”, “explica” o “determina” la otra.
+
+## Ejercicios de autochequeo
+
+1. ¿Cada caso aporta dos valores continuos y la pregunta es por su relación?
+2. ¿Miraste el diagrama de dispersión antes de interpretar *r*?
+3. ¿Sabés decir qué significa el signo de tu coeficiente en palabras?
+4. ¿Tu conclusión evita convertir una relación observada en una afirmación causal?
+
+## Plantilla para llevar
+
+📄 **Plantilla para llevar:** [Plan de análisis en una página](plantillas/plan-de-analisis.md). Revisá también el [checklist antes de analizar](plantillas/checklist-antes-de-analizar.md). La base del ejemplo está en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv).

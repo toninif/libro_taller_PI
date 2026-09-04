@@ -1,0 +1,53 @@
+# Una media vs. un valor: t de una muestra {#sec-t-una-muestra}
+
+::: {.callout-tip}
+## La idea en una línea
+La t de una muestra compara el promedio de tu grupo contra un único valor de referencia —no contra otro grupo— y te dice si esa diferencia es mayor de lo que esperarías por azar.
+:::
+
+## Cuándo se usa
+
+Se usa cuando tenés una sola muestra y una variable continua, y la pregunta no es "¿cómo se compara con otro grupo?" sino "¿cómo se compara con un número que ya existía antes de tus datos?". Ese valor de referencia no sale de tu base: viene de afuera —el punto medio teórico de una escala, una norma publicada, un valor esperado por el diseño del instrumento— y tenés que poder justificarlo antes de correr el análisis, no elegirlo después para que el resultado cierre.
+
+Ejemplo de este libro: `organizacion` se mide con una escala de 8 a 40 puntos; su punto medio teórico —ni de acuerdo ni en desacuerdo, en promedio— es 24. La pregunta no es si dos grupos de estudiantes difieren entre sí: es si esta muestra, en conjunto, se aleja de ese punto neutro.
+
+Si en cambio tuvieras dos grupos, o la misma persona medida dos veces, no es este análisis: es el @sec-dos-grupos. Y si lo que tenés es un promedio que "te parece bajo" sin un valor externo que lo respalde, todavía no estás listo para este test: primero conseguí o justificá la referencia, después corré el análisis.
+
+## Paso a paso en jamovi
+
+`Analyses → T-Tests → One Sample T-Test`. Movés la variable continua (`organizacion`) a **Dependent Variables** y escribís el valor de referencia en **Test Value** (acá, 24; el default de jamovi es 0, así que no te olvides de cambiarlo). En **Assumption Checks**, tildá **Normality test**; en **Additional Statistics**, tildá **Effect size** y **Confidence interval**. No hay homogeneidad de varianzas que revisar: solo hay una muestra.
+
+La tabla de resultados trae el estadístico *t*, los grados de libertad (*df*), el valor *p*, la diferencia respecto del valor de referencia y, si tildaste **Additional Statistics**, el intervalo de confianza y el tamaño de efecto. Son las mismas columnas que vas a usar en la frase de resultado.
+
+## Ejemplo trabajado
+
+Con la base `encuesta-estudiantes-limpia` (@sec-jamovi), los 72 casos tienen `organizacion` completa:
+
+| *n* | *M* | *DE* | Valor de referencia |
+|---|---|---|---|
+| 72 | 24.39 | 4.04 | 24 |
+
+La comparación da *t*(71) = 0.82, *p* = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto *d* de Cohen = 0.10. El intervalo de confianza incluye el 24: es exactamente lo que predice un resultado no significativo.
+
+## Cómo leer el output e informarlo en APA
+
+> El puntaje promedio de organización de la muestra (*M* = 24.39, *DE* = 4.04) no difirió significativamente del punto medio teórico de la escala, *t*(71) = 0.82, *p* = .415, IC 95 % [23.44, 25.34], *d* = 0.10.
+
+Un resultado no significativo no es "no pasó nada": es un resultado con su propia frase, su *t*, su *p* y su intervalo, igual que uno significativo. El intervalo de confianza hace un trabajo que el *p* solo no hace: muestra que la media probablemente cae en algún punto entre 23.44 y 25.34, un rango que incluye el valor de referencia. Reportar "no hubo diferencia" sin ese intervalo deja al lector sin saber si el estudio pudo detectar una diferencia chica o si directamente casi no había ninguna.
+
+Un error frecuente: interpretar *p* > .05 como "se demostró que la organización es igual a 24". Un test de hipótesis no prueba la igualdad; solo dice que no hay evidencia suficiente para rechazar el valor de referencia con estos datos.
+
+### Si la normalidad no se sostiene
+
+El @sec-supuestos ya lo dijo en general: acá se aplica a una sola variable, no a una comparación de varianzas entre grupos. Mirá el histograma y el gráfico Q-Q de `organizacion`, no solo el valor de Shapiro-Wilk. Si la distribución está claramente sesgada o hay valores extremos que cambiarían la conclusión, la alternativa dentro del alcance de este libro es la prueba de rangos con signo de Wilcoxon, que compara la mediana con el valor de referencia en lugar de la media. Como toda alternativa, se nombra y se justifica en el plan; no se prueba en silencio hasta que dé un resultado más cómodo.
+
+## Ejercicios de autochequeo
+
+1. ¿El valor de referencia que vas a usar existe antes de tus datos, o lo elegiste después de ver la media de tu muestra?
+2. ¿Tu variable es continua y tenés un solo grupo, sin comparación entre personas ni mediciones repetidas?
+3. Si tu resultado no fuera significativo, ¿tenés igual la frase completa —*M*, *DE*, *t*, *p*, IC— lista para informarlo?
+4. ¿Podés explicar, en una oración, qué significa que el intervalo de confianza incluya o no el valor de referencia?
+
+## Plantilla para llevar
+
+📄 **Plantilla para llevar:** [Plan de análisis en una página](plantillas/plan-de-analisis.md) — completá el campo 6 con la frase de resultado de este capítulo. La base del ejemplo está en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv).

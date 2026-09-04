@@ -1,0 +1,38 @@
+# Presentación {.unnumbered}
+
+::: {.callout-note appearance="simple"}
+Este libro acompaña la cursada de Prácticas de Investigación (UP / UAI). Está pensado para usar junto con las actividades de la materia, una base de datos y jamovi abierto.
+:::
+
+## La idea rectora
+
+Los análisis se piensan **antes** de tener los datos. El análisis empieza en el diseño, no cuando ya cargaste la base. Este libro no enseña estadística —esa base ya la traés del grado—: enseña a **pensar y decidir** con lo que ya sabés. El test no es el protagonista; la decisión sí.
+
+## Qué vas a encontrar
+
+Vas a encontrar un recorrido para pasar de una pregunta a un resultado que puedas defender. El foco está en cuatro cosas:
+
+- Definir una pregunta, una hipótesis y un plan de análisis antes de recolectar.
+- Armar, documentar y preparar una base sin perder de vista qué representa cada variable.
+- Elegir y ejecutar en jamovi los análisis centrales de la materia: descriptivos, t, ANOVA de un factor, correlación y chi-cuadrado.
+- Leer el output y comunicarlo con tablas, gráficos y formato APA 7.
+
+jamovi es la única herramienta del libro. No hace falta programar: sí hace falta saber qué opción responde tu pregunta y qué mirar después de seleccionarla. Los ejemplos usan datos sintéticos de estudiantes; sirven para practicar el procedimiento, no para sacar conclusiones sobre una población real.
+
+## El recorrido
+
+Los capítulos 1 y 2 ponen el análisis en el diseño: primero definís qué querés saber y qué resultado contaría como respuesta. Los capítulos 3 a 7 ordenan la base y muestran cómo trabajar con ella en jamovi. Los capítulos 8 y 9 ayudan a elegir un análisis y a revisar sus supuestos. Del 10 al 14 se aplican los análisis uno por uno. Los dos últimos capítulos se ocupan de informar resultados y reunir las plantillas de trabajo.
+
+El recorrido es acumulativo. Si estás empezando un trabajo práctico, conviene seguirlo de principio a fin. Si ya tenés una pregunta y una base, empezá por el @sec-plan, recorré los capítulos 3 a 9 y recién después elegí el análisis. Ir directo al test suele ser rápido; volver para corregir una variable mal definida no.
+
+## Cómo usar este libro
+
+Trabajá con tu propio proyecto al lado. Después de cada capítulo, completá la parte equivalente de tu plan de análisis, diccionario o base; no hace falta esperar a “saber todo” para empezar a decidir. Las plantillas descargables te dan una estructura, pero las decisiones tienen que salir de tu pregunta y de cómo mediste las variables.
+
+Cuando llegues a un capítulo de análisis, hacé siempre la misma secuencia: formulá la pregunta en una oración, identificá la variable de agrupamiento o predictora y la de resultado, verificá los supuestos, ejecutá el análisis y escribí una frase de resultado. Si algo no encaja, volver a la definición de las variables es parte del análisis, no un retroceso.
+
+El apéndice reúne procedimientos que quedan fuera del núcleo de la materia. Podés dejarlo para después: dominar los análisis centrales vale más que acumular tests.
+
+---
+
+Dr. Fernando Tonini · [toninif.github.io](https://toninif.github.io) · ORCID [0000-0001-6435-8923](https://orcid.org/0000-0001-6435-8923)

@@ -1,0 +1,15 @@
+# Para ir más lejos {.appendix}
+
+Este apéndice queda como trabajo futuro, fuera del núcleo de la materia y de esta primera edición. Los tres temas de abajo no son necesarios para completar el recorrido de los capítulos 1 a 16; quedan anotados como próximos pasos para quien quiera seguir después de dominar los análisis centrales.
+
+## Regresión lineal
+
+*Pendiente para una próxima edición.*
+
+## ANOVA factorial
+
+*Pendiente para una próxima edición.*
+
+## ANOVA de medidas repetidas
+
+*Pendiente para una próxima edición.*

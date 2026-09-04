@@ -1,0 +1,70 @@
+# Dos grupos: t independientes y pareada {#sec-dos-grupos}
+
+::: {.callout-tip}
+## La idea en una línea
+Comparás dos grupos distintos con la t de muestras independientes, y las mismas personas medidas dos veces con la t de muestras pareadas: si son personas distintas o las mismas dos veces se decide antes que cualquier otra cosa.
+:::
+
+## Cuándo se usa
+
+La t de dos grupos responde una única forma de pregunta: ¿el promedio de una variable continua difiere entre dos condiciones? Lo que cambia entre las dos versiones es de dónde salen esas dos condiciones.
+
+- **Muestras independientes**: los dos grupos son personas distintas. Cada caso aparece una sola vez en la base, y una variable categórica de dos niveles los separa. Ejemplo de este libro: `procrastinacion` según `trabaja` (sí / no).
+- **Muestras pareadas**: es la misma persona medida dos veces (antes/después, con/sin una condición). Cada caso aparece una sola vez en la fila, pero aporta dos columnas de resultado. Ejemplo de este libro: `organizacion_pre` y `organizacion_post` de cada estudiante que pasó por un taller.
+
+Confundir estas dos situaciones es el error más común del capítulo: tratar mediciones repetidas de las mismas personas como si fueran independientes infla la evidencia de una diferencia que en realidad podría deberse a que comparás a cada persona contra sí misma. El @sec-supuestos ya lo advirtió: la independencia se decide en el diseño, no en jamovi.
+
+## Paso a paso en jamovi
+
+**Muestras independientes**: `Analyses → T-Tests → Independent Samples T-Test`. Movés la variable de resultado continua (`procrastinacion`) a **Dependent Variables** y la variable de agrupamiento (`trabaja`) a **Grouping Variable**. En **Assumption Checks**, tildá **Homogeneity test** (Levene) y **Normality test**; en **Additional Statistics**, tildá **Effect size** y **Confidence interval**.
+
+**Muestras pareadas**: `Analyses → T-Tests → Paired Samples T-Test`. Movés las dos variables del mismo caso como un par a **Paired Variables**: jamovi calcula la diferencia como **Measure 1 menos Measure 2**, en ese orden. Si esperás una mejora y querés que la diferencia salga en positivo —como en este ejemplo—, cargá primero `organizacion_post` (Measure 1) y después `organizacion_pre` (Measure 2). Si las cargás al revés, el signo se invierte pero el resultado es igual de válido: solo tenés que interpretarlo con el signo que corresponda. En **Assumption Checks**, tildá **Normality test** sobre las diferencias; acá no hay homogeneidad de varianzas que revisar, porque no hay dos grupos distintos.
+
+En los dos casos, jamovi ofrece la t de Student por default y la t de Welch como opción adicional en independientes. Pedí las dos y compará una con otra recién si Levene te avisa que las varianzas difieren. La tabla de resultados trae siempre las mismas columnas: el estadístico *t*, los grados de libertad (*df*), el valor *p*, la diferencia de medias, su error estándar y, si tildaste **Additional Statistics**, el intervalo de confianza y el tamaño de efecto. Son las columnas que vas a leer en la sección siguiente.
+
+## Ejemplo trabajado
+
+### Muestras independientes: ¿la procrastinación difiere según la situación laboral?
+
+Con la base `encuesta-estudiantes-limpia` (@sec-jamovi), 36 estudiantes trabajan y 34 no; dos casos quedan fuera por tener `trabaja` sin declarar. El resumen que ya habías bosquejado en el @sec-describir queda así:
+
+| Grupo | *n* | *M* | *DE* |
+|---|---|---|---|
+| Trabaja | 36 | 34.24 | 3.70 |
+| No trabaja | 34 | 31.49 | 4.79 |
+
+El chequeo de homogeneidad de varianzas (Levene) da *F*(1, 68) = 2.76, *p* = .101: no hay evidencia de que las varianzas difieran, así que la t de Student es la que vas a reportar. Si hubiera dado *p* < .05, el cambio no habría sido conceptual: se toma la fila de Welch de la misma tabla, con su propio *df* no entero, y se informa igual que la de Student, nombrando la alternativa como pide el @sec-supuestos. La comparación da *t*(68) = 2.70, *p* = .009, con una diferencia de medias de 2.75 puntos (IC 95 % [0.72, 4.79]) y un tamaño de efecto *d* de Cohen = 0.65.
+
+### Muestras pareadas: ¿cambia la organización después del taller?
+
+Con `taller-organizacion-prepost` (n = 32), cada estudiante aporta un puntaje antes y otro después:
+
+| Momento | *n* | *M* | *DE* |
+|---|---|---|---|
+| Antes | 32 | 21.55 | 2.98 |
+| Después | 32 | 24.13 | 3.58 |
+
+La diferencia promedio es de 2.58 puntos (después menos antes), con *t*(31) = 7.83, *p* < .001, IC 95 % de la diferencia [1.90, 3.25] y *d* de Cohen = 1.38.
+
+## Cómo leer el output e informarlo en APA
+
+jamovi te da todos los números; el párrafo tenés que armarlo vos, con la misma frase con huecos que escribiste en el @sec-plan. Para muestras independientes:
+
+> Los estudiantes que trabajan presentaron mayor procrastinación (*M* = 34.24, *DE* = 3.70) que los que no trabajan (*M* = 31.49, *DE* = 4.79), *t*(68) = 2.70, *p* = .009, IC 95 % [0.72, 4.79], *d* = 0.65. La diferencia fue estadísticamente significativa.
+
+Para muestras pareadas:
+
+> La organización aumentó entre el inicio (*M* = 21.55, *DE* = 2.98) y el final del taller (*M* = 24.13, *DE* = 3.58), *t*(31) = 7.83, *p* < .001, IC 95 % [1.90, 3.25], *d* = 1.38. El cambio fue estadísticamente significativo.
+
+Tres reglas que no dependen del ejemplo: los estadísticos (*t*, *d*) van en cursiva; *p* se informa con el valor exacto salvo que sea menor a .001, en cuyo caso se escribe "*p* < .001"; y el sentido de la diferencia (quién es mayor que quién, o si aumentó o disminuyó) se dice en palabras, no solo en números. Un lector no debería tener que hacer la resta para saber qué pasó.
+
+## Ejercicios de autochequeo
+
+1. Para tu propia pregunta: ¿los dos grupos son personas distintas o las mismas personas medidas dos veces?
+2. ¿Revisaste Levene antes de decidir entre la t de Student y la de Welch, o asumiste homogeneidad sin mirar?
+3. ¿Tu frase de resultado incluye *M*, *DE*, *t*, *p* y el tamaño de efecto, y no solo el valor de *p*?
+4. Si el resultado no hubiera sido significativo, ¿igual tenías algo que informar? (Sí: la ausencia de diferencia también es un resultado.)
+
+## Plantilla para llevar
+
+📄 **Plantilla para llevar:** [Plan de análisis en una página](plantillas/plan-de-analisis.md) — completá el campo 6 con la frase de resultado de este capítulo. Las bases del ejemplo están en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv) y [`taller-organizacion-prepost.omv`](plantillas/taller-organizacion-prepost.omv).
