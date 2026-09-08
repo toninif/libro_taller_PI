@@ -9,18 +9,18 @@ if (!requireNamespace("jmvReadWrite", quietly = TRUE)) {
   stop("No se encontró jmvReadWrite. Ejecutá este script con el R incluido en jamovi.")
 }
 
-main <- read.csv("datos/encuesta-estudiantes-limpia.csv", na.strings = "")
+main <- read.csv("datos/encuesta-estudiantes-limpia.csv", na.strings = "", fileEncoding = "UTF-8")
 main$turno <- factor(main$turno)
-main$trabaja <- factor(main$trabaja)
+main$trabaja <- factor(main$trabaja, levels = c("s\u00ed", "no"))
 main$aprobo_parcial <- factor(main$aprobo_parcial)
 paired <- read.csv("datos/taller-organizacion-prepost.csv")
 
 one_sample <- t.test(main$organizacion, mu = 24)
-independent <- t.test(procrastinacion ~ trabaja, data = main)
+independent <- t.test(procrastinacion ~ trabaja, data = main, var.equal = TRUE)
 paired_result <- t.test(paired$organizacion_post, paired$organizacion_pre, paired = TRUE)
 anova_result <- summary(aov(procrastinacion ~ turno, data = main))[[1]][["Pr(>F)"]][1]
 correlation <- cor.test(main$horas_estudio, main$procrastinacion)
-contingency <- chisq.test(table(main$trabaja, main$aprobo_parcial))
+contingency <- chisq.test(table(main$trabaja, main$aprobo_parcial), correct = FALSE)
 
 reopened_main <- jmvReadWrite::read_omv("plantillas/encuesta-estudiantes-limpia.omv")
 reopened_paired <- jmvReadWrite::read_omv("plantillas/taller-organizacion-prepost.omv")
@@ -30,7 +30,7 @@ cat("PAIRED_ROWS=", nrow(paired), "\n", sep = "")
 cat("MISSING_WORK_HOURS=", sum(is.na(main$horas_trabajo)), "\n", sep = "")
 cat(sprintf("ONE_SAMPLE_MEAN=%.2f P=%.4f\n", mean(main$organizacion), one_sample$p.value))
 cat(sprintf("INDEPENDENT_DIFF=%.2f P=%.4f\n",
-            diff(tapply(main$procrastinacion, main$trabaja, mean)), independent$p.value))
+            -diff(tapply(main$procrastinacion, main$trabaja, mean)), independent$p.value))
 cat(sprintf("PAIRED_DIFF=%.2f P=%.4f\n",
             mean(paired$organizacion_post - paired$organizacion_pre), paired_result$p.value))
 cat(sprintf("ANOVA_P=%.6f\n", anova_result))

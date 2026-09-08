@@ -47,9 +47,13 @@ Un párrafo no reemplaza una tabla cuando hay más de dos o tres grupos, o cuand
 
 Lo que jamovi no pone y vos tenés que agregar:
 
-1. Un número y un título en cursiva arriba de la tabla (`Tabla 1`, seguido en la línea siguiente por *Procrastinación según situación laboral*, en cursiva).
+1. Un número en negrita arriba de la tabla (**Tabla 1**) y, en la línea siguiente, un título en cursiva (*Procrastinación según situación laboral*).
 2. Encabezados de columna con el símbolo correspondiente en cursiva (*n*, *M*, *DE*), no el nombre completo de la variable.
 3. Una nota debajo, si hace falta aclarar una abreviatura o el *n* total.
+
+**Tabla 1**
+
+*Procrastinación según situación laboral*
 
 | Grupo | *n* | *M* | *DE* |
 |---|---:|---:|---:|

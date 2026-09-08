@@ -14,7 +14,7 @@ El nivel de medida que fijaste en el @sec-anatomia no es un dato para el diccion
 | Continua | Media, desvío estándar, mínimo, máximo; histograma | `procrastinacion`, `horas_estudio` |
 | Nominal | Frecuencias y porcentajes; gráfico de barras | `turno`, `trabaja`, `aprobo_parcial` |
 
-En jamovi: **Analyses → Exploration → Descriptives**. Movés las variables a la casilla **Variables**, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico correspondiente en la pestaña **Plots**. Pedir una media de una variable nominal —o un gráfico de barras de una continua sin agrupar— no genera un error, pero tampoco genera información: jamovi hace lo que le pedís, no lo que tiene sentido.
+En jamovi: **Analyses → Exploration → Descriptives**. Movés las variables a la casilla **Variables**, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico correspondiente en **Plots**. Las opciones disponibles dependen del nivel de medida: verificá que esté bien declarado. Un código numérico de una categoría no convierte su promedio en un resumen interpretable.
 
 ## La tabla que ya habías bosquejado
 
@@ -45,7 +45,7 @@ Un gráfico elegido porque "queda bien" y no porque responde la pregunta es, en 
 Este repaso no reemplaza los chequeos de supuestos del @sec-supuestos: es previo. Antes de abrir un test, mirá los descriptivos que acabás de pedir y respondé:
 
 - **¿El *n* de cada grupo alcanza?** Un grupo con tres casos no va a sostener ninguna comparación, más allá de lo que diga un test.
-- **¿Los valores mínimo y máximo son posibles?** Contralos contra el rango que anotaste en el diccionario; un `120` en una escala de 10 a 50 es un error de carga, no un dato.
+- **¿Los valores mínimo y máximo son posibles?** Contrastalos con el rango que anotaste en el diccionario; un `120` en una escala de 10 a 50 requiere revisar la carga o el cálculo del puntaje.
 - **¿La forma de la distribución es razonable?** Un histograma muy asimétrico o con dos picos te avisa antes de que lo haga un supuesto incumplido.
 - **¿Los datos faltantes se concentran en algún grupo?** Un patrón de faltantes que no es parejo entre grupos puede sesgar la comparación antes de que corras un solo test.
 

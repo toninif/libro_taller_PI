@@ -14,8 +14,8 @@ book:
       orcid: "0000-0001-6435-8923"
       url: "https://toninif.github.io"
   date: today
-  site-url: "https://toninif.github.io/libro_practicas/"  # ajustar al nombre final del repo
-  repo-url: "https://github.com/toninif/libro_practicas"  # ajustar
+  site-url: "https://toninif.github.io/libro_taller_PI/"
+  repo-url: "https://github.com/toninif/libro_taller_PI"
   sidebar:
     search: true
   chapters:

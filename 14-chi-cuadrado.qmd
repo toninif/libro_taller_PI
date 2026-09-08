@@ -15,7 +15,7 @@ El test compara los conteos observados con los conteos que esperarías si las va
 
 ## Paso a paso en jamovi
 
-Abrí `Analyses → Frequencies → Independent Samples`. Pasá `trabaja` a **Rows** y `aprobo_parcial` a **Columns**. En **Statistics**, pedí **χ² test of association** y **Phi and Cramer's V**. En **Cells**, pedí los conteos observados, esperados y porcentajes por fila.
+Abrí `Analyses → Frequencies → Independent Samples`. Pasá `trabaja` a **Rows** y `aprobo_parcial` a **Columns**. En **Statistics**, pedí **χ²** y **Phi and Cramer's V**. Para reproducir este ejemplo, dejá desmarcada **χ² continuity correction**: informamos Pearson sin corrección de continuidad. En **Cells**, pedí **Observed counts**, **Expected counts** y **Row** dentro de los porcentajes.
 
 Los porcentajes por fila responden de manera directa a la pregunta: dentro de quienes trabajan, ¿qué porcentaje aprobó?, y dentro de quienes no, ¿qué porcentaje aprobó? Los conteos esperados, en cambio, sirven para revisar el supuesto técnico. En una tabla 2 × 2 como esta, si las frecuencias esperadas son muy pequeñas, la aproximación de χ² puede ser mala y Fisher es una alternativa más adecuada.
 

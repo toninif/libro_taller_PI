@@ -1,4 +1,4 @@
-# El diccionario de datos
+# El diccionario de datos {#sec-diccionario}
 
 ::: {.callout-tip}
 ## La idea en una línea
@@ -34,11 +34,13 @@ No todas las variables necesitan el mismo nivel de detalle. Una variable continu
 
 En la encuesta del libro, `horas_trabajo` es una cantidad continua. Pero la pregunta de comparación usa otra variable: `trabaja`. Esa segunda variable se calcula con un criterio previo: “sí” si la persona informó diez o más horas de trabajo remunerado por semana; “no” en caso contrario.
 
+::: {.table-responsive}
 | Nombre | Etiqueta | Valores / regla | Rol | Nota |
 |---|---|---|---|---|
 | `horas_trabajo` | Horas de trabajo semanales | 0 a 70; `-99` = faltante | Insumo | Se informa como cantidad. |
 | `trabaja` | Situación laboral | sí = 10 o más horas; no = menos de 10 | Agrupamiento | Variable calculada desde `horas_trabajo`. |
 | `procrastinacion` | Puntaje de procrastinación | 10 a 50; mayor puntaje = mayor procrastinación | Resultado | Puntaje total de la escala definida por la cátedra. |
+:::
 
 La regla de diez horas puede discutirse antes de recolectar; eso es justamente lo que tiene que ocurrir. Una vez iniciada la comparación, cambiarla porque produce grupos “más lindos” sería una decisión tomada mirando los datos. El diccionario deja una huella de esa elección.
 

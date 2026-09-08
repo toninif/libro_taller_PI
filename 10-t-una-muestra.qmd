@@ -15,9 +15,9 @@ Si en cambio tuvieras dos grupos, o la misma persona medida dos veces, no es est
 
 ## Paso a paso en jamovi
 
-`Analyses → T-Tests → One Sample T-Test`. Movés la variable continua (`organizacion`) a **Dependent Variables** y escribís el valor de referencia en **Test Value** (acá, 24; el default de jamovi es 0, así que no te olvides de cambiarlo). En **Assumption Checks**, tildá **Normality test**; en **Additional Statistics**, tildá **Effect size** y **Confidence interval**. No hay homogeneidad de varianzas que revisar: solo hay una muestra.
+`Analyses → T-Tests → One Sample T-Test`. Movés la variable continua (`organizacion`) a **Dependent Variables** y escribís el valor de referencia en **Test value** (acá, 24; el default de jamovi es 0, así que no te olvides de cambiarlo). Mantené la hipótesis bilateral **≠ Test value**. En **Assumption Checks**, tildá **Normality test** y **Q-Q Plot**; en **Additional Statistics**, pedí **Descriptives**, **Mean difference**, su **Confidence interval** al 95 % y **Effect size**. No hay homogeneidad de varianzas que revisar: solo hay una muestra.
 
-La tabla de resultados trae el estadístico *t*, los grados de libertad (*df*), el valor *p*, la diferencia respecto del valor de referencia y, si tildaste **Additional Statistics**, el intervalo de confianza y el tamaño de efecto. Son las mismas columnas que vas a usar en la frase de resultado.
+La tabla de resultados trae el estadístico *t*, los grados de libertad (*df*), el valor *p* y las columnas adicionales que pediste. El intervalo junto a **Mean difference** corresponde a la diferencia respecto de 24: en este ejemplo es [−0.56, 1.34]. Para expresar el IC de la media, sumá 24 a ambos límites: [23.44, 25.34]. La casilla de intervalo debajo de **Effect size** corresponde a *d*, no a la media.
 
 ## Ejemplo trabajado
 
@@ -33,13 +33,13 @@ La comparación da *t*(71) = 0.82, *p* = .415, con una diferencia de apenas 0.39
 
 > El puntaje promedio de organización de la muestra (*M* = 24.39, *DE* = 4.04) no difirió significativamente del punto medio teórico de la escala, *t*(71) = 0.82, *p* = .415, IC 95 % [23.44, 25.34], *d* = 0.10.
 
-Un resultado no significativo no es "no pasó nada": es un resultado con su propia frase, su *t*, su *p* y su intervalo, igual que uno significativo. El intervalo de confianza hace un trabajo que el *p* solo no hace: muestra que la media probablemente cae en algún punto entre 23.44 y 25.34, un rango que incluye el valor de referencia. Reportar "no hubo diferencia" sin ese intervalo deja al lector sin saber si el estudio pudo detectar una diferencia chica o si directamente casi no había ninguna.
+Un resultado no significativo no es "no pasó nada": es un resultado con su propia frase, su *t*, su *p* y su intervalo, igual que uno significativo. El intervalo de confianza muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.
 
 Un error frecuente: interpretar *p* > .05 como "se demostró que la organización es igual a 24". Un test de hipótesis no prueba la igualdad; solo dice que no hay evidencia suficiente para rechazar el valor de referencia con estos datos.
 
 ### Si la normalidad no se sostiene
 
-El @sec-supuestos ya lo dijo en general: acá se aplica a una sola variable, no a una comparación de varianzas entre grupos. Mirá el histograma y el gráfico Q-Q de `organizacion`, no solo el valor de Shapiro-Wilk. Si la distribución está claramente sesgada o hay valores extremos que cambiarían la conclusión, la alternativa dentro del alcance de este libro es la prueba de rangos con signo de Wilcoxon, que compara la mediana con el valor de referencia en lugar de la media. Como toda alternativa, se nombra y se justifica en el plan; no se prueba en silencio hasta que dé un resultado más cómodo.
+El @sec-supuestos ya lo dijo en general: acá se aplica a una sola variable, no a una comparación de varianzas entre grupos. Mirá el histograma y el gráfico Q-Q de `organizacion`, no solo el valor de Shapiro-Wilk. La prueba de rangos con signo de Wilcoxon puede servir cuando resulta razonable suponer una distribución simétrica alrededor de un centro; bajo esa condición, permite contrastar ese centro, que coincide con la mediana, con el valor de referencia. No resuelve automáticamente una asimetría marcada. Si la distribución es muy sesgada o hay extremos influyentes, revisá los datos y la pregunta antes de elegir una alternativa. Como toda alternativa, se nombra y se justifica en el plan.
 
 ## Ejercicios de autochequeo
 

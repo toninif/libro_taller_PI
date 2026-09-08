@@ -15,6 +15,7 @@ Los demás supuestos sí se pueden explorar con los datos. Pero explorar no sign
 
 ## Las comprobaciones más comunes
 
+::: {.table-responsive}
 | Pregunta | Qué mirar | Por qué importa |
 |---|---|---|
 | ¿La variable está bien definida y medida? | Tipo de variable, códigos y faltantes | Un análisis no corrige una variable mal codificada. |
@@ -23,6 +24,7 @@ Los demás supuestos sí se pueden explorar con los datos. Pero explorar no sign
 | ¿Los grupos tienen dispersiones muy distintas? | Descriptivos y prueba de homogeneidad | Afecta especialmente a la t independiente y al ANOVA clásico. |
 | ¿La relación es aproximadamente lineal? | Gráfico de dispersión | Una correlación de Pearson puede ocultar una curva. |
 | ¿Las frecuencias esperadas alcanzan? | Tabla de contingencia | Chi-cuadrado necesita conteos adecuados para su aproximación. |
+:::
 
 No todos estos puntos aplican a todos los análisis. Pedir todas las pruebas “por las dudas” suele producir una pantalla llena de resultados que no cambian ninguna decisión.
 
@@ -45,7 +47,7 @@ Estas son alternativas frecuentes dentro del alcance del libro:
 | Varianzas desiguales entre dos grupos | Revisar tamaños de grupo y descriptivos | t de Welch. |
 | Varianzas desiguales entre tres o más grupos | Revisar la diferencia y los tamaños | ANOVA de Welch y comparaciones Games-Howell. |
 | Distribución muy asimétrica o extremos que cambian la conclusión | Revisar codificación, gráfico y pregunta | Prueba no paramétrica adecuada, con interpretación propia. |
-| Relación no lineal u ordinal | Mostrar el gráfico y no forzar Pearson | Correlación de Spearman o replantear la pregunta. |
+| Variables ordinales o relación monótona no lineal | Mostrar el gráfico y no forzar Pearson | Correlación de Spearman; si la relación cambia de dirección, replantear la pregunta. |
 | Frecuencias esperadas demasiado bajas | Revisar categorías y diseño antes de analizar | En una tabla 2 × 2, considerar Fisher; no agrupar categorías solo para “pasar” el test. |
 
 Las alternativas no son premios de consuelo. Responden preguntas cercanas, pero no siempre idénticas. Por ejemplo, Mann-Whitney no es simplemente “la t sin normalidad”: compara distribuciones con una hipótesis nula distinta. Cuando uses un plan B, nombralo y explicá por qué lo elegiste.

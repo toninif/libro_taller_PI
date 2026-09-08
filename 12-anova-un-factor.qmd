@@ -15,9 +15,11 @@ ANOVA evita hacer muchas t entre pares. Con tres grupos hay tres comparaciones p
 
 ## Paso a paso en jamovi
 
-Abrí `Analyses → ANOVA → One-Way ANOVA`. Pasá `procrastinacion` a **Dependent Variable** y `turno` a **Grouping Variable**. Pedí **Descriptives** y un gráfico de medias para ver los grupos antes del test.
+Abrí `Analyses → ANOVA → One-Way ANOVA`. Pasá `procrastinacion` a **Dependent Variables** y `turno` a **Grouping Variable**. En **Additional Statistics**, pedí **Descriptives table** y **Descriptives plots** para ver los grupos antes del test.
 
-En **Assumption Checks**, tildá **Normality test**, gráfico Q-Q y **Equality of variances** (Levene). Para el ANOVA clásico, pedí **Fisher’s**; si las varianzas son claramente desiguales, usá **Welch’s**. En **Post Hoc Tests**, agregá `turno`: Tukey corresponde cuando usás el ANOVA clásico con varianzas razonablemente homogéneas; Games-Howell es la alternativa cuando usás Welch. Pedí también el tamaño de efecto, eta cuadrado (η²).
+En **Assumption Checks**, tildá **Normality test**, **Q-Q Plot** y **Homogeneity test** (Levene). En **Variances**, para reproducir el ANOVA clásico del ejemplo, marcá **Assume equal (Fisher's)**; Welch aparece seleccionado por defecto. En **Post-Hoc Tests**, elegí **Tukey (equal variances)**: este panel ya toma el factor de **Grouping Variable**, no pide volver a agregar `turno`. Si usás Welch por varianzas desiguales, la alternativa es **Games-Howell (unequal variances)**.
+
+El panel simplificado no ofrece eta cuadrado. Para obtener η² del ANOVA clásico, abrí también `Analyses → ANOVA → ANOVA`, colocá `procrastinacion` en **Dependent Variable** y `turno` en **Fixed Factors**, y marcá **η²** en **Effect Size**. Con este único factor, el *F* coincide con el de Fisher del panel anterior. Esta ruta adicional permite reproducir el tamaño de efecto del reporte.
 
 El orden importa: las comparaciones post-hoc no reemplazan la prueba global. Primero mirás la pregunta general, después examinás pares solo si corresponde. No elegís el par que “se ve más distinto” para correr una t aislada.
 
@@ -33,7 +35,7 @@ Con `encuesta-estudiantes-limpia` (@sec-jamovi), hay 24 estudiantes en cada turn
 
 Levene da *F*(2, 69) = 2.10, *p* = .130. No hay evidencia de varianzas desiguales, así que usamos el ANOVA clásico. La prueba global es significativa, *F*(2, 69) = 18.63, *p* < .001, η² = .35. El resultado no dice que los tres grupos difieren entre sí: dice que al menos uno tiene un promedio distinto.
 
-Tukey aclara dónde están las diferencias. El turno noche presenta mayor procrastinación que mañana, diferencia de medias = 6.25, IC 95 % [3.71, 8.78], *p* < .001. El turno tarde también supera al de mañana, diferencia = 4.57, IC 95 % [2.03, 7.10], *p* < .001. Noche y tarde no difieren de manera concluyente, diferencia = 1.68, IC 95 % [−0.86, 4.22], *p* = .259.
+Tukey aclara dónde están las diferencias. El turno noche presenta mayor procrastinación que mañana, diferencia de medias = 6.25, *p* < .001. El turno tarde también supera al de mañana, diferencia = 4.57, *p* < .001. Noche y tarde no difieren de manera concluyente, diferencia = 1.68, *p* = .259. La tabla de jamovi resta el grupo de la fila menos el de la columna: con el orden mañana, tarde, noche, esas diferencias aparecen negativas. Acá las expresamos en el sentido inverso para acompañar la frase; los valores *p* son los mismos.
 
 η² = .35 indica que, en estos datos sintéticos, el turno explica cerca del 35 % de la variación observada en procrastinación. No significa que el turno cause esa diferencia: quienes cursan en cada horario pueden diferir en muchas otras características. ANOVA compara promedios; no convierte una comparación observacional en una conclusión causal.
 

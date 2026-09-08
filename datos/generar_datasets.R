@@ -1,5 +1,5 @@
 # Genera los datos sintéticos usados en el libro.
-# Ejecutar con el R incluido en jamovi y definir JAMOVI_R_LIBRARY si fuera necesario.
+# Ejecutar con R 4.5.3, --encoding=UTF-8 y JAMOVI_R_LIBRARY (ver datos/README.md).
 
 jamovi_library <- Sys.getenv("JAMOVI_R_LIBRARY")
 if (nzchar(jamovi_library)) {
@@ -13,9 +13,9 @@ if (nzchar(jamovi_library)) {
 tryCatch(Sys.setlocale("LC_CTYPE", "en_US.UTF-8"), error = function(e) invisible(NULL))
 tryCatch(Sys.setlocale("LC_CTYPE", ".UTF-8"), error = function(e) invisible(NULL))
 
-# Marca explícitamente como UTF-8 cualquier literal con tilde o ñ, para que
-# no dependa de cómo el intérprete de R haya leído el código fuente de este
-# archivo. Usar siempre u("...") en vez de "..." para texto acentuado.
+# Marca los literales ya leídos como UTF-8. Esto no repara caracteres dañados
+# durante el parseo: también es necesario iniciar R con el locale y la
+# codificación documentados en datos/README.md.
 u <- function(x) {
   Encoding(x) <- "UTF-8"
   x

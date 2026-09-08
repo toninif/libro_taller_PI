@@ -15,7 +15,7 @@ El árbol de decisión no reemplaza lo que aprendiste en estadística. Te ayuda 
 2. La variable de resultado: ¿es continua o categórica?
 3. La otra variable: ¿forma grupos, representa una segunda medida de la misma persona o es otra cantidad?
 
-Si no podés responderlas, volvé al @sec-plan o al diccionario de datos. Un árbol no decide por una variable mal definida.
+Si no podés responderlas, volvé al @sec-plan o al diccionario de datos (@sec-diccionario). Un árbol no decide por una variable mal definida.
 
 ## Primera bifurcación: ¿comparás o buscás relación?
 
@@ -29,14 +29,16 @@ No confundas “dos variables” con “relación”. Una comparación entre dos
 
 ## La tabla maestra
 
+::: {.table-responsive}
 | Si tu pregunta es… | Y tus variables son… | El análisis central es… | Capítulo |
 |---|---|---|---|
-| ¿Un promedio difiere de un valor? | Un resultado continuo y un valor de referencia | t de una muestra | 10 |
-| ¿Dos grupos distintos difieren? | Resultado continuo; agrupamiento con dos categorías | t de muestras independientes | 11 |
-| ¿Las mismas personas cambiaron? | Dos mediciones continuas de cada caso | t de muestras pareadas | 11 |
-| ¿Tres o más grupos difieren? | Resultado continuo; agrupamiento con tres o más categorías | ANOVA de un factor | 12 |
-| ¿Dos cantidades se relacionan? | Dos variables continuas | Correlación | 13 |
-| ¿Dos categorías se asocian? | Dos variables categóricas | Chi-cuadrado de independencia | 14 |
+| ¿Un promedio difiere de un valor? | Un resultado continuo y un valor de referencia | t de una muestra | @sec-t-una-muestra |
+| ¿Dos grupos distintos difieren? | Resultado continuo; agrupamiento con dos categorías | t de muestras independientes | @sec-dos-grupos |
+| ¿Las mismas personas cambiaron? | Dos mediciones continuas de cada caso | t de muestras pareadas | @sec-dos-grupos |
+| ¿Tres o más grupos difieren? | Resultado continuo; agrupamiento con tres o más categorías | ANOVA de un factor | @sec-anova |
+| ¿Dos cantidades se relacionan? | Dos variables continuas | Correlación | @sec-correlacion |
+| ¿Dos categorías se asocian? | Dos variables categóricas | Chi-cuadrado de independencia | @sec-chi |
+:::
 
 Esa tabla cubre el núcleo de la materia, no todas las preguntas posibles. Si querés predecir un resultado con varias variables, controlar covariables o analizar diseños más complejos, mirá el apéndice cuando ya domines esta lógica.
 

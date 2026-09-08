@@ -9,7 +9,7 @@ La correlación describe cuánto y en qué dirección se relacionan dos variable
 
 Usás correlación cuando cada caso aporta dos medidas continuas y tu pregunta es por su relación, no por una diferencia entre grupos. En el ejemplo del libro: ¿a más horas de estudio semanal se observa menor procrastinación académica?
 
-No hay grupos que comparar. Cada estudiante tiene un valor de `horas_estudio` y otro de `procrastinacion`; el análisis mira cómo se mueven esos pares. Si una de tus variables es categórica, volvés al @sec-arbol. Codificar `trabaja` como 0 y 1 no la convierte en una cantidad adecuada para correlacionar con un puntaje.
+No hay grupos que comparar en este ejemplo. Cada estudiante tiene un valor de `horas_estudio` y otro de `procrastinacion`; el análisis mira cómo se mueven esos pares. Si una de tus variables es categórica, volvés al @sec-arbol para elegir la presentación más clara. Una variable binaria codificada como 0 y 1 puede correlacionarse con un puntaje mediante la correlación punto-biserial, pero en este libro abordamos esa pregunta como comparación de dos grupos.
 
 El coeficiente de Pearson, *r*, va de −1 a 1. Un valor positivo indica que valores altos de una variable tienden a aparecer con valores altos de la otra; uno negativo, que valores altos de una tienden a aparecer con valores bajos de la otra. Un *r* cercano a 0 indica que no hay una relación lineal clara. La magnitud no tiene una etiqueta universal: se interpreta con el tema, la precisión del intervalo y lo que una relación de ese tamaño permite concluir.
 

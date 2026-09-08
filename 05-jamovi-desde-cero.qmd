@@ -53,4 +53,4 @@ Con la base importada y guardada, en el próximo capítulo vas a transformarla s
 
 ## Referencias
 
-The jamovi project. (2025). *jamovi* (Version 2.7.31) [Computer software]. https://www.jamovi.org
+The jamovi project. (2026). *jamovi* (Version 2.7.31) [Computer software]. https://www.jamovi.org
