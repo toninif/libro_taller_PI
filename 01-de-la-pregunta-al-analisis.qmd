@@ -1,37 +1,42 @@
-# De la pregunta al análisis {#sec-pregunta}
+# La estadística desde la pregunta {#sec-pregunta}
 
-::: {.callout-tip}
-## La idea en una línea
-El análisis no se elige mirando la base: se decide cuando formulás la pregunta y definís qué vas a medir.
+::: callout-tip
+## La idea en una frase
+
+Como advierte un renombrado estadístico, pensar en el análisis cuando el estudio ya terminó se asemeja a hacerle una autopsia... Quizá podamos saber de qué murió, pero ya no podremos salvarlo.
 :::
 
-## El error típico: recolectar primero, pensar después
+## El error a evitar: recolectar primero, pensar después
 
-Es tentador empezar por el instrumento: armar una encuesta, salir a buscar respuestas y recién después preguntarte qué hacer con ellas. El problema aparece cuando abrís la base. Ahí es donde te enterás de que la variable que ibas a usar para agrupar tiene seis categorías cuando necesitabas dos, que mediste el mismo concepto con tres preguntas distintas sin decidir cómo se combinan, o que la escala que elegiste no tiene un punto de corte publicado. Ninguna de esas decisiones desapareció: solo se movió de lugar, del diseño al análisis, y ahora la tenés que tomar con la base ya abierta.
+Esta frase de Fisher es deliberadamente exagerada, pero apunta a un problema muy concreto. Mientras llevamos adelante el estudio, muchas decisiones que parecen estadísticas son, en realidad, decisiones de diseño. Y si no se toman antes de recolectar los datos, después ya no tienen solución.
 
-Tomar decisiones de análisis mirando los datos no es un atajo inocente. Cada elección que hacés después de ver los resultados —qué variables combinar, qué casos excluir, qué corte usar— es una bifurcación, y en cada una pudiste haber elegido distinto. El conjunto de esas bifurcaciones es lo que Gelman y Loken (2013) llaman el "jardín de senderos que se bifurcan" (sí, es un guiño a Borges): aunque nunca llegues a probar dos análisis y quedarte con el que "dio mejor", el solo hecho de decidir después de mirar ya cambia lo que ese resultado significa. La forma de evitarlo no es tener más cuidado al decidir; es decidir antes de tener datos que mirar.
+Es tentador empezar por el instrumento. Empezar a confeccionar una encuesta, salir a buscar los participantes y recién después preguntarte qué hacer con ellos. El problema con esto aparece cuando abrís la base. Ahí es donde te enterás de que la variable que ibas a usar para agrupar tiene seis categorías cuando necesitabas dos, que mediste el mismo concepto con tres preguntas distintas sin decidir cómo se combinan o que la escala que elegiste no tiene un punto de corte publicado. Ninguno de estos casos apareció de la nada. Son cuestiones de diseño que ahora tenés que solucionar con la base ya abierta.
+
+Tomar decisiones de análisis mirando los datos no es un atajo inocente. Pensemos que cada elección que hacés después de ver los resultados (variables que combinás, qué casos excluir, qué corte usar) es una bifurcación, y en cada una pudiste haber elegido distinto. El conjunto de esas bifurcaciones es lo que Gelman y Loken (2013) llaman el “jardín de senderos que se bifurcan” (sí, es un guiño a Borges jeje). Es decir que, aunque nunca llegues a probar dos análisis y quedarte con el que “dio mejor”, el solo hecho de decidir después de mirar ya cambia lo que ese resultado significa.
+
+Por eso, la solución no consiste en ser más cuidadoso cuando finalmente abrís la base. Consiste en llegar a ese momento con la mayor cantidad posible de decisiones ya tomadas. Esto implica decidir qué pregunta querés responder, qué variables representan esa pregunta y qué análisis permite ponerla a prueba.
 
 ## La pregunta ya contiene el análisis
 
-La buena noticia es que no hace falta memorizar qué test usar en cada situación. Si tu pregunta de investigación está bien formulada, ya contiene casi toda la información que necesitás para elegir el análisis:
+La buena noticia es que no hace falta memorizar qué análisis estadístico usar en cada situación. Si tu pregunta de investigación está bien formulada, ya contiene casi toda la información que necesitás para elegir el análisis:
 
-- **¿Cuántas variables involucra y con qué rol?** Una pregunta de comparación tiene una variable de agrupamiento y una variable de resultado que se compara entre grupos. Una pregunta de asociación tiene dos variables que varían juntas, sin que una "agrupe" a la otra.
-- **¿De qué tipo es cada variable?** Categórica o continua. Esto solo lo sabés si ya decidiste cómo la vas a medir, no cuando la mires en la base.
-- **¿Contra qué se compara?** Contra otro grupo, contra un valor de referencia, o contra sí misma en otro momento.
+-   **¿Cuántas variables involucra y con qué rol?** Una pregunta de comparación tiene una variable de agrupamiento y una variable de resultado que se compara entre grupos. Una pregunta de asociación tiene dos variables que varían juntas, sin que una "agrupe" a la otra.
+-   **¿De qué tipo es cada variable?** Categórica o continua. Esto solo lo sabés si ya decidiste cómo la vas a medir, no cuando la mires en la base.
+-   **¿Contra qué se compara?** Contra otro grupo, contra un valor de referencia, o contra sí misma en otro momento.
 
 Compará estas tres preguntas:
 
-- *¿El promedio de ansiedad de los ingresantes difiere del punto de corte del instrumento?* Una variable continua contra un valor fijo.
-- *¿La satisfacción con la cursada difiere entre comisiones de mañana, tarde y noche?* Una variable continua comparada entre tres grupos.
-- *¿Las horas de estudio semanal se relacionan con el rendimiento?* Dos variables continuas, sin grupos.
+-   *¿El promedio de ansiedad de los ingresantes difiere del punto de corte del instrumento?* Una variable continua contra un valor fijo.
+-   *¿La satisfacción con la cursada difiere entre comisiones de mañana, tarde y noche?* Una variable continua comparada entre tres grupos.
+-   *¿Las horas de estudio semanal se relacionan con el rendimiento?* Dos variables continuas, sin grupos.
 
-Ninguna de las tres menciona un test por su nombre, y sin embargo cada una ya apunta a un análisis distinto —los vas a encontrar en el @sec-arbol y en los capítulos que le siguen—. Esto es lo que quiere decir que la pregunta contiene el análisis: no que tengas que saber estadística avanzada, sino que si sos preciso al formularla, la elección deja de ser una adivinanza.
+Ninguna de las tres menciona una prueba estadística por su nombre, y sin embargo cada una ya apunta a un análisis distinto (los vas a encontrar en el @sec-arbol y en los capítulos que le siguen). Por ende, si formulás la pregunta con precisión, entonces la elección del análisis deja de ser una cuestión de azar.
 
 ## Anticipar el resultado antes de tener un dato
 
-Hay una prueba simple para saber si tu pregunta está lo bastante precisa: ¿podés bosquejar, ahora mismo, la tabla o el gráfico que vas a mostrar al final? Si podés dibujar los ejes, las filas o las columnas sin tener un solo caso cargado, tu pregunta está lista. Si no podés —porque todavía no sabés cuántos grupos vas a comparar, o qué valor vas a resumir—, todavía no terminaste de definirla.
+Hay una prueba simple para saber si tu pregunta está lo bastante precisa: ¿podés bosquejar, ahora mismo, la tabla o el gráfico que vas a mostrar al final? Si podés dibujar los ejes, las filas o las columnas sin tener un solo caso cargado, tu pregunta está lista. Si no podés (porque todavía no sabés cuántos grupos vas a comparar, o qué valor vas a resumir), todavía no terminaste de definirla.
 
-Esto no es un lujo metodológico. Nosek et al. (2018) señalan que buena parte del valor de planificar antes de recolectar está en separar la generación de una hipótesis de su puesta a prueba: si decidís qué esperás ver antes de tener datos, un resultado —en cualquier dirección— es informativo. Si lo decidís después, cualquier patrón que aparezca en los datos puede parecer la hipótesis que "siempre pensaste".
+Esto no es un lujo metodológico. Nosek et al. (2018) señalan que buena parte del valor de planificar antes de recolectar está en separar la generación de una hipótesis de su puesta a prueba. Si decidís qué esperás ver antes de tener datos, un resultado —en cualquier dirección— es informativo. Si lo decidís después, cualquier patrón que aparezca en los datos puede parecer la hipótesis que "siempre pensaste".
 
 ## Qué sigue
 
@@ -41,15 +46,15 @@ Este capítulo dio la idea; el @sec-plan la convierte en un procedimiento de sei
 
 Antes de pasar al capítulo siguiente, contestá:
 
-1. ¿Podés nombrar tu pregunta de investigación en una sola oración, sin "y además" ni "depende"?
-2. ¿Sabés, a partir de esa pregunta, cuántas variables necesitás y qué rol cumple cada una?
-3. ¿Podrías bosquejar ahora mismo la tabla o el gráfico que esperás mostrar al final, aunque todavía no tengas datos?
-4. Si la respuesta a alguna de las tres anteriores es "no", ¿qué te falta definir antes de salir a recolectar?
+1.  ¿Podés nombrar tu pregunta de análisis en una sola oración, sin "y además" ni "depende"?
+2.  ¿Sabés, a partir de esa pregunta, cuántas variables necesitás y qué rol cumple cada una?
+3.  ¿Podrías bosquejar ahora mismo la tabla o el gráfico que esperás mostrar al final, aunque todavía no tengas datos?
+4.  Si la respuesta a alguna de las tres anteriores es "no", ¿qué te falta definir antes de salir a recolectar?
 
 ## Referencias
 
-::: {.text-break}
-Gelman, A., & Loken, E. (2013). *The garden of forking paths: Why multiple comparisons can be a problem, even when there is no "fishing expedition" or "p-hacking" and the research hypothesis was posited ahead of time* [Manuscrito no publicado]. Department of Statistics, Columbia University. http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf
+::: text-break
+Gelman, A., & Loken, E. (2013). *The garden of forking paths: Why multiple comparisons can be a problem, even when there is no "fishing expedition" or "p-hacking" and the research hypothesis was posited ahead of time* \[Manuscrito no publicado\]. Department of Statistics, Columbia University. http://www.stat.columbia.edu/\~gelman/research/unpublished/p_hacking.pdf
 
 Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *Proceedings of the National Academy of Sciences, 115*(11), 2600–2606. https://doi.org/10.1073/pnas.1708274114
 :::

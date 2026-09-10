@@ -1,8 +1,8 @@
 # Anatomía de una base {#sec-anatomia}
 
 ::: {.callout-tip}
-## La idea en una línea
-Una base no es una lista de números: es una tabla donde cada fila representa un caso, cada columna una variable y cada celda una medición que tiene que poder interpretarse.
+## La idea 
+Una base es mucho más que una con números. En una base de datos cada fila representa un caso, cada columna una variable y cada celda una medición que tiene que poder interpretarse. Por lo general, estas tablas son anchas y, a medida que se ordenan y limpian los datos, se vuelven largas.
 :::
 
 ## La tabla que está detrás de cualquier análisis
@@ -13,7 +13,7 @@ Abrís una base y ves filas, columnas y valores. Parece obvio, pero el análisis
 - una **columna** es una variable: una característica que puede cambiar de un caso a otro;
 - una **celda** es el valor de esa variable para ese caso.
 
-En la encuesta ficticia que vamos a usar durante el libro, cada fila corresponde a un estudiante. `horas_estudio` es una columna y el número de horas semanales de una persona es una celda. Si cada fila mezclara estudiantes, materias o momentos de medición sin avisarlo, no tendrías una base lista para analizar: tendrías una tabla difícil de descifrar.
+En la encuesta ficticia que vamos a usar durante el libro, cada fila corresponde a un estudiante. `horas_estudio` es una columna y el número de horas semanales de una persona es una celda. Si cada fila mezclara estudiantes, materias o momentos de medición sin avisarlo, no tendrías una base lista para analizar.
 
 ::: {.table-responsive}
 | id | turno | horas_estudio | procrastinacion | aprobo_parcial |
@@ -37,7 +37,7 @@ La tercera pregunta conecta esta base con el plan de análisis del @sec-plan. Un
 
 ## El número no alcanza para saber qué tipo de variable es
 
-Un número puede ser una cantidad, una etiqueta o un código. Por eso `1 = mañana`, `2 = tarde` y `3 = noche` no convierten al turno en una variable continua: sumar esos códigos o calcular su promedio no tiene sentido. Antes de hacer cuentas, preguntate si la distancia entre los valores representa algo real.
+Un número puede ser una cantidad, una etiqueta o un código. Por eso `1 = mañana`, `2 = tarde` y `3 = noche` no convierten al turno en una variable continua. Por eso, sumar estos códigos o calcular su promedio no tiene sentido. Antes de hacer cuentas, preguntate si la distancia entre los valores representa algo real.
 
 En jamovi conviene separar dos decisiones. El **tipo de dato** describe cómo se guarda el valor: entero, decimal o texto. El **nivel de medida** indica cómo debe tratarse en el análisis: nominal, ordinal, continua o ID. Al importar una base, jamovi hace una estimación automática; revisarla es parte de preparar la base, no un detalle técnico.
 

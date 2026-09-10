@@ -1,40 +1,41 @@
 # Hipótesis, variables y plan de análisis {#sec-plan}
 
-::: {.callout-tip}
-## La idea en una línea
-Antes de recolectar un solo dato, tenés que poder decir qué vas a comparar y qué contaría como respuesta. Ese es el plan de análisis: cabe en una página y se escribe primero.
+::: callout-tip
+## La idea de base
+
+Antes de recolectar un solo dato, tenés que poder decir qué vas a comparar y qué contaría como respuesta. Ese es el plan de análisis. Entra en una página y es lo primero que se escribe.
 :::
 
 ## Dos estudiantes, la misma pregunta
 
-Julia y Martina cursan Prácticas y llegaron a la misma pregunta: ¿la procrastinación académica difiere entre estudiantes que trabajan y estudiantes que no trabajan?
+Julia y Martina cursan Prácticas y uno de sus objetivos es comparar la procrastinación en función de la situación laboral. Por lo tanto, llegaron a la misma pregunta: ¿la procrastinación académica difiere entre estudiantes que trabajan y estudiantes que no trabajan?
 
-Martina armó el formulario ese fin de semana y salió a recolectar. Preguntó "¿trabajás?" con opciones *sí / no / a veces / hice changas este mes*, y midió procrastinación con tres preguntas que se le ocurrieron, cada una con escalas distintas. Juntó 80 respuestas. Cuando abrió la base, empezaron los problemas: ¿"a veces" cuenta como trabajar? ¿Las tres preguntas se promedian, se suman, se usa una sola? Cada decisión que no tomó antes ahora la tiene que tomar *mirando los datos*, y cada una se puede discutir. El análisis que termine haciendo va a ser el que la base le permita, no el que la pregunta pedía.
+Martina armó el formulario ese fin de semana y salió a recolectar. Preguntó "¿trabajás?" con opciones *sí / no / a veces / hice changas este mes* y midió procrastinación con tres preguntas que se le ocurrieron, cada una con escalas distintas. Juntó 80 respuestas. Cuando abrió la base, empezaron los problemas: ¿"a veces" cuenta como trabajar? ¿Las tres preguntas se promedian, se suman, se usa una sola? Cada decisión que no tomó antes ahora la tiene que tomar *mirando los datos* y cada una se puede discutir. El análisis que termine haciendo va a ser el que la base le permita, no el que la pregunta pedía.
 
-Julia, antes de recolectar, escribió media página: qué iba a comparar (dos grupos: trabaja / no trabaja, definido como 10 o más horas semanales), con qué variable de resultado (puntaje total de una escala de procrastinación ya validada), y qué análisis iba a usar cuando tuviera los datos. Cuando abrió su base, no tuvo que decidir nada: solo ejecutar lo que ya había decidido.
+Julia, antes de recolectar, escribió media página: qué iba a comparar (dos grupos: trabaja / no trabaja, definido como 10 o más horas semanales), con qué variable de resultado (puntaje total de una escala de procrastinación ya validada) y qué análisis iba a usar cuando tuviera los datos. Cuando abrió su base, no tuvo que decidir nada y solo se concentró en ejecutar lo que ya había decidido.
 
-La diferencia no es de conocimiento estadístico —las dos saben lo mismo—. Es que Julia decidió en el diseño y Martina dejó las decisiones para después. Este capítulo es para que seas Julia.
+Ambas tenían la misma formación estadística, pero Julia decidió desde el diseño y Martina dejó las decisiones para después. Este capítulo es para que seas Julia.
 
 ## De la hipótesis a las variables
 
 Tu hipótesis ya contiene el análisis; solo hay que hacerla explícita. Toda hipótesis de comparación o de relación involucra variables con **roles** distintos:
 
 | Rol | Qué es | En el ejemplo |
-|---|---|---|
-| Variable de agrupamiento (o predictora) | La que define los grupos que comparás, o la que creés que influye | Situación laboral (trabaja / no trabaja) |
-| Variable de resultado | La que esperás que cambie entre grupos, o la que querés explicar | Puntaje de procrastinación |
+|------------------------|------------------------|------------------------|
+| Variable de agrupamiento | La que define los grupos que comparás o la que creés que influye | Situación laboral (trabaja / no trabaja) |
+| Variable de resultado | La que esperás que cambie entre grupos o la que querés explicar | Puntaje de procrastinación |
 
 Con los roles asignados, hacete tres preguntas sobre cada variable:
 
-1. **¿De qué tipo es?** ¿Categórica (grupos, etiquetas) o continua (números con los que tiene sentido promediar)? Esto lo viste en el grado y lo retomamos en el @sec-anatomia; acá lo único nuevo es que la respuesta *determina el análisis disponible*.
-2. **¿Cómo se define exactamente?** "Trabaja" no es una medición hasta que decidís el corte (¿cuántas horas?, ¿changas cuentan?). "Procrastinación" no es una medición hasta que elegís el instrumento y qué puntaje usás.
-3. **¿Cuántos valores/grupos tiene?** Dos grupos y tres grupos llevan a análisis distintos (@sec-arbol).
+1.  **¿De qué tipo es?** ¿Categórica (grupos, etiquetas) o continua (números con los que tiene sentido promediar)? Esto lo viste en el grado y lo retomamos en el @sec-anatomia. Acá lo único nuevo es que la respuesta *determina el análisis disponible*.
+2.  **¿Cómo se define exactamente?** "Trabaja" no es una medición hasta que decidís el corte (¿cuántas horas? ¿Changas cuentan?). "Procrastinación" no es una medición hasta que elegís el instrumento y qué puntaje usás.
+3.  **¿Cuántos valores/grupos tiene?** Dos grupos implican un tipo de análisis, mientras que más de dos grupos llevan a un análisis distinto (@sec-arbol).
 
-Si contestás estas tres preguntas para cada variable, el análisis queda casi elegido solo. Es la lógica del árbol de decisión del @sec-arbol: pregunta + tipo de variables → análisis. No hace falta memorizar tests; hace falta conocer tus variables.
+Si contestás estas tres preguntas para cada variable, el análisis queda casi elegido solo. Es la lógica del árbol de decisión del @sec-arbol: pregunta+ hipótesis + tipo de variables → análisis. Lo importante reside en conocer tus variables.
 
 ## Qué contaría como respuesta
 
-Este es el paso que casi nadie hace y el que más problemas evita: **imaginate el resultado final antes de tener datos**.
+Este es un paso muy importante, que a veces es dejado de lado. **Imaginate el resultado final antes de tener datos**.
 
 Concretamente, escribí dos cosas:
 
@@ -42,26 +43,26 @@ Concretamente, escribí dos cosas:
 
 **La frase de resultado que querrías poder escribir**, con huecos:
 
-> "Los estudiantes que trabajan presentaron [mayor / menor / similar] procrastinación (*M* = __, *DE* = __) que los que no trabajan (*M* = __, *DE* = __), y la diferencia [fue / no fue] estadísticamente significativa."
+> "Los estudiantes que trabajan presentaron \[mayor / menor / similar\] procrastinación (*M* = \_\_\_, *DE* = \_\_\_) que los que no trabajan (*M* = \_\_\_, *DE* = \_\_\_) y la diferencia \[fue / no fue\] estadísticamente significativa."
 
-Fijate todo lo que esa frase te obliga a definir: que hay dos grupos, que la procrastinación se resume en una media, que vas a comparar medias. Si tu hipótesis no se deja escribir como una frase con huecos, no está lista para recolectar. Y algo más: **las dos versiones de la frase (diferencia sí / diferencia no) tienen que ser un resultado aceptable para vos**. Si solo una te sirve, el problema no es de análisis.
+Fijate todo lo que esa frase te obliga a definir: que hay dos grupos, que la procrastinación se resume en una media, que vas a comparar medias. Si tu hipótesis no se deja escribir como una frase con huecos, no está lista para recolectar. Algo más: **las dos versiones de la frase (diferencia sí / diferencia no) tienen que ser un resultado aceptable para vos**. Si solo una te sirve, el problema no es de análisis.
 
-En jamovi esto tiene una traducción directa: la frase con huecos es lo que vas a completar leyendo el output, y la tabla que bosquejaste es la que vas a pedir en *Analyses*. El plan que escribís hoy es literalmente la lista de lo que vas a clickear después.
+En jamovi esto tiene una traducción directa: la frase con huecos es lo que vas a completar leyendo el output que te tira el programa y la tabla que bosquejaste es la que vas a pedir en la sección *Análisis*. El plan que escribís hoy es literalmente la lista de lo que vas a cliquear después.
 
 ## El plan de análisis en una página
 
 Juntemos todo. Un plan de análisis tiene seis campos y cabe en una página:
 
 | Campo | Qué escribís |
-|---|---|
-| 1. Pregunta | La pregunta de investigación, en una oración |
-| 2. Hipótesis | Qué esperás encontrar, en forma comparable ("los que ___ tendrán mayor ___ que los que ___") |
-| 3. Variables | Cada una con su rol (agrupamiento / resultado), tipo, definición exacta y valores posibles |
-| 4. Análisis previsto | El análisis que responde la pregunta, según el árbol del @sec-arbol |
-| 5. Supuestos a chequear | Qué vas a verificar antes de confiar en el resultado, y el plan B si no se cumple (@sec-supuestos) |
-| 6. Resultado esperado | La tabla/gráfico bosquejado y la frase de resultado con huecos |
+|------------------------------------|------------------------------------|
+| 1\. Pregunta | La pregunta de análisis en una oración |
+| 2\. Hipótesis | Qué esperás encontrar, en forma comparable ("los que \_\_\_ tendrán mayor \_\_\_ que los que \_\_\_") |
+| 3\. Variables | Cada una con su rol (agrupamiento / resultado), tipo, definición exacta y valores posibles |
+| 4\. Análisis previsto | El análisis que responde la pregunta, según el árbol del @sec-arbol |
+| 5\. Supuestos a chequear | Qué vas a verificar antes de confiar en el resultado y el plan B si no se cumple (@sec-supuestos) |
+| 6\. Resultado esperado | La tabla/gráfico bosquejado y la frase de resultado con huecos |
 
-Dos aclaraciones. Primera: el plan se escribe **antes de recolectar**, pero no es un contrato con escribano; si al ver los datos aparece algo que te obliga a desviarte, te desviás *sabiendo que te desviaste y por qué*, que es exactamente lo contrario de improvisar. Segunda: los campos 4 y 5 los vas a poder completar mejor después de la Parte II; en tu primer plan está bien dejar el análisis previsto como mejor conjetura y volver a afinarlo.
+Dos aspectos para tener en cuenta. El plan se escribe **antes de recolectar**, pero no es un contrato. Si al ver los datos aparece algo que te obliga a desviarte, te desviás *sabiendo que te desviaste y por qué*, que es exactamente lo contrario de improvisar. Luego reportas esa desviación y la interpretas con cautela. Los campos 4 y 5 que aparecen en la tabla los vas a poder completar mejor después de la Parte II de este libro.
 
 ## Ejemplo completo: el plan de Julia
 
@@ -70,6 +71,7 @@ Dos aclaraciones. Primera: el plan se escribe **antes de recolectar**, pero no e
 > **2. Hipótesis:** Los estudiantes que trabajan presentarán mayor procrastinación académica que los que no trabajan.
 >
 > **3. Variables:**
+>
 > - *Situación laboral* — agrupamiento; categórica, 2 grupos; "trabaja" = 10+ hs semanales remuneradas en el último mes; valores: trabaja / no trabaja.
 > - *Procrastinación académica* — resultado; continua; puntaje total de la Escala de Procrastinación Académica (suma de ítems, rango 16–80).
 >
@@ -85,7 +87,6 @@ Dos aclaraciones. Primera: el plan se escribe **antes de recolectar**, pero no e
 
 Antes de dar tu plan por terminado, contestá honestamente:
 
-1. ¿Podrías dárselo a otra persona y que recolecte los datos sin hacerte ninguna pregunta? Si tendría que preguntarte algo, ese algo falta en el plan.
-2. ¿Cada variable tiene rol, tipo y definición exacta? "Ansiedad" no es una variable; "puntaje total del STAI-Estado" sí.
-3. ¿Escribiste la frase de resultado con huecos? ¿Las dos versiones (hipótesis confirmada / no confirmada) te sirven como resultado?
-4. ¿El análisis previsto sale de tus variables o de "es el que conozco"? Si es lo segundo, volvé al punto 2: quizás haya que ajustar la hipótesis, no el análisis.
+1.  ¿Podrías dárselo a otra persona para que recolecte los datos sin hacerte ninguna pregunta? Si tendría que preguntarte algo, ese algo falta en el plan.
+2.  ¿Cada variable tiene rol, tipo y definición exacta? "Ansiedad" no es una variable; "puntaje total del STAI-Estado" sí.
+3.  ¿El análisis previsto sale de tus variables o de "es el que conozco"? Si es lo segundo, volvé al punto 2: quizás haya que ajustar la hipótesis, no el análisis.
