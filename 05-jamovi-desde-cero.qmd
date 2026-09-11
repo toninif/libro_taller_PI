@@ -1,6 +1,6 @@
 # jamovi desde cero {#sec-jamovi}
 
-::: {.callout-tip}
+::: callout-tip
 ## La idea en una línea
 
 En jamovi los resultados se recalculan cada vez que cambiás una opción del análisis o un dato de la base. Aprender a usarlo suele ser más simple que otros programas (cof, cof… SPSS, cof, cof).
@@ -14,7 +14,7 @@ Al abrir jamovi por primera vez vas a ver una planilla vacía con dos solapas ar
 
 Podés ver un video sobre cómo descargar e instalar el programa aquí abajo:
 
-{{< video https://youtu.be/319QIXyj2Zc aspect-ratio="16x9" >}}
+{{< video https://youtu.be/D0P9O8gVdE0 aspect-ratio="16x9" >}}
 
 ## Los resultados se recalculan al cambiar las opciones
 
