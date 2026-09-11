@@ -6,7 +6,7 @@
 Como advierte un renombrado estadístico, pensar en el análisis cuando el estudio ya terminó se asemeja a hacerle una autopsia... Quizá podamos saber de qué murió, pero ya no podremos salvarlo.
 :::
 
-## El error a evitar: recolectar primero, pensar después
+## Pensar antes de recolectar
 
 Esta frase de Fisher es deliberadamente exagerada, pero apunta a un problema muy concreto. Mientras llevamos adelante el estudio, muchas decisiones que parecen estadísticas son, en realidad, decisiones de diseño. Y si no se toman antes de recolectar los datos, después ya no tienen solución.
 
@@ -14,11 +14,11 @@ Es tentador empezar por el instrumento. Empezar a confeccionar una encuesta, sal
 
 Tomar decisiones de análisis mirando los datos no es un atajo inocente. Pensemos que cada elección que hacés después de ver los resultados (variables que combinás, qué casos excluir, qué corte usar) es una bifurcación, y en cada una pudiste haber elegido distinto. El conjunto de esas bifurcaciones es lo que Gelman y Loken (2013) llaman el “jardín de senderos que se bifurcan” (sí, es un guiño a Borges jeje). Es decir que, aunque nunca llegues a probar dos análisis y quedarte con el que “dio mejor”, el solo hecho de decidir después de mirar ya cambia lo que ese resultado significa.
 
-Por eso, la solución no consiste en ser más cuidadoso cuando finalmente abrís la base. Consiste en llegar a ese momento con la mayor cantidad posible de decisiones ya tomadas. Esto implica decidir qué pregunta querés responder, qué variables representan esa pregunta y qué análisis permite ponerla a prueba.
+Conviene llegar a la base con la mayor cantidad posible de decisiones ya tomadas. Empezá por definir qué pregunta querés responder, qué variables representan esa pregunta y qué análisis permite ponerla a prueba.
 
 ## La pregunta ya contiene el análisis
 
-La buena noticia es que no hace falta memorizar qué análisis estadístico usar en cada situación. Si tu pregunta de investigación está bien formulada, ya contiene casi toda la información que necesitás para elegir el análisis:
+Una pregunta bien formulada te da buena parte de la información que necesitás para elegir el análisis. Fijate qué dice sobre estos aspectos.
 
 -   **¿Cuántas variables involucra y con qué rol?** Una pregunta de comparación tiene una variable de agrupamiento y una variable de resultado que se compara entre grupos. Una pregunta de asociación tiene dos variables que varían juntas, sin que una "agrupe" a la otra.
 -   **¿De qué tipo es cada variable?** Categórica o continua. Esto solo lo sabés si ya decidiste cómo la vas a medir, no cuando la mires en la base.
@@ -30,17 +30,21 @@ Compará estas tres preguntas:
 -   *¿La satisfacción con la cursada difiere entre comisiones de mañana, tarde y noche?* Una variable continua comparada entre tres grupos.
 -   *¿Las horas de estudio semanal se relacionan con el rendimiento?* Dos variables continuas, sin grupos.
 
-Ninguna de las tres menciona una prueba estadística por su nombre, y sin embargo cada una ya apunta a un análisis distinto (los vas a encontrar en el @sec-arbol y en los capítulos que le siguen). Por ende, si formulás la pregunta con precisión, entonces la elección del análisis deja de ser una cuestión de azar.
+Cada pregunta apunta a un análisis distinto, aunque ninguna lo menciona por su nombre. Los vas a encontrar en el @sec-arbol y en los capítulos que le siguen. Formular la pregunta con precisión te ayuda a reconocer cuál corresponde.
 
 ## Anticipar el resultado antes de tener un dato
 
-Hay una prueba simple para saber si tu pregunta está lo bastante precisa: ¿podés bosquejar, ahora mismo, la tabla o el gráfico que vas a mostrar al final? Si podés dibujar los ejes, las filas o las columnas sin tener un solo caso cargado, tu pregunta está lista. Si no podés (porque todavía no sabés cuántos grupos vas a comparar, o qué valor vas a resumir), todavía no terminaste de definirla.
+Hay una prueba simple para saber si tu pregunta es lo bastante precisa. ¿Podés bosquejar, ahora mismo, la tabla o el gráfico que vas a mostrar al final? Si podés dibujar los ejes, las filas o las columnas sin tener un solo caso cargado, tu pregunta está lista. Si no podés (porque todavía no sabés cuántos grupos vas a comparar, o qué valor vas a resumir), todavía no terminaste de definirla.
 
-Esto no es un lujo metodológico. Nosek et al. (2018) señalan que buena parte del valor de planificar antes de recolectar está en separar la generación de una hipótesis de su puesta a prueba. Si decidís qué esperás ver antes de tener datos, un resultado —en cualquier dirección— es informativo. Si lo decidís después, cualquier patrón que aparezca en los datos puede parecer la hipótesis que "siempre pensaste".
+Nosek et al. (2018) señalan que buena parte del valor de planificar antes de recolectar está en separar la generación de una hipótesis de su puesta a prueba. Si decidís qué esperás ver antes de tener datos, el resultado es informativo cualquiera sea su dirección. Si lo decidís después, cualquier patrón que aparezca en los datos puede parecer la hipótesis que "siempre pensaste".
 
 ## Qué sigue
 
-Este capítulo dio la idea; el @sec-plan la convierte en un procedimiento de seis pasos que vas a poder aplicar a tu propio proyecto, siguiendo el caso completo de dos estudiantes que llegan a la misma pregunta por caminos distintos. A partir de ahí, cada capítulo de la Parte I te da las herramientas para preparar la base según lo que planificaste, y cada capítulo de la Parte II te ayuda a ejecutar exactamente el análisis que ya decidiste.
+En el @sec-plan vas a trabajar estas decisiones en seis pasos, siguiendo el caso de dos estudiantes que llegan a la misma pregunta por caminos distintos. Después vas a organizar tu proyecto, preparar la base y seguir el capítulo de análisis que corresponda a tu pregunta.
+
+## En tu proyecto
+
+Escribí la pregunta de tu proyecto en una oración y nombrá las variables que necesitás para responderla. Guardá ese primer documento y el boceto de tabla o gráfico que imaginás mostrar. En el @sec-plan vas a convertirlos en un plan de análisis y organizarlos dentro de la carpeta del proyecto (@sec-proyecto).
 
 ## Autochequeo
 

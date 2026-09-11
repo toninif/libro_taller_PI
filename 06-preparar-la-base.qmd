@@ -5,39 +5,43 @@
 Preparar una base es agregar decisiones en columnas nuevas, nunca borrar ni sobrescribir lo que llegó del instrumento.
 :::
 
-## La regla que no se negocia
+## Conservar los datos originales
 
-Vas a recodificar, calcular, declarar faltantes y filtrar. Antes de la primera de esas operaciones, fijate esta regla: la columna original no se toca. `horas_trabajo`, tal como la respondió cada persona, tiene que seguir intacta en la base después de que crees `trabaja` a partir de ella. Si más adelante alguien —incluida tu versión de dentro de un mes— necesita revisar el criterio, tiene que poder hacerlo sin reconstruir nada.
+Vas a recodificar, calcular, declarar faltantes y filtrar sobre el archivo que guardaste en `trabajo/`. Conservá las columnas de origen. Por ejemplo, `horas_trabajo`, tal como la respondió cada persona, tiene que seguir disponible después de que crees `trabaja`. Así podés revisar el criterio más adelante y contrastarlo con la base de `datos-originales/`.
 
-Esto no es una preferencia estética: es lo que permite auditar cada decisión. Cada variable nueva que crees en este capítulo tiene que quedar anotada en tu diccionario de datos, con la fórmula o el criterio exacto que la generó.
+Anotá cada variable nueva en el diccionario de datos, con la fórmula o el criterio exacto que la generó. Si necesitás corregir un valor, registrá también qué consultaste para hacerlo.
 
 ## Recodificar con Transform
 
-**Transform** convierte los valores de una variable existente en categorías nuevas, sin tocar el original. Es la herramienta para pasar de una cantidad continua a un criterio categórico, como en el ejemplo que venimos siguiendo: `horas_trabajo` (continua) se convierte en `trabaja` (sí / no) con el corte en diez horas semanales.
+**Transform** convierte los valores de una variable existente en categorías nuevas, sin tocar el original. Es la herramienta para pasar de una cantidad continua a un criterio categórico, como en el ejemplo que venimos siguiendo. `horas_trabajo` (continua) se convierte en `trabaja` (sí / no) con el corte en diez horas semanales.
 
 Antes de transformar, declará `-99` como faltante en `horas_trabajo`, siguiendo la sección de faltantes de este capítulo. Así evitás clasificar una falta de respuesta como "no trabaja".
 
-Seleccioná `horas_trabajo` y pulsá **Data → Transform**. En la nueva variable, comprobá **Source variable** y elegí **Create New Transform…** en el selector de transformación. Agregá condiciones con `$source`, que representa la columna de origen: `$source >= 10` asigna `'sí'` y `$source < 10` asigna `'no'`. Nombrá la variable `trabaja` y comprobá que sea nominal. Los casos 007 y 058 deben seguir faltantes en la variable nueva. Por ejemplo, el caso 013 respondió `horas_trabajo = 17` y queda como `sí`; el caso 002 respondió 6 y queda como `no`. La columna original conserva los valores recibidos.
+Seleccioná `horas_trabajo` y pulsá **Data → Transform**. En la nueva variable, comprobá **Source variable** y elegí **Create New Transform…** en el selector de transformación. Agregá condiciones con `$source`, que representa la columna de origen. `$source >= 10` asigna `'sí'` y `$source < 10` asigna `'no'`. Nombrá la variable `trabaja` y comprobá que sea nominal. Los casos 007 y 058 deben seguir faltantes en la variable nueva. Por ejemplo, el caso 013 respondió `horas_trabajo = 17` y queda como `sí`; el caso 002 respondió 6 y queda como `no`. La columna original conserva los valores recibidos.
 
 ## Calcular con Compute
 
 **Compute** crea una variable a partir de una fórmula que puede usar una o varias columnas. Se usa para sumar los ítems de una escala en un puntaje total, para calcular una diferencia (`organizacion_post` − `organizacion_pre`) o para derivar cualquier cantidad que no viene directamente del instrumento.
 
-En jamovi, pulsá **Data → Compute** para crear una variable calculada. Escribís la fórmula con el selector de variables y funciones (`SUM`, `MEAN`, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá la regla exacta —qué ítems se suman, con qué signo y cómo se tratan los faltantes— en el diccionario: una fórmula que solo existe en la cabeza de quien la escribió no se puede revisar.
+En jamovi, pulsá **Data → Compute** para crear una variable calculada. Escribís la fórmula con el selector de variables y funciones (`SUM`, `MEAN`, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.
 
-Transform y Compute resuelven problemas distintos: Transform recodifica una variable en categorías; Compute calcula un valor a partir de una fórmula. Si dudás cuál te corresponde, preguntate si estás agrupando valores existentes (Transform) o calculando uno nuevo (Compute).
+Transform y Compute resuelven problemas distintos. Transform recodifica una variable en categorías; Compute calcula un valor a partir de una fórmula. Si dudás cuál te corresponde, preguntate si estás agrupando valores existentes (Transform) o calculando uno nuevo (Compute).
 
 ## Declarar los datos faltantes
 
-En la base de este libro, dos respuestas sin completar en `horas_trabajo` se registran como `-99`. El número en sí no tiene nada de especial: es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes es decirle a jamovi qué valores no cuentan como datos.
+En la base de este libro, dos respuestas sin completar en `horas_trabajo` se registran como `-99`. Ese código es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes es decirle a jamovi qué valores no cuentan como datos.
 
-En jamovi: doble clic en el encabezado de la columna → pestaña **Missing Values** → agregás la condición ("si el valor es -99, tratarlo como faltante"). A partir de ahí, esos casos quedan excluidos de los cálculos de esa variable, pero sin perder la fila: siguen visibles en **Data** y disponibles para cualquier otra variable que sí hayan respondido.
+En jamovi, hacé doble clic en el encabezado de la columna, abrí **Missing Values** y agregá la condición para tratar `-99` como faltante. Esos casos quedan excluidos de los cálculos de esa variable. Las filas siguen visibles en **Data** y disponibles para analizar las otras variables que sí hayan respondido.
 
 ## Filtrar sin borrar
 
-Un filtro oculta temporalmente algunos casos de los análisis, sin eliminarlos de la base. Es la herramienta correcta cuando necesitás restringir un análisis a un subgrupo (por ejemplo, solo quienes trabajan) o excluir respuestas incompletas; la incorrecta es borrar filas: una fila borrada no se puede auditar ni recuperar, y nadie que revise tu trabajo después va a poder saber por qué desapareció.
+Un filtro deja temporalmente algunos casos fuera de los análisis, sin eliminarlos de la base. Usalo cuando necesites restringir el análisis a un subgrupo o excluir respuestas incompletas según lo previsto en el plan. Conservar las filas y registrar el criterio permite revisar qué casos entraron y por qué.
 
 En jamovi, pulsá **Data → Filters** y escribí la condición lógica (por ejemplo, `trabaja == 'sí'`). Los casos que no cumplen la condición se marcan en la planilla y quedan fuera de los análisis mientras el filtro esté activo, pero podés desactivarlo y volver a la base completa en cualquier momento. Desactivá este filtro antes de seguir los ejemplos que comparan quienes trabajan con quienes no.
+
+## En tu proyecto
+
+Guardá la base preparada como una nueva versión en `trabajo/`. Actualizá el diccionario en `documentos/` con cada recodificación, cálculo y código de faltante. En el registro de cambios anotá los criterios aplicados y qué filtros dejaste activos. Comprobá que el archivo recibido sigue disponible en `datos-originales/`.
 
 ## Autochequeo
 

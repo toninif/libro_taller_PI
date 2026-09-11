@@ -8,6 +8,10 @@ El libro acompaña a estudiantes de Prácticas de Investigación que ya vieron e
 
 ## Voz y extensión
 
+Por decisión de Fernando del 2026-09-10, sostener el proyecto del estudiante durante todo el recorrido. La presentación anticipa esta forma de trabajo; `sec-proyecto`, al cierre de la Apertura, explica la organización. Cada capítulo incluye «En tu proyecto» con un avance concreto y su destino dentro de `documentos/`, `datos-originales/`, `trabajo/`, `resultados/` o `informe/`. Distinguir el proyecto completo del archivo `.omv`. Los capítulos analíticos se aplican según la pregunta; practicar todas las técnicas no obliga a incorporarlas al informe.
+
+Preferir oraciones conectadas y ejemplos concretos. Reducir dos puntos usados para encadenar explicaciones, incisos con guiones y fórmulas como «no es X, es Y», «la regla que no se negocia» o cierres que repiten una moraleja. Conservar los signos que cumplen una función en sintaxis, rutas, valores negativos, nombres técnicos y referencias. Mantener el voseo, los comentarios personales del autor y la primera persona de la presentación.
+
 Escribir en español rioplatense, en segunda persona singular (`tenés`, `podés`, `elegís`), con tono directo, cuidadoso y no condescendiente. Explicar primero para qué sirve una decisión y luego cómo se implementa. Evitar definiciones enciclopédicas, tecnicismos sin traducción y listas de opciones que no ayudan a decidir.
 
 Como guía, los capítulos conceptuales tendrán entre 800 y 1.400 palabras; los de análisis, entre 1.000 y 1.600. Una idea que requiere muchas excepciones se divide en una sección breve o se remite al apéndice.
@@ -23,8 +27,9 @@ Los capítulos de análisis 10–14 mantienen siempre este orden:
 3. Paso a paso en jamovi.
 4. Ejemplo trabajado.
 5. Cómo leer el output e informarlo en APA.
-6. Ejercicios de autochequeo.
-7. Plantilla para llevar.
+6. En tu proyecto.
+7. Ejercicios de autochequeo.
+8. Recursos para el trabajo, cuando hagan falta.
 
 Cada ruta de jamovi se escribe como texto, por ejemplo: `Analyses → T-Tests → Independent Samples T-Test`. No usar capturas salvo que una interfaz no pueda explicarse de forma clara con texto. Antes de publicar, verificar las rutas en la versión de jamovi declarada en el capítulo.
 

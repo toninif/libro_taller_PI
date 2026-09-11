@@ -1,37 +1,41 @@
 # Presentación {.unnumbered}
 
 ::: {.callout-note appearance="simple"}
-Este recurso está pensado para acompañar algunas de las prácticas de investigación abordadas durante la cursada. Para usarlo solo necesitás las actividades de la materia, una base de datos y jamovi instalado.
+Este recurso está pensado para acompañar tu proyecto de Prácticas de Investigación desde las primeras decisiones hasta el informe. Podés empezar con una pregunta, aunque todavía no tengas datos. Cuando llegue el momento de analizar, vamos a trabajar con jamovi.
 :::
 
 ## La idea central
 
-Me gustaría que se lleven la idea de que los análisis se piensan **antes** de tener los datos. Se podría decir que el análisis empieza en el diseño y no recién cuando ya tenés cargada la base. También me gustaría resaltar que este libro no enseña estadística (esos conocimientos ya los adquiriste en otras materias). Lo que trata de mostrar es cómo se puede **tomar decisiones** con lo que ya sabés. A fin de cuentas, la prueba estadística se hace con un par de clicks. Acá el protagonista es el proceso decisorio que te permite justificar la elección de *ese* análisis y no otro.
+Me gustaría que se lleven la idea de que los análisis se piensan **antes** de tener los datos. El análisis empieza en el diseño, cuando decidís qué querés saber y cómo vas a estudiarlo. Los conocimientos de estadística ya los adquiriste en otras materias. Acá vamos a usarlos para tomar decisiones sobre tu proyecto. A fin de cuentas, la prueba estadística se hace con un par de clics. Lo que lleva trabajo es poder justificar por qué elegiste ese análisis y qué podés concluir con sus resultados.
+
+Por eso te propongo trabajar desde un proyecto durante todo el libro. Vas a ir reuniendo la pregunta, el plan, el diccionario, las bases y el informe en un mismo lugar. Me interesa que al final puedas retomar tu trabajo, explicar cómo llegaste a cada resultado y compartirlo con alguien que pueda entenderlo.
 
 ## Qué vas a encontrar
 
-Vas a encontrar un recorrido para pasar de una pregunta a un resultado que puedas defender. El foco está en cuatro cosas:
+Vas a encontrar un recorrido para pasar de una pregunta a un resultado que puedas defender. Durante ese recorrido vas a trabajar en estas tareas.
 
 -   Definir una pregunta, unos objetivos e hipótesis y un plan de análisis antes de recolectar.
 -   Armar, documentar y preparar una base sin perder de vista qué representa cada variable.
 -   Elegir y ejecutar los análisis centrales de la materia (en este caso utilizando jamovi, pero hay otras opciones). Esto va desde los descriptivos hasta pruebas t, ANOVA de un factor, correlación y chi-cuadrado.
 -   Leer los resultados, entenderlos y comunicarlos utilizando un formato en específico (sí, normas APA), así como tablas y gráficos.
 
-jamovi es la única herramienta que vas a utilizar a medida que avances con el libro. No hace falta saber programar (aunque es una habilidad deseable y te aliento a que la adquieras si te interesa). Sí hace falta saber qué opción responde tu pregunta y qué mirar después de seleccionarla. Los ejemplos usan datos sintéticos de estudiantes. Solo sirven para practicar el procedimiento, no para sacar conclusiones sobre una población real.
+Para los análisis vamos a usar jamovi. El plan y el informe los podés escribir en tu procesador de texto habitual, y el diccionario en una planilla. No hace falta saber programar (aunque es una habilidad deseable y te aliento a que la adquieras si te interesa). Sí hace falta saber qué opción responde tu pregunta y qué mirar después de seleccionarla. Los ejemplos usan datos sintéticos de estudiantes. Solo sirven para practicar el procedimiento, no para sacar conclusiones sobre una población real.
 
 ## Recorrido
 
-Los capítulos 1 y 2 ponen el análisis en el diseño. Primero definís qué querés saber, qué vas a hacer para responderlo y qué resultado contaría como respuesta. Del capítulo 3 al 7 ya trabajamos con la base de datos. Veremos cómo ordenarla para trabajar con ella en jamovi. Los capítulos 8 y 9 ayudan a elegir un análisis y a revisar sus supuestos. Del 10 al 14 se aplican los análisis uno por uno. Los dos últimos capítulos se ocupan de cómo informar nuestros resultados.
+La Apertura empieza con la pregunta (@sec-pregunta) y el plan de análisis (@sec-plan), y termina con la organización del proyecto (@sec-proyecto). En la Parte I vas a preparar y describir la base. La Parte II te ayuda a elegir un análisis, revisar sus supuestos e interpretar el resultado. La Parte III se ocupa del informe y de los recursos que acompañan el trabajo.
 
-El recorrido es acumulativo. Si estás empezando un trabajo práctico, conviene seguirlo de principio a fin. Si ya tenés una pregunta y una base, empezá por el @sec-plan, recorré los capítulos 3 a 9 y recién después elegí el análisis. Es importante tener en cuenta que ejecutar el análisis suele ser rápido, pero volver para corregir una variable mal definida no lo es tanto, y a veces ya no se puede.
+El recorrido es acumulativo. Si estás empezando un trabajo práctico, seguí la Apertura y la Parte I mientras armás tu proyecto. Si ya tenés una pregunta y una base, revisá el @sec-plan y organizá los archivos como se propone en @sec-proyecto antes de continuar. Al llegar al @sec-arbol, elegí los capítulos de análisis que correspondan a tu pregunta. Podés practicar los demás con los ejemplos del libro, pero tu proyecto no necesita usar todas las pruebas.
 
 ## Cómo usar este libro
 
-Trabajá con tu propio proyecto al lado. Después de cada capítulo, completá la parte equivalente de tu plan de análisis, diccionario o base. No hace falta esperar a “saber todo” para empezar a decidir. Las plantillas descargables te dan una estructura, pero las decisiones tienen que salir de tu pregunta, de las variables que planteaste y de cómo las mediste.
+Trabajá con tu proyecto abierto. Cada capítulo incluye una sección **En tu proyecto** con una tarea concreta que vas a incorporar a tus archivos. Los autochequeos te ayudan a revisar ese avance. Las plantillas descargables te dan una estructura para empezar; completalas con las decisiones que surjan de tu pregunta, tus variables y la forma en que las mediste.
 
-Cuando llegues a un capítulo de análisis, hacé siempre la misma secuencia. Primero formulá la pregunta en una oración, luego identificá la variable de agrupamiento o predictora y la de resultado. Verificá los supuestos, ejecutá el análisis y escribí una frase de resultado. Si algo no encaja, podés revisarlo, volver a la definición de las variables o reanalizar esos datos. Esto forma parte de todo el proceso de análisis y no implica un retroceso.
+Si todavía no tenés un proyecto propio, armá uno de práctica con la encuesta sintética del libro y elegí una de sus preguntas. Guardalo separado del trabajo de la materia para reconocer siempre de dónde salen los datos y qué resultados son ejercicios.
 
-El apéndice reúne procedimientos que quedan fuera del núcleo de la materia. Podés dejarlo para después: dominar los análisis centrales vale más que acumular tests.
+Cuando llegues al análisis que necesita tu proyecto, retomá la pregunta y las variables del plan. Verificá los supuestos, ejecutá el análisis y escribí una frase de resultado. Guardá el archivo de jamovi y registrá cualquier cambio respecto de lo previsto, con su motivo. Si algo no encaja, revisá las definiciones y la preparación de la base antes de interpretar.
+
+El apéndice señala temas que quedan para una próxima edición. Con el recorrido central podés completar los proyectos que usan los análisis abordados en la materia.
 
 ------------------------------------------------------------------------
 

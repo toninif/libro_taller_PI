@@ -1,34 +1,34 @@
-# Dos grupos: t independientes y pareada {#sec-dos-grupos}
+# t independientes y pareada {#sec-dos-grupos}
 
 ::: {.callout-tip}
 ## La idea en una línea
-Comparás dos grupos distintos con la t de muestras independientes, y las mismas personas medidas dos veces con la t de muestras pareadas: si son personas distintas o las mismas dos veces se decide antes que cualquier otra cosa.
+Usás la t de muestras independientes para comparar dos grupos de personas distintas. Si comparás dos mediciones de las mismas personas, usás la t de muestras pareadas. El diseño de tu proyecto define cuál corresponde.
 :::
 
 ## Cuándo se usa
 
-La t de dos grupos responde una única forma de pregunta: ¿el promedio de una variable continua difiere entre dos condiciones? Lo que cambia entre las dos versiones es de dónde salen esas dos condiciones.
+La t de dos grupos permite evaluar si el promedio de una variable continua difiere entre dos condiciones. Lo que cambia entre las dos versiones es de dónde salen esas dos condiciones.
 
-- **Muestras independientes**: los dos grupos son personas distintas. Cada caso aparece una sola vez en la base, y una variable categórica de dos niveles los separa. Ejemplo de este libro: `procrastinacion` según `trabaja` (sí / no).
-- **Muestras pareadas**: es la misma persona medida dos veces (antes/después, con/sin una condición). Cada caso aparece una sola vez en la fila, pero aporta dos columnas de resultado. Ejemplo de este libro: `organizacion_pre` y `organizacion_post` de cada estudiante que pasó por un taller.
+- **Muestras independientes**. Los dos grupos son personas distintas. Cada caso aparece una sola vez en la base, y una variable categórica de dos niveles los separa. En este libro comparamos `procrastinacion` según `trabaja` (sí / no).
+- **Muestras pareadas**. Es la misma persona medida dos veces (antes/después, con/sin una condición). Cada caso aparece una sola vez en la fila, pero aporta dos columnas de resultado. En este libro comparamos `organizacion_pre` y `organizacion_post` de cada estudiante que pasó por un taller.
 
-Confundir estas dos situaciones altera el error estándar y la evidencia del análisis: tratar mediciones repetidas como independientes ignora la relación entre las dos medidas de cada persona. No siempre exagera la evidencia; también puede perder precisión. El @sec-supuestos ya lo advirtió: la independencia se decide en el diseño, no en jamovi.
+Confundir estas dos situaciones altera el error estándar y la evidencia del análisis. Tratar mediciones repetidas como independientes ignora la relación entre las dos medidas de cada persona. No siempre exagera la evidencia; también puede perder precisión. La revisión de independencia del @sec-supuestos requiere volver al diseño.
 
 ## Paso a paso en jamovi
 
-**Muestras independientes**: `Analyses → T-Tests → Independent Samples T-Test`. Movés la variable de resultado continua (`procrastinacion`) a **Dependent Variables** y la variable de agrupamiento (`trabaja`) a **Grouping Variable**. En **Assumption Checks**, tildá **Homogeneity test** (Levene), **Normality test** y **Q-Q plot**. En **Additional Statistics**, pedí **Descriptives**, **Mean difference**, su **Confidence interval** al 95 % y **Effect size**.
+Para **muestras independientes**, abrí `Analyses → T-Tests → Independent Samples T-Test`. Movés la variable de resultado continua (`procrastinacion`) a **Dependent Variables** y la variable de agrupamiento (`trabaja`) a **Grouping Variable**. En **Assumption Checks**, tildá **Homogeneity test** (Levene), **Normality test** y **Q-Q plot**. En **Additional Statistics**, pedí **Descriptives**, **Mean difference**, su **Confidence interval** al 95 % y **Effect size**.
 
-jamovi resta el primer nivel de `trabaja` menos el segundo. El archivo descargable trae `no` antes de `sí`: para reproducir los signos positivos de este capítulo, abrí el editor de la variable y ordená los niveles con `sí` primero y `no` después. Si conservás el orden original, obtenés *t* = −2.70, diferencia = −2.75 e IC [−4.79, −0.72], con el mismo *p* bilateral. Verificá el orden en los descriptivos y mantené **Group 1 ≠ Group 2**.
+jamovi resta el primer nivel de `trabaja` menos el segundo. El archivo descargable trae `no` antes de `sí`. Para reproducir los signos positivos de este capítulo, abrí el editor de la variable y ordená los niveles con `sí` primero y `no` después. Si conservás el orden original, obtenés *t* = −2.70, diferencia = −2.75 e IC [−4.79, −0.72], con el mismo *p* bilateral. Verificá el orden en los descriptivos y mantené **Group 1 ≠ Group 2**.
 
-**Muestras pareadas**: `Analyses → T-Tests → Paired Samples T-Test`. Movés las dos variables del mismo caso como un par a **Paired Variables**: jamovi calcula la diferencia como **Measure 1 menos Measure 2**, en ese orden. Si esperás una mejora y querés que la diferencia salga en positivo —como en este ejemplo—, cargá primero `organizacion_post` (Measure 1) y después `organizacion_pre` (Measure 2). Si las cargás al revés, el signo se invierte pero el resultado es igual de válido: solo tenés que interpretarlo con el signo que corresponda. En **Assumption Checks**, tildá **Normality test** sobre las diferencias; acá no hay homogeneidad de varianzas que revisar, porque no hay dos grupos distintos.
+Para **muestras pareadas**, abrí `Analyses → T-Tests → Paired Samples T-Test`. Movés las dos variables del mismo caso como un par a **Paired Variables**. jamovi calcula **Measure 1 menos Measure 2**, en ese orden. Para expresar el cambio como después menos antes, cargá primero `organizacion_post` (Measure 1) y después `organizacion_pre` (Measure 2). Así una mejora aparece con signo positivo. Si las cargás al revés, el signo se invierte y tenés que interpretarlo con ese orden. En **Assumption Checks**, tildá **Normality test** sobre las diferencias. No hay homogeneidad de varianzas que revisar, porque no hay dos grupos distintos.
 
 En pareadas, mantené **Measure 1 ≠ Measure 2** y pedí también **Descriptives**, **Mean difference**, su intervalo al 95 % y **Effect size**. En los dos análisis, estas casillas agregan las columnas necesarias para el reporte; no aparecen todas por defecto. El intervalo debajo de **Effect size** corresponde a *d*.
 
-jamovi ofrece Student por default y Welch como opción adicional en independientes. Elegí según el plan, los tamaños de grupo y las dispersiones: un Levene no significativo no demuestra igualdad de varianzas. Welch también es una opción válida prevista de antemano, especialmente si dudás de la homogeneidad; no elijas entre filas según cuál dé un *p* más conveniente.
+jamovi ofrece Student por defecto y Welch como opción adicional en independientes. Elegí según el plan, los tamaños de grupo y las dispersiones. Un Levene no significativo no demuestra igualdad de varianzas. Welch también es una opción válida prevista de antemano, especialmente si dudás de la homogeneidad; no elijas entre filas según cuál dé un *p* más conveniente.
 
 ## Ejemplo trabajado
 
-### Muestras independientes: ¿la procrastinación difiere según la situación laboral?
+### Procrastinación según la situación laboral
 
 Con la base `encuesta-estudiantes-limpia` (@sec-jamovi), 36 estudiantes trabajan y 34 no; dos casos quedan fuera por tener `trabaja` sin declarar. El resumen que ya habías bosquejado en el @sec-describir queda así:
 
@@ -39,7 +39,7 @@ Con la base `encuesta-estudiantes-limpia` (@sec-jamovi), 36 estudiantes trabajan
 
 El chequeo de homogeneidad de varianzas (Levene) de jamovi da *F*(1, 68) = 2.83, *p* = .097. Para este ejemplo usamos Student, considerando también tamaños de grupo parecidos y los descriptivos. Si las dispersiones fueran problemáticas, usaríamos la fila de Welch, con sus propios grados de libertad, nombrando la alternativa como pide el @sec-supuestos. La comparación, en el orden sí menos no, da *t*(68) = 2.70, *p* = .009, con una diferencia de medias de 2.75 puntos (IC 95 % [0.72, 4.79]) y un tamaño de efecto *d* de Cohen = 0.65.
 
-### Muestras pareadas: ¿cambia la organización después del taller?
+### Organización antes y después del taller
 
 Con `taller-organizacion-prepost` (n = 32), cada estudiante aporta un puntaje antes y otro después:
 
@@ -60,15 +60,19 @@ Para muestras pareadas:
 
 > La organización aumentó entre el inicio (*M* = 21.55, *DE* = 2.98) y el final del taller (*M* = 24.13, *DE* = 3.58), *t*(31) = 7.83, *p* < .001, IC 95 % [1.90, 3.25], *d* = 1.38. El cambio fue estadísticamente significativo.
 
-Tres reglas que no dependen del ejemplo: los estadísticos (*t*, *d*) van en cursiva; *p* se informa con el valor exacto salvo que sea menor a .001, en cuyo caso se escribe "*p* < .001"; y el sentido de la diferencia (quién es mayor que quién, o si aumentó o disminuyó) se dice en palabras, no solo en números. Un lector no debería tener que hacer la resta para saber qué pasó.
+En ambos ejemplos, los estadísticos (*t*, *d*) van en cursiva; *p* se informa con el valor exacto salvo que sea menor a .001, en cuyo caso se escribe "*p* < .001"; y el sentido de la diferencia (quién es mayor que quién, o si aumentó o disminuyó) se dice en palabras, no solo en números. Un lector no debería tener que hacer la resta para saber qué pasó.
+
+## En tu proyecto
+
+Aplicá la versión de la t que corresponda al diseño de tu proyecto y guardá el análisis en `trabajo/`. Registrá el orden de los grupos o de las mediciones para poder interpretar el signo de la diferencia. Exportá la tabla que necesites a `resultados/` y escribí la comparación en `informe/`. Justificá cualquier cambio respecto del plan. Para practicar la otra versión de la t, usá los datos del libro en tu proyecto de práctica.
 
 ## Ejercicios de autochequeo
 
-1. Para tu propia pregunta: ¿los dos grupos son personas distintas o las mismas personas medidas dos veces?
+1. En tu proyecto, ¿los dos grupos son personas distintas o las mismas personas medidas dos veces?
 2. ¿Tu elección entre Student y Welch considera el plan, las dispersiones y los tamaños de grupo, además de Levene?
 3. ¿Tu frase de resultado incluye *M*, *DE*, *t*, *p* y el tamaño de efecto, y no solo el valor de *p*?
 4. Si el resultado no hubiera sido significativo, ¿igual podrías informar la estimación y su intervalo sin afirmar que demostraste ausencia de diferencia?
 
 ## Plantilla para llevar
 
-📄 **Plantilla para llevar:** [Plan de análisis en una página](plantillas/plan-de-analisis.md) — completá el campo 6 con la frase de resultado de este capítulo. Las bases del ejemplo están en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv) y [`taller-organizacion-prepost.omv`](plantillas/taller-organizacion-prepost.omv).
+Retomá el [plan de análisis en una página](plantillas/plan-de-analisis.md) y contrastá la comparación con lo que habías previsto. Las bases del ejemplo están en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv) y [`taller-organizacion-prepost.omv`](plantillas/taller-organizacion-prepost.omv).

@@ -3,26 +3,26 @@
 ::: {.callout-tip}
 ## La idea en una línea
 
-En jamovi no se "corren" análisis. Se abren, y en la sección Resultado se recalcula solo cada vez que cambiás una opción. Aprender jamovi suele ser más simple que otros programas (cof, cof… SPSS, cof, cof).
+En jamovi los resultados se recalculan cada vez que cambiás una opción del análisis o un dato de la base. Aprender a usarlo suele ser más simple que otros programas (cof, cof… SPSS, cof, cof).
 :::
 
 ## Instalar y abrir
 
 jamovi es gratuito y funciona en Windows, macOS y Linux. También existe una versión en la nube que corre en el navegador sin instalar nada (pero no nos metamos con eso). Descargalo desde jamovi.org y elegí la versión de escritorio para tu sistema operativo. Al momento de escribir este recurso se usa como referencia jamovi 2.7.31. Si tu versión difiere, las opciones que se describen acá pueden estar en un menú con otro nombre, pero la lógica es la misma.
 
-Al abrir jamovi por primera vez vas a ver una planilla vacía con dos solapas arriba: **Data** (Datos) y **Analyses** (Análisis). Esa distinción es lo primero que tenés que notar. En **Data** (Datos) viven los datos; en **Analyses** (Análisis) viven las decisiones. Vas a pasar la mayor parte del tiempo yendo de una a la otra.
+Al abrir jamovi por primera vez vas a ver una planilla vacía con dos solapas arriba, **Data** (Datos) y **Analyses** (Análisis). Esa distinción es lo primero que tenés que notar. En **Data** (Datos) revisás la base y las variables; en **Analyses** (Análisis) elegís los procedimientos y sus opciones. Vas a pasar la mayor parte del tiempo yendo de una a la otra.
 
 Podés ver un video sobre cómo descargar e instalar el programa aquí abajo:
 
 {{< video https://youtu.be/319QIXyj2Zc aspect-ratio="16x9" >}}
 
-## El modelo mental: nada se ejecuta, todo se recalcula
+## Los resultados se recalculan al cambiar las opciones
 
 Si venís de otro programa estadístico, la costumbre es escribir o armar un comando, ejecutarlo y mirar un resultado fijo. jamovi funciona con un enfoque distinto. Cada análisis es un panel de opciones que produce un resultado en el momento ubicado a la derecha de la pantalla. Si tildás una opción de más, el resultado nuevo aparece al instante. Si la destildás, entonces desaparece. No hay un botón "ejecutar" que separe la decisión del resultado.
 
 Esto implica que en jamovi elegir qué reportar y generarlo son la misma acción. Por eso el plan de análisis del @sec-plan no es algo pasajero. Al delimitarlo correctamente ya estás generando la lista de paneles que vas a abrir y de opciones que vas a tildar.
 
-## Data (Datos) y Analyses (Análisis): dónde viven los datos y las decisiones
+## Las solapas Data (Datos) y Analyses (Análisis)
 
 | Solapa | Qué encontrás | Qué se define ahí |
 |------------------------|------------------------|------------------------|
@@ -37,21 +37,25 @@ Te sugiero que revises cada sección y así te familiarizás con la interfaz de 
 
 ## Importar tu primera base
 
-Importar la base es muy fácil. De hecho, si ya armaste el diccionario de datos del capítulo anterior, ese documento te dice de antemano qué deberías encontrar en cada columna. Para practicar con datos reales, descargá [`encuesta-estudiantes-bruta.csv`](datos/encuesta-estudiantes-bruta.csv). Es la misma base que vas a preparar en el próximo capítulo, todavía sin declarar tipos, niveles de medida ni faltantes.
+Para importar la base, tené abierto el diccionario que guardaste en `documentos/`. Te va a permitir revisar qué deberías encontrar en cada columna. Para practicar, descargá la base sintética [`encuesta-estudiantes-bruta.csv`](datos/encuesta-estudiantes-bruta.csv) y guardala en `datos-originales/` de tu proyecto de práctica. Es la que vas a preparar en el próximo capítulo, todavía sin declarar tipos, niveles de medida ni faltantes.
 
 1.  Abrí jamovi y hacé clic en el ícono de menú (☰, arriba a la izquierda) → **Open** (Abrir) → **This PC** (Esta PC) → **Browse** (Navegar), y elegí tu archivo `.csv` o `.xlsx`.
-2.  jamovi importa la base y estima automáticamente el nivel de medida de cada columna, igual que viste en el @sec-anatomia. Esa estimación es un punto de partida, no una decisión tuya: revisá cada variable contra tu diccionario antes de seguir.
-3.  Para revisar o corregir una variable, hacé doble clic en el encabezado de la columna. Ahí volvés a ver el editor de **Setup**: nombre, tipo de dato, nivel de medida y, si corresponde, las etiquetas de cada categoría.
+2.  jamovi importa la base y estima automáticamente el nivel de medida de cada columna, igual que viste en el @sec-anatomia. Revisá cada variable contra tu diccionario antes de seguir.
+3.  Para revisar o corregir una variable, hacé doble clic en el encabezado de la columna. Ahí volvés a ver el editor de **Setup**, con el nombre, tipo de dato, nivel de medida y, si corresponde, las etiquetas de cada categoría.
 
 Podés ver cómo hacerlo en el video de abajo:
 
 {{< video https://youtu.be/J4LHXbaq4ow aspect-ratio="16x9" >}}
 
-## Guardar como proyecto .omv
+## Guardar el archivo de jamovi dentro del proyecto
 
-Una vez que ya abriste y revisaste tu base, lo que resta es guardarla. Un archivo `.omv` guarda en un solo lugar la base, todas las variables que definiste y todos los análisis que armaste con sus opciones exactas. Quien lo abra ve lo mismo que vos, sin tener que repetir un solo clic. Esto es un punto a favor de la reproducibilidad ;)
+Una vez que abriste y revisaste tu base, guardala como `.omv`. Ese archivo conserva los datos, las variables que definiste y los análisis con sus opciones. Es una parte del proyecto que organizaste en @sec-proyecto. El plan, el diccionario, los instrumentos y el informe siguen en sus propias carpetas.
 
-Para guardar: ☰ → **Save As** (Guardar como) → elegí la carpeta de tu proyecto → escribí un nombre descriptivo (por ejemplo, `apellido-encuesta-organizacion.omv`, no `Sin título.omv`) → confirmá. Guardá seguido, sobre todo después de importar la base y de declarar el nivel de medida de cada variable: son los pasos más costosos de rehacer si algo se cierra sin avisar. Para comparar tu resultado, [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv) es la versión ya preparada que vas a usar a partir del @sec-t-una-muestra.
+Para guardar, abrí ☰ → **Save As** (Guardar como), elegí `trabajo/` dentro de la carpeta de tu proyecto y escribí un nombre descriptivo, como `analisis-procrastinacion-v01.omv`. Guardá seguido, sobre todo después de importar la base y revisar las variables. Podés comparar tu preparación con [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv), la versión preparada que se usa en los ejemplos de análisis.
+
+## En tu proyecto
+
+Desde la carpeta de tu proyecto, abrí la base original en jamovi y guardá una primera versión `.omv` en `trabajo/`, con un nombre que identifique el estudio. Cerrala y volvé a abrirla para comprobar que se guardó. Anotá en la ficha cuál es el archivo de trabajo. Si estás siguiendo el ejemplo del libro, hacé estos pasos en tu proyecto de práctica.
 
 ## Autochequeo
 
@@ -59,7 +63,7 @@ Antes de pasar a preparar la base, comprobá que podés hacer esto sin ayuda:
 
 1.  Abrir jamovi e identificar, sin dudar, si estás parado/a en **Data** (Datos) o en **Analyses** (Análisis).
 2.  Importar un archivo `.csv` cualquiera y revisar el nivel de medida que jamovi le asignó a cada columna.
-3.  Guardar el proyecto como `.omv` con un nombre que identifique el archivo dentro de seis meses.
+3.  Guardar el archivo `.omv` en `trabajo/` con un nombre que puedas reconocer dentro de seis meses.
 4.  Cerrar jamovi, volver a abrir el `.omv` y confirmar que la base y las variables quedaron exactamente como las dejaste.
 
 Con la base importada y guardada, en el próximo capítulo vas a transformarla sin perder el archivo original.

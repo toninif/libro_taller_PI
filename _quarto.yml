@@ -20,18 +20,18 @@ book:
     search: true
   chapters:
     - index.qmd
-    - part: "Apertura — Pensar el análisis antes de los datos"
+    - part: "Apertura. Pensar el análisis antes de los datos"
       chapters:
         - 01-de-la-pregunta-al-analisis.qmd
         - 02-plan-de-analisis.qmd
-    - part: "Parte I — Los datos en orden"
+    - part: "Parte I. Los datos en orden"
       chapters:
         - 03-anatomia-de-una-base.qmd
         - 04-diccionario-de-datos.qmd
         - 05-jamovi-desde-cero.qmd
         - 06-preparar-la-base.qmd
         - 07-describir-y-mostrar.qmd
-    - part: "Parte II — Elegir y ejecutar"
+    - part: "Parte II. Elegir y ejecutar"
       chapters:
         - 08-arbol-de-decision.qmd
         - 09-supuestos.qmd
@@ -40,7 +40,7 @@ book:
         - 12-anova-un-factor.qmd
         - 13-correlacion.qmd
         - 14-chi-cuadrado.qmd
-    - part: "Parte III — Comunicar"
+    - part: "Parte III. Comunicar"
       chapters:
         - 15-informar-en-apa.qmd
         - 16-caja-de-herramientas.qmd

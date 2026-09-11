@@ -1,36 +1,37 @@
-# Caja de herramientas
+# Caja de herramientas {#sec-herramientas}
 
-Llegaste al final del recorrido central. Esta caja reúne los recursos que sirven para llevar lo que aprendiste a tu propio proyecto. No son formularios para completar por obligación: cada uno te ayuda a dejar una decisión escrita, revisable y conectada con la pregunta que querés responder.
+Esta caja reúne los recursos que vas a usar durante el proyecto. Podés volver a ella desde cualquier capítulo para descargar una plantilla o revisar qué te falta documentar.
 
 ## Cómo usarlos
 
-El orden más útil es el mismo que seguiste en el libro. Antes de recolectar, empezá por el plan de análisis y el diccionario. Cuando la base esté lista, usá el árbol y el checklist de análisis. Al redactar, abrí las frases APA y el checklist de entrega. No esperes al último día: un recurso funciona mejor cuando acompaña la decisión que tenés que tomar en ese momento.
+Usalos dentro de la carpeta que organizaste en @sec-proyecto. Antes de recolectar, empezá por la ficha, el plan de análisis y el diccionario. Cuando la base esté lista, retomá el árbol y la lista de revisión del análisis. Al redactar, abrí las frases APA y la lista de entrega.
 
 ## Plantillas
 
-- [Plan de análisis en una página](plantillas/plan-de-analisis.md): para definir pregunta, hipótesis, variables, análisis previsto, supuestos y resultado esperado.
-- [Diccionario de datos](plantillas/diccionario-de-datos.csv): planilla con una fila por variable. Se abre en Excel, LibreOffice u otra planilla de cálculo.
-- [Frases de reporte APA con huecos](plantillas/frases-de-reporte-apa.md): modelos para t, ANOVA, correlación y chi-cuadrado. Reemplazá los huecos con tu output; no copies una frase si no coincide con tu análisis.
+- [Ficha y registro del proyecto](plantillas/ficha-del-proyecto.md). Para ubicar los archivos vigentes y registrar las decisiones y los próximos pasos.
+- [Plan de análisis en una página](plantillas/plan-de-analisis.md). Para definir pregunta, hipótesis, variables, análisis previsto, supuestos y resultado esperado.
+- [Diccionario de datos](plantillas/diccionario-de-datos.csv). Planilla con una fila por variable que podés abrir en Excel, LibreOffice u otra planilla de cálculo.
+- [Frases de reporte APA con huecos](plantillas/frases-de-reporte-apa.md). Modelos para t, ANOVA, correlación y chi-cuadrado. Completá el que corresponda a tu análisis con tus propios resultados.
 
-Guardá estas plantillas junto con tu base, no en una carpeta perdida. El plan explica por qué elegiste un análisis; el diccionario explica qué significa cada columna; las frases te ayudan a comunicar el resultado sin borrar el razonamiento anterior.
+Guardá la ficha, el plan y el diccionario completos en `documentos/`. Usá las frases para redactar el texto que vas a guardar en `informe/`. Los enlaces de la ficha te van a ayudar a encontrar la base y los análisis correspondientes.
 
-## Checklists
+## Listas de revisión
 
-- [Antes de recolectar](plantillas/checklist-antes-de-recolectar.md): pregunta, hipótesis, definiciones y decisiones previas.
-- [Antes de analizar](plantillas/checklist-antes-de-analizar.md): copia original, faltantes, descriptivos, supuestos y plan B.
-- [Antes de entregar](plantillas/checklist-antes-de-entregar.md): resultado, tablas, APA, archivos y resguardo de datos.
+- [Antes de recolectar](plantillas/checklist-antes-de-recolectar.md). Pregunta, hipótesis, definiciones y decisiones previas.
+- [Antes de analizar](plantillas/checklist-antes-de-analizar.md). Copia original, faltantes, descriptivos, supuestos y plan B.
+- [Antes de entregar](plantillas/checklist-antes-de-entregar.md). Resultado, tablas, APA, archivos y resguardo de datos.
 
-Una lista marcada no convierte automáticamente un análisis en bueno. Sirve para detectar una omisión antes de que se convierta en un problema: una variable sin definición, un filtro olvidado, un valor imposible o una frase que afirma más de lo que los datos permiten.
+Estas listas ayudan a detectar omisiones, como una variable sin definición, un filtro olvidado, un valor imposible o una frase que afirma más de lo que los datos permiten.
 
 ## Árbol de decisión general
 
-Descargá el [árbol de decisión para análisis básicos](plantillas/arbol-de-decision.md). Resume el recorrido de la Parte II: una media frente a un valor lleva a t de una muestra; dos grupos distintos, a t independiente; las mismas personas dos veces, a t pareada; tres o más grupos, a ANOVA; dos continuas, a correlación; dos categóricas, a chi-cuadrado.
+Descargá el [árbol de decisión para análisis básicos](plantillas/arbol-de-decision.md). Resume las opciones de la Parte II y te ayuda a reconocer qué capítulo corresponde a tu pregunta.
 
 Tenelo al lado mientras escribís el plan, no después de obtener el resultado. El árbol confirma que la herramienta responde tu pregunta; no reemplaza la definición de las variables ni la revisión de supuestos.
 
 ## Datos de práctica
 
-Los ejemplos del libro usan datos sintéticos: son inventados para practicar y no describen a estudiantes reales. Podés descargarlos y abrirlos sin modificar tu propia base:
+Los ejemplos usan datos sintéticos, inventados para practicar. Guardá las descargas en `datos-originales/` de tu proyecto de práctica y los archivos que modifiques en `trabajo/`.
 
 - [Encuesta bruta en CSV](datos/encuesta-estudiantes-bruta.csv), para importar y practicar faltantes.
 - [Encuesta limpia en CSV](datos/encuesta-estudiantes-limpia.csv), para revisar la versión preparada.
@@ -39,6 +40,8 @@ Los ejemplos del libro usan datos sintéticos: son inventados para practicar y n
 
 Si los usás para practicar, guardá una copia con otro nombre antes de hacer transformaciones. Así siempre podés volver al ejemplo original.
 
-## Para cerrar
+## En tu proyecto
 
-El objetivo del libro no es que puedas elegir un test de memoria. Es que puedas defender una cadena completa: una pregunta clara, variables bien definidas, una base documentada, un análisis coherente y una conclusión que dice exactamente lo que los datos permiten decir. Si esa cadena está escrita, jamovi deja de ser una pantalla llena de opciones y pasa a ser una herramienta para ejecutar decisiones que ya pensaste.
+Revisá la carpeta completa antes de entregar. La ficha debe indicar cuáles son el plan, el diccionario, la base de trabajo y el informe vigentes. Abrí el archivo de jamovi que respalda el informe y comprobá que podés encontrar cada resultado. Conservá el original, el registro de cambios y una copia de respaldo.
+
+Si trabajás en grupo, pedile a otra persona que ubique esos archivos usando la ficha. Si necesita preguntarte cuál abrir o de dónde salió una tabla, completá esa información. El proyecto queda listo cuando pueden retomarlo y explicar las decisiones que llevaron de la pregunta al resultado.

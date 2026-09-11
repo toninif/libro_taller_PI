@@ -1,17 +1,17 @@
 # Anatomía de una base {#sec-anatomia}
 
 ::: {.callout-tip}
-## La idea 
-Una base es mucho más que una con números. En una base de datos cada fila representa un caso, cada columna una variable y cada celda una medición que tiene que poder interpretarse. Por lo general, estas tablas son anchas y, a medida que se ordenan y limpian los datos, se vuelven largas.
+## La idea
+En una base de datos cada fila representa un caso, cada columna una variable y cada celda una medición que tiene que poder interpretarse. En la encuesta del libro, una fila corresponde a un estudiante.
 :::
 
 ## La tabla que está detrás de cualquier análisis
 
-Abrís una base y ves filas, columnas y valores. Parece obvio, pero el análisis se complica cuando no podés contestar qué representa cada una de esas cosas. La regla es simple:
+Abrí la base de tu proyecto y fijate qué representa cada fila, columna y celda. En la tabla que vamos a usar se organizan así.
 
-- una **fila** es un caso: una persona, una escuela, una respuesta o una medición, según tu pregunta;
-- una **columna** es una variable: una característica que puede cambiar de un caso a otro;
-- una **celda** es el valor de esa variable para ese caso.
+- Una **fila** corresponde a un caso, que puede ser una persona, una escuela, una respuesta o una medición, según tu pregunta.
+- Una **columna** corresponde a una variable, una característica que puede cambiar de un caso a otro.
+- Una **celda** contiene el valor de esa variable para ese caso.
 
 En la encuesta ficticia que vamos a usar durante el libro, cada fila corresponde a un estudiante. `horas_estudio` es una columna y el número de horas semanales de una persona es una celda. Si cada fila mezclara estudiantes, materias o momentos de medición sin avisarlo, no tendrías una base lista para analizar.
 
@@ -25,7 +25,7 @@ En la encuesta ficticia que vamos a usar durante el libro, cada fila corresponde
 
 No hace falta memorizar esa tabla. Sí hace falta poder leerla en voz alta: “el caso 002 cursa de noche, estudia tres horas semanales, tiene un puntaje de procrastinación de 42 y no aprobó el parcial”. Si no podés hacer esa traducción, todavía no sabés qué hay en la base.
 
-## Antes de analizar: tres preguntas por columna
+## Tres preguntas por columna
 
 Para cada variable, respondé estas preguntas antes de abrir *Analyses*:
 
@@ -39,7 +39,7 @@ La tercera pregunta conecta esta base con el plan de análisis del @sec-plan. Un
 
 Un número puede ser una cantidad, una etiqueta o un código. Por eso `1 = mañana`, `2 = tarde` y `3 = noche` no convierten al turno en una variable continua. Por eso, sumar estos códigos o calcular su promedio no tiene sentido. Antes de hacer cuentas, preguntate si la distancia entre los valores representa algo real.
 
-En jamovi conviene separar dos decisiones. El **tipo de dato** describe cómo se guarda el valor: entero, decimal o texto. El **nivel de medida** indica cómo debe tratarse en el análisis: nominal, ordinal, continua o ID. Al importar una base, jamovi hace una estimación automática; revisarla es parte de preparar la base, no un detalle técnico.
+En jamovi conviene separar dos decisiones. El **tipo de dato** describe cómo se guarda el valor, como entero, decimal o texto. El **nivel de medida** indica cómo debe tratarse en el análisis, como nominal, ordinal, continua o ID. Al importar una base, jamovi hace una estimación automática; revisarla es parte de preparar la base, no un detalle técnico.
 
 ::: {.table-responsive}
 | Nivel de medida | Qué representa | Ejemplo | Qué no conviene hacer |
@@ -50,7 +50,7 @@ En jamovi conviene separar dos decisiones. El **tipo de dato** describe cómo se
 | ID | Identifica un caso | `id` | Usarla como variable de resultado o agrupamiento. |
 :::
 
-La distinción no es un examen de definiciones. Te permite anticipar qué opciones aparecerán en jamovi y qué resumen tiene sentido pedir. Para una variable nominal, querés frecuencias; para una continua, una media o una mediana puede ser útil. Esa decisión la vamos a usar en el @sec-describir.
+El nivel de medida te permite anticipar qué resumen tiene sentido pedir. Para una variable nominal, querés frecuencias; para una continua, una media o una mediana puede ser útil. Esa decisión la vamos a usar en el @sec-describir.
 
 ## Cómo mirarlo en jamovi
 
@@ -62,6 +62,7 @@ No cambies una columna a “continua” para forzar un análisis que querés hac
 
 Durante los próximos capítulos vamos a trabajar con una encuesta sintética de 72 estudiantes. Esta es la anatomía que debería tener su versión limpia:
 
+::: {.table-responsive}
 | Variable | Nivel de medida | Papel habitual |
 |---|---|---|
 | `id` | ID | Identifica cada caso; no se analiza. |
@@ -73,8 +74,13 @@ Durante los próximos capítulos vamos a trabajar con una encuesta sintética de
 | `procrastinacion` | Continua | Variable de resultado en varias preguntas. |
 | `organizacion` | Continua | Se compara con un valor de referencia. |
 | `aprobo_parcial` | Nominal | Se asocia con otras categorías. |
+:::
 
-Fijate que una base bien organizada ya deja ver preguntas posibles. Pero “posible” no significa “interesante”: la pregunta viene primero. La base tiene que permitir responderla sin que tengas que redefinir todo cuando los datos ya están cargados.
+Contrastá estas columnas con la pregunta del plan. Comprobá que la base contiene las variables que necesitás y que sus definiciones coinciden con lo que habías previsto.
+
+## En tu proyecto
+
+Abrí el plan que guardaste en `documentos/` y contrastalo con las columnas de tu base. Anotá qué representa una fila y qué tipo de variable es cada columna que vas a usar. Si todavía no recolectaste, armá una tabla vacía con esos encabezados en `trabajo/`. Si ya recibiste datos, conservá el archivo recibido en `datos-originales/` y revisá una copia de trabajo.
 
 ## Autochequeo
 
@@ -85,4 +91,4 @@ Antes de seguir, elegí una base propia y comprobá lo siguiente:
 3. ¿Hay códigos numéricos que podrían confundirse con cantidades?
 4. ¿Marcaste los identificadores para no analizarlos por accidente?
 
-Si una respuesta es “no”, todavía no necesitás un test: necesitás ordenar la base. El próximo capítulo te da el documento para hacerlo.
+Si alguna respuesta es “no”, revisá la base antes de analizar. En el próximo capítulo vas a documentar cada variable en el diccionario.

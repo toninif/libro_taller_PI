@@ -30,9 +30,9 @@ Estos son los campos mínimos:
 
 No todas las variables necesitan el mismo nivel de detalle. Una variable continua suele requerir rango, unidad y forma de cálculo. Una categórica necesita, además, que cada código quede traducido. Lo importante es que no haya valores misteriosos.
 
-## Ejemplo: una decisión que hay que dejar escrita
+## Dejar escrita la definición de trabajo
 
-En el ejemplo que estamos usando para el libro, `horas_trabajo` es una cantidad continua. Pero la pregunta de comparación usa otra variable: `trabaja`. Esa segunda variable se calcula con un criterio previo: “sí” si la persona informó diez o más horas de trabajo remunerado por semana; “no” en caso contrario.
+En el ejemplo del libro, `horas_trabajo` es una cantidad continua. La pregunta de comparación usa `trabaja`, que se calcula con un criterio previo. Se asigna “sí” a quien informó diez o más horas de trabajo remunerado por semana y “no” a quien informó menos de diez. Si faltan las horas, también queda faltante `trabaja`.
 
 ::: {.table-responsive}
 | Nombre | Etiqueta | Valores / regla | Rol | Nota |
@@ -46,19 +46,23 @@ La regla de diez horas puede discutirse antes de recolectar; eso es justamente l
 
 ## Nombres que ayudan a trabajar
 
-Usá nombres cortos, consistentes y sin espacios para las columnas: `horas_estudio`, `aprobo_parcial`, `organizacion_pre`. Reservá las etiquetas para el nombre largo que verá quien usa la base. Así es más fácil reconocer la variable en jamovi, escribir una fórmula y enlazarla con el plan de análisis.
+Usá nombres cortos, consistentes y sin espacios para las columnas, como `horas_estudio`, `aprobo_parcial`, `organizacion_pre`. Reservá las etiquetas para el nombre largo que verá quien usa la base. Así es más fácil reconocer la variable en jamovi, escribir una fórmula y enlazarla con el plan de análisis.
 
-Evitá nombres como `var1`, `dato_nuevo` o `puntaje_final_final`. También evitá que una sola columna mezcle dos cosas: una variable como “trabaja y estudia” no es una variable (de mínima, son dos). Si cambiás una definición, actualizá el diccionario en el mismo momento. Si la base y su diccionario quedan disociados, entonces terminan siendo dos versiones distintas de la realidad (esto es igual a problemas).
+Evitá nombres como `var1`, `dato_nuevo` o `puntaje_final_final`. También evitá que una sola columna mezcle dos cosas. Una variable como “trabaja y estudia” no es una variable (de mínima, son dos). Si cambiás una definición, actualizá el diccionario en el mismo momento. Si la base y su diccionario quedan disociados, entonces terminan siendo dos versiones distintas de la realidad (esto es igual a problemas).
 
 ## Cuándo completarlo
 
-Empezá el diccionario al diseñar o seleccionar el instrumento, aunque tenga huecos. Actualizalo al importar la base, cuando declares faltantes, recodifiques una variable o crees un puntaje. Antes de analizar, hacé una ojeada final: compará cada encabezado de la planilla con el diccionario y comprobá que los valores observados son posibles.
+Empezá el diccionario al diseñar o seleccionar el instrumento, aunque tenga huecos. Actualizalo al importar la base, cuando declares faltantes, recodifiques una variable o crees un puntaje. Antes de analizar, compará cada encabezado de la planilla con el diccionario y comprobá que los valores observados son posibles.
 
 No hace falta llenar columnas que no aportan a tu proyecto. Sí hace falta poder contestar, para cada variable que vas a usar, “¿qué es?”, “¿cómo se obtuvo?”, “¿qué valores admite?” y “¿qué haré si falta?”.
 
 ## Plantilla para llevar
 
-Descargá la [plantilla de diccionario de datos](plantillas/diccionario-de-datos.csv). Es un CSV: se abre en Excel, LibreOffice o una planilla similar. Completá una fila por variable y guardalo junto con tu base. Si preferís trabajar desde papel, podés usar las mismas columnas en una tabla de tu informe. Al abrirlo, dirigite a la pestaña Datos y hacé clic en "Texto a columnas" para visualizarlo como siempre.
+Descargá la [plantilla de diccionario de datos](plantillas/diccionario-de-datos.csv). Podés abrir el CSV en Excel, LibreOffice o una planilla similar. Completá una fila por variable y guardalo en `documentos/` de tu proyecto. Si preferís trabajar en papel, podés usar las mismas columnas. Si al abrirlo aparece todo en una columna, usá la opción "Texto a columnas" de la pestaña Datos y elegí la coma como separador.
+
+## En tu proyecto
+
+Completá el diccionario de tu proyecto y guardalo en `documentos/`. Usá los mismos nombres de columna que aparecen en la base e incluí las unidades, los códigos de faltantes y las reglas de cálculo. Anotá en la ficha del proyecto qué archivo contiene el diccionario vigente. Cada vez que cambies una variable, actualizá también su definición.
 
 ## Autochequeo
 

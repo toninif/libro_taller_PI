@@ -2,14 +2,14 @@
 
 ::: {.callout-tip}
 ## La idea en una línea
-Un supuesto no es una casilla que hay que aprobar para seguir: es una condición que te dice cuándo el resultado de un análisis merece confianza y cuándo necesitás ajustar el plan.
+Los supuestos son las condiciones en las que se apoya un análisis. Revisarlos te ayuda a decidir si podés interpretar el resultado o necesitás ajustar el plan.
 :::
 
 ## Qué estás chequeando realmente
 
 Cada análisis resume los datos de una manera particular. La t compara medias; la correlación describe una relación lineal; chi-cuadrado compara frecuencias esperadas y observadas. Los supuestos son las condiciones bajo las cuales esos resúmenes y sus valores `p` se comportan como esperamos.
 
-El primer supuesto no aparece en ninguna ventana de jamovi: **los casos tienen que ser independientes cuando el diseño lo requiere**. Si registraste a la misma persona dos veces como si fueran dos personas distintas, o si las respuestas provienen de grupos que se influyen entre sí sin considerarlo, ningún botón arregla el problema. Volvé al diseño y a la base.
+La independencia de los casos, cuando el diseño la requiere, se revisa a partir de cómo obtuviste los datos. Si registraste a la misma persona dos veces como si fueran dos personas distintas, o si las respuestas provienen de grupos que se influyen entre sí sin considerarlo, ningún botón arregla el problema. Volvé al diseño y a la base.
 
 Los demás supuestos sí se pueden explorar con los datos. Pero explorar no significa obedecer ciegamente un número. Un test de normalidad con muchos casos puede marcar una diferencia mínima; con pocos casos puede no detectar una forma problemática. Mirá siempre el gráfico, el tamaño de los grupos, los valores extremos y qué cambiaría realmente en tu conclusión.
 
@@ -32,9 +32,9 @@ No todos estos puntos aplican a todos los análisis. Pedir todas las pruebas “
 
 En los capítulos de análisis vamos a indicar las casillas exactas, pero la lógica es siempre la misma. En las t independientes y en ANOVA, buscá **Assumption Checks** para pedir normalidad, gráficos Q-Q y homogeneidad de varianzas. En una t de una muestra o pareada, la atención está en la distribución de la variable o de las diferencias, no en comparar varianzas de grupos distintos.
 
-Para correlación, empezá por el gráfico de dispersión: necesitás ver si la relación sigue una línea aproximada y si un solo caso está empujando todo el resultado. Para chi-cuadrado, revisá la tabla de contingencia y las frecuencias esperadas. jamovi puede calcular esas verificaciones; vos tenés que decidir qué implican para la pregunta.
+Para correlación, empezá por el gráfico de dispersión. Necesitás ver si la relación sigue una línea aproximada y si un solo caso está empujando todo el resultado. Para chi-cuadrado, revisá la tabla de contingencia y las frecuencias esperadas. jamovi puede calcular esas verificaciones; vos tenés que decidir qué implican para la pregunta.
 
-La ruta no es “pedir el supuesto, mirar `p`, seguir”. Es: pedir la información, interpretarla junto con los gráficos y dejar escrita la decisión que tomaste.
+Interpretá las pruebas junto con los gráficos y dejá escrita la decisión que tomaste.
 
 ## Si algo no se cumple
 
@@ -50,19 +50,23 @@ Estas son alternativas frecuentes dentro del alcance del libro:
 | Variables ordinales o relación monótona no lineal | Mostrar el gráfico y no forzar Pearson | Correlación de Spearman; si la relación cambia de dirección, replantear la pregunta. |
 | Frecuencias esperadas demasiado bajas | Revisar categorías y diseño antes de analizar | En una tabla 2 × 2, considerar Fisher; no agrupar categorías solo para “pasar” el test. |
 
-Las alternativas no son premios de consuelo. Responden preguntas cercanas, pero no siempre idénticas. Por ejemplo, Mann-Whitney no es simplemente “la t sin normalidad”: compara distribuciones con una hipótesis nula distinta. Cuando uses un plan B, nombralo y explicá por qué lo elegiste.
+Las alternativas pueden responder preguntas cercanas, pero no siempre idénticas. Mann-Whitney, por ejemplo, compara distribuciones con una hipótesis nula distinta de la t. Cuando uses un plan B, nombralo y explicá por qué lo elegiste.
 
-## Normalidad: suficiente, no perfecta
+## Cómo evaluar la normalidad
 
-La normalidad no significa que cada histograma tenga forma de campana perfecta. Significa que la forma de los datos —junto con el tamaño y equilibrio de los grupos— permite que el análisis de medias sea una aproximación razonable. Por eso, no tomes una decisión solo porque Shapiro-Wilk dio menor o mayor que .05. Un gráfico Q-Q, los descriptivos y el conocimiento de cómo se obtuvieron los datos forman parte de la evidencia.
+Al evaluar la normalidad, considerá la forma de la distribución junto con el tamaño y el equilibrio de los grupos. Esa revisión ayuda a valorar si el análisis de medias ofrece una aproximación razonable. No tomes una decisión solo porque Shapiro-Wilk dio menor o mayor que .05. Un gráfico Q-Q, los descriptivos y el conocimiento de cómo se obtuvieron los datos forman parte de la evidencia.
 
-Tampoco confundas normalidad con independencia. Podés tener una distribución impecable y un diseño inválido si las mismas personas aparecen como grupos independientes. El orden correcto es: primero diseño y codificación, después distribución y varianzas, y recién entonces el resultado del análisis.
+Tampoco confundas normalidad con independencia. Podés tener una distribución que se aproxime a la normal y un diseño inválido si las mismas personas aparecen como grupos independientes. Revisá primero el diseño y la codificación, después la distribución y las varianzas, y recién entonces el resultado del análisis.
 
 ## Dejar escrito el plan B
 
-En tu plan de análisis, agregá una línea por cada análisis: “Voy a revisar ___ mediante ___. Si el problema es relevante, voy a usar ___ y voy a informarlo”. Por ejemplo: “Para comparar la procrastinación entre grupos, voy a revisar gráficos, normalidad y homogeneidad. Si las varianzas son muy distintas, usaré la t de Welch”.
+En tu plan de análisis, agregá una línea por cada análisis. Podés escribir “Voy a revisar ___ mediante ___. Si el problema es relevante, voy a usar ___ y voy a informarlo”. Por ejemplo, “Para comparar la procrastinación entre grupos, voy a revisar gráficos, normalidad y homogeneidad. Si las varianzas son muy distintas, usaré la t de Welch”.
 
 Eso no te obliga a anticipar cada problema posible. Evita que la alternativa aparezca recién después de ver cuál da el resultado más conveniente.
+
+## En tu proyecto
+
+Completá en el plan qué supuestos vas a revisar y qué alternativa considerarías ante cada problema relevante. Al hacer esas comprobaciones, guardalas en el archivo de jamovi de `trabajo/`. Anotá en el registro qué observaste y cómo decidiste continuar, incluso si mantuviste el análisis previsto.
 
 ## Autochequeo
 
@@ -73,4 +77,4 @@ Antes de confiar en un output, preguntate:
 3. ¿Sé qué supuesto es relevante para este análisis concreto?
 4. Si uso una alternativa, ¿puedo explicar qué pregunta responde y por qué la elegí?
 
-Si podés responderlas, no estás “pasando un control”: estás construyendo un resultado que otra persona puede revisar y entender.
+Conservá estas comprobaciones junto con el análisis para que otra persona pueda revisar cómo decidiste continuar.

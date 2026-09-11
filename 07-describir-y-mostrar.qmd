@@ -2,23 +2,23 @@
 
 ::: {.callout-tip}
 ## La idea en una línea
-Antes de testear, describí: los descriptivos y un gráfico simple muestran si tu pregunta tiene sentido con estos datos, antes de gastar un test en confirmarlo.
+Antes de aplicar una prueba, revisá los descriptivos y un gráfico adecuado para tu pregunta. Te ayudan a conocer la distribución y a detectar problemas en la base.
 :::
 
 ## Qué pedir según el tipo de variable
 
-El nivel de medida que fijaste en el @sec-anatomia no es un dato para el diccionario nada más: determina qué estadístico tiene sentido pedir.
+El nivel de medida que fijaste en el @sec-anatomia determina qué estadístico tiene sentido pedir.
 
 | Tipo de variable | Qué pedir | Ejemplo en la base de este libro |
 |---|---|---|
 | Continua | Media, desvío estándar, mínimo, máximo; histograma | `procrastinacion`, `horas_estudio` |
 | Nominal | Frecuencias y porcentajes; gráfico de barras | `turno`, `trabaja`, `aprobo_parcial` |
 
-En jamovi: **Analyses → Exploration → Descriptives**. Movés las variables a la casilla **Variables**, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico correspondiente en **Plots**. Las opciones disponibles dependen del nivel de medida: verificá que esté bien declarado. Un código numérico de una categoría no convierte su promedio en un resumen interpretable.
+En jamovi, abrí **Analyses → Exploration → Descriptives**. Movés las variables a la casilla **Variables**, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico en **Plots**. Verificá el nivel de medida, porque las opciones disponibles dependen de él. Un código numérico de una categoría no convierte su promedio en un resumen interpretable.
 
 ## La tabla que ya habías bosquejado
 
-Si en tu plan de análisis (@sec-plan) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que **Descriptives** puede darte antes de correr ningún test: agregá `trabaja` en la casilla **Split by** y jamovi devuelve la media, el desvío y el *n* de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.
+Si en tu plan de análisis (@sec-plan) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que **Descriptives** puede darte antes de correr ningún test. Agregá `trabaja` en la casilla **Split by** y jamovi devuelve la media, el desvío y el *n* de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.
 
 Todavía sin tener los números, ya podés anticipar la forma de esa tabla:
 
@@ -27,9 +27,9 @@ Todavía sin tener los números, ya podés anticipar la forma de esa tabla:
 | Trabaja | | | |
 | No trabaja | | | |
 
-Compará esto con lo que jamovi genera al aplicar **Split by**: mismas filas, mismas columnas. Si tu boceto tiene una fila o una columna de más, es momento de revisar el plan, no de forzar la tabla para que coincida.
+Compará tu boceto con lo que jamovi genera al aplicar **Split by**. Si tiene una fila o una columna de más, revisá si elegiste las variables y los grupos que habías previsto.
 
-Lo mismo vale para el gráfico. Un diagrama de caja (*boxplot*) partido por grupo es el equivalente visual de esa tabla: la línea dentro de la caja marca la mediana, los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. No hace falta calcularlo a mano; alcanza con saber leerlo. La regla para elegir gráfico es la pregunta, no la variedad de opciones que ofrece el menú:
+Lo mismo vale para el gráfico. Un diagrama de caja (*boxplot*) partido por grupo permite observar la distribución de cada grupo. La línea dentro de la caja marca la mediana, los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. Elegí el gráfico según lo que querés mostrar de tus variables.
 
 | Tu pregunta es sobre… | Pedí… |
 |---|---|
@@ -38,18 +38,22 @@ Lo mismo vale para el gráfico. Un diagrama de caja (*boxplot*) partido por grup
 | La forma de una sola variable continua | Histograma |
 | Las frecuencias de una variable categórica | Gráfico de barras |
 
-Un gráfico elegido porque "queda bien" y no porque responde la pregunta es, en el mejor de los casos, una distracción.
+Elegí el gráfico que permita ver la comparación o la relación que estás estudiando.
 
 ## Qué mirar antes de cualquier test
 
-Este repaso no reemplaza los chequeos de supuestos del @sec-supuestos: es previo. Antes de abrir un test, mirá los descriptivos que acabás de pedir y respondé:
+Este repaso es previo a los chequeos de supuestos del @sec-supuestos. Mirá los descriptivos que acabás de pedir y respondé estas preguntas.
 
 - **¿El *n* de cada grupo alcanza?** Un grupo con tres casos no va a sostener ninguna comparación, más allá de lo que diga un test.
 - **¿Los valores mínimo y máximo son posibles?** Contrastalos con el rango que anotaste en el diccionario; un `120` en una escala de 10 a 50 requiere revisar la carga o el cálculo del puntaje.
 - **¿La forma de la distribución es razonable?** Un histograma muy asimétrico o con dos picos te avisa antes de que lo haga un supuesto incumplido.
 - **¿Los datos faltantes se concentran en algún grupo?** Un patrón de faltantes que no es parejo entre grupos puede sesgar la comparación antes de que corras un solo test.
 
-Si algo de esto falla, todavía no es momento de testear: es momento de volver a la base.
+Si encontrás alguno de estos problemas, volvé a la base y registrá cómo lo resolviste antes de analizar.
+
+## En tu proyecto
+
+Pedí los descriptivos y el gráfico que correspondan a la pregunta de tu plan y guardá el `.omv` en `trabajo/`. Exportá a `resultados/` la tabla y el gráfico que vas a usar, con nombres reconocibles. Escribí en `informe/` un primer párrafo descriptivo. Si encontraste valores imposibles o faltantes que requieren una revisión, registralos antes de continuar.
 
 ## Autochequeo
 

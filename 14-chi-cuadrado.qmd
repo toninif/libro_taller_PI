@@ -1,4 +1,4 @@
-# Variables categóricas: chi-cuadrado {#sec-chi}
+# Chi-cuadrado para variables categóricas {#sec-chi}
 
 ::: {.callout-tip}
 ## La idea en una línea
@@ -7,7 +7,7 @@ Chi-cuadrado pregunta si dos variables categóricas se distribuyen juntas de una
 
 ## Cuándo se usa
 
-Usás chi-cuadrado de independencia cuando tenés dos variables categóricas y cada caso entra en una sola celda de la tabla. En el ejemplo: `trabaja` (sí / no) y `aprobo_parcial` (sí / no). La pregunta no es si un grupo tiene una media más alta; es si la proporción de aprobación cambia según la situación laboral.
+Usás chi-cuadrado de independencia cuando tenés dos variables categóricas y cada caso entra en una sola celda de la tabla. En el ejemplo usamos `trabaja` (sí / no) y `aprobo_parcial` (sí / no). Queremos saber si la proporción de aprobación cambia según la situación laboral.
 
 La unidad de análisis sigue siendo la persona, no la celda. Cada estudiante aparece una vez y aporta una categoría en cada variable. Si las mismas personas aparecen repetidas, si una respuesta puede entrar en varias categorías o si tu resultado es continuo, este no es el análisis correcto. Volvé al @sec-arbol antes de abrir el menú.
 
@@ -15,9 +15,9 @@ El test compara los conteos observados con los conteos que esperarías si las va
 
 ## Paso a paso en jamovi
 
-Abrí `Analyses → Frequencies → Independent Samples`. Pasá `trabaja` a **Rows** y `aprobo_parcial` a **Columns**. En **Statistics**, pedí **χ²** y **Phi and Cramer's V**. Para reproducir este ejemplo, dejá desmarcada **χ² continuity correction**: informamos Pearson sin corrección de continuidad. En **Cells**, pedí **Observed counts**, **Expected counts** y **Row** dentro de los porcentajes.
+Abrí `Analyses → Frequencies → Independent Samples`. Pasá `trabaja` a **Rows** y `aprobo_parcial` a **Columns**. En **Statistics**, pedí **χ²** y **Phi and Cramer's V**. Para reproducir este ejemplo, dejá desmarcada **χ² continuity correction**. Informamos Pearson sin corrección de continuidad. En **Cells**, pedí **Observed counts**, **Expected counts** y **Row** dentro de los porcentajes.
 
-Los porcentajes por fila responden de manera directa a la pregunta: dentro de quienes trabajan, ¿qué porcentaje aprobó?, y dentro de quienes no, ¿qué porcentaje aprobó? Los conteos esperados, en cambio, sirven para revisar el supuesto técnico. En una tabla 2 × 2 como esta, si las frecuencias esperadas son muy pequeñas, la aproximación de χ² puede ser mala y Fisher es una alternativa más adecuada.
+Los porcentajes por fila muestran qué proporción aprobó dentro de cada grupo laboral. Los conteos esperados, en cambio, sirven para revisar el supuesto técnico. En una tabla 2 × 2 como esta, si las frecuencias esperadas son muy pequeñas, la aproximación de χ² puede ser mala y Fisher es una alternativa más adecuada.
 
 No uses porcentajes sin mirar los conteos. Un 100 % calculado sobre dos casos puede verse impresionante y no aportar evidencia suficiente para una conclusión.
 
@@ -25,14 +25,16 @@ No uses porcentajes sin mirar los conteos. Un 100 % calculado sobre dos casos pu
 
 En `encuesta-estudiantes-limpia` (@sec-jamovi), dos casos no tienen `trabaja` porque sus horas laborales estaban faltantes. La tabla usa los 70 casos restantes:
 
+::: {.table-responsive}
 | Situación laboral | No aprobó | Aprobó | Total | % que aprobó |
 |---|---:|---:|---:|---:|
 | No trabaja | 12 | 22 | 34 | 64.7 % |
 | Trabaja | 18 | 18 | 36 | 50.0 % |
+:::
 
 Las frecuencias esperadas van de 14.57 a 20.57; todas superan ampliamente cinco. La prueba de independencia da χ²(1) = 1.54, *p* = .214, con V de Cramer = .15. En estos datos hay una diferencia descriptiva de porcentajes, pero no evidencia suficiente para concluir que situación laboral y aprobación estén asociadas.
 
-El resultado no demuestra que “trabajar no influye”. El intervalo de posibilidades compatible con estos datos incluye una asociación pequeña, una diferencia por azar u otras explicaciones que esta encuesta no midió. El punto es más simple: con esta muestra y esta tabla, no hay evidencia concluyente de asociación.
+Con esta muestra y esta tabla, no hay evidencia concluyente de asociación. Eso no demuestra que “trabajar no influye” ni permite descartar todas las asociaciones posibles. Además, el diseño de la encuesta no permite atribuir efectos causales al trabajo.
 
 V de Cramer resume el tamaño de la asociación y, en una tabla 2 × 2, coincide numéricamente con Phi. Un V = .15 es pequeño en términos descriptivos, pero la importancia práctica siempre depende de la pregunta, las consecuencias y la precisión disponible; no de una etiqueta automática.
 
@@ -40,11 +42,15 @@ V de Cramer resume el tamaño de la asociación y, en una tabla 2 × 2, coincide
 
 > La situación laboral no se asoció de manera concluyente con la aprobación del parcial, χ²(1, *N* = 70) = 1.54, *p* = .214, V = .15. Aprobó el 64.7 % de quienes no trabajaban y el 50.0 % de quienes trabajaban.
 
-Nombrar los porcentajes evita que un χ² sin dirección quede abstracto. Informar *N* deja claro que dos casos con información laboral faltante no entraron en esta comparación. “No significativo” no equivale a “las proporciones son iguales”: describe la evidencia de esta muestra, no una verdad definitiva sobre la población.
+Nombrar los porcentajes evita que un χ² sin dirección quede abstracto. Informar *N* deja claro que dos casos con información laboral faltante no entraron en esta comparación. “No significativo” describe la evidencia de esta muestra, no una verdad definitiva sobre la población.
 
 ### Si las frecuencias esperadas son bajas
 
-No mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí **Fisher's exact test** en jamovi. Si hay muchas categorías con pocos casos, quizá el problema no sea el test: tal vez necesitás más datos o una pregunta menos fragmentada.
+No mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí **Fisher's exact test** en jamovi. Si hay muchas categorías con pocos casos, quizá necesites más datos o una pregunta menos fragmentada.
+
+## En tu proyecto
+
+Si tu proyecto estudia la asociación entre dos variables categóricas, guardá la tabla de contingencia y la revisión de frecuencias esperadas en `trabajo/`. Registrá qué prueba aplicaste y sobre cuántos casos. Exportá los conteos y porcentajes necesarios a `resultados/` y escribí la interpretación en `informe/`, aclarando sobre qué total calculaste los porcentajes. Si tu proyecto tiene otra pregunta, practicá con la encuesta del libro.
 
 ## Ejercicios de autochequeo
 
@@ -55,4 +61,4 @@ No mezcles categorías solo para que una casilla supere cinco. Primero preguntat
 
 ## Plantilla para llevar
 
-📄 **Plantilla para llevar:** [Plan de análisis en una página](plantillas/plan-de-analisis.md). Antes de interpretar el output, pasá por el [checklist antes de analizar](plantillas/checklist-antes-de-analizar.md). La base del ejemplo está en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv).
+Usá el [plan de análisis](plantillas/plan-de-analisis.md) y la [lista de revisión antes de analizar](plantillas/checklist-antes-de-analizar.md) para comprobar la comparación. La base del ejemplo está en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv).

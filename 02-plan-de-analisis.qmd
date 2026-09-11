@@ -8,13 +8,13 @@ Antes de recolectar un solo dato, tenés que poder decir qué vas a comparar y q
 
 ## Dos estudiantes, la misma pregunta
 
-Julia y Martina cursan Prácticas y uno de sus objetivos es comparar la procrastinación en función de la situación laboral. Por lo tanto, llegaron a la misma pregunta: ¿la procrastinación académica difiere entre estudiantes que trabajan y estudiantes que no trabajan?
+Julia y Martina cursan Prácticas y quieren comparar la procrastinación en función de la situación laboral. Ambas se preguntan si la procrastinación académica difiere entre estudiantes que trabajan y estudiantes que no trabajan.
 
-Martina armó el formulario ese fin de semana y salió a recolectar. Preguntó "¿trabajás?" con opciones *sí / no / a veces / hice changas este mes* y midió procrastinación con tres preguntas que se le ocurrieron, cada una con escalas distintas. Juntó 80 respuestas. Cuando abrió la base, empezaron los problemas: ¿"a veces" cuenta como trabajar? ¿Las tres preguntas se promedian, se suman, se usa una sola? Cada decisión que no tomó antes ahora la tiene que tomar *mirando los datos* y cada una se puede discutir. El análisis que termine haciendo va a ser el que la base le permita, no el que la pregunta pedía.
+Martina armó el formulario ese fin de semana y salió a recolectar. Preguntó "¿trabajás?" con opciones *sí / no / a veces / hice changas este mes* y midió procrastinación con tres preguntas que se le ocurrieron, cada una con escalas distintas. Juntó 80 respuestas. Cuando abrió la base, empezaron los problemas. ¿"a veces" cuenta como trabajar? ¿Las tres preguntas se promedian, se suman, se usa una sola? Cada decisión que no tomó antes ahora la tiene que tomar *mirando los datos* y cada una se puede discutir. El análisis que termine haciendo va a ser el que la base le permita, no el que la pregunta pedía.
 
-Julia, antes de recolectar, escribió media página: qué iba a comparar (dos grupos: trabaja / no trabaja, definido como 10 o más horas semanales), con qué variable de resultado (puntaje total de una escala de procrastinación ya validada) y qué análisis iba a usar cuando tuviera los datos. Cuando abrió su base, no tuvo que decidir nada y solo se concentró en ejecutar lo que ya había decidido.
+Julia, antes de recolectar, escribió media página con lo que iba a comparar. Definió dos grupos según si trabajaban diez o más horas semanales, eligió el puntaje total de una escala de procrastinación ya validada y dejó previsto el análisis. Cuando abrió su base, pudo revisar los datos y los supuestos con esas decisiones a mano.
 
-Ambas tenían la misma formación estadística, pero Julia decidió desde el diseño y Martina dejó las decisiones para después. Este capítulo es para que seas Julia.
+Ambas tenían la misma formación estadística, pero Julia decidió desde el diseño y Martina dejó las decisiones para después. En tu proyecto, ese plan previo te va a ayudar a reconocer qué falta resolver antes de recolectar.
 
 ## De la hipótesis a las variables
 
@@ -31,7 +31,7 @@ Con los roles asignados, hacete tres preguntas sobre cada variable:
 2.  **¿Cómo se define exactamente?** "Trabaja" no es una medición hasta que decidís el corte (¿cuántas horas? ¿Changas cuentan?). "Procrastinación" no es una medición hasta que elegís el instrumento y qué puntaje usás.
 3.  **¿Cuántos valores/grupos tiene?** Dos grupos implican un tipo de análisis, mientras que más de dos grupos llevan a un análisis distinto (@sec-arbol).
 
-Si contestás estas tres preguntas para cada variable, el análisis queda casi elegido solo. Es la lógica del árbol de decisión del @sec-arbol: pregunta+ hipótesis + tipo de variables → análisis. Lo importante reside en conocer tus variables.
+Con estas respuestas podés recorrer el árbol de decisión del @sec-arbol. La pregunta, la hipótesis y el tipo de variables te permiten justificar la elección del análisis.
 
 ## Qué contaría como respuesta
 
@@ -39,19 +39,19 @@ Este es un paso muy importante, que a veces es dejado de lado. **Imaginate el re
 
 Concretamente, escribí dos cosas:
 
-**La tabla o el gráfico que querrías mostrar.** Para el ejemplo: una tabla con dos filas (trabaja / no trabaja) y columnas de media y desvío de procrastinación. Si no podés bosquejar esa tabla, todavía no sabés qué vas a analizar.
+**La tabla o el gráfico que querrías mostrar.** En este ejemplo sería una tabla con dos filas (trabaja / no trabaja) y columnas de media y desvío de procrastinación. Si no podés bosquejar esa tabla, todavía no sabés qué vas a analizar.
 
 **La frase de resultado que querrías poder escribir**, con huecos:
 
 > "Los estudiantes que trabajan presentaron \[mayor / menor / similar\] procrastinación (*M* = \_\_\_, *DE* = \_\_\_) que los que no trabajan (*M* = \_\_\_, *DE* = \_\_\_) y la diferencia \[fue / no fue\] estadísticamente significativa."
 
-Fijate todo lo que esa frase te obliga a definir: que hay dos grupos, que la procrastinación se resume en una media, que vas a comparar medias. Si tu hipótesis no se deja escribir como una frase con huecos, no está lista para recolectar. Algo más: **las dos versiones de la frase (diferencia sí / diferencia no) tienen que ser un resultado aceptable para vos**. Si solo una te sirve, el problema no es de análisis.
+Para escribir esa frase, tuviste que definir dos grupos y decidir que ibas a comparar sus medias de procrastinación. Si te cuesta completarla, revisá qué falta precisar antes de recolectar. Considerá también cómo informarías un resultado distinto del que esperabas. Tanto una diferencia significativa como una no significativa deben tener lugar en el informe.
 
-En jamovi esto tiene una traducción directa: la frase con huecos es lo que vas a completar leyendo el output que te tira el programa y la tabla que bosquejaste es la que vas a pedir en la sección *Análisis*. El plan que escribís hoy es literalmente la lista de lo que vas a cliquear después.
+Cuando tengas los datos, vas a completar la frase con los resultados de jamovi y a pedir la tabla que bosquejaste desde la sección *Análisis*. El plan te permite anticipar qué opciones vas a necesitar.
 
 ## El plan de análisis en una página
 
-Juntemos todo. Un plan de análisis tiene seis campos y cabe en una página:
+Podés organizar el plan de análisis en estos seis campos.
 
 | Campo | Qué escribís |
 |------------------------------------|------------------------------------|
@@ -62,9 +62,9 @@ Juntemos todo. Un plan de análisis tiene seis campos y cabe en una página:
 | 5\. Supuestos a chequear | Qué vas a verificar antes de confiar en el resultado y el plan B si no se cumple (@sec-supuestos) |
 | 6\. Resultado esperado | La tabla/gráfico bosquejado y la frase de resultado con huecos |
 
-Dos aspectos para tener en cuenta. El plan se escribe **antes de recolectar**, pero no es un contrato. Si al ver los datos aparece algo que te obliga a desviarte, te desviás *sabiendo que te desviaste y por qué*, que es exactamente lo contrario de improvisar. Luego reportas esa desviación y la interpretas con cautela. Los campos 4 y 5 que aparecen en la tabla los vas a poder completar mejor después de la Parte II de este libro.
+El plan se escribe **antes de recolectar** y puede requerir cambios. Si los datos muestran un problema que te obliga a modificarlo, dejá escrito qué cambió y por qué. Después informá esa decisión y tenela en cuenta al interpretar. Los campos 4 y 5 los vas a poder completar mejor con el árbol de decisión y la revisión de supuestos de la Parte II.
 
-## Ejemplo completo: el plan de Julia
+## El plan de Julia
 
 > **1. Pregunta:** ¿Difiere la procrastinación académica entre estudiantes universitarios que trabajan y que no trabajan?
 >
@@ -72,8 +72,8 @@ Dos aspectos para tener en cuenta. El plan se escribe **antes de recolectar**, p
 >
 > **3. Variables:**
 >
-> - *Situación laboral* — agrupamiento; categórica, 2 grupos; "trabaja" = 10+ hs semanales remuneradas en el último mes; valores: trabaja / no trabaja.
-> - *Procrastinación académica* — resultado; continua; puntaje total de la Escala de Procrastinación Académica (suma de ítems, rango 16–80).
+> - *Situación laboral*. Variable de agrupamiento categórica con dos grupos. Se considera que trabaja a quien dedica diez o más horas semanales a una actividad remunerada en el último mes. Los valores son trabaja y no trabaja.
+> - *Procrastinación académica*. Variable de resultado continua, medida con el puntaje total de la Escala de Procrastinación Académica (suma de ítems, rango 16–80).
 >
 > **4. Análisis previsto:** comparación de medias entre dos grupos independientes (t de Student; @sec-dos-grupos).
 >
@@ -81,7 +81,11 @@ Dos aspectos para tener en cuenta. El plan se escribe **antes de recolectar**, p
 >
 > **6. Resultado esperado:** tabla de medias y desvíos por grupo + la frase con huecos de la sección anterior.
 
-📄 **Plantilla para llevar:** [Plan de análisis en una página](plantillas/plan-de-analisis.md) — la misma estructura, vacía, lista para completar con tu proyecto.
+Descargá el [plan de análisis en una página](plantillas/plan-de-analisis.md) y completalo con tu proyecto.
+
+## En tu proyecto
+
+Completá la [plantilla del plan de análisis](plantillas/plan-de-analisis.md) con la pregunta que venís trabajando. Indicá qué decisiones ya tomaste y qué necesitás consultar o definir. Fechá esta primera versión y conservá el boceto de tabla o gráfico junto con ella. Si ya tenés datos, dejá anotado cuáles de esas decisiones tomaste antes de verlos y cuáles estás tomando ahora.
 
 ## Autochequeo
 
@@ -89,4 +93,47 @@ Antes de dar tu plan por terminado, contestá honestamente:
 
 1.  ¿Podrías dárselo a otra persona para que recolecte los datos sin hacerte ninguna pregunta? Si tendría que preguntarte algo, ese algo falta en el plan.
 2.  ¿Cada variable tiene rol, tipo y definición exacta? "Ansiedad" no es una variable; "puntaje total del STAI-Estado" sí.
-3.  ¿El análisis previsto sale de tus variables o de "es el que conozco"? Si es lo segundo, volvé al punto 2: quizás haya que ajustar la hipótesis, no el análisis.
+3.  ¿El análisis previsto sale de tus variables o de "es el que conozco"? Si es lo segundo, volvé al punto 2 y revisá cómo definiste las variables y qué pregunta querés responder.
+
+## Trabajar desde un proyecto {#sec-proyecto}
+
+Ya tenés una primera versión del plan. Antes de entrar en la base, conviene darle un lugar dentro del trabajo completo. Cuando acá hablamos de proyecto, pensamos en la investigación que estás haciendo y en los materiales que te permiten llevarla adelante. La pregunta, las decisiones y los archivos se van a ir construyendo juntos.
+
+Puede parecer suficiente guardar la base en el escritorio y el informe en Descargas. El problema aparece cuando retomás el trabajo y encontrás tres bases parecidas, una tabla pegada en un mensaje y un diccionario que describe nombres de columnas que ya cambiaste. Tener todo organizado desde el principio te permite reconocer qué archivo usaste, qué modificaste y de dónde salió cada resultado. También facilita que otra persona del grupo continúe el trabajo.
+
+### Una carpeta para cada proyecto
+
+Creá una carpeta con un nombre que reconozcas, como `procrastinacion-y-trabajo`. Dentro de ella, armá esta estructura sencilla. Las carpetas pueden estar vacías al comienzo; las vas a completar a medida que avances.
+
+```text
+procrastinacion-y-trabajo/
+  documentos/
+  datos-originales/
+  trabajo/
+  resultados/
+  informe/
+```
+
+En `documentos/` guardá la pregunta, el plan de análisis, los instrumentos y el diccionario. Agregá la [ficha y registro del proyecto](plantillas/ficha-del-proyecto.md) en el formato que uses para escribir. Ahí vas a indicar cuáles son los archivos vigentes y anotar la fecha, qué cambiaste, por qué y a qué archivo afecta.
+
+En `datos-originales/` conservá la base tal como la recibiste o exportaste del instrumento. Si recibís una nueva entrega de datos, guardala con otra fecha. Hacé las correcciones y transformaciones sobre una copia en `trabajo/`, donde también van los archivos `.omv` de jamovi. Así podés volver a consultar el material recibido cuando necesites revisar una decisión.
+
+Usá `resultados/` para las tablas y los gráficos que vas a comunicar, y `informe/` para el texto que los interpreta. El archivo de jamovi conserva el análisis que produjo esos resultados. Una tabla exportada sirve para mostrarlo, pero por sí sola no permite recuperar todas las opciones que elegiste.
+
+Esta organización es un punto de partida. Si tu grupo ya tiene una estructura clara, pueden mantenerla. Lo importante es que todos sepan dónde está cada cosa y qué archivo están usando.
+
+### Nombres y versiones que puedas reconocer
+
+Elegí nombres que indiquen el contenido y agregá una fecha o una versión cuando necesites conservar un estado anterior. Por ejemplo, `encuesta-2026-09-10.csv`, `analisis-procrastinacion-v01.omv` e `informe-v01.docx`. Evitá `final`, `final2` y `ahora-si-final`, que dejan de servir en cuanto hay una corrección más.
+
+Guardá mientras trabajás. Antes de un cambio importante, como modificar un criterio de exclusión o incorporar nuevos casos, conservá la versión anterior y anotá la decisión en el registro. Si trabajan en grupo, acuerden quién edita cada archivo y cómo avisa que terminó. Mantengan una copia de respaldo del proyecto en el lugar que use la materia para ese fin.
+
+En la ficha del proyecto indicá cuál es la base de trabajo vigente y qué archivo de jamovi respalda el informe. Si la base cambia después de exportar una tabla, revisá el análisis y actualizá también la tabla y el texto. Tener los archivos en una carpeta ayuda a encontrarlos; mantenerlos de acuerdo requiere revisar esos cambios.
+
+### Cómo vas a trabajar durante el libro
+
+Al empezar una actividad, abrí la carpeta del proyecto y retomá la pregunta y el plan. Al terminar, guardá el avance que pide **En tu proyecto** y dejá anotada cualquier decisión nueva. En la Parte I vas a completar el diccionario, preparar la base y guardar los descriptivos. En la Parte II vas a conservar las comprobaciones y los análisis que respondan tu pregunta. En la Parte III vas a reunirlos en un informe que puedas contrastar con los archivos de trabajo.
+
+Los capítulos de pruebas ofrecen distintos caminos. Si tu pregunta compara dos grupos independientes, seguirás el @sec-dos-grupos; eso no te obliga a agregar una correlación o un ANOVA al informe. Para explorar otra técnica, usá el proyecto de práctica. Si durante tu investigación aparece una pregunta nueva, registrala como tal y explicá cuándo surgió.
+
+Antes de pasar a la Parte I, creá las carpetas, guardá el plan en `documentos/` y completá la ficha con el nombre del proyecto, sus integrantes y la pregunta. Dejá escrito el próximo paso. Aunque todavía no tengas datos, ya tenés un proyecto desde el que trabajar.

@@ -1,23 +1,23 @@
-# Una media vs. un valor: t de una muestra {#sec-t-una-muestra}
+# t de una muestra {#sec-t-una-muestra}
 
 ::: {.callout-tip}
 ## La idea en una línea
-La t de una muestra compara el promedio de tu grupo contra un único valor de referencia —no contra otro grupo— y te dice si esa diferencia es mayor de lo que esperarías por azar.
+La t de una muestra compara el promedio de tu grupo con un valor de referencia y permite evaluar la evidencia de una diferencia.
 :::
 
 ## Cuándo se usa
 
-Se usa cuando tenés una sola muestra y una variable continua, y la pregunta no es "¿cómo se compara con otro grupo?" sino "¿cómo se compara con un número que ya existía antes de tus datos?". Ese valor de referencia no sale de tu base: viene de afuera —el punto medio teórico de una escala, una norma publicada, un valor esperado por el diseño del instrumento— y tenés que poder justificarlo antes de correr el análisis, no elegirlo después para que el resultado cierre.
+Se usa cuando tenés una sola muestra y una variable continua, y querés comparar su media con un valor definido antes de mirar los datos. Puede ser el punto medio teórico de una escala, una norma publicada o un valor esperado por el diseño del instrumento. Dejá justificada esa referencia en el plan antes de hacer la comparación.
 
-Ejemplo de este libro: `organizacion` se mide con una escala de 8 a 40 puntos; su punto medio teórico —ni de acuerdo ni en desacuerdo, en promedio— es 24. La pregunta no es si dos grupos de estudiantes difieren entre sí: es si esta muestra, en conjunto, se aleja de ese punto neutro.
+En este libro, `organizacion` se mide con una escala de 8 a 40 puntos. Su punto medio teórico es 24, que representa una respuesta promedio de ni de acuerdo ni en desacuerdo. Queremos saber si la media de esta muestra difiere de ese punto neutro.
 
-Si en cambio tuvieras dos grupos, o la misma persona medida dos veces, no es este análisis: es el @sec-dos-grupos. Y si lo que tenés es un promedio que "te parece bajo" sin un valor externo que lo respalde, todavía no estás listo para este test: primero conseguí o justificá la referencia, después corré el análisis.
+Si tenés dos grupos o las mismas personas medidas dos veces, consultá el @sec-dos-grupos. Si el promedio te parece bajo pero no tenés un valor externo con el que compararlo, primero necesitás justificar esa referencia.
 
 ## Paso a paso en jamovi
 
-`Analyses → T-Tests → One Sample T-Test`. Movés la variable continua (`organizacion`) a **Dependent Variables** y escribís el valor de referencia en **Test value** (acá, 24; el default de jamovi es 0, así que no te olvides de cambiarlo). Mantené la hipótesis bilateral **≠ Test value**. En **Assumption Checks**, tildá **Normality test** y **Q-Q Plot**; en **Additional Statistics**, pedí **Descriptives**, **Mean difference**, su **Confidence interval** al 95 % y **Effect size**. No hay homogeneidad de varianzas que revisar: solo hay una muestra.
+`Analyses → T-Tests → One Sample T-Test`. Movés la variable continua (`organizacion`) a **Dependent Variables** y escribís el valor de referencia en **Test value** (acá, 24; el valor predeterminado de jamovi es 0, así que no te olvides de cambiarlo). Mantené la hipótesis bilateral **≠ Test value**. En **Assumption Checks**, tildá **Normality test** y **Q-Q Plot**; en **Additional Statistics**, pedí **Descriptives**, **Mean difference**, su **Confidence interval** al 95 % y **Effect size**. Solo hay una muestra, así que no corresponde revisar homogeneidad de varianzas entre grupos.
 
-La tabla de resultados trae el estadístico *t*, los grados de libertad (*df*), el valor *p* y las columnas adicionales que pediste. El intervalo junto a **Mean difference** corresponde a la diferencia respecto de 24: en este ejemplo es [−0.56, 1.34]. Para expresar el IC de la media, sumá 24 a ambos límites: [23.44, 25.34]. La casilla de intervalo debajo de **Effect size** corresponde a *d*, no a la media.
+La tabla de resultados trae el estadístico *t*, los grados de libertad (*df*), el valor *p* y las columnas adicionales que pediste. El intervalo junto a **Mean difference** corresponde a la diferencia respecto de 24. En este ejemplo es [−0.56, 1.34]. Para expresar el IC de la media, sumá 24 a ambos límites y obtenés [23.44, 25.34]. La casilla de intervalo debajo de **Effect size** corresponde a *d*, no a la media.
 
 ## Ejemplo trabajado
 
@@ -27,27 +27,31 @@ Con la base `encuesta-estudiantes-limpia` (@sec-jamovi), los 72 casos tienen `or
 |---|---|---|---|
 | 72 | 24.39 | 4.04 | 24 |
 
-La comparación da *t*(71) = 0.82, *p* = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto *d* de Cohen = 0.10. El intervalo de confianza incluye el 24: es exactamente lo que predice un resultado no significativo.
+La comparación da *t*(71) = 0.82, *p* = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto *d* de Cohen = 0.10. El intervalo de confianza incluye el 24, en concordancia con el resultado no significativo de esta prueba bilateral.
 
 ## Cómo leer el output e informarlo en APA
 
 > El puntaje promedio de organización de la muestra (*M* = 24.39, *DE* = 4.04) no difirió significativamente del punto medio teórico de la escala, *t*(71) = 0.82, *p* = .415, IC 95 % [23.44, 25.34], *d* = 0.10.
 
-Un resultado no significativo no es "no pasó nada": es un resultado con su propia frase, su *t*, su *p* y su intervalo, igual que uno significativo. El intervalo de confianza muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.
+Informá también los resultados no significativos con su estimación, *t*, *p* e intervalo. El intervalo de confianza muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.
 
-Un error frecuente: interpretar *p* > .05 como "se demostró que la organización es igual a 24". Un test de hipótesis no prueba la igualdad; solo dice que no hay evidencia suficiente para rechazar el valor de referencia con estos datos.
+Un error frecuente es interpretar *p* > .05 como "se demostró que la organización es igual a 24". Un test de hipótesis no prueba la igualdad; solo dice que no hay evidencia suficiente para rechazar el valor de referencia con estos datos.
 
 ### Si la normalidad no se sostiene
 
-El @sec-supuestos ya lo dijo en general: acá se aplica a una sola variable, no a una comparación de varianzas entre grupos. Mirá el histograma y el gráfico Q-Q de `organizacion`, no solo el valor de Shapiro-Wilk. La prueba de rangos con signo de Wilcoxon puede servir cuando resulta razonable suponer una distribución simétrica alrededor de un centro; bajo esa condición, permite contrastar ese centro, que coincide con la mediana, con el valor de referencia. No resuelve automáticamente una asimetría marcada. Si la distribución es muy sesgada o hay extremos influyentes, revisá los datos y la pregunta antes de elegir una alternativa. Como toda alternativa, se nombra y se justifica en el plan.
+La revisión del @sec-supuestos se aplica acá a una sola variable. Mirá el histograma y el gráfico Q-Q de `organizacion`, no solo el valor de Shapiro-Wilk. La prueba de rangos con signo de Wilcoxon puede servir cuando resulta razonable suponer una distribución simétrica alrededor de un centro; bajo esa condición, permite contrastar ese centro, que coincide con la mediana, con el valor de referencia. No resuelve automáticamente una asimetría marcada. Si la distribución es muy sesgada o hay extremos influyentes, revisá los datos y la pregunta antes de elegir una alternativa. Como toda alternativa, se nombra y se justifica en el plan.
+
+## En tu proyecto
+
+Si tu pregunta compara una media con un valor de referencia, dejá la justificación de ese valor en el plan de `documentos/`. Guardá el análisis y sus comprobaciones en `trabajo/`, y escribí el resultado en el borrador de `informe/`, con la diferencia y su intervalo. Comprobá que distinguís el intervalo de la media del intervalo de la diferencia. Si esta prueba no corresponde a tu proyecto, hacé el ejercicio en el proyecto de práctica.
 
 ## Ejercicios de autochequeo
 
 1. ¿El valor de referencia que vas a usar existe antes de tus datos, o lo elegiste después de ver la media de tu muestra?
 2. ¿Tu variable es continua y tenés un solo grupo, sin comparación entre personas ni mediciones repetidas?
-3. Si tu resultado no fuera significativo, ¿tenés igual la frase completa —*M*, *DE*, *t*, *p*, IC— lista para informarlo?
+3. Si tu resultado no fuera significativo, ¿podrías informarlo con *M*, *DE*, *t*, *p* e IC?
 4. ¿Podés explicar, en una oración, qué significa que el intervalo de confianza incluya o no el valor de referencia?
 
 ## Plantilla para llevar
 
-📄 **Plantilla para llevar:** [Plan de análisis en una página](plantillas/plan-de-analisis.md) — completá el campo 6 con la frase de resultado de este capítulo. La base del ejemplo está en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv).
+Podés retomar el [plan de análisis en una página](plantillas/plan-de-analisis.md) para contrastar el resultado con el boceto del campo 6. La base del ejemplo está en [`encuesta-estudiantes-limpia.omv`](plantillas/encuesta-estudiantes-limpia.omv).
