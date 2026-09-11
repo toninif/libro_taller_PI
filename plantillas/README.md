@@ -1,8 +1,10 @@
 # Plantillas descargables
 
-Estos recursos acompañan los capítulos del libro. Se linkean desde el capítulo correspondiente y, cuando el conjunto esté completo, también desde el capítulo 16.
+Estos recursos acompañan el proyecto del estudiante y están enlazados desde los capítulos y la caja de herramientas. Guardá la ficha, el plan y el diccionario completos en `documentos/`; los archivos de jamovi con los que trabajás van en `trabajo/`.
 
 ## Disponibles
+
+- `ficha-del-proyecto.md`. Ficha de archivos vigentes y registro de decisiones, cambios y próximos pasos.
 
 - `plan-de-analisis.md`: estructura para definir pregunta, hipótesis, variables, análisis y resultado esperado.
 - `diccionario-de-datos.csv`: plantilla para documentar cada variable. Se abre con Excel, LibreOffice o cualquier planilla de cálculo.

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>14&nbsp; Variables categóricas: chi-cuadrado – Pensar el análisis antes de los datos</title>
+<title>14&nbsp; Chi-cuadrado para variables categóricas – Pensar el análisis antes de los datos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-arbol-de-decision.html">Parte II — Elegir y ejecutar</a></li><li class="breadcrumb-item"><a href="./14-chi-cuadrado.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Variables categóricas: chi-cuadrado</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-arbol-de-decision.html">Parte II. Elegir y ejecutar</a></li><li class="breadcrumb-item"><a href="./14-chi-cuadrado.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chi-cuadrado para variables categóricas</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Apertura — Pensar el análisis antes de los datos</span></a>
+ <span class="menu-text">Apertura. Pensar el análisis antes de los datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Parte I — Los datos en orden</span></a>
+ <span class="menu-text">Parte I. Los datos en orden</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -189,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Parte II — Elegir y ejecutar</span></a>
+ <span class="menu-text">Parte II. Elegir y ejecutar</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -210,31 +210,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./10-t-una-muestra.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Una media vs.&nbsp;un valor: t de una muestra</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">t de una muestra</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-dos-grupos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Dos grupos: t independientes y pareada</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">t independientes y pareada</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./12-anova-un-factor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Tres o más grupos: ANOVA de un factor</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ANOVA de un factor</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./13-correlacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Relación entre dos variables: correlación</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Correlación entre dos variables</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./14-chi-cuadrado.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Variables categóricas: chi-cuadrado</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chi-cuadrado para variables categóricas</span></span></a>
   </div>
 </li>
       </ul>
@@ -242,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Parte III — Comunicar</span></a>
+ <span class="menu-text">Parte III. Comunicar</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -296,17 +296,18 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#si-las-frecuencias-esperadas-son-bajas" id="toc-si-las-frecuencias-esperadas-son-bajas" class="nav-link" data-scroll-target="#si-las-frecuencias-esperadas-son-bajas">Si las frecuencias esperadas son bajas</a></li>
   </ul></li>
-  <li><a href="#ejercicios-de-autochequeo" id="toc-ejercicios-de-autochequeo" class="nav-link" data-scroll-target="#ejercicios-de-autochequeo"><span class="header-section-number">14.5</span> Ejercicios de autochequeo</a></li>
-  <li><a href="#plantilla-para-llevar" id="toc-plantilla-para-llevar" class="nav-link" data-scroll-target="#plantilla-para-llevar"><span class="header-section-number">14.6</span> Plantilla para llevar</a></li>
+  <li><a href="#en-tu-proyecto" id="toc-en-tu-proyecto" class="nav-link" data-scroll-target="#en-tu-proyecto"><span class="header-section-number">14.5</span> En tu proyecto</a></li>
+  <li><a href="#ejercicios-de-autochequeo" id="toc-ejercicios-de-autochequeo" class="nav-link" data-scroll-target="#ejercicios-de-autochequeo"><span class="header-section-number">14.6</span> Ejercicios de autochequeo</a></li>
+  <li><a href="#plantilla-para-llevar" id="toc-plantilla-para-llevar" class="nav-link" data-scroll-target="#plantilla-para-llevar"><span class="header-section-number">14.7</span> Plantilla para llevar</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-arbol-de-decision.html">Parte II — Elegir y ejecutar</a></li><li class="breadcrumb-item"><a href="./14-chi-cuadrado.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Variables categóricas: chi-cuadrado</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-arbol-de-decision.html">Parte II. Elegir y ejecutar</a></li><li class="breadcrumb-item"><a href="./14-chi-cuadrado.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chi-cuadrado para variables categóricas</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-chi" class="quarto-section-identifier"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Variables categóricas: chi-cuadrado</span></span></h1>
+<h1 class="title"><span id="sec-chi" class="quarto-section-identifier"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chi-cuadrado para variables categóricas</span></span></h1>
 </div>
 
 
@@ -338,19 +339,20 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="cuándo-se-usa" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="cuándo-se-usa"><span class="header-section-number">14.1</span> Cuándo se usa</h2>
-<p>Usás chi-cuadrado de independencia cuando tenés dos variables categóricas y cada caso entra en una sola celda de la tabla. En el ejemplo: <code>trabaja</code> (sí / no) y <code>aprobo_parcial</code> (sí / no). La pregunta no es si un grupo tiene una media más alta; es si la proporción de aprobación cambia según la situación laboral.</p>
+<p>Usás chi-cuadrado de independencia cuando tenés dos variables categóricas y cada caso entra en una sola celda de la tabla. En el ejemplo usamos <code>trabaja</code> (sí / no) y <code>aprobo_parcial</code> (sí / no). Queremos saber si la proporción de aprobación cambia según la situación laboral.</p>
 <p>La unidad de análisis sigue siendo la persona, no la celda. Cada estudiante aparece una vez y aporta una categoría en cada variable. Si las mismas personas aparecen repetidas, si una respuesta puede entrar en varias categorías o si tu resultado es continuo, este no es el análisis correcto. Volvé al <a href="08-arbol-de-decision.html" class="quarto-xref"><span>Capítulo 8</span></a> antes de abrir el menú.</p>
 <p>El test compara los conteos observados con los conteos que esperarías si las variables fueran independientes. Si quienes trabajan y quienes no trabajaran aprobaran en proporciones parecidas, las frecuencias esperadas se parecen a las observadas. Si se alejan más de lo esperable por azar, χ² aumenta y el valor <em>p</em> baja.</p>
 </section>
 <section id="paso-a-paso-en-jamovi" class="level2" data-number="14.2">
 <h2 data-number="14.2" class="anchored" data-anchor-id="paso-a-paso-en-jamovi"><span class="header-section-number">14.2</span> Paso a paso en jamovi</h2>
-<p>Abrí <code>Analyses → Frequencies → Independent Samples</code>. Pasá <code>trabaja</code> a <strong>Rows</strong> y <code>aprobo_parcial</code> a <strong>Columns</strong>. En <strong>Statistics</strong>, pedí <strong>χ²</strong> y <strong>Phi and Cramer’s V</strong>. Para reproducir este ejemplo, dejá desmarcada <strong>χ² continuity correction</strong>: informamos Pearson sin corrección de continuidad. En <strong>Cells</strong>, pedí <strong>Observed counts</strong>, <strong>Expected counts</strong> y <strong>Row</strong> dentro de los porcentajes.</p>
-<p>Los porcentajes por fila responden de manera directa a la pregunta: dentro de quienes trabajan, ¿qué porcentaje aprobó?, y dentro de quienes no, ¿qué porcentaje aprobó? Los conteos esperados, en cambio, sirven para revisar el supuesto técnico. En una tabla 2 × 2 como esta, si las frecuencias esperadas son muy pequeñas, la aproximación de χ² puede ser mala y Fisher es una alternativa más adecuada.</p>
+<p>Abrí <code>Analyses → Frequencies → Independent Samples</code>. Pasá <code>trabaja</code> a <strong>Rows</strong> y <code>aprobo_parcial</code> a <strong>Columns</strong>. En <strong>Statistics</strong>, pedí <strong>χ²</strong> y <strong>Phi and Cramer’s V</strong>. Para reproducir este ejemplo, dejá desmarcada <strong>χ² continuity correction</strong>. Informamos Pearson sin corrección de continuidad. En <strong>Cells</strong>, pedí <strong>Observed counts</strong>, <strong>Expected counts</strong> y <strong>Row</strong> dentro de los porcentajes.</p>
+<p>Los porcentajes por fila muestran qué proporción aprobó dentro de cada grupo laboral. Los conteos esperados, en cambio, sirven para revisar el supuesto técnico. En una tabla 2 × 2 como esta, si las frecuencias esperadas son muy pequeñas, la aproximación de χ² puede ser mala y Fisher es una alternativa más adecuada.</p>
 <p>No uses porcentajes sin mirar los conteos. Un 100 % calculado sobre dos casos puede verse impresionante y no aportar evidencia suficiente para una conclusión.</p>
 </section>
 <section id="ejemplo-trabajado" class="level2" data-number="14.3">
 <h2 data-number="14.3" class="anchored" data-anchor-id="ejemplo-trabajado"><span class="header-section-number">14.3</span> Ejemplo trabajado</h2>
 <p>En <code>encuesta-estudiantes-limpia</code> (<a href="05-jamovi-desde-cero.html" class="quarto-xref"><span>Capítulo 5</span></a>), dos casos no tienen <code>trabaja</code> porque sus horas laborales estaban faltantes. La tabla usa los 70 casos restantes:</p>
+<div class="table-responsive">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -378,8 +380,9 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
 <p>Las frecuencias esperadas van de 14.57 a 20.57; todas superan ampliamente cinco. La prueba de independencia da χ²(1) = 1.54, <em>p</em> = .214, con V de Cramer = .15. En estos datos hay una diferencia descriptiva de porcentajes, pero no evidencia suficiente para concluir que situación laboral y aprobación estén asociadas.</p>
-<p>El resultado no demuestra que “trabajar no influye”. El intervalo de posibilidades compatible con estos datos incluye una asociación pequeña, una diferencia por azar u otras explicaciones que esta encuesta no midió. El punto es más simple: con esta muestra y esta tabla, no hay evidencia concluyente de asociación.</p>
+<p>Con esta muestra y esta tabla, no hay evidencia concluyente de asociación. Eso no demuestra que “trabajar no influye” ni permite descartar todas las asociaciones posibles. Además, el diseño de la encuesta no permite atribuir efectos causales al trabajo.</p>
 <p>V de Cramer resume el tamaño de la asociación y, en una tabla 2 × 2, coincide numéricamente con Phi. Un V = .15 es pequeño en términos descriptivos, pero la importancia práctica siempre depende de la pregunta, las consecuencias y la precisión disponible; no de una etiqueta automática.</p>
 </section>
 <section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="14.4">
@@ -387,14 +390,18 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>La situación laboral no se asoció de manera concluyente con la aprobación del parcial, χ²(1, <em>N</em> = 70) = 1.54, <em>p</em> = .214, V = .15. Aprobó el 64.7 % de quienes no trabajaban y el 50.0 % de quienes trabajaban.</p>
 </blockquote>
-<p>Nombrar los porcentajes evita que un χ² sin dirección quede abstracto. Informar <em>N</em> deja claro que dos casos con información laboral faltante no entraron en esta comparación. “No significativo” no equivale a “las proporciones son iguales”: describe la evidencia de esta muestra, no una verdad definitiva sobre la población.</p>
+<p>Nombrar los porcentajes evita que un χ² sin dirección quede abstracto. Informar <em>N</em> deja claro que dos casos con información laboral faltante no entraron en esta comparación. “No significativo” describe la evidencia de esta muestra, no una verdad definitiva sobre la población.</p>
 <section id="si-las-frecuencias-esperadas-son-bajas" class="level3">
 <h3 class="anchored" data-anchor-id="si-las-frecuencias-esperadas-son-bajas">Si las frecuencias esperadas son bajas</h3>
-<p>No mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí <strong>Fisher’s exact test</strong> en jamovi. Si hay muchas categorías con pocos casos, quizá el problema no sea el test: tal vez necesitás más datos o una pregunta menos fragmentada.</p>
+<p>No mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí <strong>Fisher’s exact test</strong> en jamovi. Si hay muchas categorías con pocos casos, quizá necesites más datos o una pregunta menos fragmentada.</p>
 </section>
 </section>
-<section id="ejercicios-de-autochequeo" class="level2" data-number="14.5">
-<h2 data-number="14.5" class="anchored" data-anchor-id="ejercicios-de-autochequeo"><span class="header-section-number">14.5</span> Ejercicios de autochequeo</h2>
+<section id="en-tu-proyecto" class="level2" data-number="14.5">
+<h2 data-number="14.5" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">14.5</span> En tu proyecto</h2>
+<p>Si tu proyecto estudia la asociación entre dos variables categóricas, guardá la tabla de contingencia y la revisión de frecuencias esperadas en <code>trabajo/</code>. Registrá qué prueba aplicaste y sobre cuántos casos. Exportá los conteos y porcentajes necesarios a <code>resultados/</code> y escribí la interpretación en <code>informe/</code>, aclarando sobre qué total calculaste los porcentajes. Si tu proyecto tiene otra pregunta, practicá con la encuesta del libro.</p>
+</section>
+<section id="ejercicios-de-autochequeo" class="level2" data-number="14.6">
+<h2 data-number="14.6" class="anchored" data-anchor-id="ejercicios-de-autochequeo"><span class="header-section-number">14.6</span> Ejercicios de autochequeo</h2>
 <ol type="1">
 <li>¿Tus dos variables son categóricas y cada caso puede entrar en una sola celda?</li>
 <li>¿Revisaste conteos y porcentajes, no solo χ² y <em>p</em>?</li>
@@ -402,9 +409,9 @@ ul.task-list li input[type="checkbox"] {
 <li>¿Tu frase informa el tamaño de asociación y evita afirmar causalidad?</li>
 </ol>
 </section>
-<section id="plantilla-para-llevar" class="level2" data-number="14.6">
-<h2 data-number="14.6" class="anchored" data-anchor-id="plantilla-para-llevar"><span class="header-section-number">14.6</span> Plantilla para llevar</h2>
-<p>📄 <strong>Plantilla para llevar:</strong> <a href="plantillas/plan-de-analisis.md">Plan de análisis en una página</a>. Antes de interpretar el output, pasá por el <a href="plantillas/checklist-antes-de-analizar.md">checklist antes de analizar</a>. La base del ejemplo está en <a href="plantillas/encuesta-estudiantes-limpia.omv"><code>encuesta-estudiantes-limpia.omv</code></a>.</p>
+<section id="plantilla-para-llevar" class="level2" data-number="14.7">
+<h2 data-number="14.7" class="anchored" data-anchor-id="plantilla-para-llevar"><span class="header-section-number">14.7</span> Plantilla para llevar</h2>
+<p>Usá el <a href="plantillas/plan-de-analisis.md">plan de análisis</a> y la <a href="plantillas/checklist-antes-de-analizar.md">lista de revisión antes de analizar</a> para comprobar la comparación. La base del ejemplo está en <a href="plantillas/encuesta-estudiantes-limpia.omv"><code>encuesta-estudiantes-limpia.omv</code></a>.</p>
 
 
 </section>
@@ -817,8 +824,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./13-correlacion.html" class="pagination-link" aria-label="Relación entre dos variables: correlación">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Relación entre dos variables: correlación</span></span>
+      <a href="./13-correlacion.html" class="pagination-link" aria-label="Correlación entre dos variables">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Correlación entre dos variables</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
