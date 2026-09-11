@@ -291,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#instalar-y-abrir" id="toc-instalar-y-abrir" class="nav-link active" data-scroll-target="#instalar-y-abrir"><span class="header-section-number">5.1</span> Instalar y abrir</a></li>
   <li><a href="#el-modelo-mental-nada-se-ejecuta-todo-se-recalcula" id="toc-el-modelo-mental-nada-se-ejecuta-todo-se-recalcula" class="nav-link" data-scroll-target="#el-modelo-mental-nada-se-ejecuta-todo-se-recalcula"><span class="header-section-number">5.2</span> El modelo mental: nada se ejecuta, todo se recalcula</a></li>
-  <li><a href="#data-y-analyses-dónde-viven-los-datos-y-las-decisiones" id="toc-data-y-analyses-dónde-viven-los-datos-y-las-decisiones" class="nav-link" data-scroll-target="#data-y-analyses-dónde-viven-los-datos-y-las-decisiones"><span class="header-section-number">5.3</span> Data y Analyses: dónde viven los datos y las decisiones</a></li>
+  <li><a href="#data-datos-y-analyses-análisis-dónde-viven-los-datos-y-las-decisiones" id="toc-data-datos-y-analyses-análisis-dónde-viven-los-datos-y-las-decisiones" class="nav-link" data-scroll-target="#data-datos-y-analyses-análisis-dónde-viven-los-datos-y-las-decisiones"><span class="header-section-number">5.3</span> Data (Datos) y Analyses (Análisis): dónde viven los datos y las decisiones</a></li>
   <li><a href="#importar-tu-primera-base" id="toc-importar-tu-primera-base" class="nav-link" data-scroll-target="#importar-tu-primera-base"><span class="header-section-number">5.4</span> Importar tu primera base</a></li>
   <li><a href="#guardar-como-proyecto-.omv" id="toc-guardar-como-proyecto-.omv" class="nav-link" data-scroll-target="#guardar-como-proyecto-.omv"><span class="header-section-number">5.5</span> Guardar como proyecto .omv</a></li>
   <li><a href="#autochequeo" id="toc-autochequeo" class="nav-link" data-scroll-target="#autochequeo"><span class="header-section-number">5.6</span> Autochequeo</a></li>
@@ -331,21 +331,23 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>En jamovi no se “corren” análisis: se abren, y el resultado se recalcula solo cada vez que cambiás una opción. Aprender jamovi es aprender dónde viven los datos y dónde viven las decisiones.</p>
+<p>En jamovi no se “corren” análisis. Se abren, y en la sección Resultado se recalcula solo cada vez que cambiás una opción. Aprender jamovi suele ser más simple que otros programas (cof, cof… SPSS, cof, cof).</p>
 </div>
 </div>
 <section id="instalar-y-abrir" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="instalar-y-abrir"><span class="header-section-number">5.1</span> Instalar y abrir</h2>
-<p>jamovi es gratuito y funciona en Windows, macOS y Linux; también existe una versión en la nube que corre en el navegador sin instalar nada. Descargalo desde jamovi.org y elegí la versión de escritorio para tu sistema operativo. Este libro usa como referencia jamovi 2.7.31: si tu versión difiere, las opciones que se describen acá pueden estar en un menú con otro nombre, pero la lógica es la misma.</p>
-<p>Al abrir jamovi por primera vez vas a ver una planilla vacía con dos solapas arriba: <strong>Data</strong> y <strong>Analyses</strong>. Esa distinción es el primer modelo mental que tenés que instalar: en <strong>Data</strong> viven los datos; en <strong>Analyses</strong> viven las decisiones. Vas a pasar la mayor parte del tiempo yendo de una a la otra, no quedándote en una sola.</p>
+<p>jamovi es gratuito y funciona en Windows, macOS y Linux. También existe una versión en la nube que corre en el navegador sin instalar nada (pero no nos metamos con eso). Descargalo desde jamovi.org y elegí la versión de escritorio para tu sistema operativo. Al momento de escribir este recurso se usa como referencia jamovi 2.7.31. Si tu versión difiere, las opciones que se describen acá pueden estar en un menú con otro nombre, pero la lógica es la misma.</p>
+<p>Al abrir jamovi por primera vez vas a ver una planilla vacía con dos solapas arriba: <strong>Data</strong> (Datos) y <strong>Analyses</strong> (Análisis). Esa distinción es lo primero que tenés que notar. En <strong>Data</strong> (Datos) viven los datos; en <strong>Analyses</strong> (Análisis) viven las decisiones. Vas a pasar la mayor parte del tiempo yendo de una a la otra.</p>
+<p>Podés ver un video sobre cómo descargar e instalar el programa aquí abajo:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/319QIXyj2Zc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="el-modelo-mental-nada-se-ejecuta-todo-se-recalcula" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="el-modelo-mental-nada-se-ejecuta-todo-se-recalcula"><span class="header-section-number">5.2</span> El modelo mental: nada se ejecuta, todo se recalcula</h2>
-<p>Si venís de otro programa estadístico, la costumbre es escribir o armar un comando, ejecutarlo y mirar un resultado fijo. jamovi funciona distinto: cada análisis es un panel de opciones que produce un resultado en el momento, a la derecha de la pantalla. Si tildás una opción de más, el resultado nuevo aparece al instante; si la destildás, desaparece. No hay un botón “ejecutar” que separe la decisión del resultado.</p>
-<p>Esto tiene una consecuencia para el resto del libro: en jamovi, elegir qué reportar y generarlo son la misma acción. Por eso el plan de análisis del <a href="02-plan-de-analisis.html" class="quarto-xref"><span>Capítulo 2</span></a> no es un trámite antes de “usar la herramienta”: es la lista de paneles que vas a abrir y de opciones que vas a tildar.</p>
+<p>Si venís de otro programa estadístico, la costumbre es escribir o armar un comando, ejecutarlo y mirar un resultado fijo. jamovi funciona con un enfoque distinto. Cada análisis es un panel de opciones que produce un resultado en el momento ubicado a la derecha de la pantalla. Si tildás una opción de más, el resultado nuevo aparece al instante. Si la destildás, entonces desaparece. No hay un botón “ejecutar” que separe la decisión del resultado.</p>
+<p>Esto implica que en jamovi elegir qué reportar y generarlo son la misma acción. Por eso el plan de análisis del <a href="02-plan-de-analisis.html" class="quarto-xref"><span>Capítulo 2</span></a> no es algo pasajero. Al delimitarlo correctamente ya estás generando la lista de paneles que vas a abrir y de opciones que vas a tildar.</p>
 </section>
-<section id="data-y-analyses-dónde-viven-los-datos-y-las-decisiones" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="data-y-analyses-dónde-viven-los-datos-y-las-decisiones"><span class="header-section-number">5.3</span> Data y Analyses: dónde viven los datos y las decisiones</h2>
+<section id="data-datos-y-analyses-análisis-dónde-viven-los-datos-y-las-decisiones" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="data-datos-y-analyses-análisis-dónde-viven-los-datos-y-las-decisiones"><span class="header-section-number">5.3</span> Data (Datos) y Analyses (Análisis): dónde viven los datos y las decisiones</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -361,38 +363,50 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Data</strong></td>
+<td><strong>Data</strong> (Datos)</td>
 <td>Una planilla de filas (casos) y columnas (variables), igual a la anatomía del <a href="03-anatomia-de-una-base.html" class="quarto-xref"><span>Capítulo 3</span></a></td>
 <td>Nombre, tipo de dato, nivel de medida y valores de cada variable</td>
 </tr>
 <tr class="even">
-<td><strong>Analyses</strong></td>
+<td><strong>Analyses</strong> (Análisis)</td>
 <td>Un menú de familias de análisis (Exploration, T-Tests, ANOVA, Regression, Frequencies…)</td>
 <td>Qué variables entran en cada análisis y qué estadísticos o gráficos pedís</td>
 </tr>
 </tbody>
 </table>
-<p>Al seleccionar un análisis en <strong>Analyses</strong>, se abre un panel de opciones y los resultados aparecen al lado, en el panel de resultados. Podés volver a abrir ese panel en cualquier momento haciendo clic sobre el resultado ya generado: nada queda “cerrado” ni oculto en un script aparte.</p>
+<p>Al seleccionar un análisis en <strong>Analyses</strong> (Análisis), se abre un panel de opciones y los resultados aparecen al lado, en el panel de resultados. Podés volver a abrir ese panel en cualquier momento haciendo clic sobre el resultado ya generado. Nada queda “cerrado” ni oculto en un script aparte, ni es definitivo.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Te sugiero que revises cada sección y así te familiarizás con la interfaz de usuario.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="importar-tu-primera-base" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="importar-tu-primera-base"><span class="header-section-number">5.4</span> Importar tu primera base</h2>
-<p>Si ya armaste el diccionario de datos del capítulo anterior, importar la base es casi mecánico: ese documento te dice de antemano qué deberías encontrar en cada columna. Para practicar con datos reales, descargá <a href="datos/encuesta-estudiantes-bruta.csv"><code>encuesta-estudiantes-bruta.csv</code></a>: es la misma base que vas a preparar en el próximo capítulo, todavía sin declarar tipos, niveles de medida ni faltantes.</p>
+<p>Importar la base es muy fácil. De hecho, si ya armaste el diccionario de datos del capítulo anterior, ese documento te dice de antemano qué deberías encontrar en cada columna. Para practicar con datos reales, descargá <a href="datos/encuesta-estudiantes-bruta.csv"><code>encuesta-estudiantes-bruta.csv</code></a>. Es la misma base que vas a preparar en el próximo capítulo, todavía sin declarar tipos, niveles de medida ni faltantes.</p>
 <ol type="1">
-<li>Abrí jamovi y hacé clic en el ícono de menú (☰, arriba a la izquierda) → <strong>Open</strong> → <strong>This PC</strong> → <strong>Browse</strong>, y elegí tu archivo <code>.csv</code> o <code>.xlsx</code>.</li>
+<li>Abrí jamovi y hacé clic en el ícono de menú (☰, arriba a la izquierda) → <strong>Open</strong> (Abrir) → <strong>This PC</strong> (Esta PC) → <strong>Browse</strong> (Navegar), y elegí tu archivo <code>.csv</code> o <code>.xlsx</code>.</li>
 <li>jamovi importa la base y estima automáticamente el nivel de medida de cada columna, igual que viste en el <a href="03-anatomia-de-una-base.html" class="quarto-xref"><span>Capítulo 3</span></a>. Esa estimación es un punto de partida, no una decisión tuya: revisá cada variable contra tu diccionario antes de seguir.</li>
 <li>Para revisar o corregir una variable, hacé doble clic en el encabezado de la columna. Ahí volvés a ver el editor de <strong>Setup</strong>: nombre, tipo de dato, nivel de medida y, si corresponde, las etiquetas de cada categoría.</li>
 </ol>
+<p>Podés ver cómo hacerlo en el video de abajo:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/J4LHXbaq4ow" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="guardar-como-proyecto-.omv" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="guardar-como-proyecto-.omv"><span class="header-section-number">5.5</span> Guardar como proyecto .omv</h2>
-<p>Guardar no es un paso administrativo: es lo que hace que tu trabajo sea reproducible. Un archivo <code>.omv</code> guarda en un solo lugar la base, todas las variables que definiste y todos los análisis que armaste con sus opciones exactas. Quien lo abra ve lo mismo que vos, sin tener que repetir un solo clic.</p>
-<p>Para guardar: ☰ → <strong>Save As</strong> → elegí una carpeta → escribí un nombre descriptivo (por ejemplo, <code>apellido-encuesta-organizacion.omv</code>, no <code>Sin título.omv</code>) → confirmá. Guardá seguido, sobre todo después de importar la base y de declarar el nivel de medida de cada variable: son los pasos más costosos de rehacer si algo se cierra sin avisar. Para comparar tu resultado, <a href="plantillas/encuesta-estudiantes-limpia.omv"><code>encuesta-estudiantes-limpia.omv</code></a> es la versión ya preparada que vas a usar a partir del <a href="10-t-una-muestra.html" class="quarto-xref"><span>Capítulo 10</span></a>.</p>
+<p>Una vez que ya abriste y revisaste tu base, lo que resta es guardarla. Un archivo <code>.omv</code> guarda en un solo lugar la base, todas las variables que definiste y todos los análisis que armaste con sus opciones exactas. Quien lo abra ve lo mismo que vos, sin tener que repetir un solo clic. Esto es un punto a favor de la reproducibilidad ;)</p>
+<p>Para guardar: ☰ → <strong>Save As</strong> (Guardar como) → elegí la carpeta de tu proyecto → escribí un nombre descriptivo (por ejemplo, <code>apellido-encuesta-organizacion.omv</code>, no <code>Sin título.omv</code>) → confirmá. Guardá seguido, sobre todo después de importar la base y de declarar el nivel de medida de cada variable: son los pasos más costosos de rehacer si algo se cierra sin avisar. Para comparar tu resultado, <a href="plantillas/encuesta-estudiantes-limpia.omv"><code>encuesta-estudiantes-limpia.omv</code></a> es la versión ya preparada que vas a usar a partir del <a href="10-t-una-muestra.html" class="quarto-xref"><span>Capítulo 10</span></a>.</p>
 </section>
 <section id="autochequeo" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="autochequeo"><span class="header-section-number">5.6</span> Autochequeo</h2>
 <p>Antes de pasar a preparar la base, comprobá que podés hacer esto sin ayuda:</p>
 <ol type="1">
-<li>Abrir jamovi e identificar, sin dudar, si estás parado en <strong>Data</strong> o en <strong>Analyses</strong>.</li>
+<li>Abrir jamovi e identificar, sin dudar, si estás parado/a en <strong>Data</strong> (Datos) o en <strong>Analyses</strong> (Análisis).</li>
 <li>Importar un archivo <code>.csv</code> cualquiera y revisar el nivel de medida que jamovi le asignó a cada columna.</li>
 <li>Guardar el proyecto como <code>.omv</code> con un nombre que identifique el archivo dentro de seis meses.</li>
 <li>Cerrar jamovi, volver a abrir el <code>.omv</code> y confirmar que la base y las variables quedaron exactamente como las dejaste.</li>
