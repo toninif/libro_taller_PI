@@ -260,6 +260,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-pensar-graficos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensar los gráficos</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -277,6 +283,30 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Para ir más lejos</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a2-paletas-accesibles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Paletas de colores accesibles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a3-glosario-bilingue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glosario bilingüe</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a4-guia-rapida.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Guía rápida: qué análisis y qué gráfico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a5-instalar-jamovi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Instalar jamovi y sus módulos</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -291,9 +321,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#qué-pedir-según-el-tipo-de-variable" id="toc-qué-pedir-según-el-tipo-de-variable" class="nav-link active" data-scroll-target="#qué-pedir-según-el-tipo-de-variable"><span class="header-section-number">7.1</span> Qué pedir según el tipo de variable</a></li>
   <li><a href="#la-tabla-que-ya-habías-bosquejado" id="toc-la-tabla-que-ya-habías-bosquejado" class="nav-link" data-scroll-target="#la-tabla-que-ya-habías-bosquejado"><span class="header-section-number">7.2</span> La tabla que ya habías bosquejado</a></li>
-  <li><a href="#qué-mirar-antes-de-cualquier-test" id="toc-qué-mirar-antes-de-cualquier-test" class="nav-link" data-scroll-target="#qué-mirar-antes-de-cualquier-test"><span class="header-section-number">7.3</span> Qué mirar antes de cualquier test</a></li>
-  <li><a href="#en-tu-proyecto" id="toc-en-tu-proyecto" class="nav-link" data-scroll-target="#en-tu-proyecto"><span class="header-section-number">7.4</span> En tu proyecto</a></li>
-  <li><a href="#autochequeo" id="toc-autochequeo" class="nav-link" data-scroll-target="#autochequeo"><span class="header-section-number">7.5</span> Autochequeo</a></li>
+  <li><a href="#leer-el-gráfico" id="toc-leer-el-gráfico" class="nav-link" data-scroll-target="#leer-el-gráfico"><span class="header-section-number">7.3</span> Leer el gráfico</a></li>
+  <li><a href="#qué-mirar-antes-de-cualquier-test" id="toc-qué-mirar-antes-de-cualquier-test" class="nav-link" data-scroll-target="#qué-mirar-antes-de-cualquier-test"><span class="header-section-number">7.4</span> Qué mirar antes de cualquier test</a></li>
+  <li><a href="#en-tu-proyecto" id="toc-en-tu-proyecto" class="nav-link" data-scroll-target="#en-tu-proyecto"><span class="header-section-number">7.5</span> En tu proyecto</a></li>
+  <li><a href="#autochequeo" id="toc-autochequeo" class="nav-link" data-scroll-target="#autochequeo"><span class="header-section-number">7.6</span> Autochequeo</a></li>
   </ul>
 </nav>
     </div>
@@ -351,12 +382,12 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>Continua</td>
-<td>Media, desvío estándar, mínimo, máximo; histograma</td>
+<td>Media (mean), desvío estándar (standard deviation), mínimo, máximo; histograma (histogram)</td>
 <td><code>procrastinacion</code>, <code>horas_estudio</code></td>
 </tr>
 <tr class="even">
 <td>Nominal</td>
-<td>Frecuencias y porcentajes; gráfico de barras</td>
+<td>Frecuencias (frequencies) y porcentajes; gráfico de barras (bar chart)</td>
 <td><code>turno</code>, <code>trabaja</code>, <code>aprobo_parcial</code></td>
 </tr>
 </tbody>
@@ -392,8 +423,12 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>Compará tu boceto con lo que jamovi genera al aplicar <strong>Split by</strong>. Si tiene una fila o una columna de más, revisá si elegiste las variables y los grupos que habías previsto.</p>
-<p>Lo mismo vale para el gráfico. Un diagrama de caja (<em>boxplot</em>) partido por grupo permite observar la distribución de cada grupo. La línea dentro de la caja marca la mediana, los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. Elegí el gráfico según lo que querés mostrar de tus variables.</p>
+<p>Lo mismo vale para el gráfico. Un diagrama de caja (<em>boxplot</em>) partido por grupo permite observar la distribución de cada grupo. La línea dentro de la caja marca la mediana (median), los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. Elegí el gráfico según lo que querés mostrar de tus variables.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Tu pregunta es sobre…</th>
@@ -407,7 +442,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>La relación entre dos variables continuas</td>
-<td>Diagrama de dispersión</td>
+<td>Diagrama de dispersión (scatter plot)</td>
 </tr>
 <tr class="odd">
 <td>La forma de una sola variable continua</td>
@@ -421,8 +456,13 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>Elegí el gráfico que permita ver la comparación o la relación que estás estudiando.</p>
 </section>
-<section id="qué-mirar-antes-de-cualquier-test" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="qué-mirar-antes-de-cualquier-test"><span class="header-section-number">7.3</span> Qué mirar antes de cualquier test</h2>
+<section id="leer-el-gráfico" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">7.3</span> Leer el gráfico</h2>
+<p>El gráfico central de este capítulo es el boxplot partido por grupo. Lo pedís en <strong>Exploration → Descriptives</strong>, moviendo la variable continua a <strong>Variables</strong>, la categórica a <strong>Split by</strong> y activando <strong>Box plot</strong> en <strong>Plots</strong>. Para una sola variable continua, el histograma cumple el mismo papel.</p>
+<p>Cuando lo corrés, mirá la línea dentro de cada caja (la mediana), el alto de la caja (dónde se concentra la mitad central de los casos) y los puntos que quedan más allá de los bigotes (los valores alejados que conviene revisar). Si comparás dos grupos, fijate cuánto se solapan las cajas: dos cajas que apenas se tocan anticipan una diferencia; dos cajas muy encimadas, que quizás no la haya. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> explica por qué estos gráficos, basados en posición, se leen mejor que otros.</p>
+</section>
+<section id="qué-mirar-antes-de-cualquier-test" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="qué-mirar-antes-de-cualquier-test"><span class="header-section-number">7.4</span> Qué mirar antes de cualquier test</h2>
 <p>Este repaso es previo a los chequeos de supuestos del <a href="09-supuestos.html" class="quarto-xref"><span>Capítulo 9</span></a>. Mirá los descriptivos que acabás de pedir y respondé estas preguntas.</p>
 <ul>
 <li><strong>¿El <em>n</em> de cada grupo alcanza?</strong> Un grupo con tres casos no va a sostener ninguna comparación, más allá de lo que diga un test.</li>
@@ -432,12 +472,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Si encontrás alguno de estos problemas, volvé a la base y registrá cómo lo resolviste antes de analizar.</p>
 </section>
-<section id="en-tu-proyecto" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">7.4</span> En tu proyecto</h2>
+<section id="en-tu-proyecto" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">7.5</span> En tu proyecto</h2>
 <p>Pedí los descriptivos y el gráfico que correspondan a la pregunta de tu plan y guardá el <code>.omv</code> en <code>trabajo/</code>. Exportá a <code>resultados/</code> la tabla y el gráfico que vas a usar, con nombres reconocibles. Escribí en <code>informe/</code> un primer párrafo descriptivo. Si encontraste valores imposibles o faltantes que requieren una revisión, registralos antes de continuar.</p>
 </section>
-<section id="autochequeo" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="autochequeo"><span class="header-section-number">7.5</span> Autochequeo</h2>
+<section id="autochequeo" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="autochequeo"><span class="header-section-number">7.6</span> Autochequeo</h2>
 <ol type="1">
 <li>¿Pediste el estadístico que corresponde al tipo de cada variable, no el que aparece primero en el menú?</li>
 <li>¿La tabla partida por grupo que generaste se parece a la que bosquejaste en tu plan de análisis?</li>

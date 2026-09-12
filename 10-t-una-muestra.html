@@ -260,6 +260,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-pensar-graficos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensar los gráficos</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -277,6 +283,30 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Para ir más lejos</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a2-paletas-accesibles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Paletas de colores accesibles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a3-glosario-bilingue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glosario bilingüe</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a4-guia-rapida.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Guía rápida: qué análisis y qué gráfico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a5-instalar-jamovi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Instalar jamovi y sus módulos</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -292,13 +322,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#cuándo-se-usa" id="toc-cuándo-se-usa" class="nav-link active" data-scroll-target="#cuándo-se-usa"><span class="header-section-number">10.1</span> Cuándo se usa</a></li>
   <li><a href="#paso-a-paso-en-jamovi" id="toc-paso-a-paso-en-jamovi" class="nav-link" data-scroll-target="#paso-a-paso-en-jamovi"><span class="header-section-number">10.2</span> Paso a paso en jamovi</a></li>
   <li><a href="#ejemplo-trabajado" id="toc-ejemplo-trabajado" class="nav-link" data-scroll-target="#ejemplo-trabajado"><span class="header-section-number">10.3</span> Ejemplo trabajado</a></li>
-  <li><a href="#cómo-leer-el-output-e-informarlo-en-apa" id="toc-cómo-leer-el-output-e-informarlo-en-apa" class="nav-link" data-scroll-target="#cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">10.4</span> Cómo leer el output e informarlo en APA</a>
+  <li><a href="#leer-el-gráfico" id="toc-leer-el-gráfico" class="nav-link" data-scroll-target="#leer-el-gráfico"><span class="header-section-number">10.4</span> Leer el gráfico</a></li>
+  <li><a href="#cómo-leer-el-output-e-informarlo-en-apa" id="toc-cómo-leer-el-output-e-informarlo-en-apa" class="nav-link" data-scroll-target="#cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">10.5</span> Cómo leer el output e informarlo en APA</a>
   <ul class="collapse">
   <li><a href="#si-la-normalidad-no-se-sostiene" id="toc-si-la-normalidad-no-se-sostiene" class="nav-link" data-scroll-target="#si-la-normalidad-no-se-sostiene">Si la normalidad no se sostiene</a></li>
   </ul></li>
-  <li><a href="#en-tu-proyecto" id="toc-en-tu-proyecto" class="nav-link" data-scroll-target="#en-tu-proyecto"><span class="header-section-number">10.5</span> En tu proyecto</a></li>
-  <li><a href="#ejercicios-de-autochequeo" id="toc-ejercicios-de-autochequeo" class="nav-link" data-scroll-target="#ejercicios-de-autochequeo"><span class="header-section-number">10.6</span> Ejercicios de autochequeo</a></li>
-  <li><a href="#plantilla-para-llevar" id="toc-plantilla-para-llevar" class="nav-link" data-scroll-target="#plantilla-para-llevar"><span class="header-section-number">10.7</span> Plantilla para llevar</a></li>
+  <li><a href="#en-tu-proyecto" id="toc-en-tu-proyecto" class="nav-link" data-scroll-target="#en-tu-proyecto"><span class="header-section-number">10.6</span> En tu proyecto</a></li>
+  <li><a href="#ejercicios-de-autochequeo" id="toc-ejercicios-de-autochequeo" class="nav-link" data-scroll-target="#ejercicios-de-autochequeo"><span class="header-section-number">10.7</span> Ejercicios de autochequeo</a></li>
+  <li><a href="#plantilla-para-llevar" id="toc-plantilla-para-llevar" class="nav-link" data-scroll-target="#plantilla-para-llevar"><span class="header-section-number">10.8</span> Plantilla para llevar</a></li>
   </ul>
 </nav>
     </div>
@@ -369,26 +400,31 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>La comparación da <em>t</em>(71) = 0.82, <em>p</em> = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto <em>d</em> de Cohen = 0.10. El intervalo de confianza incluye el 24, en concordancia con el resultado no significativo de esta prueba bilateral.</p>
+<p>La comparación da <em>t</em>(71) = 0.82, <em>p</em> = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto (effect size) <em>d</em> de Cohen = 0.10. El intervalo de confianza incluye el 24, en concordancia con el resultado no significativo de esta prueba bilateral.</p>
 </section>
-<section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">10.4</span> Cómo leer el output e informarlo en APA</h2>
+<section id="leer-el-gráfico" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">10.4</span> Leer el gráfico</h2>
+<p>Acá el gráfico que acompaña el análisis es el <strong>Q-Q Plot</strong> de <code>organizacion</code>, junto con su histograma. El Q-Q lo pedís en <strong>Assumption Checks</strong>; el histograma, en <strong>Exploration → Descriptives → Plots</strong>. Sirven para decidir si la comparación de la media con el valor de referencia se apoya en una distribución razonable.</p>
+<p>Cuando los corrés, en el histograma mirá si la forma es una campana más o menos centrada y sin dos picos, y dónde cae el valor de referencia 24 respecto del grueso de los casos. En el Q-Q, mirá si los puntos siguen la diagonal; un despegue marcado en las puntas te avisa de asimetría o extremos antes de confiar en la <em>t</em>. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> ordena esta forma de leer.</p>
+</section>
+<section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">10.5</span> Cómo leer el output e informarlo en APA</h2>
 <blockquote class="blockquote">
 <p>El puntaje promedio de organización de la muestra (<em>M</em> = 24.39, <em>DE</em> = 4.04) no difirió significativamente del punto medio teórico de la escala, <em>t</em>(71) = 0.82, <em>p</em> = .415, IC 95 % [23.44, 25.34], <em>d</em> = 0.10.</p>
 </blockquote>
-<p>Informá también los resultados no significativos con su estimación, <em>t</em>, <em>p</em> e intervalo. El intervalo de confianza muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.</p>
+<p>Informá también los resultados no significativos con su estimación, <em>t</em>, <em>p</em> e intervalo. El intervalo de confianza (confidence interval) muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.</p>
 <p>Un error frecuente es interpretar <em>p</em> &gt; .05 como “se demostró que la organización es igual a 24”. Un test de hipótesis no prueba la igualdad; solo dice que no hay evidencia suficiente para rechazar el valor de referencia con estos datos.</p>
 <section id="si-la-normalidad-no-se-sostiene" class="level3">
 <h3 class="anchored" data-anchor-id="si-la-normalidad-no-se-sostiene">Si la normalidad no se sostiene</h3>
 <p>La revisión del <a href="09-supuestos.html" class="quarto-xref"><span>Capítulo 9</span></a> se aplica acá a una sola variable. Mirá el histograma y el gráfico Q-Q de <code>organizacion</code>, no solo el valor de Shapiro-Wilk. La prueba de rangos con signo de Wilcoxon puede servir cuando resulta razonable suponer una distribución simétrica alrededor de un centro; bajo esa condición, permite contrastar ese centro, que coincide con la mediana, con el valor de referencia. No resuelve automáticamente una asimetría marcada. Si la distribución es muy sesgada o hay extremos influyentes, revisá los datos y la pregunta antes de elegir una alternativa. Como toda alternativa, se nombra y se justifica en el plan.</p>
 </section>
 </section>
-<section id="en-tu-proyecto" class="level2" data-number="10.5">
-<h2 data-number="10.5" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">10.5</span> En tu proyecto</h2>
+<section id="en-tu-proyecto" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">10.6</span> En tu proyecto</h2>
 <p>Si tu pregunta compara una media con un valor de referencia, dejá la justificación de ese valor en el plan de <code>documentos/</code>. Guardá el análisis y sus comprobaciones en <code>trabajo/</code>, y escribí el resultado en el borrador de <code>informe/</code>, con la diferencia y su intervalo. Comprobá que distinguís el intervalo de la media del intervalo de la diferencia. Si esta prueba no corresponde a tu proyecto, hacé el ejercicio en el proyecto de práctica.</p>
 </section>
-<section id="ejercicios-de-autochequeo" class="level2" data-number="10.6">
-<h2 data-number="10.6" class="anchored" data-anchor-id="ejercicios-de-autochequeo"><span class="header-section-number">10.6</span> Ejercicios de autochequeo</h2>
+<section id="ejercicios-de-autochequeo" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="ejercicios-de-autochequeo"><span class="header-section-number">10.7</span> Ejercicios de autochequeo</h2>
 <ol type="1">
 <li>¿El valor de referencia que vas a usar existe antes de tus datos, o lo elegiste después de ver la media de tu muestra?</li>
 <li>¿Tu variable es continua y tenés un solo grupo, sin comparación entre personas ni mediciones repetidas?</li>
@@ -396,8 +432,8 @@ ul.task-list li input[type="checkbox"] {
 <li>¿Podés explicar, en una oración, qué significa que el intervalo de confianza incluya o no el valor de referencia?</li>
 </ol>
 </section>
-<section id="plantilla-para-llevar" class="level2" data-number="10.7">
-<h2 data-number="10.7" class="anchored" data-anchor-id="plantilla-para-llevar"><span class="header-section-number">10.7</span> Plantilla para llevar</h2>
+<section id="plantilla-para-llevar" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="plantilla-para-llevar"><span class="header-section-number">10.8</span> Plantilla para llevar</h2>
 <p>Podés retomar el <a href="plantillas/plan-de-analisis.md">plan de análisis en una página</a> para contrastar el resultado con el boceto del campo 6. La base del ejemplo está en <a href="plantillas/encuesta-estudiantes-limpia.omv"><code>encuesta-estudiantes-limpia.omv</code></a>.</p>
 
 

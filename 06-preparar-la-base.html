@@ -260,6 +260,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-pensar-graficos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensar los gráficos</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -275,6 +281,30 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./a1-para-ir-mas-lejos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Para ir más lejos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a2-paletas-accesibles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Paletas de colores accesibles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a3-glosario-bilingue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glosario bilingüe</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a4-guia-rapida.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Guía rápida: qué análisis y qué gráfico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a5-instalar-jamovi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Instalar jamovi y sus módulos</span></span></a>
   </div>
 </li>
       </ul>
@@ -348,12 +378,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="calcular-con-compute" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="calcular-con-compute"><span class="header-section-number">6.3</span> Calcular con Compute</h2>
 <p><strong>Compute</strong> crea una variable a partir de una fórmula que puede usar una o varias columnas. Se usa para sumar los ítems de una escala en un puntaje total, para calcular una diferencia (<code>organizacion_post</code> − <code>organizacion_pre</code>) o para derivar cualquier cantidad que no viene directamente del instrumento.</p>
-<p>En jamovi, pulsá <strong>Data → Compute</strong> para crear una variable calculada. Escribís la fórmula con el selector de variables y funciones (<code>SUM</code>, <code>MEAN</code>, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.</p>
+<p>En jamovi, pulsá <strong>Data → Compute</strong> para crear una variable calculada (computed variable). Escribís la fórmula con el selector de variables y funciones (<code>SUM</code>, <code>MEAN</code>, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.</p>
 <p>Transform y Compute resuelven problemas distintos. Transform recodifica una variable en categorías; Compute calcula un valor a partir de una fórmula. Si dudás cuál te corresponde, preguntate si estás agrupando valores existentes (Transform) o calculando uno nuevo (Compute).</p>
 </section>
 <section id="declarar-los-datos-faltantes" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="declarar-los-datos-faltantes"><span class="header-section-number">6.4</span> Declarar los datos faltantes</h2>
-<p>En la base de este libro, dos respuestas sin completar en <code>horas_trabajo</code> se registran como <code>-99</code>. Ese código es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes es decirle a jamovi qué valores no cuentan como datos.</p>
+<p>En la base de este libro, dos respuestas sin completar en <code>horas_trabajo</code> se registran como <code>-99</code>. Ese código es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes (missing values) es decirle a jamovi qué valores no cuentan como datos.</p>
 <p>En jamovi, hacé doble clic en el encabezado de la columna, abrí <strong>Missing Values</strong> y agregá la condición para tratar <code>-99</code> como faltante. Esos casos quedan excluidos de los cálculos de esa variable. Las filas siguen visibles en <strong>Data</strong> y disponibles para analizar las otras variables que sí hayan respondido.</p>
 </section>
 <section id="filtrar-sin-borrar" class="level2" data-number="6.5">

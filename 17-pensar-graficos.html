@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Fernando Tonini">
 
-<title>Pensar el análisis antes de los datos</title>
+<title>17&nbsp; Pensar los gráficos – Pensar el análisis antes de los datos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,7 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-de-la-pregunta-al-analisis.html" rel="next">
+<link href="./a1-para-ir-mas-lejos.html" rel="next">
+<link href="./16-caja-de-herramientas.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Presentación</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./15-informar-en-apa.html">Parte III. Comunicar</a></li><li class="breadcrumb-item"><a href="./17-pensar-graficos.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensar los gráficos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Presentación</span></a>
   </div>
 </li>
@@ -262,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./17-pensar-graficos.html" class="sidebar-item-text sidebar-link">
+  <a href="./17-pensar-graficos.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensar los gráficos</span></span></a>
   </div>
 </li>
@@ -319,42 +319,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación">Presentación</a>
+  <li><a href="#la-gramática-de-un-gráfico" id="toc-la-gramática-de-un-gráfico" class="nav-link active" data-scroll-target="#la-gramática-de-un-gráfico"><span class="header-section-number">17.1</span> La gramática de un gráfico</a></li>
+  <li><a href="#qué-percibe-bien-el-ojo" id="toc-qué-percibe-bien-el-ojo" class="nav-link" data-scroll-target="#qué-percibe-bien-el-ojo"><span class="header-section-number">17.2</span> Qué percibe bien el ojo</a>
   <ul class="collapse">
-  <li><a href="#la-idea-central" id="toc-la-idea-central" class="nav-link" data-scroll-target="#la-idea-central">La idea central</a></li>
-  <li><a href="#qué-vas-a-encontrar" id="toc-qué-vas-a-encontrar" class="nav-link" data-scroll-target="#qué-vas-a-encontrar">Qué vas a encontrar</a></li>
-  <li><a href="#recorrido" id="toc-recorrido" class="nav-link" data-scroll-target="#recorrido">Recorrido</a></li>
-  <li><a href="#cómo-usar-este-libro" id="toc-cómo-usar-este-libro" class="nav-link" data-scroll-target="#cómo-usar-este-libro">Cómo usar este libro</a></li>
+  <li><a href="#por-qué-el-gráfico-de-torta-casi-nunca-conviene" id="toc-por-qué-el-gráfico-de-torta-casi-nunca-conviene" class="nav-link" data-scroll-target="#por-qué-el-gráfico-de-torta-casi-nunca-conviene">Por qué el gráfico de torta casi nunca conviene</a></li>
   </ul></li>
+  <li><a href="#otros-no-hagas-esto-con-su-porqué" id="toc-otros-no-hagas-esto-con-su-porqué" class="nav-link" data-scroll-target="#otros-no-hagas-esto-con-su-porqué"><span class="header-section-number">17.3</span> Otros “no hagas esto”, con su porqué</a></li>
+  <li><a href="#decisiones-honestas" id="toc-decisiones-honestas" class="nav-link" data-scroll-target="#decisiones-honestas"><span class="header-section-number">17.4</span> Decisiones honestas</a></li>
+  <li><a href="#el-gráfico-como-parte-del-razonamiento" id="toc-el-gráfico-como-parte-del-razonamiento" class="nav-link" data-scroll-target="#el-gráfico-como-parte-del-razonamiento"><span class="header-section-number">17.5</span> El gráfico como parte del razonamiento</a></li>
+  <li><a href="#graficar-en-jamovi-de-fábrica-y-con-plugins" id="toc-graficar-en-jamovi-de-fábrica-y-con-plugins" class="nav-link" data-scroll-target="#graficar-en-jamovi-de-fábrica-y-con-plugins"><span class="header-section-number">17.6</span> Graficar en jamovi: de fábrica y con plugins</a></li>
+  <li><a href="#en-tu-proyecto" id="toc-en-tu-proyecto" class="nav-link" data-scroll-target="#en-tu-proyecto"><span class="header-section-number">17.7</span> En tu proyecto</a></li>
+  <li><a href="#autochequeo" id="toc-autochequeo" class="nav-link" data-scroll-target="#autochequeo"><span class="header-section-number">17.8</span> Autochequeo</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./15-informar-en-apa.html">Parte III. Comunicar</a></li><li class="breadcrumb-item"><a href="./17-pensar-graficos.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensar los gráficos</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Pensar el análisis antes de los datos</h1>
-<p class="subtitle lead">Análisis de datos con jamovi para Prácticas de Investigación</p>
+<h1 class="title"><span id="sec-pensar-graficos" class="quarto-section-identifier"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensar los gráficos</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Autor/a</div>
-    <div class="quarto-title-meta-contents">
-             <p><a href="https://toninif.github.io">Dr.&nbsp;Fernando Tonini</a> <a href="https://orcid.org/0000-0001-6435-8923" class="quarto-title-author-orcid" aria-label="ORCID profile for Dr.&nbsp;Fernando Tonini"> <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Fecha de publicación</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">12 de septiembre de 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -364,50 +355,99 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="presentación" class="level1 unnumbered">
-<h1 class="unnumbered">Presentación</h1>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Este recurso está pensado para acompañar tu proyecto de Prácticas de Investigación desde las primeras decisiones hasta el informe. Podés empezar con una pregunta, aunque todavía no tengas datos. Cuando llegue el momento de analizar, vamos a trabajar con jamovi.</p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>La idea en una línea
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Un gráfico traduce tus variables en propiedades que el ojo puede ver. Elegir bien un gráfico es elegir qué propiedad visual representa cada variable, para que la comparación que te importa salte a la vista sin que nadie tenga que esforzarse.</p>
 </div>
-<section id="la-idea-central" class="level2">
-<h2 class="anchored" data-anchor-id="la-idea-central">La idea central</h2>
-<p>Me gustaría que se lleven la idea de que los análisis se piensan <strong>antes</strong> de tener los datos. El análisis empieza en el diseño, cuando decidís qué querés saber y cómo vas a estudiarlo. Los conocimientos de estadística ya los adquiriste en otras materias. Acá vamos a usarlos para tomar decisiones sobre tu proyecto. A fin de cuentas, la prueba estadística se hace con un par de clics. Lo que lleva trabajo es poder justificar por qué elegiste ese análisis y qué podés concluir con sus resultados.</p>
-<p>Por eso te propongo trabajar desde un proyecto durante todo el libro. Vas a ir reuniendo la pregunta, el plan, el diccionario, las bases y el informe en un mismo lugar. Me interesa que al final puedas retomar tu trabajo, explicar cómo llegaste a cada resultado y compartirlo con alguien que pueda entenderlo.</p>
+</div>
+<p>A lo largo del libro fuiste pidiendo gráficos en cada análisis: el histograma del <a href="07-describir-y-mostrar.html" class="quarto-xref"><span>Capítulo 7</span></a>, el gráfico Q-Q del <a href="09-supuestos.html" class="quarto-xref"><span>Capítulo 9</span></a>, el diagrama de dispersión del <a href="13-correlacion.html" class="quarto-xref"><span>Capítulo 13</span></a>. En cada capítulo te dijimos qué mirar. Este cierre reúne esas piezas y te da el marco que las ordena, ahora que ya viste todos los gráficos del recorrido. La idea es que puedas decidir, frente a una variable nueva, qué gráfico la muestra mejor y por qué.</p>
+<section id="la-gramática-de-un-gráfico" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="la-gramática-de-un-gráfico"><span class="header-section-number">17.1</span> La gramática de un gráfico</h2>
+<p>Todo gráfico hace lo mismo: toma una variable y la convierte en una propiedad visual. La posición sobre un eje, el largo de una barra, el color, el tamaño, la forma de un punto. Cuando entendés que un gráfico es ese mapeo de variables a propiedades, dejás de elegirlo por costumbre y empezás a elegirlo por lo que querés que se lea.</p>
+<p>Un diagrama de dispersión mapea dos variables continuas a dos posiciones, una en el eje horizontal y otra en el vertical; por eso sirve para ver una relación. Un gráfico de barras mapea una categoría a la posición horizontal y una cantidad al largo de la barra; por eso sirve para comparar cantidades entre grupos. Un boxplot mapea la distribución de una variable a un conjunto de posiciones (mediana, cuartiles, extremos); por eso sirve para comparar formas y detectar valores alejados. La pregunta útil, antes de abrir el menú, no es “¿qué gráfico hago?”, sino “¿qué variable quiero que se lea en la posición, cuál en el largo, cuál en el color?”.</p>
 </section>
-<section id="qué-vas-a-encontrar" class="level2">
-<h2 class="anchored" data-anchor-id="qué-vas-a-encontrar">Qué vas a encontrar</h2>
-<p>Vas a encontrar un recorrido para pasar de una pregunta a un resultado que puedas defender. Durante ese recorrido vas a trabajar en estas tareas.</p>
-<ul>
-<li>Definir una pregunta, unos objetivos e hipótesis y un plan de análisis antes de recolectar.</li>
-<li>Armar, documentar y preparar una base sin perder de vista qué representa cada variable.</li>
-<li>Elegir y ejecutar los análisis centrales de la materia (en este caso utilizando jamovi, pero hay otras opciones). Esto va desde los descriptivos hasta pruebas t, ANOVA de un factor, correlación y chi-cuadrado.</li>
-<li>Leer los resultados, entenderlos y comunicarlos utilizando un formato en específico (sí, normas APA), así como tablas y gráficos.</li>
-</ul>
-<p>Para los análisis vamos a usar jamovi. El plan y el informe los podés escribir en tu procesador de texto habitual, y el diccionario en una planilla. No hace falta saber programar (aunque es una habilidad deseable y te aliento a que la adquieras si te interesa). Sí hace falta saber qué opción responde tu pregunta y qué mirar después de seleccionarla. Los ejemplos usan datos sintéticos de estudiantes. Solo sirven para practicar el procedimiento, no para sacar conclusiones sobre una población real.</p>
+<section id="qué-percibe-bien-el-ojo" class="level2" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="qué-percibe-bien-el-ojo"><span class="header-section-number">17.2</span> Qué percibe bien el ojo</h2>
+<p>No todas las propiedades visuales se leen con la misma precisión. Cuando dos cosas están alineadas sobre un mismo eje, comparamos sus posiciones con mucha exactitud: vemos enseguida cuál está más arriba y por cuánto. La longitud sobre una base común, como la altura de dos barras que arrancan de la misma línea, también se estima bien. En cambio, estimamos con mucho más error los ángulos, las áreas y las intensidades de color. Podemos decir que un área es “más grande”, pero no cuánto más.</p>
+<p>Ese hecho, y no una cuestión de gusto, es lo que decide entre un gráfico y otro. De ahí sale el caso más conocido.</p>
+<section id="por-qué-el-gráfico-de-torta-casi-nunca-conviene" class="level3">
+<h3 class="anchored" data-anchor-id="por-qué-el-gráfico-de-torta-casi-nunca-conviene">Por qué el gráfico de torta casi nunca conviene</h3>
+<p>Una torta representa cada categoría como una porción, es decir, como un ángulo y un área. Le pide al ojo justo lo que peor estima. Para comparar dos porciones parecidas tenés que juzgar dos ángulos, y ahí nos equivocamos. Las mismas cantidades en un gráfico de barras se convierten en alturas sobre un eje común, que es lo que mejor leemos: la comparación se vuelve inmediata. Con dos o tres categorías la torta todavía se defiende; con cinco, seis o más porciones se vuelve casi ilegible y la gente termina leyendo los números impresos encima, lo que significa que el gráfico ya no está haciendo su trabajo.</p>
+<p>No se trata de una prohibición suelta (“nunca uses torta”), sino de un ejemplo del principio general: elegí la propiedad visual que el ojo lee con precisión para la comparación que te importa. Casi siempre, para comparar cantidades entre categorías, esa propiedad es la longitud de una barra sobre un eje común.</p>
 </section>
-<section id="recorrido" class="level2">
-<h2 class="anchored" data-anchor-id="recorrido">Recorrido</h2>
-<p>La Apertura empieza con la pregunta (<a href="01-de-la-pregunta-al-analisis.html" class="quarto-xref"><span>1&nbsp; La estadística desde la pregunta</span></a>) y el plan de análisis (<a href="02-plan-de-analisis.html" class="quarto-xref"><span>2&nbsp; Hipótesis, variables y plan de análisis</span></a>), y termina con la organización del proyecto (<a href="02-plan-de-analisis.html#sec-proyecto" class="quarto-xref"><span>Trabajar desde un proyecto</span></a>). En la Parte I vas a preparar y describir la base. La Parte II te ayuda a elegir un análisis, revisar sus supuestos e interpretar el resultado. La Parte III se ocupa del informe y de los recursos que acompañan el trabajo.</p>
-<p>El recorrido es acumulativo. Si estás empezando un trabajo práctico, seguí la Apertura y la Parte I mientras armás tu proyecto. Si ya tenés una pregunta y una base, revisá el <a href="02-plan-de-analisis.html" class="quarto-xref"><span>2&nbsp; Hipótesis, variables y plan de análisis</span></a> y organizá los archivos como se propone en <a href="02-plan-de-analisis.html#sec-proyecto" class="quarto-xref"><span>Trabajar desde un proyecto</span></a> antes de continuar. Al llegar al <a href="08-arbol-de-decision.html" class="quarto-xref"><span>8&nbsp; El árbol de decisión</span></a>, elegí los capítulos de análisis que correspondan a tu pregunta. Podés practicar los demás con los ejemplos del libro, pero tu proyecto no necesita usar todas las pruebas.</p>
 </section>
-<section id="cómo-usar-este-libro" class="level2">
-<h2 class="anchored" data-anchor-id="cómo-usar-este-libro">Cómo usar este libro</h2>
-<p>Trabajá con tu proyecto abierto. Cada capítulo incluye una sección <strong>En tu proyecto</strong> con una tarea concreta que vas a incorporar a tus archivos. Los autochequeos te ayudan a revisar ese avance. Las plantillas descargables te dan una estructura para empezar; completalas con las decisiones que surjan de tu pregunta, tus variables y la forma en que las mediste.</p>
-<p>Si todavía no tenés un proyecto propio, armá uno de práctica con la encuesta sintética del libro y elegí una de sus preguntas. Guardalo separado del trabajo de la materia para reconocer siempre de dónde salen los datos y qué resultados son ejercicios.</p>
-<p>Cuando llegues al análisis que necesita tu proyecto, retomá la pregunta y las variables del plan. Verificá los supuestos, ejecutá el análisis y escribí una frase de resultado. Guardá el archivo de jamovi y registrá cualquier cambio respecto de lo previsto, con su motivo. Si algo no encaja, revisá las definiciones y la preparación de la base antes de interpretar.</p>
-<p>El apéndice señala temas que quedan para una próxima edición. Con el recorrido central podés completar los proyectos que usan los análisis abordados en la materia.</p>
-<hr>
-<p>Dr.&nbsp;Fernando Tonini · <a href="https://toninif.github.io">toninif.github.io</a> · ORCID <a href="https://orcid.org/0000-0001-6435-8923">0000-0001-6435-8923</a></p>
+<section id="otros-no-hagas-esto-con-su-porqué" class="level2" data-number="17.3">
+<h2 data-number="17.3" class="anchored" data-anchor-id="otros-no-hagas-esto-con-su-porqué"><span class="header-section-number">17.3</span> Otros “no hagas esto”, con su porqué</h2>
+<p>Los errores frecuentes en gráficos comparten una raíz: distorsionan el mapeo entre el dato y lo que se ve. Conviene reconocerlos por la razón, no como reglas sueltas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Práctica a evitar</th>
+<th>Por qué distorsiona</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cortar el eje vertical para que no arranque en cero</td>
+<td>Exagera diferencias: una brecha real de dos puntos puede parecer enorme, porque el largo de la barra deja de ser proporcional a la cantidad.</td>
+</tr>
+<tr class="even">
+<td>Agregar profundidad o efectos 3D</td>
+<td>La perspectiva cambia áreas y ángulos según la posición; dos valores iguales se ven distintos y ninguno se lee bien.</td>
+</tr>
+<tr class="odd">
+<td>Amontonar demasiadas categorías o series</td>
+<td>El ojo pierde el hilo cuando hay que rastrear diez colores o veinte barras; el gráfico deja de responder una pregunta y pasa a ser un volcado de datos.</td>
+</tr>
+<tr class="even">
+<td>Usar color solo para decorar</td>
+<td>Si el color no codifica ninguna variable, agrega ruido y compite con la información que sí importa.</td>
+</tr>
+</tbody>
+</table>
+<p>En todos los casos el criterio es el mismo: si un elemento visual no representa un dato o no ayuda a leer una comparación, está de más.</p>
+</section>
+<section id="decisiones-honestas" class="level2" data-number="17.4">
+<h2 data-number="17.4" class="anchored" data-anchor-id="decisiones-honestas"><span class="header-section-number">17.4</span> Decisiones honestas</h2>
+<p>Diseñar un gráfico honesto es, sobre todo, no engañar al ojo, ni siquiera sin querer. El color es la decisión más delicada. Informa cuando codifica una variable (por ejemplo, un color por turno de cursada) y distrae cuando es puramente decorativo. Si vas a usar color para distinguir grupos, usá una paleta accesible, pensada para que quien no distingue el rojo del verde igual pueda separar las categorías; en el <a href="a2-paletas-accesibles.html" class="quarto-xref"><span>Apéndice B</span></a> tenés paletas listas para eso. Una regla simple ayuda: que el gráfico no dependa solo del color, sino que las categorías también se distingan por posición, etiqueta o forma.</p>
+<p>El otro criterio es la contención. Un gráfico se explica solo cuando tiene lo mínimo necesario para entenderlo: ejes rotulados con la variable y su unidad, una escala que arranca donde corresponde, y nada más. Cada grilla, sombra o borde que agregás compite con los datos. Antes de sumar un elemento, preguntate qué dato representa; si la respuesta es “ninguno”, sacalo.</p>
+</section>
+<section id="el-gráfico-como-parte-del-razonamiento" class="level2" data-number="17.5">
+<h2 data-number="17.5" class="anchored" data-anchor-id="el-gráfico-como-parte-del-razonamiento"><span class="header-section-number">17.5</span> El gráfico como parte del razonamiento</h2>
+<p>En este libro el gráfico nunca fue un adorno que se pega al final del informe. Fue una herramienta para pensar. Mirás el histograma antes del test para ver la forma de la distribución; mirás el diagrama de dispersión antes de leer <em>r</em> para descartar que una curva o un solo caso estén gobernando el resultado; mirás el gráfico Q-Q para decidir si el supuesto de normalidad es razonable. El gráfico entra en la decisión, no la ilustra después de tomada. Cuando lo pensás así, elegirlo bien deja de ser una cuestión estética y pasa a ser parte del análisis.</p>
+</section>
+<section id="graficar-en-jamovi-de-fábrica-y-con-plugins" class="level2" data-number="17.6">
+<h2 data-number="17.6" class="anchored" data-anchor-id="graficar-en-jamovi-de-fábrica-y-con-plugins"><span class="header-section-number">17.6</span> Graficar en jamovi: de fábrica y con plugins</h2>
+<p>jamovi ya trae, sin instalar nada, los gráficos que usaste en todo el libro. En <strong>Exploration → Descriptives</strong>, dentro de <strong>Plots</strong>, están las barras para categóricas, los histogramas y las curvas de densidad para continuas, los boxplots para comparar grupos y el diagrama de dispersión. Los análisis, además, ofrecen sus propios gráficos en <strong>Assumption Checks</strong> y <strong>Plots</strong>, como el Q-Q plot o el gráfico de medias del ANOVA. Para el recorrido de esta materia, eso alcanza.</p>
+<p>Si querés más control o gráficos listos para publicar, jamovi tiene módulos que se instalan en un par de clics desde <strong>Modules → jamovi library</strong>, sin reiniciar el programa. Dos son especialmente útiles. <strong>jmvplots</strong>, oficial, es un envoltorio de <em>ggplot2</em> que te deja armar gráficos personalizados con más opciones de formato. <strong>jjstatsplot</strong>, basado en <em>ggstatsplot</em>, produce gráficos “listos para publicar” que integran en una sola imagen el gráfico, el resultado del test y el tamaño de efecto. Son un buen paso siguiente cuando el gráfico va a un póster o a un artículo, pero no los necesitás para completar los capítulos de este libro.</p>
+</section>
+<section id="en-tu-proyecto" class="level2" data-number="17.7">
+<h2 data-number="17.7" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">17.7</span> En tu proyecto</h2>
+<p>Revisá los gráficos que ya exportaste a <code>resultados/</code>. Para cada uno, preguntate qué variable está en la posición, cuál en el largo y cuál en el color, y si esa elección hace visible la comparación de tu pregunta. Si alguno usa una torta para comparar más de dos categorías, un eje cortado o color decorativo, rehacelo con el criterio de este capítulo y dejá anotado en el registro por qué lo cambiaste. Comprobá también que la paleta sea accesible.</p>
+</section>
+<section id="autochequeo" class="level2" data-number="17.8">
+<h2 data-number="17.8" class="anchored" data-anchor-id="autochequeo"><span class="header-section-number">17.8</span> Autochequeo</h2>
+<ol type="1">
+<li>Para tu gráfico principal, ¿podés decir qué variable representa cada propiedad visual (posición, largo, color)?</li>
+<li>La comparación que te importa, ¿se apoya en longitud o posición sobre un eje común, y no en ángulos o áreas?</li>
+<li>¿El eje de cantidades arranca en cero y ningún efecto visual exagera las diferencias?</li>
+<li>Si usás color, ¿codifica una variable y la paleta es accesible, o es solo decorativo?</li>
+<li>¿Cada elemento del gráfico representa un dato, de modo que se explique solo?</li>
+</ol>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -818,10 +858,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./16-caja-de-herramientas.html" class="pagination-link" aria-label="Caja de herramientas">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-de-la-pregunta-al-analisis.html" class="pagination-link" aria-label="La estadística desde la pregunta">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">La estadística desde la pregunta</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./a1-para-ir-mas-lejos.html" class="pagination-link" aria-label="Para ir más lejos">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Para ir más lejos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

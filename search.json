@@ -208,7 +208,7 @@
     "href": "02-plan-de-analisis.html#sec-proyecto",
     "title": "2  Hipótesis, variables y plan de análisis",
     "section": "2.8 Trabajar desde un proyecto",
-    "text": "2.8 Trabajar desde un proyecto\nYa tenés una primera versión del plan. Antes de entrar en la base, conviene darle un lugar dentro del trabajo completo. Cuando acá hablamos de proyecto, pensamos en la investigación que estás haciendo y en los materiales que te permiten llevarla adelante. La pregunta, las decisiones y los archivos se van a ir construyendo juntos.\nPuede parecer suficiente guardar la base en el escritorio y el informe en Descargas. El problema aparece cuando retomás el trabajo y encontrás tres bases parecidas, una tabla pegada en un mensaje y un diccionario que describe nombres de columnas que ya cambiaste. Tener todo organizado desde el principio te permite reconocer qué archivo usaste, qué modificaste y de dónde salió cada resultado. También facilita que otra persona del grupo continúe el trabajo.\n\nUna carpeta para cada proyecto\nCreá una carpeta con un nombre que reconozcas, como procrastinacion-y-trabajo. Dentro de ella, armá esta estructura sencilla. Las carpetas pueden estar vacías al comienzo; las vas a completar a medida que avances.\nprocrastinacion-y-trabajo/\n  documentos/\n  datos-originales/\n  trabajo/\n  resultados/\n  informe/\nEn documentos/ guardá la pregunta, el plan de análisis, los instrumentos y el diccionario. Agregá la ficha y registro del proyecto en el formato que uses para escribir. Ahí vas a indicar cuáles son los archivos vigentes y anotar la fecha, qué cambiaste, por qué y a qué archivo afecta.\nEn datos-originales/ conservá la base tal como la recibiste o exportaste del instrumento. Si recibís una nueva entrega de datos, guardala con otra fecha. Hacé las correcciones y transformaciones sobre una copia en trabajo/, donde también van los archivos .omv de jamovi. Así podés volver a consultar el material recibido cuando necesites revisar una decisión.\nUsá resultados/ para las tablas y los gráficos que vas a comunicar, y informe/ para el texto que los interpreta. El archivo de jamovi conserva el análisis que produjo esos resultados. Una tabla exportada sirve para mostrarlo, pero por sí sola no permite recuperar todas las opciones que elegiste.\nEsta organización es un punto de partida. Si tu grupo ya tiene una estructura clara, pueden mantenerla. Lo importante es que todos sepan dónde está cada cosa y qué archivo están usando.\n\n\nNombres y versiones que puedas reconocer\nElegí nombres que indiquen el contenido y agregá una fecha o una versión cuando necesites conservar un estado anterior. Por ejemplo, encuesta-2026-09-10.csv, analisis-procrastinacion-v01.omv e informe-v01.docx. Evitá final, final2 y ahora-si-final, que dejan de servir en cuanto hay una corrección más.\nGuardá mientras trabajás. Antes de un cambio importante, como modificar un criterio de exclusión o incorporar nuevos casos, conservá la versión anterior y anotá la decisión en el registro. Si trabajan en grupo, acuerden quién edita cada archivo y cómo avisa que terminó. Mantengan una copia de respaldo del proyecto en el lugar que use la materia para ese fin.\nEn la ficha del proyecto indicá cuál es la base de trabajo vigente y qué archivo de jamovi respalda el informe. Si la base cambia después de exportar una tabla, revisá el análisis y actualizá también la tabla y el texto. Tener los archivos en una carpeta ayuda a encontrarlos; mantenerlos de acuerdo requiere revisar esos cambios.\n\n\nCómo vas a trabajar durante el libro\nAl empezar una actividad, abrí la carpeta del proyecto y retomá la pregunta y el plan. Al terminar, guardá el avance que pide En tu proyecto y dejá anotada cualquier decisión nueva. En la Parte I vas a completar el diccionario, preparar la base y guardar los descriptivos. En la Parte II vas a conservar las comprobaciones y los análisis que respondan tu pregunta. En la Parte III vas a reunirlos en un informe que puedas contrastar con los archivos de trabajo.\nLos capítulos de pruebas ofrecen distintos caminos. Si tu pregunta compara dos grupos independientes, seguirás el Capítulo 11; eso no te obliga a agregar una correlación o un ANOVA al informe. Para explorar otra técnica, usá el proyecto de práctica. Si durante tu investigación aparece una pregunta nueva, registrala como tal y explicá cuándo surgió.\nAntes de pasar a la Parte I, creá las carpetas, guardá el plan en documentos/ y completá la ficha con el nombre del proyecto, sus integrantes y la pregunta. Dejá escrito el próximo paso. Aunque todavía no tengas datos, ya tenés un proyecto desde el que trabajar.",
+    "text": "2.8 Trabajar desde un proyecto\nYa tenés una primera versión del plan. Antes de entrar en la base, conviene darle un lugar dentro del trabajo completo. Cuando acá hablamos de proyecto, pensamos en la investigación que estás haciendo y en los materiales que te permiten llevarla adelante. La pregunta, las decisiones y los archivos se van a ir construyendo juntos.\nPuede parecer suficiente guardar la base en el escritorio y el informe en Descargas. El problema aparece cuando retomás el trabajo y encontrás tres bases parecidas, una tabla pegada en un mensaje y un diccionario que describe nombres de columnas que ya cambiaste. Tener todo organizado desde el principio te permite reconocer qué archivo usaste, qué modificaste y de dónde salió cada resultado. También facilita que otra persona del grupo continúe el trabajo.\n\nUna carpeta para cada proyecto\nCreá una carpeta con un nombre que reconozcas, como procrastinacion-y-trabajo. Dentro de ella, armá esta estructura sencilla. Las carpetas pueden estar vacías al comienzo; las vas a completar a medida que avances.\n📁 procrastinacion-y-trabajo/\n   📄 documentos/\n   📦 datos-originales/\n   🧰 trabajo/\n   📊 resultados/\n   📝 informe/\nEn documentos/ guardá la pregunta, el plan de análisis, los instrumentos y el diccionario. Agregá la ficha y registro del proyecto en el formato que uses para escribir. Ahí vas a indicar cuáles son los archivos vigentes y anotar la fecha, qué cambiaste, por qué y a qué archivo afecta.\nEn datos-originales/ conservá la base tal como la recibiste o exportaste del instrumento. Si recibís una nueva entrega de datos, guardala con otra fecha. Hacé las correcciones y transformaciones sobre una copia en trabajo/, donde también van los archivos .omv de jamovi. Así podés volver a consultar el material recibido cuando necesites revisar una decisión.\nUsá resultados/ para las tablas y los gráficos que vas a comunicar, y informe/ para el texto que los interpreta. El archivo de jamovi conserva el análisis que produjo esos resultados. Una tabla exportada sirve para mostrarlo, pero por sí sola no permite recuperar todas las opciones que elegiste.\nEsta organización es un punto de partida. Si tu grupo ya tiene una estructura clara, pueden mantenerla. Lo importante es que todos sepan dónde está cada cosa y qué archivo están usando.\n\n\nNombres y versiones que puedas reconocer\nElegí nombres que indiquen el contenido y agregá una fecha o una versión cuando necesites conservar un estado anterior. Por ejemplo, encuesta-2026-09-10.csv, analisis-procrastinacion-v01.omv e informe-v01.docx. Evitá final, final2 y ahora-si-final, que dejan de servir en cuanto hay una corrección más.\nGuardá mientras trabajás. Antes de un cambio importante, como modificar un criterio de exclusión o incorporar nuevos casos, conservá la versión anterior y anotá la decisión en el registro. Si trabajan en grupo, acuerden quién edita cada archivo y cómo avisa que terminó. Mantengan una copia de respaldo del proyecto en el lugar que use la materia para ese fin.\nEn la ficha del proyecto indicá cuál es la base de trabajo vigente y qué archivo de jamovi respalda el informe. Si la base cambia después de exportar una tabla, revisá el análisis y actualizá también la tabla y el texto. Tener los archivos en una carpeta ayuda a encontrarlos; mantenerlos de acuerdo requiere revisar esos cambios.\n\n\nCómo vas a trabajar durante el libro\nAl empezar una actividad, abrí la carpeta del proyecto y retomá la pregunta y el plan. Al terminar, guardá el avance que pide En tu proyecto y dejá anotada cualquier decisión nueva. En la Parte I vas a completar el diccionario, preparar la base y guardar los descriptivos. En la Parte II vas a conservar las comprobaciones y los análisis que respondan tu pregunta. En la Parte III vas a reunirlos en un informe que puedas contrastar con los archivos de trabajo.\nLos capítulos de pruebas ofrecen distintos caminos. Si tu pregunta compara dos grupos independientes, seguirás el Capítulo 11; eso no te obliga a agregar una correlación o un ANOVA al informe. Para explorar otra técnica, usá el proyecto de práctica. Si durante tu investigación aparece una pregunta nueva, registrala como tal y explicá cuándo surgió.\nAntes de pasar a la Parte I, creá las carpetas, guardá el plan en documentos/ y completá la ficha con el nombre del proyecto, sus integrantes y la pregunta. Dejá escrito el próximo paso. Aunque todavía no tengas datos, ya tenés un proyecto desde el que trabajar.",
     "crumbs": [
       "Apertura. Pensar el análisis antes de los datos",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hipótesis, variables y plan de análisis</span>"
@@ -252,7 +252,7 @@
     "href": "03-anatomia-de-una-base.html#el-número-no-alcanza-para-saber-qué-tipo-de-variable-es",
     "title": "3  Anatomía de una base",
     "section": "3.3 El número no alcanza para saber qué tipo de variable es",
-    "text": "3.3 El número no alcanza para saber qué tipo de variable es\nUn número puede ser una cantidad, una etiqueta o un código. Por eso 1 = mañana, 2 = tarde y 3 = noche no convierten al turno en una variable continua. Por eso, sumar estos códigos o calcular su promedio no tiene sentido. Antes de hacer cuentas, preguntate si la distancia entre los valores representa algo real.\nEn jamovi conviene separar dos decisiones. El tipo de dato describe cómo se guarda el valor, como entero, decimal o texto. El nivel de medida indica cómo debe tratarse en el análisis, como nominal, ordinal, continua o ID. Al importar una base, jamovi hace una estimación automática; revisarla es parte de preparar la base, no un detalle técnico.\n\n\n\n\n\n\n\n\n\n\nNivel de medida\nQué representa\nEjemplo\nQué no conviene hacer\n\n\n\n\nNominal\nCategorías sin orden\nturno: mañana, tarde, noche\nPromediar las categorías.\n\n\nOrdinal\nCategorías con orden, pero sin distancias conocidas\nAcuerdo: nada, poco, bastante, mucho\nSuponer que cada salto vale lo mismo.\n\n\nContinua\nCantidades donde las diferencias son interpretables\nhoras_estudio, procrastinacion\nConvertirla en grupos sin una razón.\n\n\nID\nIdentifica un caso\nid\nUsarla como variable de resultado o agrupamiento.\n\n\n\n\nEl nivel de medida te permite anticipar qué resumen tiene sentido pedir. Para una variable nominal, querés frecuencias; para una continua, una media o una mediana puede ser útil. Esa decisión la vamos a usar en el Capítulo 7.",
+    "text": "3.3 El número no alcanza para saber qué tipo de variable es\nUn número puede ser una cantidad, una etiqueta o un código. Por eso 1 = mañana, 2 = tarde y 3 = noche no convierten al turno en una variable continua. Por eso, sumar estos códigos o calcular su promedio no tiene sentido. Antes de hacer cuentas, preguntate si la distancia entre los valores representa algo real.\nEn jamovi conviene separar dos decisiones. El tipo de dato (data type) describe cómo se guarda el valor, como entero, decimal o texto. El nivel de medida (measure type) indica cómo debe tratarse en el análisis, como nominal, ordinal, continua o ID. Al importar una base, jamovi hace una estimación automática; revisarla es parte de preparar la base, no un detalle técnico.\n\n\n\n\n\n\n\n\n\n\nNivel de medida\nQué representa\nEjemplo\nQué no conviene hacer\n\n\n\n\nNominal\nCategorías sin orden\nturno: mañana, tarde, noche\nPromediar las categorías.\n\n\nOrdinal\nCategorías con orden, pero sin distancias conocidas\nAcuerdo: nada, poco, bastante, mucho\nSuponer que cada salto vale lo mismo.\n\n\nContinua\nCantidades donde las diferencias son interpretables\nhoras_estudio, procrastinacion\nConvertirla en grupos sin una razón.\n\n\nID\nIdentifica un caso\nid\nUsarla como variable de resultado o agrupamiento.\n\n\n\n\nEl nivel de medida te permite anticipar qué resumen tiene sentido pedir. Para una variable nominal, querés frecuencias; para una continua, una media o una mediana puede ser útil. Esa decisión la vamos a usar en el Capítulo 7.",
     "crumbs": [
       "Parte I. Los datos en orden",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Anatomía de una base</span>"
@@ -505,7 +505,7 @@
     "href": "06-preparar-la-base.html#calcular-con-compute",
     "title": "6  Preparar la base",
     "section": "6.3 Calcular con Compute",
-    "text": "6.3 Calcular con Compute\nCompute crea una variable a partir de una fórmula que puede usar una o varias columnas. Se usa para sumar los ítems de una escala en un puntaje total, para calcular una diferencia (organizacion_post − organizacion_pre) o para derivar cualquier cantidad que no viene directamente del instrumento.\nEn jamovi, pulsá Data → Compute para crear una variable calculada. Escribís la fórmula con el selector de variables y funciones (SUM, MEAN, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.\nTransform y Compute resuelven problemas distintos. Transform recodifica una variable en categorías; Compute calcula un valor a partir de una fórmula. Si dudás cuál te corresponde, preguntate si estás agrupando valores existentes (Transform) o calculando uno nuevo (Compute).",
+    "text": "6.3 Calcular con Compute\nCompute crea una variable a partir de una fórmula que puede usar una o varias columnas. Se usa para sumar los ítems de una escala en un puntaje total, para calcular una diferencia (organizacion_post − organizacion_pre) o para derivar cualquier cantidad que no viene directamente del instrumento.\nEn jamovi, pulsá Data → Compute para crear una variable calculada (computed variable). Escribís la fórmula con el selector de variables y funciones (SUM, MEAN, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.\nTransform y Compute resuelven problemas distintos. Transform recodifica una variable en categorías; Compute calcula un valor a partir de una fórmula. Si dudás cuál te corresponde, preguntate si estás agrupando valores existentes (Transform) o calculando uno nuevo (Compute).",
     "crumbs": [
       "Parte I. Los datos en orden",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Preparar la base</span>"
@@ -516,7 +516,7 @@
     "href": "06-preparar-la-base.html#declarar-los-datos-faltantes",
     "title": "6  Preparar la base",
     "section": "6.4 Declarar los datos faltantes",
-    "text": "6.4 Declarar los datos faltantes\nEn la base de este libro, dos respuestas sin completar en horas_trabajo se registran como -99. Ese código es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes es decirle a jamovi qué valores no cuentan como datos.\nEn jamovi, hacé doble clic en el encabezado de la columna, abrí Missing Values y agregá la condición para tratar -99 como faltante. Esos casos quedan excluidos de los cálculos de esa variable. Las filas siguen visibles en Data y disponibles para analizar las otras variables que sí hayan respondido.",
+    "text": "6.4 Declarar los datos faltantes\nEn la base de este libro, dos respuestas sin completar en horas_trabajo se registran como -99. Ese código es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes (missing values) es decirle a jamovi qué valores no cuentan como datos.\nEn jamovi, hacé doble clic en el encabezado de la columna, abrí Missing Values y agregá la condición para tratar -99 como faltante. Esos casos quedan excluidos de los cálculos de esa variable. Las filas siguen visibles en Data y disponibles para analizar las otras variables que sí hayan respondido.",
     "crumbs": [
       "Parte I. Los datos en orden",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Preparar la base</span>"
@@ -571,7 +571,7 @@
     "href": "07-describir-y-mostrar.html#qué-pedir-según-el-tipo-de-variable",
     "title": "7  Describir y mostrar",
     "section": "",
-    "text": "Tipo de variable\nQué pedir\nEjemplo en la base de este libro\n\n\n\n\nContinua\nMedia, desvío estándar, mínimo, máximo; histograma\nprocrastinacion, horas_estudio\n\n\nNominal\nFrecuencias y porcentajes; gráfico de barras\nturno, trabaja, aprobo_parcial",
+    "text": "Tipo de variable\nQué pedir\nEjemplo en la base de este libro\n\n\n\n\nContinua\nMedia (mean), desvío estándar (standard deviation), mínimo, máximo; histograma (histogram)\nprocrastinacion, horas_estudio\n\n\nNominal\nFrecuencias (frequencies) y porcentajes; gráfico de barras (bar chart)\nturno, trabaja, aprobo_parcial",
     "crumbs": [
       "Parte I. Los datos en orden",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Describir y mostrar</span>"
@@ -582,7 +582,18 @@
     "href": "07-describir-y-mostrar.html#la-tabla-que-ya-habías-bosquejado",
     "title": "7  Describir y mostrar",
     "section": "7.2 La tabla que ya habías bosquejado",
-    "text": "7.2 La tabla que ya habías bosquejado\nSi en tu plan de análisis (Capítulo 2) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que Descriptives puede darte antes de correr ningún test. Agregá trabaja en la casilla Split by y jamovi devuelve la media, el desvío y el n de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.\nTodavía sin tener los números, ya podés anticipar la forma de esa tabla:\n\n\n\nGrupo\nn\nM\nDE\n\n\n\n\nTrabaja\n\n\n\n\n\nNo trabaja\n\n\n\n\n\n\nCompará tu boceto con lo que jamovi genera al aplicar Split by. Si tiene una fila o una columna de más, revisá si elegiste las variables y los grupos que habías previsto.\nLo mismo vale para el gráfico. Un diagrama de caja (boxplot) partido por grupo permite observar la distribución de cada grupo. La línea dentro de la caja marca la mediana, los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. Elegí el gráfico según lo que querés mostrar de tus variables.\n\n\n\nTu pregunta es sobre…\nPedí…\n\n\n\n\nUn grupo comparado con otro\nBoxplot por grupo\n\n\nLa relación entre dos variables continuas\nDiagrama de dispersión\n\n\nLa forma de una sola variable continua\nHistograma\n\n\nLas frecuencias de una variable categórica\nGráfico de barras\n\n\n\nElegí el gráfico que permita ver la comparación o la relación que estás estudiando.",
+    "text": "7.2 La tabla que ya habías bosquejado\nSi en tu plan de análisis (Capítulo 2) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que Descriptives puede darte antes de correr ningún test. Agregá trabaja en la casilla Split by y jamovi devuelve la media, el desvío y el n de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.\nTodavía sin tener los números, ya podés anticipar la forma de esa tabla:\n\n\n\nGrupo\nn\nM\nDE\n\n\n\n\nTrabaja\n\n\n\n\n\nNo trabaja\n\n\n\n\n\n\nCompará tu boceto con lo que jamovi genera al aplicar Split by. Si tiene una fila o una columna de más, revisá si elegiste las variables y los grupos que habías previsto.\nLo mismo vale para el gráfico. Un diagrama de caja (boxplot) partido por grupo permite observar la distribución de cada grupo. La línea dentro de la caja marca la mediana (median), los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. Elegí el gráfico según lo que querés mostrar de tus variables.\n\n\n\n\n\n\n\nTu pregunta es sobre…\nPedí…\n\n\n\n\nUn grupo comparado con otro\nBoxplot por grupo\n\n\nLa relación entre dos variables continuas\nDiagrama de dispersión (scatter plot)\n\n\nLa forma de una sola variable continua\nHistograma\n\n\nLas frecuencias de una variable categórica\nGráfico de barras\n\n\n\nElegí el gráfico que permita ver la comparación o la relación que estás estudiando.",
+    "crumbs": [
+      "Parte I. Los datos en orden",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Describir y mostrar</span>"
+    ]
+  },
+  {
+    "objectID": "07-describir-y-mostrar.html#leer-el-gráfico",
+    "href": "07-describir-y-mostrar.html#leer-el-gráfico",
+    "title": "7  Describir y mostrar",
+    "section": "7.3 Leer el gráfico",
+    "text": "7.3 Leer el gráfico\nEl gráfico central de este capítulo es el boxplot partido por grupo. Lo pedís en Exploration → Descriptives, moviendo la variable continua a Variables, la categórica a Split by y activando Box plot en Plots. Para una sola variable continua, el histograma cumple el mismo papel.\nCuando lo corrés, mirá la línea dentro de cada caja (la mediana), el alto de la caja (dónde se concentra la mitad central de los casos) y los puntos que quedan más allá de los bigotes (los valores alejados que conviene revisar). Si comparás dos grupos, fijate cuánto se solapan las cajas: dos cajas que apenas se tocan anticipan una diferencia; dos cajas muy encimadas, que quizás no la haya. El Capítulo 17 explica por qué estos gráficos, basados en posición, se leen mejor que otros.",
     "crumbs": [
       "Parte I. Los datos en orden",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Describir y mostrar</span>"
@@ -592,8 +603,8 @@
     "objectID": "07-describir-y-mostrar.html#qué-mirar-antes-de-cualquier-test",
     "href": "07-describir-y-mostrar.html#qué-mirar-antes-de-cualquier-test",
     "title": "7  Describir y mostrar",
-    "section": "7.3 Qué mirar antes de cualquier test",
-    "text": "7.3 Qué mirar antes de cualquier test\nEste repaso es previo a los chequeos de supuestos del Capítulo 9. Mirá los descriptivos que acabás de pedir y respondé estas preguntas.\n\n¿El n de cada grupo alcanza? Un grupo con tres casos no va a sostener ninguna comparación, más allá de lo que diga un test.\n¿Los valores mínimo y máximo son posibles? Contrastalos con el rango que anotaste en el diccionario; un 120 en una escala de 10 a 50 requiere revisar la carga o el cálculo del puntaje.\n¿La forma de la distribución es razonable? Un histograma muy asimétrico o con dos picos te avisa antes de que lo haga un supuesto incumplido.\n¿Los datos faltantes se concentran en algún grupo? Un patrón de faltantes que no es parejo entre grupos puede sesgar la comparación antes de que corras un solo test.\n\nSi encontrás alguno de estos problemas, volvé a la base y registrá cómo lo resolviste antes de analizar.",
+    "section": "7.4 Qué mirar antes de cualquier test",
+    "text": "7.4 Qué mirar antes de cualquier test\nEste repaso es previo a los chequeos de supuestos del Capítulo 9. Mirá los descriptivos que acabás de pedir y respondé estas preguntas.\n\n¿El n de cada grupo alcanza? Un grupo con tres casos no va a sostener ninguna comparación, más allá de lo que diga un test.\n¿Los valores mínimo y máximo son posibles? Contrastalos con el rango que anotaste en el diccionario; un 120 en una escala de 10 a 50 requiere revisar la carga o el cálculo del puntaje.\n¿La forma de la distribución es razonable? Un histograma muy asimétrico o con dos picos te avisa antes de que lo haga un supuesto incumplido.\n¿Los datos faltantes se concentran en algún grupo? Un patrón de faltantes que no es parejo entre grupos puede sesgar la comparación antes de que corras un solo test.\n\nSi encontrás alguno de estos problemas, volvé a la base y registrá cómo lo resolviste antes de analizar.",
     "crumbs": [
       "Parte I. Los datos en orden",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Describir y mostrar</span>"
@@ -603,8 +614,8 @@
     "objectID": "07-describir-y-mostrar.html#en-tu-proyecto",
     "href": "07-describir-y-mostrar.html#en-tu-proyecto",
     "title": "7  Describir y mostrar",
-    "section": "7.4 En tu proyecto",
-    "text": "7.4 En tu proyecto\nPedí los descriptivos y el gráfico que correspondan a la pregunta de tu plan y guardá el .omv en trabajo/. Exportá a resultados/ la tabla y el gráfico que vas a usar, con nombres reconocibles. Escribí en informe/ un primer párrafo descriptivo. Si encontraste valores imposibles o faltantes que requieren una revisión, registralos antes de continuar.",
+    "section": "7.5 En tu proyecto",
+    "text": "7.5 En tu proyecto\nPedí los descriptivos y el gráfico que correspondan a la pregunta de tu plan y guardá el .omv en trabajo/. Exportá a resultados/ la tabla y el gráfico que vas a usar, con nombres reconocibles. Escribí en informe/ un primer párrafo descriptivo. Si encontraste valores imposibles o faltantes que requieren una revisión, registralos antes de continuar.",
     "crumbs": [
       "Parte I. Los datos en orden",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Describir y mostrar</span>"
@@ -614,8 +625,8 @@
     "objectID": "07-describir-y-mostrar.html#autochequeo",
     "href": "07-describir-y-mostrar.html#autochequeo",
     "title": "7  Describir y mostrar",
-    "section": "7.5 Autochequeo",
-    "text": "7.5 Autochequeo\n\n¿Pediste el estadístico que corresponde al tipo de cada variable, no el que aparece primero en el menú?\n¿La tabla partida por grupo que generaste se parece a la que bosquejaste en tu plan de análisis?\n¿Revisaste mínimos y máximos contra tu diccionario de datos?\n¿Elegiste el gráfico según la pregunta, y no según cuál te resultó más atractivo?\n\nCon la base descripta y revisada, en el Capítulo 8 vas a elegir, con criterio, qué análisis la responde.",
+    "section": "7.6 Autochequeo",
+    "text": "7.6 Autochequeo\n\n¿Pediste el estadístico que corresponde al tipo de cada variable, no el que aparece primero en el menú?\n¿La tabla partida por grupo que generaste se parece a la que bosquejaste en tu plan de análisis?\n¿Revisaste mínimos y máximos contra tu diccionario de datos?\n¿Elegiste el gráfico según la pregunta, y no según cuál te resultó más atractivo?\n\nCon la base descripta y revisada, en el Capítulo 8 vas a elegir, con criterio, qué análisis la responde.",
     "crumbs": [
       "Parte I. Los datos en orden",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Describir y mostrar</span>"
@@ -659,7 +670,7 @@
     "href": "08-arbol-de-decision.html#elegir-el-análisis-según-la-pregunta",
     "title": "8  El árbol de decisión",
     "section": "8.3 Elegir el análisis según la pregunta",
-    "text": "8.3 Elegir el análisis según la pregunta\n\n\n\n\n\n\n\n\n\n\nSi tu pregunta es…\nY tus variables son…\nEl análisis central es…\nCapítulo\n\n\n\n\n¿Un promedio difiere de un valor?\nUn resultado continuo y un valor de referencia\nt de una muestra\nCapítulo 10\n\n\n¿Dos grupos distintos difieren?\nResultado continuo; agrupamiento con dos categorías\nt de muestras independientes\nCapítulo 11\n\n\n¿Las mismas personas cambiaron?\nDos mediciones continuas de cada caso\nt de muestras pareadas\nCapítulo 11\n\n\n¿Tres o más grupos difieren?\nResultado continuo; agrupamiento con tres o más categorías\nANOVA de un factor\nCapítulo 12\n\n\n¿Dos cantidades se relacionan?\nDos variables continuas\nCorrelación\nCapítulo 13\n\n\n¿Dos categorías se asocian?\nDos variables categóricas\nChi-cuadrado de independencia\nCapítulo 14\n\n\n\n\nEsa tabla cubre el núcleo de la materia, no todas las preguntas posibles. Si querés predecir un resultado con varias variables, controlar covariables o analizar diseños más complejos, mirá el apéndice cuando ya domines esta lógica.\nDescargá el árbol de decisión para análisis básicos. Imprimilo o tenelo abierto mientras completás tu plan de análisis.",
+    "text": "8.3 Elegir el análisis según la pregunta\n\n\n\n\n\n\n\n\n\n\nSi tu pregunta es…\nY tus variables son…\nEl análisis central es…\nCapítulo\n\n\n\n\n¿Un promedio difiere de un valor?\nUn resultado continuo y un valor de referencia\nt de una muestra (one-sample t test)\nCapítulo 10\n\n\n¿Dos grupos distintos difieren?\nResultado continuo; agrupamiento con dos categorías\nt de muestras independientes (independent samples t test)\nCapítulo 11\n\n\n¿Las mismas personas cambiaron?\nDos mediciones continuas de cada caso\nt de muestras pareadas (paired samples t test)\nCapítulo 11\n\n\n¿Tres o más grupos difieren?\nResultado continuo; agrupamiento con tres o más categorías\nANOVA de un factor (one-way ANOVA)\nCapítulo 12\n\n\n¿Dos cantidades se relacionan?\nDos variables continuas\nCorrelación (correlation)\nCapítulo 13\n\n\n¿Dos categorías se asocian?\nDos variables categóricas\nChi-cuadrado de independencia (chi-square)\nCapítulo 14\n\n\n\n\nEsa tabla cubre el núcleo de la materia, no todas las preguntas posibles. Si querés predecir un resultado con varias variables, controlar covariables o analizar diseños más complejos, mirá el apéndice cuando ya domines esta lógica.\nDescargá el árbol de decisión para análisis básicos. Imprimilo o tenelo abierto mientras completás tu plan de análisis.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>El árbol de decisión</span>"
@@ -670,7 +681,18 @@
     "href": "08-arbol-de-decision.html#un-recorrido-con-el-caso-del-libro",
     "title": "8  El árbol de decisión",
     "section": "8.4 Un recorrido con el caso del libro",
-    "text": "8.4 Un recorrido con el caso del libro\nTomemos la encuesta de estudiantes. La variable procrastinacion es continua. Si preguntás si cambia entre trabaja = sí y trabaja = no, comparás dos grupos distintos con una t independiente. Si preguntás si cambia entre turno = mañana, tarde y noche, comparás tres grupos mediante ANOVA. El resultado es el mismo, pero la cantidad de grupos cambia la herramienta.\nSi, en cambio, preguntás si horas_estudio se relaciona con procrastinacion, cada estudiante aporta dos cantidades. La herramienta es una correlación. Y si querés saber si trabaja se asocia con aprobo_parcial, ambas variables son categorías. Armás una tabla de contingencia y usás chi-cuadrado.\nUna misma base permite responder varias preguntas. En tu proyecto vas a seguir las que definiste en el plan, con el análisis adecuado para cada una.",
+    "text": "8.4 Un recorrido con el caso del libro\nTomemos la encuesta de estudiantes. La variable procrastinacion es continua. Si preguntás si cambia entre trabaja = sí y trabaja = no, comparás dos grupos distintos con una t independiente. Si preguntás si cambia entre turno = mañana, tarde y noche, comparás tres grupos mediante ANOVA. El resultado es el mismo, pero la cantidad de grupos cambia la herramienta.\nSi, en cambio, preguntás si horas_estudio se relaciona con procrastinacion, cada estudiante aporta dos cantidades. La herramienta es una correlación. Y si querés saber si trabaja se asocia con aprobo_parcial, ambas variables son categorías. Armás una tabla de contingencia (contingency table) y usás chi-cuadrado.\nUna misma base permite responder varias preguntas. En tu proyecto vas a seguir las que definiste en el plan, con el análisis adecuado para cada una.",
+    "crumbs": [
+      "Parte II. Elegir y ejecutar",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>El árbol de decisión</span>"
+    ]
+  },
+  {
+    "objectID": "08-arbol-de-decision.html#en-el-fondo-un-solo-modelo",
+    "href": "08-arbol-de-decision.html#en-el-fondo-un-solo-modelo",
+    "title": "8  El árbol de decisión",
+    "section": "8.5 En el fondo, un solo modelo",
+    "text": "8.5 En el fondo, un solo modelo\nEl árbol enumera herramientas con nombres distintos, y eso puede dar la impresión de que cada análisis es un aparato separado con sus propias reglas. No lo es. Todos responden la misma pregunta de base: ¿el valor de una variable cambia según el valor de otra? Cambia la forma de la variable que usás para explicar, no la pregunta.\nPensalo con dos análisis que parecen muy distintos. La t de muestras independientes pregunta si la media de procrastinacion cambia entre dos categorías, quienes trabajan y quienes no. La correlación pregunta si procrastinacion cambia a medida que suben las horas_estudio. En los dos casos hay una variable de resultado y otra que la explica; lo único que cambia es que la explicativa es una categoría de dos niveles en un caso y una cantidad continua en el otro. De hecho, si codificás el grupo como 0 y 1 y corrés una correlación, obtenés la misma información que la t: no son dos mundos, son la misma idea vista desde dos entradas. La ANOVA extiende eso a una explicativa con tres o más categorías, y todas descomponen lo mismo: cuánta de la variación del resultado acompaña a la variable explicativa y cuánta queda sin explicar.\nChi-cuadrado queda un paso al costado, porque compara frecuencias en lugar de promedios, pero comparte la pregunta de fondo: ¿estas dos variables se mueven de forma independiente o no? En estadística esta unidad se formaliza bajo la idea de un modelo lineal general, que excede el alcance del libro. Para tu trabajo alcanza con quedarte con la intuición: elegís una herramienta u otra por la forma de tus variables y por cómo vas a interpretar el resultado, no porque sean teorías rivales. Por eso el árbol no te pide adivinar un test, sino definir bien tu resultado y tu variable explicativa; con eso, el análisis casi se elige solo.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>El árbol de decisión</span>"
@@ -680,8 +702,8 @@
     "objectID": "08-arbol-de-decision.html#tres-desvíos-frecuentes",
     "href": "08-arbol-de-decision.html#tres-desvíos-frecuentes",
     "title": "8  El árbol de decisión",
-    "section": "8.5 Tres desvíos frecuentes",
-    "text": "8.5 Tres desvíos frecuentes\nConvertir números en grupos por costumbre. Dividir horas_estudio en “pocas” y “muchas” horas para hacer una t puede hacerte perder información. Si la pregunta es por la relación entre horas y procrastinación, empezá por correlación.\nUsar correlación para comparar categorías. Codificar trabaja como 0 y 1 no transforma una comparación de grupos en una pregunta de relación continua. El código es una etiqueta conveniente, no una escala.\nElegir según el resultado deseado. No probás t, ANOVA y correlación para quedarte con el p que te gusta. La pregunta y el plan indican el análisis antes de mirar el resultado.",
+    "section": "8.6 Tres desvíos frecuentes",
+    "text": "8.6 Tres desvíos frecuentes\nConvertir números en grupos por costumbre. Dividir horas_estudio en “pocas” y “muchas” horas para hacer una t puede hacerte perder información. Si la pregunta es por la relación entre horas y procrastinación, empezá por correlación.\nUsar correlación para comparar categorías. Codificar trabaja como 0 y 1 no transforma una comparación de grupos en una pregunta de relación continua. El código es una etiqueta conveniente, no una escala.\nElegir según el resultado deseado. No probás t, ANOVA y correlación para quedarte con el p que te gusta. La pregunta y el plan indican el análisis antes de mirar el resultado.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>El árbol de decisión</span>"
@@ -691,8 +713,8 @@
     "objectID": "08-arbol-de-decision.html#antes-de-hacer-clic",
     "href": "08-arbol-de-decision.html#antes-de-hacer-clic",
     "title": "8  El árbol de decisión",
-    "section": "8.6 Antes de hacer clic",
-    "text": "8.6 Antes de hacer clic\nElegido el análisis, todavía faltan dos pasos. Primero, revisá que los casos sean los que querés analizar y que los datos faltantes estén declarados. Segundo, consultá los supuestos del capítulo siguiente. Un análisis correcto para la pregunta puede requerir una alternativa si los datos no cumplen ciertas condiciones.\nDejá escrita la justificación en tu plan. Podés empezar con “Para responder mi pregunta voy a usar ___ porque mi resultado es ___ y mi otra variable es ___”. Si te cuesta completarla, revisá las definiciones antes de abrir el análisis.",
+    "section": "8.7 Antes de hacer clic",
+    "text": "8.7 Antes de hacer clic\nElegido el análisis, todavía faltan dos pasos. Primero, revisá que los casos sean los que querés analizar y que los datos faltantes estén declarados. Segundo, consultá los supuestos del capítulo siguiente. Un análisis correcto para la pregunta puede requerir una alternativa si los datos no cumplen ciertas condiciones.\nDejá escrita la justificación en tu plan. Podés empezar con “Para responder mi pregunta voy a usar ___ porque mi resultado es ___ y mi otra variable es ___”. Si te cuesta completarla, revisá las definiciones antes de abrir el análisis.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>El árbol de decisión</span>"
@@ -702,8 +724,8 @@
     "objectID": "08-arbol-de-decision.html#en-tu-proyecto",
     "href": "08-arbol-de-decision.html#en-tu-proyecto",
     "title": "8  El árbol de decisión",
-    "section": "8.7 En tu proyecto",
-    "text": "8.7 En tu proyecto\nRevisá el análisis previsto en el plan y justificá la elección con tu pregunta, el tipo de variables y el diseño. Anotá qué capítulo vas a seguir después de revisar los supuestos. Si tu objetivo solo requiere describir, dejalo indicado. Cuando una pregunta nueva surja al mirar la base, incorporala al registro con la fecha para distinguirla de las que planteaste al comienzo.",
+    "section": "8.8 En tu proyecto",
+    "text": "8.8 En tu proyecto\nRevisá el análisis previsto en el plan y justificá la elección con tu pregunta, el tipo de variables y el diseño. Anotá qué capítulo vas a seguir después de revisar los supuestos. Si tu objetivo solo requiere describir, dejalo indicado. Cuando una pregunta nueva surja al mirar la base, incorporala al registro con la fecha para distinguirla de las que planteaste al comienzo.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>El árbol de decisión</span>"
@@ -713,8 +735,8 @@
     "objectID": "08-arbol-de-decision.html#autochequeo",
     "href": "08-arbol-de-decision.html#autochequeo",
     "title": "8  El árbol de decisión",
-    "section": "8.8 Autochequeo",
-    "text": "8.8 Autochequeo\nPara una pregunta propia, contestá:\n\n¿Quiero comparar, describir o buscar una relación?\n¿Cuál es mi variable de resultado y qué nivel de medida tiene?\n¿Las personas de los grupos son distintas o son las mismas medidas dos veces?\n¿El análisis elegido responde exactamente esa pregunta?\n\nSi las cuatro respuestas son claras, ya podés pasar a los supuestos y luego al capítulo específico de tu análisis.",
+    "section": "8.9 Autochequeo",
+    "text": "8.9 Autochequeo\nPara una pregunta propia, contestá:\n\n¿Quiero comparar, describir o buscar una relación?\n¿Cuál es mi variable de resultado y qué nivel de medida tiene?\n¿Las personas de los grupos son distintas o son las mismas medidas dos veces?\n¿El análisis elegido responde exactamente esa pregunta?\n\nSi las cuatro respuestas son claras, ya podés pasar a los supuestos y luego al capítulo específico de tu análisis.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>El árbol de decisión</span>"
@@ -725,7 +747,7 @@
     "href": "09-supuestos.html",
     "title": "9  Supuestos y cómo se chequean en jamovi",
     "section": "",
-    "text": "9.1 Qué estás chequeando realmente\nCada análisis resume los datos de una manera particular. La t compara medias; la correlación describe una relación lineal; chi-cuadrado compara frecuencias esperadas y observadas. Los supuestos son las condiciones bajo las cuales esos resúmenes y sus valores p se comportan como esperamos.\nLa independencia de los casos, cuando el diseño la requiere, se revisa a partir de cómo obtuviste los datos. Si registraste a la misma persona dos veces como si fueran dos personas distintas, o si las respuestas provienen de grupos que se influyen entre sí sin considerarlo, ningún botón arregla el problema. Volvé al diseño y a la base.\nLos demás supuestos sí se pueden explorar con los datos. Pero explorar no significa obedecer ciegamente un número. Un test de normalidad con muchos casos puede marcar una diferencia mínima; con pocos casos puede no detectar una forma problemática. Mirá siempre el gráfico, el tamaño de los grupos, los valores extremos y qué cambiaría realmente en tu conclusión.",
+    "text": "9.1 Qué estás chequeando realmente\nCada análisis resume los datos de una manera particular. La t compara medias; la correlación describe una relación lineal; chi-cuadrado compara frecuencias esperadas y observadas. Los supuestos son las condiciones bajo las cuales esos resúmenes y sus valores p se comportan como esperamos.\nLa independencia de los casos, cuando el diseño la requiere, se revisa a partir de cómo obtuviste los datos. Si registraste a la misma persona dos veces como si fueran dos personas distintas, o si las respuestas provienen de grupos que se influyen entre sí sin considerarlo, ningún botón arregla el problema. Volvé al diseño y a la base.\nLos demás supuestos sí se pueden explorar con los datos. Pero explorar no significa obedecer ciegamente un número. Un test de normalidad (normality) con muchos casos puede marcar una diferencia mínima; con pocos casos puede no detectar una forma problemática. Mirá siempre el gráfico, el tamaño de los grupos, los valores extremos y qué cambiaría realmente en tu conclusión.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Supuestos y cómo se chequean en jamovi</span>"
@@ -747,7 +769,7 @@
     "href": "09-supuestos.html#dónde-pedirlos-en-jamovi",
     "title": "9  Supuestos y cómo se chequean en jamovi",
     "section": "9.3 Dónde pedirlos en jamovi",
-    "text": "9.3 Dónde pedirlos en jamovi\nEn los capítulos de análisis vamos a indicar las casillas exactas, pero la lógica es siempre la misma. En las t independientes y en ANOVA, buscá Assumption Checks para pedir normalidad, gráficos Q-Q y homogeneidad de varianzas. En una t de una muestra o pareada, la atención está en la distribución de la variable o de las diferencias, no en comparar varianzas de grupos distintos.\nPara correlación, empezá por el gráfico de dispersión. Necesitás ver si la relación sigue una línea aproximada y si un solo caso está empujando todo el resultado. Para chi-cuadrado, revisá la tabla de contingencia y las frecuencias esperadas. jamovi puede calcular esas verificaciones; vos tenés que decidir qué implican para la pregunta.\nInterpretá las pruebas junto con los gráficos y dejá escrita la decisión que tomaste.",
+    "text": "9.3 Dónde pedirlos en jamovi\nEn los capítulos de análisis vamos a indicar las casillas exactas, pero la lógica es siempre la misma. En las t independientes y en ANOVA, buscá Assumption Checks para pedir normalidad, gráficos Q-Q y homogeneidad de varianzas (homogeneity of variance). En una t de una muestra o pareada, la atención está en la distribución de la variable o de las diferencias, no en comparar varianzas de grupos distintos.\nPara correlación, empezá por el gráfico de dispersión. Necesitás ver si la relación sigue una línea aproximada y si un solo caso está empujando todo el resultado. Para chi-cuadrado, revisá la tabla de contingencia y las frecuencias esperadas. jamovi puede calcular esas verificaciones; vos tenés que decidir qué implican para la pregunta.\nInterpretá las pruebas junto con los gráficos y dejá escrita la decisión que tomaste.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Supuestos y cómo se chequean en jamovi</span>"
@@ -776,11 +798,22 @@
     ]
   },
   {
+    "objectID": "09-supuestos.html#leer-el-gráfico",
+    "href": "09-supuestos.html#leer-el-gráfico",
+    "title": "9  Supuestos y cómo se chequean en jamovi",
+    "section": "9.6 Leer el gráfico",
+    "text": "9.6 Leer el gráfico\nEl gráfico más útil para revisar normalidad es el Q-Q Plot, que pedís en Assumption Checks. No es abstracto: en el eje horizontal pone los valores que esperarías si los datos fueran exactamente normales y, en el vertical, tus datos reales. Si la distribución se aproxima a la normal, los puntos caen cerca de la línea diagonal. Cuando corrés esto, mirá los extremos: si los puntos de las puntas se despegan de la diagonal formando una curva o una “S”, tenés colas más pesadas o una asimetría que Shapiro-Wilk por sí solo no muestra.\nPara la linealidad de una correlación, el gráfico equivalente es el diagrama de dispersión: buscás que la nube siga una recta y no una curva. En ambos casos el gráfico concreta lo que un número resume, y a veces lo contradice. El Capítulo 17 ordena esta forma de mirar.",
+    "crumbs": [
+      "Parte II. Elegir y ejecutar",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Supuestos y cómo se chequean en jamovi</span>"
+    ]
+  },
+  {
     "objectID": "09-supuestos.html#dejar-escrito-el-plan-b",
     "href": "09-supuestos.html#dejar-escrito-el-plan-b",
     "title": "9  Supuestos y cómo se chequean en jamovi",
-    "section": "9.6 Dejar escrito el plan B",
-    "text": "9.6 Dejar escrito el plan B\nEn tu plan de análisis, agregá una línea por cada análisis. Podés escribir “Voy a revisar ___ mediante . Si el problema es relevante, voy a usar  y voy a informarlo”. Por ejemplo, “Para comparar la procrastinación entre grupos, voy a revisar gráficos, normalidad y homogeneidad. Si las varianzas son muy distintas, usaré la t de Welch”.\nEso no te obliga a anticipar cada problema posible. Evita que la alternativa aparezca recién después de ver cuál da el resultado más conveniente.",
+    "section": "9.7 Dejar escrito el plan B",
+    "text": "9.7 Dejar escrito el plan B\nEn tu plan de análisis, agregá una línea por cada análisis. Podés escribir “Voy a revisar ___ mediante . Si el problema es relevante, voy a usar  y voy a informarlo”. Por ejemplo, “Para comparar la procrastinación entre grupos, voy a revisar gráficos, normalidad y homogeneidad. Si las varianzas son muy distintas, usaré la t de Welch”.\nEso no te obliga a anticipar cada problema posible. Evita que la alternativa aparezca recién después de ver cuál da el resultado más conveniente.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Supuestos y cómo se chequean en jamovi</span>"
@@ -790,8 +823,8 @@
     "objectID": "09-supuestos.html#en-tu-proyecto",
     "href": "09-supuestos.html#en-tu-proyecto",
     "title": "9  Supuestos y cómo se chequean en jamovi",
-    "section": "9.7 En tu proyecto",
-    "text": "9.7 En tu proyecto\nCompletá en el plan qué supuestos vas a revisar y qué alternativa considerarías ante cada problema relevante. Al hacer esas comprobaciones, guardalas en el archivo de jamovi de trabajo/. Anotá en el registro qué observaste y cómo decidiste continuar, incluso si mantuviste el análisis previsto.",
+    "section": "9.8 En tu proyecto",
+    "text": "9.8 En tu proyecto\nCompletá en el plan qué supuestos vas a revisar y qué alternativa considerarías ante cada problema relevante. Al hacer esas comprobaciones, guardalas en el archivo de jamovi de trabajo/. Anotá en el registro qué observaste y cómo decidiste continuar, incluso si mantuviste el análisis previsto.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Supuestos y cómo se chequean en jamovi</span>"
@@ -801,8 +834,8 @@
     "objectID": "09-supuestos.html#autochequeo",
     "href": "09-supuestos.html#autochequeo",
     "title": "9  Supuestos y cómo se chequean en jamovi",
-    "section": "9.8 Autochequeo",
-    "text": "9.8 Autochequeo\nAntes de confiar en un output, preguntate:\n\n¿Mi diseño cumple el supuesto de independencia o estoy tratando mediciones repetidas como si fueran personas distintas?\n¿Miré los gráficos además de las pruebas automáticas?\n¿Sé qué supuesto es relevante para este análisis concreto?\nSi uso una alternativa, ¿puedo explicar qué pregunta responde y por qué la elegí?\n\nConservá estas comprobaciones junto con el análisis para que otra persona pueda revisar cómo decidiste continuar.",
+    "section": "9.9 Autochequeo",
+    "text": "9.9 Autochequeo\nAntes de confiar en un output, preguntate:\n\n¿Mi diseño cumple el supuesto de independencia o estoy tratando mediciones repetidas como si fueran personas distintas?\n¿Miré los gráficos además de las pruebas automáticas?\n¿Sé qué supuesto es relevante para este análisis concreto?\nSi uso una alternativa, ¿puedo explicar qué pregunta responde y por qué la elegí?\n\nConservá estas comprobaciones junto con el análisis para que otra persona pueda revisar cómo decidiste continuar.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Supuestos y cómo se chequean en jamovi</span>"
@@ -835,7 +868,18 @@
     "href": "10-t-una-muestra.html#ejemplo-trabajado",
     "title": "10  t de una muestra",
     "section": "10.3 Ejemplo trabajado",
-    "text": "10.3 Ejemplo trabajado\nCon la base encuesta-estudiantes-limpia (Capítulo 5), los 72 casos tienen organizacion completa:\n\n\n\nn\nM\nDE\nValor de referencia\n\n\n\n\n72\n24.39\n4.04\n24\n\n\n\nLa comparación da t(71) = 0.82, p = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto d de Cohen = 0.10. El intervalo de confianza incluye el 24, en concordancia con el resultado no significativo de esta prueba bilateral.",
+    "text": "10.3 Ejemplo trabajado\nCon la base encuesta-estudiantes-limpia (Capítulo 5), los 72 casos tienen organizacion completa:\n\n\n\nn\nM\nDE\nValor de referencia\n\n\n\n\n72\n24.39\n4.04\n24\n\n\n\nLa comparación da t(71) = 0.82, p = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto (effect size) d de Cohen = 0.10. El intervalo de confianza incluye el 24, en concordancia con el resultado no significativo de esta prueba bilateral.",
+    "crumbs": [
+      "Parte II. Elegir y ejecutar",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>t de una muestra</span>"
+    ]
+  },
+  {
+    "objectID": "10-t-una-muestra.html#leer-el-gráfico",
+    "href": "10-t-una-muestra.html#leer-el-gráfico",
+    "title": "10  t de una muestra",
+    "section": "10.4 Leer el gráfico",
+    "text": "10.4 Leer el gráfico\nAcá el gráfico que acompaña el análisis es el Q-Q Plot de organizacion, junto con su histograma. El Q-Q lo pedís en Assumption Checks; el histograma, en Exploration → Descriptives → Plots. Sirven para decidir si la comparación de la media con el valor de referencia se apoya en una distribución razonable.\nCuando los corrés, en el histograma mirá si la forma es una campana más o menos centrada y sin dos picos, y dónde cae el valor de referencia 24 respecto del grueso de los casos. En el Q-Q, mirá si los puntos siguen la diagonal; un despegue marcado en las puntas te avisa de asimetría o extremos antes de confiar en la t. El Capítulo 17 ordena esta forma de leer.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>t de una muestra</span>"
@@ -845,8 +889,8 @@
     "objectID": "10-t-una-muestra.html#cómo-leer-el-output-e-informarlo-en-apa",
     "href": "10-t-una-muestra.html#cómo-leer-el-output-e-informarlo-en-apa",
     "title": "10  t de una muestra",
-    "section": "10.4 Cómo leer el output e informarlo en APA",
-    "text": "10.4 Cómo leer el output e informarlo en APA\n\nEl puntaje promedio de organización de la muestra (M = 24.39, DE = 4.04) no difirió significativamente del punto medio teórico de la escala, t(71) = 0.82, p = .415, IC 95 % [23.44, 25.34], d = 0.10.\n\nInformá también los resultados no significativos con su estimación, t, p e intervalo. El intervalo de confianza muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.\nUn error frecuente es interpretar p &gt; .05 como “se demostró que la organización es igual a 24”. Un test de hipótesis no prueba la igualdad; solo dice que no hay evidencia suficiente para rechazar el valor de referencia con estos datos.\n\nSi la normalidad no se sostiene\nLa revisión del Capítulo 9 se aplica acá a una sola variable. Mirá el histograma y el gráfico Q-Q de organizacion, no solo el valor de Shapiro-Wilk. La prueba de rangos con signo de Wilcoxon puede servir cuando resulta razonable suponer una distribución simétrica alrededor de un centro; bajo esa condición, permite contrastar ese centro, que coincide con la mediana, con el valor de referencia. No resuelve automáticamente una asimetría marcada. Si la distribución es muy sesgada o hay extremos influyentes, revisá los datos y la pregunta antes de elegir una alternativa. Como toda alternativa, se nombra y se justifica en el plan.",
+    "section": "10.5 Cómo leer el output e informarlo en APA",
+    "text": "10.5 Cómo leer el output e informarlo en APA\n\nEl puntaje promedio de organización de la muestra (M = 24.39, DE = 4.04) no difirió significativamente del punto medio teórico de la escala, t(71) = 0.82, p = .415, IC 95 % [23.44, 25.34], d = 0.10.\n\nInformá también los resultados no significativos con su estimación, t, p e intervalo. El intervalo de confianza (confidence interval) muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.\nUn error frecuente es interpretar p &gt; .05 como “se demostró que la organización es igual a 24”. Un test de hipótesis no prueba la igualdad; solo dice que no hay evidencia suficiente para rechazar el valor de referencia con estos datos.\n\nSi la normalidad no se sostiene\nLa revisión del Capítulo 9 se aplica acá a una sola variable. Mirá el histograma y el gráfico Q-Q de organizacion, no solo el valor de Shapiro-Wilk. La prueba de rangos con signo de Wilcoxon puede servir cuando resulta razonable suponer una distribución simétrica alrededor de un centro; bajo esa condición, permite contrastar ese centro, que coincide con la mediana, con el valor de referencia. No resuelve automáticamente una asimetría marcada. Si la distribución es muy sesgada o hay extremos influyentes, revisá los datos y la pregunta antes de elegir una alternativa. Como toda alternativa, se nombra y se justifica en el plan.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>t de una muestra</span>"
@@ -856,8 +900,8 @@
     "objectID": "10-t-una-muestra.html#en-tu-proyecto",
     "href": "10-t-una-muestra.html#en-tu-proyecto",
     "title": "10  t de una muestra",
-    "section": "10.5 En tu proyecto",
-    "text": "10.5 En tu proyecto\nSi tu pregunta compara una media con un valor de referencia, dejá la justificación de ese valor en el plan de documentos/. Guardá el análisis y sus comprobaciones en trabajo/, y escribí el resultado en el borrador de informe/, con la diferencia y su intervalo. Comprobá que distinguís el intervalo de la media del intervalo de la diferencia. Si esta prueba no corresponde a tu proyecto, hacé el ejercicio en el proyecto de práctica.",
+    "section": "10.6 En tu proyecto",
+    "text": "10.6 En tu proyecto\nSi tu pregunta compara una media con un valor de referencia, dejá la justificación de ese valor en el plan de documentos/. Guardá el análisis y sus comprobaciones en trabajo/, y escribí el resultado en el borrador de informe/, con la diferencia y su intervalo. Comprobá que distinguís el intervalo de la media del intervalo de la diferencia. Si esta prueba no corresponde a tu proyecto, hacé el ejercicio en el proyecto de práctica.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>t de una muestra</span>"
@@ -867,8 +911,8 @@
     "objectID": "10-t-una-muestra.html#ejercicios-de-autochequeo",
     "href": "10-t-una-muestra.html#ejercicios-de-autochequeo",
     "title": "10  t de una muestra",
-    "section": "10.6 Ejercicios de autochequeo",
-    "text": "10.6 Ejercicios de autochequeo\n\n¿El valor de referencia que vas a usar existe antes de tus datos, o lo elegiste después de ver la media de tu muestra?\n¿Tu variable es continua y tenés un solo grupo, sin comparación entre personas ni mediciones repetidas?\nSi tu resultado no fuera significativo, ¿podrías informarlo con M, DE, t, p e IC?\n¿Podés explicar, en una oración, qué significa que el intervalo de confianza incluya o no el valor de referencia?",
+    "section": "10.7 Ejercicios de autochequeo",
+    "text": "10.7 Ejercicios de autochequeo\n\n¿El valor de referencia que vas a usar existe antes de tus datos, o lo elegiste después de ver la media de tu muestra?\n¿Tu variable es continua y tenés un solo grupo, sin comparación entre personas ni mediciones repetidas?\nSi tu resultado no fuera significativo, ¿podrías informarlo con M, DE, t, p e IC?\n¿Podés explicar, en una oración, qué significa que el intervalo de confianza incluya o no el valor de referencia?",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>t de una muestra</span>"
@@ -878,8 +922,8 @@
     "objectID": "10-t-una-muestra.html#plantilla-para-llevar",
     "href": "10-t-una-muestra.html#plantilla-para-llevar",
     "title": "10  t de una muestra",
-    "section": "10.7 Plantilla para llevar",
-    "text": "10.7 Plantilla para llevar\nPodés retomar el plan de análisis en una página para contrastar el resultado con el boceto del campo 6. La base del ejemplo está en encuesta-estudiantes-limpia.omv.",
+    "section": "10.8 Plantilla para llevar",
+    "text": "10.8 Plantilla para llevar\nPodés retomar el plan de análisis en una página para contrastar el resultado con el boceto del campo 6. La base del ejemplo está en encuesta-estudiantes-limpia.omv.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>t de una muestra</span>"
@@ -930,11 +974,22 @@
     ]
   },
   {
+    "objectID": "11-dos-grupos.html#leer-el-gráfico",
+    "href": "11-dos-grupos.html#leer-el-gráfico",
+    "title": "11  t independientes y pareada",
+    "section": "11.4 Leer el gráfico",
+    "text": "11.4 Leer el gráfico\nPara la t independiente, el gráfico es el boxplot de procrastinacion partido por trabaja: en Exploration → Descriptives, poné procrastinacion en Variables, trabaja en Split by y activá Box plot. Verás dos cajas lado a lado. Cuando lo corrés, compará la altura de las dos medianas y cuánto se solapan las cajas: un solapamiento chico acompaña la diferencia significativa del ejemplo; uno grande pediría cautela. Para la t pareada, el gráfico informativo es la distribución de las diferencias (post menos pre): interesa si se corren hacia el lado de la mejora y si algún caso va a contramano. El Capítulo 17 explica por qué la posición sobre un eje común hace legible esta comparación.",
+    "crumbs": [
+      "Parte II. Elegir y ejecutar",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>t independientes y pareada</span>"
+    ]
+  },
+  {
     "objectID": "11-dos-grupos.html#cómo-leer-el-output-e-informarlo-en-apa",
     "href": "11-dos-grupos.html#cómo-leer-el-output-e-informarlo-en-apa",
     "title": "11  t independientes y pareada",
-    "section": "11.4 Cómo leer el output e informarlo en APA",
-    "text": "11.4 Cómo leer el output e informarlo en APA\njamovi te da todos los números; el párrafo tenés que armarlo vos, con la misma frase con huecos que escribiste en el Capítulo 2. Para muestras independientes:\n\nLos estudiantes que trabajan presentaron mayor procrastinación (M = 34.24, DE = 3.70) que los que no trabajan (M = 31.49, DE = 4.79), t(68) = 2.70, p = .009, IC 95 % [0.72, 4.79], d = 0.65. La diferencia fue estadísticamente significativa.\n\nPara muestras pareadas:\n\nLa organización aumentó entre el inicio (M = 21.55, DE = 2.98) y el final del taller (M = 24.13, DE = 3.58), t(31) = 7.83, p &lt; .001, IC 95 % [1.90, 3.25], d = 1.38. El cambio fue estadísticamente significativo.\n\nEn ambos ejemplos, los estadísticos (t, d) van en cursiva; p se informa con el valor exacto salvo que sea menor a .001, en cuyo caso se escribe “p &lt; .001”; y el sentido de la diferencia (quién es mayor que quién, o si aumentó o disminuyó) se dice en palabras, no solo en números. Un lector no debería tener que hacer la resta para saber qué pasó.",
+    "section": "11.5 Cómo leer el output e informarlo en APA",
+    "text": "11.5 Cómo leer el output e informarlo en APA\njamovi te da todos los números; el párrafo tenés que armarlo vos, con la misma frase con huecos que escribiste en el Capítulo 2. Para muestras independientes:\n\nLos estudiantes que trabajan presentaron mayor procrastinación (M = 34.24, DE = 3.70) que los que no trabajan (M = 31.49, DE = 4.79), t(68) = 2.70, p = .009, IC 95 % [0.72, 4.79], d = 0.65. La diferencia fue estadísticamente significativa.\n\nPara muestras pareadas:\n\nLa organización aumentó entre el inicio (M = 21.55, DE = 2.98) y el final del taller (M = 24.13, DE = 3.58), t(31) = 7.83, p &lt; .001, IC 95 % [1.90, 3.25], d = 1.38. El cambio fue estadísticamente significativo.\n\nEn ambos ejemplos, los estadísticos (t, d) van en cursiva; p se informa con el valor exacto salvo que sea menor a .001, en cuyo caso se escribe “p &lt; .001”; y el sentido de la diferencia (quién es mayor que quién, o si aumentó o disminuyó) se dice en palabras, no solo en números. Un lector no debería tener que hacer la resta para saber qué pasó.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>t independientes y pareada</span>"
@@ -944,8 +999,8 @@
     "objectID": "11-dos-grupos.html#en-tu-proyecto",
     "href": "11-dos-grupos.html#en-tu-proyecto",
     "title": "11  t independientes y pareada",
-    "section": "11.5 En tu proyecto",
-    "text": "11.5 En tu proyecto\nAplicá la versión de la t que corresponda al diseño de tu proyecto y guardá el análisis en trabajo/. Registrá el orden de los grupos o de las mediciones para poder interpretar el signo de la diferencia. Exportá la tabla que necesites a resultados/ y escribí la comparación en informe/. Justificá cualquier cambio respecto del plan. Para practicar la otra versión de la t, usá los datos del libro en tu proyecto de práctica.",
+    "section": "11.6 En tu proyecto",
+    "text": "11.6 En tu proyecto\nAplicá la versión de la t que corresponda al diseño de tu proyecto y guardá el análisis en trabajo/. Registrá el orden de los grupos o de las mediciones para poder interpretar el signo de la diferencia. Exportá la tabla que necesites a resultados/ y escribí la comparación en informe/. Justificá cualquier cambio respecto del plan. Para practicar la otra versión de la t, usá los datos del libro en tu proyecto de práctica.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>t independientes y pareada</span>"
@@ -955,8 +1010,8 @@
     "objectID": "11-dos-grupos.html#ejercicios-de-autochequeo",
     "href": "11-dos-grupos.html#ejercicios-de-autochequeo",
     "title": "11  t independientes y pareada",
-    "section": "11.6 Ejercicios de autochequeo",
-    "text": "11.6 Ejercicios de autochequeo\n\nEn tu proyecto, ¿los dos grupos son personas distintas o las mismas personas medidas dos veces?\n¿Tu elección entre Student y Welch considera el plan, las dispersiones y los tamaños de grupo, además de Levene?\n¿Tu frase de resultado incluye M, DE, t, p y el tamaño de efecto, y no solo el valor de p?\nSi el resultado no hubiera sido significativo, ¿igual podrías informar la estimación y su intervalo sin afirmar que demostraste ausencia de diferencia?",
+    "section": "11.7 Ejercicios de autochequeo",
+    "text": "11.7 Ejercicios de autochequeo\n\nEn tu proyecto, ¿los dos grupos son personas distintas o las mismas personas medidas dos veces?\n¿Tu elección entre Student y Welch considera el plan, las dispersiones y los tamaños de grupo, además de Levene?\n¿Tu frase de resultado incluye M, DE, t, p y el tamaño de efecto, y no solo el valor de p?\nSi el resultado no hubiera sido significativo, ¿igual podrías informar la estimación y su intervalo sin afirmar que demostraste ausencia de diferencia?",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>t independientes y pareada</span>"
@@ -966,8 +1021,8 @@
     "objectID": "11-dos-grupos.html#plantilla-para-llevar",
     "href": "11-dos-grupos.html#plantilla-para-llevar",
     "title": "11  t independientes y pareada",
-    "section": "11.7 Plantilla para llevar",
-    "text": "11.7 Plantilla para llevar\nRetomá el plan de análisis en una página y contrastá la comparación con lo que habías previsto. Las bases del ejemplo están en encuesta-estudiantes-limpia.omv y taller-organizacion-prepost.omv.",
+    "section": "11.8 Plantilla para llevar",
+    "text": "11.8 Plantilla para llevar\nRetomá el plan de análisis en una página y contrastá la comparación con lo que habías previsto. Las bases del ejemplo están en encuesta-estudiantes-limpia.omv y taller-organizacion-prepost.omv.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>t independientes y pareada</span>"
@@ -1007,11 +1062,22 @@
     ]
   },
   {
+    "objectID": "12-anova-un-factor.html#leer-el-gráfico",
+    "href": "12-anova-un-factor.html#leer-el-gráfico",
+    "title": "12  ANOVA de un factor",
+    "section": "12.4 Leer el gráfico",
+    "text": "12.4 Leer el gráfico\nEl gráfico de este análisis es el de medias por grupo, que pedís con Descriptives plots en la One-Way ANOVA. Muestra un punto por turno (la media) con una barra de error alrededor. Cuando lo corrés, leé primero la altura de los tres puntos para ver el orden de los turnos, y después el largo de las barras de error: si las de dos turnos casi no se superponen, esa es la diferencia que después confirman las comparaciones de Tukey; si se superponen mucho, como pasa entre tarde y noche, el par probablemente no difiera. Un boxplot por turno complementa la mirada sobre la dispersión de cada grupo. El Capítulo 17 da el marco para leerlo.",
+    "crumbs": [
+      "Parte II. Elegir y ejecutar",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>ANOVA de un factor</span>"
+    ]
+  },
+  {
     "objectID": "12-anova-un-factor.html#cómo-leer-el-output-e-informarlo-en-apa",
     "href": "12-anova-un-factor.html#cómo-leer-el-output-e-informarlo-en-apa",
     "title": "12  ANOVA de un factor",
-    "section": "12.4 Cómo leer el output e informarlo en APA",
-    "text": "12.4 Cómo leer el output e informarlo en APA\n\nLa procrastinación académica difirió según el turno de cursada, F(2, 69) = 18.63, p &lt; .001, η² = .35. Las comparaciones de Tukey mostraron puntajes mayores en el turno noche (M = 35.40, DE = 3.29) y tarde (M = 33.72, DE = 3.32) que en el turno mañana (M = 29.15, DE = 4.31), ps &lt; .001. No hubo diferencia concluyente entre los turnos tarde y noche, p = .259.\n\nEl informe presenta el resultado global de ANOVA y los pares que aclaran ese resultado. No alcanza con decir “hubo diferencias significativas”; el lector necesita saber entre qué grupos y en qué dirección.\n\nSi las varianzas no son homogéneas\nNo borres los grupos con más dispersión ni hagas de cuenta que Levene no existe. Usá ANOVA de Welch y comparaciones Games-Howell; ambos toleran mejor varianzas desiguales. Si el problema principal es una distribución muy alejada de lo razonable o valores extremos que cambian la conclusión, revisá primero los datos y el Capítulo 9. Kruskal-Wallis puede ser una alternativa, pero responde una pregunta sobre rangos/distribuciones y se informa como tal.",
+    "section": "12.5 Cómo leer el output e informarlo en APA",
+    "text": "12.5 Cómo leer el output e informarlo en APA\n\nLa procrastinación académica difirió según el turno de cursada, F(2, 69) = 18.63, p &lt; .001, η² = .35. Las comparaciones de Tukey mostraron puntajes mayores en el turno noche (M = 35.40, DE = 3.29) y tarde (M = 33.72, DE = 3.32) que en el turno mañana (M = 29.15, DE = 4.31), ps &lt; .001. No hubo diferencia concluyente entre los turnos tarde y noche, p = .259.\n\nEl informe presenta el resultado global de ANOVA y los pares que aclaran ese resultado. No alcanza con decir “hubo diferencias significativas”; el lector necesita saber entre qué grupos y en qué dirección.\n\nSi las varianzas no son homogéneas\nNo borres los grupos con más dispersión ni hagas de cuenta que Levene no existe. Usá ANOVA de Welch y comparaciones Games-Howell; ambos toleran mejor varianzas desiguales. Si el problema principal es una distribución muy alejada de lo razonable o valores extremos que cambian la conclusión, revisá primero los datos y el Capítulo 9. Kruskal-Wallis puede ser una alternativa, pero responde una pregunta sobre rangos/distribuciones y se informa como tal.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>ANOVA de un factor</span>"
@@ -1021,8 +1087,8 @@
     "objectID": "12-anova-un-factor.html#en-tu-proyecto",
     "href": "12-anova-un-factor.html#en-tu-proyecto",
     "title": "12  ANOVA de un factor",
-    "section": "12.5 En tu proyecto",
-    "text": "12.5 En tu proyecto\nSi tu proyecto compara tres o más grupos independientes, guardá en trabajo/ el ANOVA, las comprobaciones y las comparaciones posteriores que correspondan. Registrá qué versión usaste y por qué. Llevá a resultados/ los descriptivos por grupo y escribí en informe/ el resultado global y, cuando corresponda, qué pares difieren. Si tu pregunta requiere otro análisis, reservá este ejercicio para el proyecto de práctica.",
+    "section": "12.6 En tu proyecto",
+    "text": "12.6 En tu proyecto\nSi tu proyecto compara tres o más grupos independientes, guardá en trabajo/ el ANOVA, las comprobaciones y las comparaciones posteriores que correspondan. Registrá qué versión usaste y por qué. Llevá a resultados/ los descriptivos por grupo y escribí en informe/ el resultado global y, cuando corresponda, qué pares difieren. Si tu pregunta requiere otro análisis, reservá este ejercicio para el proyecto de práctica.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>ANOVA de un factor</span>"
@@ -1032,8 +1098,8 @@
     "objectID": "12-anova-un-factor.html#ejercicios-de-autochequeo",
     "href": "12-anova-un-factor.html#ejercicios-de-autochequeo",
     "title": "12  ANOVA de un factor",
-    "section": "12.6 Ejercicios de autochequeo",
-    "text": "12.6 Ejercicios de autochequeo\n\n¿Tu variable de agrupamiento tiene tres o más categorías y tus grupos son personas distintas?\n¿Tu resultado es continuo y tiene una definición previa en el diccionario?\n¿Pediste descriptivos, Levene y el gráfico antes de interpretar el F?\nSi ANOVA es significativo, ¿usaste una comparación post-hoc coherente con las varianzas en vez de hacer t al azar?",
+    "section": "12.7 Ejercicios de autochequeo",
+    "text": "12.7 Ejercicios de autochequeo\n\n¿Tu variable de agrupamiento tiene tres o más categorías y tus grupos son personas distintas?\n¿Tu resultado es continuo y tiene una definición previa en el diccionario?\n¿Pediste descriptivos, Levene y el gráfico antes de interpretar el F?\nSi ANOVA es significativo, ¿usaste una comparación post-hoc coherente con las varianzas en vez de hacer t al azar?",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>ANOVA de un factor</span>"
@@ -1043,8 +1109,8 @@
     "objectID": "12-anova-un-factor.html#plantilla-para-llevar",
     "href": "12-anova-un-factor.html#plantilla-para-llevar",
     "title": "12  ANOVA de un factor",
-    "section": "12.7 Plantilla para llevar",
-    "text": "12.7 Plantilla para llevar\nTené a mano el plan de análisis y el árbol de decisión para revisar la comparación que planteaste. La base del ejemplo está en encuesta-estudiantes-limpia.omv.",
+    "section": "12.8 Plantilla para llevar",
+    "text": "12.8 Plantilla para llevar\nTené a mano el plan de análisis y el árbol de decisión para revisar la comparación que planteaste. La base del ejemplo está en encuesta-estudiantes-limpia.omv.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>ANOVA de un factor</span>"
@@ -1084,11 +1150,33 @@
     ]
   },
   {
+    "objectID": "13-correlacion.html#leer-el-gráfico",
+    "href": "13-correlacion.html#leer-el-gráfico",
+    "title": "13  Correlación entre dos variables",
+    "section": "13.4 Leer el gráfico",
+    "text": "13.4 Leer el gráfico\nEl gráfico propio de la correlación es el diagrama de dispersión, que ya activaste en el paso anterior. Cada punto es un estudiante, ubicado por sus horas de estudio (eje horizontal) y su procrastinación (eje vertical). Cuando lo corrés, leé tres cosas en este orden: la dirección de la nube (acá desciende, coherente con el signo negativo de r), cuán apretada está alrededor de una línea imaginaria (más apretada, relación más fuerte) y si algún punto aislado, lejos del resto, está tironeando la tendencia. Una nube en forma de U o de curva puede dar un r cercano a 0 aunque exista una relación clara, porque Pearson solo mide lo lineal. El Capítulo 17 explica por qué este gráfico, de dos posiciones, es el que mejor muestra una relación.",
+    "crumbs": [
+      "Parte II. Elegir y ejecutar",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Correlación entre dos variables</span>"
+    ]
+  },
+  {
     "objectID": "13-correlacion.html#cómo-leer-el-output-e-informarlo-en-apa",
     "href": "13-correlacion.html#cómo-leer-el-output-e-informarlo-en-apa",
     "title": "13  Correlación entre dos variables",
-    "section": "13.4 Cómo leer el output e informarlo en APA",
-    "text": "13.4 Cómo leer el output e informarlo en APA\n\nLas horas de estudio semanal se relacionaron negativamente con la procrastinación académica, r(70) = −.38, p = .001, IC 95 % [−.56, −.16]. En esta muestra, quienes informaron más horas de estudio tendieron a presentar menor procrastinación.\n\nLa frase incluye dirección, tamaño de la relación, grados de libertad, p e intervalo. El valor de r y su intervalo permiten juzgar la magnitud y la precisión del resultado en el contexto del proyecto.\n\nCorrelación no es predicción ni causalidad\nUna correlación de dos variables no ajusta otras explicaciones ni produce una predicción individual confiable. Para eso harían falta preguntas y modelos distintos, como regresión con covariables, que no forman parte del núcleo de este libro. Al escribir, indicá que las variables se relacionan, se asocian o varían juntas; no digas que una “produce”, “explica” o “determina” la otra.",
+    "section": "13.5 Cómo leer el output e informarlo en APA",
+    "text": "13.5 Cómo leer el output e informarlo en APA\n\nLas horas de estudio semanal se relacionaron negativamente con la procrastinación académica, r(70) = −.38, p = .001, IC 95 % [−.56, −.16]. En esta muestra, quienes informaron más horas de estudio tendieron a presentar menor procrastinación.\n\nLa frase incluye dirección, tamaño de la relación, grados de libertad, p e intervalo. El valor de r y su intervalo permiten juzgar la magnitud y la precisión del resultado en el contexto del proyecto.\n\nCorrelación no es predicción ni causalidad\nUna correlación de dos variables no ajusta otras explicaciones ni produce una predicción individual confiable. Para eso harían falta preguntas y modelos distintos, como regresión con covariables, que no forman parte del núcleo de este libro. Al escribir, indicá que las variables se relacionan, se asocian o varían juntas; no digas que una “produce”, “explica” o “determina” la otra.",
+    "crumbs": [
+      "Parte II. Elegir y ejecutar",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Correlación entre dos variables</span>"
+    ]
+  },
+  {
+    "objectID": "13-correlacion.html#un-juego-para-interpretar-correlaciones",
+    "href": "13-correlacion.html#un-juego-para-interpretar-correlaciones",
+    "title": "13  Correlación entre dos variables",
+    "section": "13.6 Un juego para interpretar correlaciones",
+    "text": "13.6 Un juego para interpretar correlaciones\nLeer una correlación se entrena. Este juego tiene tres rondas cortas; jugá primero, anotá tu respuesta y después abrí las soluciones.\nRonda 1. ¿Positiva o negativa? Sin números, solo con el sentido común, decidí qué signo esperás para r en cada par.\n\nHoras de sueño y nivel de cansancio al día siguiente.\nPáginas leídas en el cuatrimestre y cantidad de palabras nuevas aprendidas.\nTemperatura del día y tazas de café caliente vendidas.\nClases a las que faltás y nota final de la cursada.\n\nRonda 2. Ordená la fuerza. Tres diagramas de dispersión muestran estas nubes. Ordenalas de la relación más débil a la más fuerte y estimá un r para cada una.\n\nNube A: los puntos forman casi una línea recta ascendente.\nNube B: se nota una tendencia ascendente, pero con bastante dispersión alrededor.\nNube C: una mancha redondeada, sin dirección clara.\n\nRonda 3. ¿La lectura es correcta? Para cada frase, decidí si la interpretación se sostiene o dónde falla.\n\n“r = .80 entre helados vendidos y casos de insolación, así que vender helado causa insolación.”\n“r = .02 entre horas de pantalla y ánimo, así que no hay ninguna relación entre esas variables.”\n“r = .30, es poca cosa, no vale la pena informarlo.”\n\n\n\n\n\n\n\nNotaSoluciones\n\n\n\n\n\nRonda 1. (1) Negativa: más sueño, menos cansancio. (2) Positiva: más lectura, más vocabulario. (3) Negativa: con más calor se vende menos café caliente. (4) Negativa: más ausencias suelen acompañar notas más bajas. Lo que importa acá es el signo y su porqué, no un número exacto.\nRonda 2. De más débil a más fuerte: C, B, A. Valores plausibles: C cerca de r = .05 (casi sin relación lineal), B alrededor de r = .5 (relación moderada con dispersión) y A cerca de r = .95 (relación fuerte, casi lineal).\nRonda 3. Las tres fallan. (1) Confunde correlación con causa: una tercera variable, el calor del verano, empuja las dos. (2) Un r cercano a 0 solo descarta una relación lineal; podría haber una relación en forma de U que Pearson no capta, como viste en Capítulo 9. (3) La magnitud no se juzga con una etiqueta automática: un r = .30 puede ser relevante según la pregunta, las consecuencias y la precisión del intervalo; se informa igual, con su IC.\n\n\n\nPara entrenar el ojo con la parte visual, que en papel no se puede practicar, probá el juego en línea Guess the Correlation: te muestra una nube de puntos y tenés que estimar su r. Es una buena forma de calibrar cuánto se parece tu intuición a lo que dice el coeficiente.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Correlación entre dos variables</span>"
@@ -1098,8 +1186,8 @@
     "objectID": "13-correlacion.html#en-tu-proyecto",
     "href": "13-correlacion.html#en-tu-proyecto",
     "title": "13  Correlación entre dos variables",
-    "section": "13.5 En tu proyecto",
-    "text": "13.5 En tu proyecto\nSi tu pregunta trata sobre la relación entre dos variables, conservá el diagrama de dispersión y el análisis en trabajo/. Anotá en el registro por qué usaste Pearson o Spearman. Guardá el gráfico que vas a comunicar en resultados/ y escribí en informe/ la dirección y magnitud de la relación, con su incertidumbre. Revisá que los verbos respeten lo que permite tu diseño. Si este análisis no corresponde a tu pregunta, usá el proyecto de práctica.",
+    "section": "13.7 En tu proyecto",
+    "text": "13.7 En tu proyecto\nSi tu pregunta trata sobre la relación entre dos variables, conservá el diagrama de dispersión y el análisis en trabajo/. Anotá en el registro por qué usaste Pearson o Spearman. Guardá el gráfico que vas a comunicar en resultados/ y escribí en informe/ la dirección y magnitud de la relación, con su incertidumbre. Revisá que los verbos respeten lo que permite tu diseño. Si este análisis no corresponde a tu pregunta, usá el proyecto de práctica.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Correlación entre dos variables</span>"
@@ -1109,8 +1197,8 @@
     "objectID": "13-correlacion.html#ejercicios-de-autochequeo",
     "href": "13-correlacion.html#ejercicios-de-autochequeo",
     "title": "13  Correlación entre dos variables",
-    "section": "13.6 Ejercicios de autochequeo",
-    "text": "13.6 Ejercicios de autochequeo\n\n¿Cada caso aporta dos valores continuos y la pregunta es por su relación?\n¿Miraste el diagrama de dispersión antes de interpretar r?\n¿Sabés decir qué significa el signo de tu coeficiente en palabras?\n¿Tu conclusión evita convertir una relación observada en una afirmación causal?",
+    "section": "13.8 Ejercicios de autochequeo",
+    "text": "13.8 Ejercicios de autochequeo\n\n¿Cada caso aporta dos valores continuos y la pregunta es por su relación?\n¿Miraste el diagrama de dispersión antes de interpretar r?\n¿Sabés decir qué significa el signo de tu coeficiente en palabras?\n¿Tu conclusión evita convertir una relación observada en una afirmación causal?",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Correlación entre dos variables</span>"
@@ -1120,8 +1208,8 @@
     "objectID": "13-correlacion.html#plantilla-para-llevar",
     "href": "13-correlacion.html#plantilla-para-llevar",
     "title": "13  Correlación entre dos variables",
-    "section": "13.7 Plantilla para llevar",
-    "text": "13.7 Plantilla para llevar\nRetomá el plan de análisis y la lista de revisión antes de analizar. La base del ejemplo está en encuesta-estudiantes-limpia.omv.",
+    "section": "13.9 Plantilla para llevar",
+    "text": "13.9 Plantilla para llevar\nRetomá el plan de análisis y la lista de revisión antes de analizar. La base del ejemplo está en encuesta-estudiantes-limpia.omv.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Correlación entre dos variables</span>"
@@ -1161,11 +1249,22 @@
     ]
   },
   {
+    "objectID": "14-chi-cuadrado.html#leer-el-gráfico",
+    "href": "14-chi-cuadrado.html#leer-el-gráfico",
+    "title": "14  Chi-cuadrado para variables categóricas",
+    "section": "14.4 Leer el gráfico",
+    "text": "14.4 Leer el gráfico\nPara dos variables categóricas, el gráfico es un gráfico de barras agrupadas, no una torta. Pedilo en Frequencies → Independent Samples, dentro de Plots: activá Bar Plot, poné los porcentajes en el eje y las barras lado a lado (side by side) por grupo. Cuando lo corrés, compará la altura de la barra de “aprobó” entre quienes trabajan y quienes no; esa diferencia de alturas es la misma que leés en los porcentajes por fila. La torta obligaría a comparar porciones y, con eso, escondería una diferencia de casi quince puntos que en barras se ve de inmediato; el Capítulo 17 desarrolla por qué.",
+    "crumbs": [
+      "Parte II. Elegir y ejecutar",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Chi-cuadrado para variables categóricas</span>"
+    ]
+  },
+  {
     "objectID": "14-chi-cuadrado.html#cómo-leer-el-output-e-informarlo-en-apa",
     "href": "14-chi-cuadrado.html#cómo-leer-el-output-e-informarlo-en-apa",
     "title": "14  Chi-cuadrado para variables categóricas",
-    "section": "14.4 Cómo leer el output e informarlo en APA",
-    "text": "14.4 Cómo leer el output e informarlo en APA\n\nLa situación laboral no se asoció de manera concluyente con la aprobación del parcial, χ²(1, N = 70) = 1.54, p = .214, V = .15. Aprobó el 64.7 % de quienes no trabajaban y el 50.0 % de quienes trabajaban.\n\nNombrar los porcentajes evita que un χ² sin dirección quede abstracto. Informar N deja claro que dos casos con información laboral faltante no entraron en esta comparación. “No significativo” describe la evidencia de esta muestra, no una verdad definitiva sobre la población.\n\nSi las frecuencias esperadas son bajas\nNo mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí Fisher’s exact test en jamovi. Si hay muchas categorías con pocos casos, quizá necesites más datos o una pregunta menos fragmentada.",
+    "section": "14.5 Cómo leer el output e informarlo en APA",
+    "text": "14.5 Cómo leer el output e informarlo en APA\n\nLa situación laboral no se asoció de manera concluyente con la aprobación del parcial, χ²(1, N = 70) = 1.54, p = .214, V = .15. Aprobó el 64.7 % de quienes no trabajaban y el 50.0 % de quienes trabajaban.\n\nNombrar los porcentajes evita que un χ² sin dirección quede abstracto. Informar N deja claro que dos casos con información laboral faltante no entraron en esta comparación. “No significativo” describe la evidencia de esta muestra, no una verdad definitiva sobre la población.\n\nSi las frecuencias esperadas son bajas\nNo mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí Fisher’s exact test en jamovi. Si hay muchas categorías con pocos casos, quizá necesites más datos o una pregunta menos fragmentada.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Chi-cuadrado para variables categóricas</span>"
@@ -1175,8 +1274,8 @@
     "objectID": "14-chi-cuadrado.html#en-tu-proyecto",
     "href": "14-chi-cuadrado.html#en-tu-proyecto",
     "title": "14  Chi-cuadrado para variables categóricas",
-    "section": "14.5 En tu proyecto",
-    "text": "14.5 En tu proyecto\nSi tu proyecto estudia la asociación entre dos variables categóricas, guardá la tabla de contingencia y la revisión de frecuencias esperadas en trabajo/. Registrá qué prueba aplicaste y sobre cuántos casos. Exportá los conteos y porcentajes necesarios a resultados/ y escribí la interpretación en informe/, aclarando sobre qué total calculaste los porcentajes. Si tu proyecto tiene otra pregunta, practicá con la encuesta del libro.",
+    "section": "14.6 En tu proyecto",
+    "text": "14.6 En tu proyecto\nSi tu proyecto estudia la asociación entre dos variables categóricas, guardá la tabla de contingencia y la revisión de frecuencias esperadas en trabajo/. Registrá qué prueba aplicaste y sobre cuántos casos. Exportá los conteos y porcentajes necesarios a resultados/ y escribí la interpretación en informe/, aclarando sobre qué total calculaste los porcentajes. Si tu proyecto tiene otra pregunta, practicá con la encuesta del libro.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Chi-cuadrado para variables categóricas</span>"
@@ -1186,8 +1285,8 @@
     "objectID": "14-chi-cuadrado.html#ejercicios-de-autochequeo",
     "href": "14-chi-cuadrado.html#ejercicios-de-autochequeo",
     "title": "14  Chi-cuadrado para variables categóricas",
-    "section": "14.6 Ejercicios de autochequeo",
-    "text": "14.6 Ejercicios de autochequeo\n\n¿Tus dos variables son categóricas y cada caso puede entrar en una sola celda?\n¿Revisaste conteos y porcentajes, no solo χ² y p?\n¿Todas las frecuencias esperadas son adecuadas para usar la aproximación de chi-cuadrado?\n¿Tu frase informa el tamaño de asociación y evita afirmar causalidad?",
+    "section": "14.7 Ejercicios de autochequeo",
+    "text": "14.7 Ejercicios de autochequeo\n\n¿Tus dos variables son categóricas y cada caso puede entrar en una sola celda?\n¿Revisaste conteos y porcentajes, no solo χ² y p?\n¿Todas las frecuencias esperadas son adecuadas para usar la aproximación de chi-cuadrado?\n¿Tu frase informa el tamaño de asociación y evita afirmar causalidad?",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Chi-cuadrado para variables categóricas</span>"
@@ -1197,8 +1296,8 @@
     "objectID": "14-chi-cuadrado.html#plantilla-para-llevar",
     "href": "14-chi-cuadrado.html#plantilla-para-llevar",
     "title": "14  Chi-cuadrado para variables categóricas",
-    "section": "14.7 Plantilla para llevar",
-    "text": "14.7 Plantilla para llevar\nUsá el plan de análisis y la lista de revisión antes de analizar para comprobar la comparación. La base del ejemplo está en encuesta-estudiantes-limpia.omv.",
+    "section": "14.8 Plantilla para llevar",
+    "text": "14.8 Plantilla para llevar\nUsá el plan de análisis y la lista de revisión antes de analizar para comprobar la comparación. La base del ejemplo está en encuesta-estudiantes-limpia.omv.",
     "crumbs": [
       "Parte II. Elegir y ejecutar",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Chi-cuadrado para variables categóricas</span>"
@@ -1330,7 +1429,7 @@
     "href": "16-caja-de-herramientas.html#plantillas",
     "title": "16  Caja de herramientas",
     "section": "16.2 Plantillas",
-    "text": "16.2 Plantillas\n\nFicha y registro del proyecto. Para ubicar los archivos vigentes y registrar las decisiones y los próximos pasos.\nPlan de análisis en una página. Para definir pregunta, hipótesis, variables, análisis previsto, supuestos y resultado esperado.\nDiccionario de datos. Planilla con una fila por variable que podés abrir en Excel, LibreOffice u otra planilla de cálculo.\nFrases de reporte APA con huecos. Modelos para t, ANOVA, correlación y chi-cuadrado. Completá el que corresponda a tu análisis con tus propios resultados.\n\nGuardá la ficha, el plan y el diccionario completos en documentos/. Usá las frases para redactar el texto que vas a guardar en informe/. Los enlaces de la ficha te van a ayudar a encontrar la base y los análisis correspondientes.",
+    "text": "16.2 Plantillas\n\nFicha y registro del proyecto. Para ubicar los archivos vigentes y registrar las decisiones y los próximos pasos.\nPlan de análisis en una página. Para definir pregunta, hipótesis, variables, análisis previsto, supuestos y resultado esperado.\nDiccionario de datos. Planilla con una fila por variable que podés abrir en Excel, LibreOffice u otra planilla de cálculo.\nRegistro de preparación de la base. Para anotar las recodificaciones, los cálculos, los faltantes y los filtros al preparar la base en jamovi.\nFrases de reporte APA con huecos. Modelos para t, ANOVA, correlación y chi-cuadrado. Completá el que corresponda a tu análisis con tus propios resultados.\nReporte de resultados. Estructura del apartado de resultados, de los descriptivos a la interpretación, para redactar en informe/.\n\nGuardá la ficha, el plan y el diccionario completos en documentos/. Usá las frases para redactar el texto que vas a guardar en informe/. Los enlaces de la ficha te van a ayudar a encontrar la base y los análisis correspondientes.",
     "crumbs": [
       "Parte III. Comunicar",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas</span>"
@@ -1359,11 +1458,22 @@
     ]
   },
   {
+    "objectID": "16-caja-de-herramientas.html#referencias-rápidas",
+    "href": "16-caja-de-herramientas.html#referencias-rápidas",
+    "title": "16  Caja de herramientas",
+    "section": "16.5 Referencias rápidas",
+    "text": "16.5 Referencias rápidas\nAl final del libro hay apéndices para consultar sin releer un capítulo entero.\n\nGuía rápida: qué análisis y qué gráfico. Una carilla que cruza la pregunta y el tipo de variable con el análisis y su gráfico.\nGlosario bilingüe. Los términos del libro con su equivalente en inglés y una definición breve.\nPaletas de colores accesibles. Colores listos para distinguir grupos en un gráfico.\nInstalar jamovi y sus módulos. Descarga, instalación y agregado de módulos como jmvplots y jjstatsplot.",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas</span>"
+    ]
+  },
+  {
     "objectID": "16-caja-de-herramientas.html#datos-de-práctica",
     "href": "16-caja-de-herramientas.html#datos-de-práctica",
     "title": "16  Caja de herramientas",
-    "section": "16.5 Datos de práctica",
-    "text": "16.5 Datos de práctica\nLos ejemplos usan datos sintéticos, inventados para practicar. Guardá las descargas en datos-originales/ de tu proyecto de práctica y los archivos que modifiques en trabajo/.\n\nEncuesta bruta en CSV, para importar y practicar faltantes.\nEncuesta limpia en CSV, para revisar la versión preparada.\nEncuesta limpia en jamovi, con la variable trabaja ya calculada.\nTaller pre/post en CSV y en jamovi, para la t pareada.\n\nSi los usás para practicar, guardá una copia con otro nombre antes de hacer transformaciones. Así siempre podés volver al ejemplo original.",
+    "section": "16.6 Datos de práctica",
+    "text": "16.6 Datos de práctica\nLos ejemplos usan datos sintéticos, inventados para practicar. Guardá las descargas en datos-originales/ de tu proyecto de práctica y los archivos que modifiques en trabajo/.\n\nEncuesta bruta en CSV, para importar y practicar faltantes.\nEncuesta limpia en CSV, para revisar la versión preparada.\nEncuesta limpia en jamovi, con la variable trabaja ya calculada.\nTaller pre/post en CSV y en jamovi, para la t pareada.\n\nSi los usás para practicar, guardá una copia con otro nombre antes de hacer transformaciones. Así siempre podés volver al ejemplo original.",
     "crumbs": [
       "Parte III. Comunicar",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas</span>"
@@ -1373,11 +1483,99 @@
     "objectID": "16-caja-de-herramientas.html#en-tu-proyecto",
     "href": "16-caja-de-herramientas.html#en-tu-proyecto",
     "title": "16  Caja de herramientas",
-    "section": "16.6 En tu proyecto",
-    "text": "16.6 En tu proyecto\nRevisá la carpeta completa antes de entregar. La ficha debe indicar cuáles son el plan, el diccionario, la base de trabajo y el informe vigentes. Abrí el archivo de jamovi que respalda el informe y comprobá que podés encontrar cada resultado. Conservá el original, el registro de cambios y una copia de respaldo.\nSi trabajás en grupo, pedile a otra persona que ubique esos archivos usando la ficha. Si necesita preguntarte cuál abrir o de dónde salió una tabla, completá esa información. El proyecto queda listo cuando pueden retomarlo y explicar las decisiones que llevaron de la pregunta al resultado.",
+    "section": "16.7 En tu proyecto",
+    "text": "16.7 En tu proyecto\nRevisá la carpeta completa antes de entregar. La ficha debe indicar cuáles son el plan, el diccionario, la base de trabajo y el informe vigentes. Abrí el archivo de jamovi que respalda el informe y comprobá que podés encontrar cada resultado. Conservá el original, el registro de cambios y una copia de respaldo.\nSi trabajás en grupo, pedile a otra persona que ubique esos archivos usando la ficha. Si necesita preguntarte cuál abrir o de dónde salió una tabla, completá esa información. El proyecto queda listo cuando pueden retomarlo y explicar las decisiones que llevaron de la pregunta al resultado.",
     "crumbs": [
       "Parte III. Comunicar",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas</span>"
+    ]
+  },
+  {
+    "objectID": "17-pensar-graficos.html",
+    "href": "17-pensar-graficos.html",
+    "title": "17  Pensar los gráficos",
+    "section": "",
+    "text": "17.1 La gramática de un gráfico\nA lo largo del libro fuiste pidiendo gráficos en cada análisis: el histograma del Capítulo 7, el gráfico Q-Q del Capítulo 9, el diagrama de dispersión del Capítulo 13. En cada capítulo te dijimos qué mirar. Este cierre reúne esas piezas y te da el marco que las ordena, ahora que ya viste todos los gráficos del recorrido. La idea es que puedas decidir, frente a una variable nueva, qué gráfico la muestra mejor y por qué.\nTodo gráfico hace lo mismo: toma una variable y la convierte en una propiedad visual. La posición sobre un eje, el largo de una barra, el color, el tamaño, la forma de un punto. Cuando entendés que un gráfico es ese mapeo de variables a propiedades, dejás de elegirlo por costumbre y empezás a elegirlo por lo que querés que se lea.\nUn diagrama de dispersión mapea dos variables continuas a dos posiciones, una en el eje horizontal y otra en el vertical; por eso sirve para ver una relación. Un gráfico de barras mapea una categoría a la posición horizontal y una cantidad al largo de la barra; por eso sirve para comparar cantidades entre grupos. Un boxplot mapea la distribución de una variable a un conjunto de posiciones (mediana, cuartiles, extremos); por eso sirve para comparar formas y detectar valores alejados. La pregunta útil, antes de abrir el menú, no es “¿qué gráfico hago?”, sino “¿qué variable quiero que se lea en la posición, cuál en el largo, cuál en el color?”.",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Pensar los gráficos</span>"
+    ]
+  },
+  {
+    "objectID": "17-pensar-graficos.html#qué-percibe-bien-el-ojo",
+    "href": "17-pensar-graficos.html#qué-percibe-bien-el-ojo",
+    "title": "17  Pensar los gráficos",
+    "section": "17.2 Qué percibe bien el ojo",
+    "text": "17.2 Qué percibe bien el ojo\nNo todas las propiedades visuales se leen con la misma precisión. Cuando dos cosas están alineadas sobre un mismo eje, comparamos sus posiciones con mucha exactitud: vemos enseguida cuál está más arriba y por cuánto. La longitud sobre una base común, como la altura de dos barras que arrancan de la misma línea, también se estima bien. En cambio, estimamos con mucho más error los ángulos, las áreas y las intensidades de color. Podemos decir que un área es “más grande”, pero no cuánto más.\nEse hecho, y no una cuestión de gusto, es lo que decide entre un gráfico y otro. De ahí sale el caso más conocido.\n\nPor qué el gráfico de torta casi nunca conviene\nUna torta representa cada categoría como una porción, es decir, como un ángulo y un área. Le pide al ojo justo lo que peor estima. Para comparar dos porciones parecidas tenés que juzgar dos ángulos, y ahí nos equivocamos. Las mismas cantidades en un gráfico de barras se convierten en alturas sobre un eje común, que es lo que mejor leemos: la comparación se vuelve inmediata. Con dos o tres categorías la torta todavía se defiende; con cinco, seis o más porciones se vuelve casi ilegible y la gente termina leyendo los números impresos encima, lo que significa que el gráfico ya no está haciendo su trabajo.\nNo se trata de una prohibición suelta (“nunca uses torta”), sino de un ejemplo del principio general: elegí la propiedad visual que el ojo lee con precisión para la comparación que te importa. Casi siempre, para comparar cantidades entre categorías, esa propiedad es la longitud de una barra sobre un eje común.",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Pensar los gráficos</span>"
+    ]
+  },
+  {
+    "objectID": "17-pensar-graficos.html#otros-no-hagas-esto-con-su-porqué",
+    "href": "17-pensar-graficos.html#otros-no-hagas-esto-con-su-porqué",
+    "title": "17  Pensar los gráficos",
+    "section": "17.3 Otros “no hagas esto”, con su porqué",
+    "text": "17.3 Otros “no hagas esto”, con su porqué\nLos errores frecuentes en gráficos comparten una raíz: distorsionan el mapeo entre el dato y lo que se ve. Conviene reconocerlos por la razón, no como reglas sueltas.\n\n\n\n\n\n\n\nPráctica a evitar\nPor qué distorsiona\n\n\n\n\nCortar el eje vertical para que no arranque en cero\nExagera diferencias: una brecha real de dos puntos puede parecer enorme, porque el largo de la barra deja de ser proporcional a la cantidad.\n\n\nAgregar profundidad o efectos 3D\nLa perspectiva cambia áreas y ángulos según la posición; dos valores iguales se ven distintos y ninguno se lee bien.\n\n\nAmontonar demasiadas categorías o series\nEl ojo pierde el hilo cuando hay que rastrear diez colores o veinte barras; el gráfico deja de responder una pregunta y pasa a ser un volcado de datos.\n\n\nUsar color solo para decorar\nSi el color no codifica ninguna variable, agrega ruido y compite con la información que sí importa.\n\n\n\nEn todos los casos el criterio es el mismo: si un elemento visual no representa un dato o no ayuda a leer una comparación, está de más.",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Pensar los gráficos</span>"
+    ]
+  },
+  {
+    "objectID": "17-pensar-graficos.html#decisiones-honestas",
+    "href": "17-pensar-graficos.html#decisiones-honestas",
+    "title": "17  Pensar los gráficos",
+    "section": "17.4 Decisiones honestas",
+    "text": "17.4 Decisiones honestas\nDiseñar un gráfico honesto es, sobre todo, no engañar al ojo, ni siquiera sin querer. El color es la decisión más delicada. Informa cuando codifica una variable (por ejemplo, un color por turno de cursada) y distrae cuando es puramente decorativo. Si vas a usar color para distinguir grupos, usá una paleta accesible, pensada para que quien no distingue el rojo del verde igual pueda separar las categorías; en el Apéndice B tenés paletas listas para eso. Una regla simple ayuda: que el gráfico no dependa solo del color, sino que las categorías también se distingan por posición, etiqueta o forma.\nEl otro criterio es la contención. Un gráfico se explica solo cuando tiene lo mínimo necesario para entenderlo: ejes rotulados con la variable y su unidad, una escala que arranca donde corresponde, y nada más. Cada grilla, sombra o borde que agregás compite con los datos. Antes de sumar un elemento, preguntate qué dato representa; si la respuesta es “ninguno”, sacalo.",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Pensar los gráficos</span>"
+    ]
+  },
+  {
+    "objectID": "17-pensar-graficos.html#el-gráfico-como-parte-del-razonamiento",
+    "href": "17-pensar-graficos.html#el-gráfico-como-parte-del-razonamiento",
+    "title": "17  Pensar los gráficos",
+    "section": "17.5 El gráfico como parte del razonamiento",
+    "text": "17.5 El gráfico como parte del razonamiento\nEn este libro el gráfico nunca fue un adorno que se pega al final del informe. Fue una herramienta para pensar. Mirás el histograma antes del test para ver la forma de la distribución; mirás el diagrama de dispersión antes de leer r para descartar que una curva o un solo caso estén gobernando el resultado; mirás el gráfico Q-Q para decidir si el supuesto de normalidad es razonable. El gráfico entra en la decisión, no la ilustra después de tomada. Cuando lo pensás así, elegirlo bien deja de ser una cuestión estética y pasa a ser parte del análisis.",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Pensar los gráficos</span>"
+    ]
+  },
+  {
+    "objectID": "17-pensar-graficos.html#graficar-en-jamovi-de-fábrica-y-con-plugins",
+    "href": "17-pensar-graficos.html#graficar-en-jamovi-de-fábrica-y-con-plugins",
+    "title": "17  Pensar los gráficos",
+    "section": "17.6 Graficar en jamovi: de fábrica y con plugins",
+    "text": "17.6 Graficar en jamovi: de fábrica y con plugins\njamovi ya trae, sin instalar nada, los gráficos que usaste en todo el libro. En Exploration → Descriptives, dentro de Plots, están las barras para categóricas, los histogramas y las curvas de densidad para continuas, los boxplots para comparar grupos y el diagrama de dispersión. Los análisis, además, ofrecen sus propios gráficos en Assumption Checks y Plots, como el Q-Q plot o el gráfico de medias del ANOVA. Para el recorrido de esta materia, eso alcanza.\nSi querés más control o gráficos listos para publicar, jamovi tiene módulos que se instalan en un par de clics desde Modules → jamovi library, sin reiniciar el programa. Dos son especialmente útiles. jmvplots, oficial, es un envoltorio de ggplot2 que te deja armar gráficos personalizados con más opciones de formato. jjstatsplot, basado en ggstatsplot, produce gráficos “listos para publicar” que integran en una sola imagen el gráfico, el resultado del test y el tamaño de efecto. Son un buen paso siguiente cuando el gráfico va a un póster o a un artículo, pero no los necesitás para completar los capítulos de este libro.",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Pensar los gráficos</span>"
+    ]
+  },
+  {
+    "objectID": "17-pensar-graficos.html#en-tu-proyecto",
+    "href": "17-pensar-graficos.html#en-tu-proyecto",
+    "title": "17  Pensar los gráficos",
+    "section": "17.7 En tu proyecto",
+    "text": "17.7 En tu proyecto\nRevisá los gráficos que ya exportaste a resultados/. Para cada uno, preguntate qué variable está en la posición, cuál en el largo y cuál en el color, y si esa elección hace visible la comparación de tu pregunta. Si alguno usa una torta para comparar más de dos categorías, un eje cortado o color decorativo, rehacelo con el criterio de este capítulo y dejá anotado en el registro por qué lo cambiaste. Comprobá también que la paleta sea accesible.",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Pensar los gráficos</span>"
+    ]
+  },
+  {
+    "objectID": "17-pensar-graficos.html#autochequeo",
+    "href": "17-pensar-graficos.html#autochequeo",
+    "title": "17  Pensar los gráficos",
+    "section": "17.8 Autochequeo",
+    "text": "17.8 Autochequeo\n\nPara tu gráfico principal, ¿podés decir qué variable representa cada propiedad visual (posición, largo, color)?\nLa comparación que te importa, ¿se apoya en longitud o posición sobre un eje común, y no en ángulos o áreas?\n¿El eje de cantidades arranca en cero y ningún efecto visual exagera las diferencias?\nSi usás color, ¿codifica una variable y la paleta es accesible, o es solo decorativo?\n¿Cada elemento del gráfico representa un dato, de modo que se explique solo?",
+    "crumbs": [
+      "Parte III. Comunicar",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Pensar los gráficos</span>"
     ]
   },
   {
@@ -1411,6 +1609,204 @@
     "crumbs": [
       "Apéndices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Para ir más lejos</span>"
+    ]
+  },
+  {
+    "objectID": "a2-paletas-accesibles.html",
+    "href": "a2-paletas-accesibles.html",
+    "title": "Apéndice B — Paletas de colores accesibles",
+    "section": "",
+    "text": "B.1 Por qué importa\nEste apéndice acompaña al Capítulo 17. Reúne paletas listas para usar cuando un gráfico necesita distinguir grupos con color, pensadas para que también las lea quien no diferencia bien ciertos colores.\nCerca de uno de cada doce varones y una de cada doscientas mujeres tiene alguna forma de daltonismo; la más común confunde el rojo con el verde. Si un gráfico separa dos grupos usando justamente rojo y verde, una parte de tu audiencia ve dos tonos casi iguales y pierde la comparación. Una paleta accesible elige colores que se distinguen aun para esas personas, y en escala de grises si el gráfico se imprime en blanco y negro.\nLa regla que vale más que cualquier paleta: no dejes que el color sea la única pista. Que los grupos se distingan también por posición, etiqueta directa, forma del punto o tipo de línea. Así el gráfico funciona aunque el color falle.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Paletas de colores accesibles</span>"
+    ]
+  },
+  {
+    "objectID": "a2-paletas-accesibles.html#paleta-categórica-okabe-ito",
+    "href": "a2-paletas-accesibles.html#paleta-categórica-okabe-ito",
+    "title": "Apéndice B — Paletas de colores accesibles",
+    "section": "B.2 Paleta categórica: Okabe-Ito",
+    "text": "B.2 Paleta categórica: Okabe-Ito\nPara variables categóricas (turnos, condiciones, sí/no), la paleta de Okabe-Ito está diseñada para ser distinguible con los tipos más comunes de daltonismo. Usá los colores en este orden y con dos o tres suele alcanzar.\n\n\n\nColor\nCódigo\nUso sugerido\n\n\n\n\nNaranja\n#E69F00\nPrimer grupo\n\n\nCeleste\n#56B4E9\nSegundo grupo\n\n\nVerde\n#009E73\nTercer grupo\n\n\nAmarillo\n#F0E442\nCuarto grupo (sobre fondo oscuro)\n\n\nAzul\n#0072B2\nQuinto grupo\n\n\nBermellón\n#D55E00\nSexto grupo\n\n\nRosa\n#CC79A7\nSéptimo grupo\n\n\nNegro\n#000000\nReferencia o total\n\n\n\nSi tenés más de siete categorías, el problema casi nunca es la paleta: es que demasiadas series juntas se vuelven ilegibles (Capítulo 17). Agrupá categorías o dividí el gráfico antes de buscar más colores.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Paletas de colores accesibles</span>"
+    ]
+  },
+  {
+    "objectID": "a2-paletas-accesibles.html#paletas-de-intensidad-secuencial-y-divergente",
+    "href": "a2-paletas-accesibles.html#paletas-de-intensidad-secuencial-y-divergente",
+    "title": "Apéndice B — Paletas de colores accesibles",
+    "section": "B.3 Paletas de intensidad: secuencial y divergente",
+    "text": "B.3 Paletas de intensidad: secuencial y divergente\nCuando el color representa una cantidad y no una categoría, cambia el criterio. Una escala secuencial va de claro a oscuro de un mismo tono, para valores que van de menos a más (por ejemplo, una frecuencia). Una escala divergente usa dos tonos que se encuentran en un punto neutro en el medio, para valores que se alejan de un centro en dos direcciones (por ejemplo, diferencias positivas y negativas). Las paletas de ColorBrewer (como Blues secuencial o RdBu divergente) están probadas para accesibilidad y son las que usan por defecto muchas herramientas basadas en ggplot2.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Paletas de colores accesibles</span>"
+    ]
+  },
+  {
+    "objectID": "a2-paletas-accesibles.html#cómo-aplicarlas-en-jamovi",
+    "href": "a2-paletas-accesibles.html#cómo-aplicarlas-en-jamovi",
+    "title": "Apéndice B — Paletas de colores accesibles",
+    "section": "B.4 Cómo aplicarlas en jamovi",
+    "text": "B.4 Cómo aplicarlas en jamovi\nLos gráficos de fábrica de Exploration → Descriptives traen colores fijos y no siempre editables. Cuando necesites controlar la paleta, los módulos que instalás desde Modules → jamovi library (Capítulo 17) te dan esa opción: jmvplots y jjstatsplot se apoyan en ggplot2, donde podés fijar los colores con los códigos de arriba o pedir una paleta de ColorBrewer. Si exportás el gráfico para retocarlo en otra herramienta, copiá estos códigos hexadecimales tal cual.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Paletas de colores accesibles</span>"
+    ]
+  },
+  {
+    "objectID": "a2-paletas-accesibles.html#autochequeo",
+    "href": "a2-paletas-accesibles.html#autochequeo",
+    "title": "Apéndice B — Paletas de colores accesibles",
+    "section": "B.5 Autochequeo",
+    "text": "B.5 Autochequeo\n\n¿Los grupos de tu gráfico se distinguen por algo más que el color (posición, etiqueta, forma)?\n¿Usaste una paleta categórica para categorías y una de intensidad para cantidades, y no al revés?\nSi imprimís el gráfico en blanco y negro, ¿todavía se entiende?",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Paletas de colores accesibles</span>"
+    ]
+  },
+  {
+    "objectID": "a3-glosario-bilingue.html",
+    "href": "a3-glosario-bilingue.html",
+    "title": "Apéndice C — Glosario bilingüe",
+    "section": "",
+    "text": "C.1 Interfaz y gestión de datos\nEste glosario cumple dos funciones. Como glosario, reúne los términos que usa el libro con una definición breve. Como mapa de equivalencias español-inglés, te da el nombre en inglés que vas a encontrar en la interfaz de jamovi (que está en inglés) y en los artículos que leas. La definición va siempre en español; el término en inglés es el que necesitás reconocer, no traducir.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Glosario bilingüe</span>"
+    ]
+  },
+  {
+    "objectID": "a3-glosario-bilingue.html#interfaz-y-gestión-de-datos",
+    "href": "a3-glosario-bilingue.html#interfaz-y-gestión-de-datos",
+    "title": "Apéndice C — Glosario bilingüe",
+    "section": "",
+    "text": "Término (ES)\nTérmino (EN)\nDefinición\n\n\n\n\nBase de datos, base\nData set, data\nConjunto rectangular de casos (filas) y variables (columnas) con el que trabajás.\n\n\nDatos\nData\nPestaña de jamovi donde ves y editás la planilla de casos y variables.\n\n\nAnálisis\nAnalyses\nPestaña de jamovi donde elegís y configurás los análisis.\n\n\nCaso, fila\nCase, row\nCada unidad observada; en el libro, cada estudiante.\n\n\nVariable\nVariable\nCada característica registrada en una columna.\n\n\nNivel de medida\nMeasure type\nClasificación de una variable que define qué análisis y estadísticos tienen sentido.\n\n\nContinua\nContinuous\nVariable numérica que admite valores intermedios, como un puntaje.\n\n\nNominal\nNominal\nVariable de categorías sin orden, como el turno de cursada.\n\n\nOrdinal\nOrdinal\nVariable de categorías con un orden, pero sin distancias iguales entre ellas.\n\n\nDato faltante\nMissing value\nValor no registrado; debe declararse para que no se compute como un número real.\n\n\nFiltro\nFilter\nCondición que incluye o excluye casos del análisis sin borrarlos.\n\n\nVariable calculada, transformación\nComputed variable, transform\nVariable nueva derivada de otras mediante una fórmula.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Glosario bilingüe</span>"
+    ]
+  },
+  {
+    "objectID": "a3-glosario-bilingue.html#estadística-descriptiva",
+    "href": "a3-glosario-bilingue.html#estadística-descriptiva",
+    "title": "Apéndice C — Glosario bilingüe",
+    "section": "C.2 Estadística descriptiva",
+    "text": "C.2 Estadística descriptiva\n\n\n\n\n\n\n\n\nTérmino (ES)\nTérmino (EN)\nDefinición\n\n\n\n\nMedia\nMean (M)\nPromedio aritmético de una variable continua.\n\n\nMediana\nMedian\nValor que deja la mitad de los casos por debajo y la mitad por encima.\n\n\nDesvío estándar\nStandard deviation (SD, DE)\nMedida de cuánto se dispersan los valores alrededor de la media.\n\n\nMínimo, máximo\nMinimum, maximum\nValor más bajo y más alto observados en una variable.\n\n\nFrecuencia, conteo\nFrequency, count\nCantidad de casos en una categoría.\n\n\nDistribución\nDistribution\nForma en que se reparten los valores de una variable.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Glosario bilingüe</span>"
+    ]
+  },
+  {
+    "objectID": "a3-glosario-bilingue.html#inferencia",
+    "href": "a3-glosario-bilingue.html#inferencia",
+    "title": "Apéndice C — Glosario bilingüe",
+    "section": "C.3 Inferencia",
+    "text": "C.3 Inferencia\n\n\n\n\n\n\n\n\nTérmino (ES)\nTérmino (EN)\nDefinición\n\n\n\n\nHipótesis nula\nNull hypothesis\nAfirmación de ausencia de diferencia o relación que el test pone a prueba.\n\n\nValor p\np value\nProbabilidad de observar un resultado al menos tan extremo como el obtenido si la hipótesis nula fuera cierta.\n\n\nNivel de significación\nSignificance level, alpha (α)\nUmbral fijado de antemano para decidir sobre la hipótesis nula, habitualmente .05.\n\n\nIntervalo de confianza\nConfidence interval (CI, IC)\nRango de valores compatibles con los datos para el parámetro estimado.\n\n\nTamaño de efecto\nEffect size\nMedida de la magnitud de una diferencia o relación, independiente del tamaño de la muestra.\n\n\nGrados de libertad\nDegrees of freedom (df, gl)\nNúmero de valores libres de variar en el cálculo de un estadístico.\n\n\nError estándar\nStandard error (SE)\nDispersión esperada de un estadístico entre muestras.\n\n\nSupuesto\nAssumption\nCondición bajo la cual un análisis y su valor p se comportan como se espera.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Glosario bilingüe</span>"
+    ]
+  },
+  {
+    "objectID": "a3-glosario-bilingue.html#análisis-del-libro",
+    "href": "a3-glosario-bilingue.html#análisis-del-libro",
+    "title": "Apéndice C — Glosario bilingüe",
+    "section": "C.4 Análisis del libro",
+    "text": "C.4 Análisis del libro\n\n\n\n\n\n\n\n\nTérmino (ES)\nTérmino (EN)\nDefinición\n\n\n\n\nPrueba t\nt test\nFamilia de pruebas que compara medias.\n\n\nt de una muestra\nOne-sample t test\nCompara la media de un grupo con un valor de referencia.\n\n\nt de muestras independientes\nIndependent samples t test\nCompara las medias de dos grupos de personas distintas.\n\n\nt de muestras pareadas\nPaired samples t test\nCompara dos mediciones de las mismas personas.\n\n\nANOVA de un factor\nOne-way ANOVA\nCompara las medias de tres o más grupos independientes.\n\n\nComparaciones post hoc\nPost-hoc comparisons\nComparaciones entre pares de grupos después de un ANOVA significativo.\n\n\nCorrelación\nCorrelation\nDescribe cuánto y en qué dirección se relacionan dos variables continuas.\n\n\nCoeficiente de Pearson\nPearson’s r\nCoeficiente que mide la fuerza y el signo de una relación lineal.\n\n\nCoeficiente de Spearman\nSpearman’s rho\nCoeficiente de correlación basado en rangos, para relaciones monótonas u ordinales.\n\n\nChi-cuadrado\nChi-square (χ²)\nPrueba que evalúa si dos variables categóricas son independientes.\n\n\nTabla de contingencia\nContingency table\nTabla de frecuencias que cruza dos variables categóricas.\n\n\nHomogeneidad de varianzas\nHomogeneity of variance\nSupuesto de que los grupos comparados tienen dispersiones similares.\n\n\nPrueba de Levene\nLevene’s test\nPrueba que evalúa la homogeneidad de varianzas.\n\n\nNormalidad\nNormality\nSupuesto de que la distribución se aproxima a la normal.\n\n\nPrueba de Shapiro-Wilk\nShapiro-Wilk test\nPrueba que evalúa la normalidad de una variable.\n\n\nd de Cohen\nCohen’s d\nTamaño de efecto para la diferencia entre dos medias.\n\n\nEta cuadrado\nEta squared (η²)\nTamaño de efecto para el ANOVA; proporción de varianza asociada al factor.\n\n\nV de Cramér\nCramér’s V\nTamaño de efecto para la asociación entre variables categóricas.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Glosario bilingüe</span>"
+    ]
+  },
+  {
+    "objectID": "a3-glosario-bilingue.html#gráficos",
+    "href": "a3-glosario-bilingue.html#gráficos",
+    "title": "Apéndice C — Glosario bilingüe",
+    "section": "C.5 Gráficos",
+    "text": "C.5 Gráficos\n\n\n\n\n\n\n\n\nTérmino (ES)\nTérmino (EN)\nDefinición\n\n\n\n\nGráfico de barras\nBar chart, bar plot\nRepresenta cantidades por categoría con la altura de barras sobre un eje común.\n\n\nHistograma\nHistogram\nMuestra la distribución de una variable continua en intervalos.\n\n\nDiagrama de caja\nBox plot\nResume la distribución con mediana, cuartiles y valores alejados.\n\n\nDiagrama de dispersión\nScatter plot\nUbica cada caso por sus valores en dos variables continuas para ver su relación.\n\n\nGráfico Q-Q\nQ-Q plot\nCompara los datos con una distribución normal para evaluar el supuesto de normalidad.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Glosario bilingüe</span>"
+    ]
+  },
+  {
+    "objectID": "a4-guia-rapida.html",
+    "href": "a4-guia-rapida.html",
+    "title": "Apéndice D — Guía rápida: qué análisis y qué gráfico",
+    "section": "",
+    "text": "D.1 De la pregunta al análisis y al gráfico\nUna carilla para tener al lado mientras planificás. Resume el razonamiento central del libro: la pregunta y el tipo de tus variables definen el análisis, y cada análisis tiene un gráfico que lo acompaña. No reemplaza los capítulos; te ayuda a ubicarte y a saber adónde ir.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Guía rápida: qué análisis y qué gráfico</span>"
+    ]
+  },
+  {
+    "objectID": "a4-guia-rapida.html#de-la-pregunta-al-análisis-y-al-gráfico",
+    "href": "a4-guia-rapida.html#de-la-pregunta-al-análisis-y-al-gráfico",
+    "title": "Apéndice D — Guía rápida: qué análisis y qué gráfico",
+    "section": "",
+    "text": "Tu pregunta es…\nVariable de resultado\nOtra variable\nAnálisis\nGráfico que lo acompaña\nCapítulo\n\n\n\n\n¿Un promedio difiere de un valor de referencia?\nContinua\nUn valor fijo (no una variable)\nt de una muestra\nHistograma y gráfico Q-Q\nCapítulo 10\n\n\n¿Difieren dos grupos de personas distintas?\nContinua\nCategórica de 2 categorías\nt de muestras independientes\nDiagrama de caja por grupo\nCapítulo 11\n\n\n¿Cambiaron las mismas personas entre dos momentos?\nContinua (dos medidas por caso)\n—\nt de muestras pareadas\nDistribución de las diferencias\nCapítulo 11\n\n\n¿Difieren tres o más grupos?\nContinua\nCategórica de 3 o más categorías\nANOVA de un factor\nGráfico de medias con barras de error\nCapítulo 12\n\n\n¿Se relacionan dos cantidades?\nContinua\nContinua\nCorrelación\nDiagrama de dispersión\nCapítulo 13\n\n\n¿Se asocian dos categorías?\nCategórica\nCategórica\nChi-cuadrado de independencia\nBarras agrupadas\nCapítulo 14\n\n\n¿Cómo es una variable, antes de comparar o relacionar?\nCualquiera\n—\nDescriptivos\nHistograma, barras o diagrama de caja\nCapítulo 7",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Guía rápida: qué análisis y qué gráfico</span>"
+    ]
+  },
+  {
+    "objectID": "a4-guia-rapida.html#cómo-usar-esta-guía",
+    "href": "a4-guia-rapida.html#cómo-usar-esta-guía",
+    "title": "Apéndice D — Guía rápida: qué análisis y qué gráfico",
+    "section": "D.2 Cómo usar esta guía",
+    "text": "D.2 Cómo usar esta guía\n\nEscribí tu pregunta en una oración y decidí si querés comparar, describir o buscar una relación (Capítulo 8).\nFijate el nivel de medida de tus variables en el diccionario (Capítulo 4): continua, nominal u ordinal.\nCruzá ambas cosas en la tabla para ubicar el análisis y su gráfico.\nAntes de correrlo, revisá los supuestos (Capítulo 9). Si no se cumplen, la fila del análisis te remite a la alternativa del capítulo.\nPara elegir y leer bien el gráfico, mirá Capítulo 17.\n\nLa herramienta se elige por la pregunta y las variables, nunca por el resultado que preferirías obtener.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Guía rápida: qué análisis y qué gráfico</span>"
+    ]
+  },
+  {
+    "objectID": "a5-instalar-jamovi.html",
+    "href": "a5-instalar-jamovi.html",
+    "title": "Apéndice E — Instalar jamovi y sus módulos",
+    "section": "",
+    "text": "E.1 Instalar jamovi\njamovi es gratuito y de código abierto. Este apéndice reúne los pasos de instalación y el agregado de módulos en un solo lugar; para el recorrido guiado con video, mirá Capítulo 5.\njamovi ofrece una traducción al español que se activa en Preferences (el botón de opciones, arriba a la derecha). El libro usa los nombres en inglés porque es el idioma por defecto y el que vas a encontrar en la mayoría de los tutoriales y capturas; si activás el español, algunas etiquetas cambian de nombre.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>E</span>  <span class='chapter-title'>Instalar jamovi y sus módulos</span>"
+    ]
+  },
+  {
+    "objectID": "a5-instalar-jamovi.html#instalar-jamovi",
+    "href": "a5-instalar-jamovi.html#instalar-jamovi",
+    "title": "Apéndice E — Instalar jamovi y sus módulos",
+    "section": "",
+    "text": "Entrá a jamovi.org y abrí la sección de descargas.\nElegí la versión para tu sistema operativo (Windows, macOS o Linux). Para trabajar sin conexión, descargá la versión de escritorio (desktop), no la de la nube.\nInstalá el archivo descargado como cualquier programa y abrilo. La primera pantalla ya muestra la planilla vacía, con las pestañas Data (Datos) y Analyses (Análisis) arriba.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>E</span>  <span class='chapter-title'>Instalar jamovi y sus módulos</span>"
+    ]
+  },
+  {
+    "objectID": "a5-instalar-jamovi.html#agregar-módulos",
+    "href": "a5-instalar-jamovi.html#agregar-módulos",
+    "title": "Apéndice E — Instalar jamovi y sus módulos",
+    "section": "E.2 Agregar módulos",
+    "text": "E.2 Agregar módulos\nLos análisis básicos vienen de fábrica. Para funciones adicionales, como gráficos personalizados, jamovi usa módulos que se instalan en unos clics, sin reiniciar el programa.\n\nHacé clic en el botón Modules (el signo + grande, arriba a la derecha).\nElegí jamovi library. Se abre el catálogo de módulos disponibles.\nBuscá el módulo por su nombre y pulsá Install. Al acabar, sus análisis aparecen como una opción nueva en el menú Analyses.\n\n\nMódulos de visualización recomendados\n\n\n\n\n\n\n\nMódulo\nPara qué sirve\n\n\n\n\njmvplots\nWrapper oficial de ggplot2 para armar gráficos personalizados con más control de formato.\n\n\njjstatsplot\nBasado en ggstatsplot; genera gráficos “listos para publicar” que integran el gráfico, el test y el tamaño de efecto en una sola imagen.\n\n\n\nNo necesitás estos módulos para completar los capítulos del libro; son un buen paso siguiente cuando un gráfico va a un póster o a un artículo. Ver Capítulo 17 y las paletas de colores accesibles.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>E</span>  <span class='chapter-title'>Instalar jamovi y sus módulos</span>"
+    ]
+  },
+  {
+    "objectID": "a5-instalar-jamovi.html#si-algo-falla",
+    "href": "a5-instalar-jamovi.html#si-algo-falla",
+    "title": "Apéndice E — Instalar jamovi y sus módulos",
+    "section": "E.3 Si algo falla",
+    "text": "E.3 Si algo falla\n\nSi la descarga no arranca, probá con otro navegador o revisá los permisos de instalación de tu equipo.\nSi un módulo no aparece tras instalarlo, cerrá y volvé a abrir el catálogo de jamovi library; la conexión a internet es necesaria solo para instalarlo, no para usarlo después.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>E</span>  <span class='chapter-title'>Instalar jamovi y sus módulos</span>"
     ]
   }
 ]

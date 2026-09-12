@@ -260,6 +260,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-pensar-graficos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensar los gráficos</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -277,6 +283,30 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Para ir más lejos</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a2-paletas-accesibles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Paletas de colores accesibles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a3-glosario-bilingue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glosario bilingüe</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a4-guia-rapida.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Guía rápida: qué análisis y qué gráfico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a5-instalar-jamovi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Instalar jamovi y sus módulos</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -292,13 +322,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#cuándo-se-usa" id="toc-cuándo-se-usa" class="nav-link active" data-scroll-target="#cuándo-se-usa"><span class="header-section-number">12.1</span> Cuándo se usa</a></li>
   <li><a href="#paso-a-paso-en-jamovi" id="toc-paso-a-paso-en-jamovi" class="nav-link" data-scroll-target="#paso-a-paso-en-jamovi"><span class="header-section-number">12.2</span> Paso a paso en jamovi</a></li>
   <li><a href="#ejemplo-trabajado" id="toc-ejemplo-trabajado" class="nav-link" data-scroll-target="#ejemplo-trabajado"><span class="header-section-number">12.3</span> Ejemplo trabajado</a></li>
-  <li><a href="#cómo-leer-el-output-e-informarlo-en-apa" id="toc-cómo-leer-el-output-e-informarlo-en-apa" class="nav-link" data-scroll-target="#cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">12.4</span> Cómo leer el output e informarlo en APA</a>
+  <li><a href="#leer-el-gráfico" id="toc-leer-el-gráfico" class="nav-link" data-scroll-target="#leer-el-gráfico"><span class="header-section-number">12.4</span> Leer el gráfico</a></li>
+  <li><a href="#cómo-leer-el-output-e-informarlo-en-apa" id="toc-cómo-leer-el-output-e-informarlo-en-apa" class="nav-link" data-scroll-target="#cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">12.5</span> Cómo leer el output e informarlo en APA</a>
   <ul class="collapse">
   <li><a href="#si-las-varianzas-no-son-homogéneas" id="toc-si-las-varianzas-no-son-homogéneas" class="nav-link" data-scroll-target="#si-las-varianzas-no-son-homogéneas">Si las varianzas no son homogéneas</a></li>
   </ul></li>
-  <li><a href="#en-tu-proyecto" id="toc-en-tu-proyecto" class="nav-link" data-scroll-target="#en-tu-proyecto"><span class="header-section-number">12.5</span> En tu proyecto</a></li>
-  <li><a href="#ejercicios-de-autochequeo" id="toc-ejercicios-de-autochequeo" class="nav-link" data-scroll-target="#ejercicios-de-autochequeo"><span class="header-section-number">12.6</span> Ejercicios de autochequeo</a></li>
-  <li><a href="#plantilla-para-llevar" id="toc-plantilla-para-llevar" class="nav-link" data-scroll-target="#plantilla-para-llevar"><span class="header-section-number">12.7</span> Plantilla para llevar</a></li>
+  <li><a href="#en-tu-proyecto" id="toc-en-tu-proyecto" class="nav-link" data-scroll-target="#en-tu-proyecto"><span class="header-section-number">12.6</span> En tu proyecto</a></li>
+  <li><a href="#ejercicios-de-autochequeo" id="toc-ejercicios-de-autochequeo" class="nav-link" data-scroll-target="#ejercicios-de-autochequeo"><span class="header-section-number">12.7</span> Ejercicios de autochequeo</a></li>
+  <li><a href="#plantilla-para-llevar" id="toc-plantilla-para-llevar" class="nav-link" data-scroll-target="#plantilla-para-llevar"><span class="header-section-number">12.8</span> Plantilla para llevar</a></li>
   </ul>
 </nav>
     </div>
@@ -334,7 +365,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>ANOVA de un factor compara el promedio de una variable continua entre tres o más grupos distintos. Primero responde si hay alguna diferencia; después, las comparaciones post-hoc muestran entre qué grupos está.</p>
+<p>ANOVA de un factor compara el promedio de una variable continua entre tres o más grupos distintos. Primero responde si hay alguna diferencia; después, las comparaciones post-hoc (post-hoc comparisons) muestran entre qué grupos está.</p>
 </div>
 </div>
 <section id="cuándo-se-usa" class="level2" data-number="12.1">
@@ -387,8 +418,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Tukey aclara dónde están las diferencias. El turno noche presenta mayor procrastinación que mañana, diferencia de medias = 6.25, <em>p</em> &lt; .001. El turno tarde también supera al de mañana, diferencia = 4.57, <em>p</em> &lt; .001. Noche y tarde no difieren de manera concluyente, diferencia = 1.68, <em>p</em> = .259. La tabla de jamovi resta el grupo de la fila menos el de la columna. Con el orden mañana, tarde, noche, esas diferencias aparecen negativas. Acá las expresamos en el sentido inverso para acompañar la frase; los valores <em>p</em> son los mismos.</p>
 <p>η² = .35 indica que, en estos datos sintéticos, el turno explica cerca del 35 % de la variación observada en procrastinación. No significa que el turno cause esa diferencia. Quienes cursan en cada horario pueden diferir en muchas otras características. ANOVA compara promedios; no convierte una comparación observacional en una conclusión causal.</p>
 </section>
-<section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">12.4</span> Cómo leer el output e informarlo en APA</h2>
+<section id="leer-el-gráfico" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">12.4</span> Leer el gráfico</h2>
+<p>El gráfico de este análisis es el de medias por grupo, que pedís con <strong>Descriptives plots</strong> en la One-Way ANOVA. Muestra un punto por turno (la media) con una barra de error alrededor. Cuando lo corrés, leé primero la altura de los tres puntos para ver el orden de los turnos, y después el largo de las barras de error: si las de dos turnos casi no se superponen, esa es la diferencia que después confirman las comparaciones de Tukey; si se superponen mucho, como pasa entre tarde y noche, el par probablemente no difiera. Un boxplot por turno complementa la mirada sobre la dispersión de cada grupo. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> da el marco para leerlo.</p>
+</section>
+<section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">12.5</span> Cómo leer el output e informarlo en APA</h2>
 <blockquote class="blockquote">
 <p>La procrastinación académica difirió según el turno de cursada, <em>F</em>(2, 69) = 18.63, <em>p</em> &lt; .001, η² = .35. Las comparaciones de Tukey mostraron puntajes mayores en el turno noche (<em>M</em> = 35.40, <em>DE</em> = 3.29) y tarde (<em>M</em> = 33.72, <em>DE</em> = 3.32) que en el turno mañana (<em>M</em> = 29.15, <em>DE</em> = 4.31), <em>ps</em> &lt; .001. No hubo diferencia concluyente entre los turnos tarde y noche, <em>p</em> = .259.</p>
 </blockquote>
@@ -398,12 +433,12 @@ ul.task-list li input[type="checkbox"] {
 <p>No borres los grupos con más dispersión ni hagas de cuenta que Levene no existe. Usá ANOVA de Welch y comparaciones Games-Howell; ambos toleran mejor varianzas desiguales. Si el problema principal es una distribución muy alejada de lo razonable o valores extremos que cambian la conclusión, revisá primero los datos y el <a href="09-supuestos.html" class="quarto-xref"><span>Capítulo 9</span></a>. Kruskal-Wallis puede ser una alternativa, pero responde una pregunta sobre rangos/distribuciones y se informa como tal.</p>
 </section>
 </section>
-<section id="en-tu-proyecto" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">12.5</span> En tu proyecto</h2>
+<section id="en-tu-proyecto" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">12.6</span> En tu proyecto</h2>
 <p>Si tu proyecto compara tres o más grupos independientes, guardá en <code>trabajo/</code> el ANOVA, las comprobaciones y las comparaciones posteriores que correspondan. Registrá qué versión usaste y por qué. Llevá a <code>resultados/</code> los descriptivos por grupo y escribí en <code>informe/</code> el resultado global y, cuando corresponda, qué pares difieren. Si tu pregunta requiere otro análisis, reservá este ejercicio para el proyecto de práctica.</p>
 </section>
-<section id="ejercicios-de-autochequeo" class="level2" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="ejercicios-de-autochequeo"><span class="header-section-number">12.6</span> Ejercicios de autochequeo</h2>
+<section id="ejercicios-de-autochequeo" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="ejercicios-de-autochequeo"><span class="header-section-number">12.7</span> Ejercicios de autochequeo</h2>
 <ol type="1">
 <li>¿Tu variable de agrupamiento tiene tres o más categorías y tus grupos son personas distintas?</li>
 <li>¿Tu resultado es continuo y tiene una definición previa en el diccionario?</li>
@@ -411,8 +446,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Si ANOVA es significativo, ¿usaste una comparación post-hoc coherente con las varianzas en vez de hacer t al azar?</li>
 </ol>
 </section>
-<section id="plantilla-para-llevar" class="level2" data-number="12.7">
-<h2 data-number="12.7" class="anchored" data-anchor-id="plantilla-para-llevar"><span class="header-section-number">12.7</span> Plantilla para llevar</h2>
+<section id="plantilla-para-llevar" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="plantilla-para-llevar"><span class="header-section-number">12.8</span> Plantilla para llevar</h2>
 <p>Tené a mano el <a href="plantillas/plan-de-analisis.md">plan de análisis</a> y el <a href="plantillas/arbol-de-decision.md">árbol de decisión</a> para revisar la comparación que planteaste. La base del ejemplo está en <a href="plantillas/encuesta-estudiantes-limpia.omv"><code>encuesta-estudiantes-limpia.omv</code></a>.</p>
 
 
