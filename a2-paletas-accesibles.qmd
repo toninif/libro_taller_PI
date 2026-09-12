@@ -1,0 +1,40 @@
+# Paletas de colores accesibles {#sec-paletas-accesibles .appendix}
+
+Este apéndice acompaña al @sec-pensar-graficos. Reúne paletas listas para usar cuando un gráfico necesita distinguir grupos con color, pensadas para que también las lea quien no diferencia bien ciertos colores.
+
+## Por qué importa
+
+Cerca de uno de cada doce varones y una de cada doscientas mujeres tiene alguna forma de daltonismo; la más común confunde el rojo con el verde. Si un gráfico separa dos grupos usando justamente rojo y verde, una parte de tu audiencia ve dos tonos casi iguales y pierde la comparación. Una paleta accesible elige colores que se distinguen aun para esas personas, y en escala de grises si el gráfico se imprime en blanco y negro.
+
+La regla que vale más que cualquier paleta: **no dejes que el color sea la única pista**. Que los grupos se distingan también por posición, etiqueta directa, forma del punto o tipo de línea. Así el gráfico funciona aunque el color falle.
+
+## Paleta categórica: Okabe-Ito
+
+Para variables categóricas (turnos, condiciones, sí/no), la paleta de Okabe-Ito está diseñada para ser distinguible con los tipos más comunes de daltonismo. Usá los colores en este orden y con dos o tres suele alcanzar.
+
+| Color | Código | Uso sugerido |
+|---|---|---|
+| Naranja | `#E69F00` | Primer grupo |
+| Celeste | `#56B4E9` | Segundo grupo |
+| Verde | `#009E73` | Tercer grupo |
+| Amarillo | `#F0E442` | Cuarto grupo (sobre fondo oscuro) |
+| Azul | `#0072B2` | Quinto grupo |
+| Bermellón | `#D55E00` | Sexto grupo |
+| Rosa | `#CC79A7` | Séptimo grupo |
+| Negro | `#000000` | Referencia o total |
+
+Si tenés más de siete categorías, el problema casi nunca es la paleta: es que demasiadas series juntas se vuelven ilegibles (@sec-pensar-graficos). Agrupá categorías o dividí el gráfico antes de buscar más colores.
+
+## Paletas de intensidad: secuencial y divergente
+
+Cuando el color representa una cantidad y no una categoría, cambia el criterio. Una escala **secuencial** va de claro a oscuro de un mismo tono, para valores que van de menos a más (por ejemplo, una frecuencia). Una escala **divergente** usa dos tonos que se encuentran en un punto neutro en el medio, para valores que se alejan de un centro en dos direcciones (por ejemplo, diferencias positivas y negativas). Las paletas de ColorBrewer (como `Blues` secuencial o `RdBu` divergente) están probadas para accesibilidad y son las que usan por defecto muchas herramientas basadas en *ggplot2*.
+
+## Cómo aplicarlas en jamovi
+
+Los gráficos de fábrica de **Exploration → Descriptives** traen colores fijos y no siempre editables. Cuando necesites controlar la paleta, los módulos que instalás desde **Modules → jamovi library** (@sec-pensar-graficos) te dan esa opción: **jmvplots** y **jjstatsplot** se apoyan en *ggplot2*, donde podés fijar los colores con los códigos de arriba o pedir una paleta de ColorBrewer. Si exportás el gráfico para retocarlo en otra herramienta, copiá estos códigos hexadecimales tal cual.
+
+## Autochequeo
+
+1. ¿Los grupos de tu gráfico se distinguen por algo más que el color (posición, etiqueta, forma)?
+2. ¿Usaste una paleta categórica para categorías y una de intensidad para cantidades, y no al revés?
+3. Si imprimís el gráfico en blanco y negro, ¿todavía se entiende?

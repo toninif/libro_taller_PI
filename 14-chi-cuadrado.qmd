@@ -38,6 +38,10 @@ Con esta muestra y esta tabla, no hay evidencia concluyente de asociación. Eso 
 
 V de Cramer resume el tamaño de la asociación y, en una tabla 2 × 2, coincide numéricamente con Phi. Un V = .15 es pequeño en términos descriptivos, pero la importancia práctica siempre depende de la pregunta, las consecuencias y la precisión disponible; no de una etiqueta automática.
 
+## Leer el gráfico
+
+Para dos variables categóricas, el gráfico es un **gráfico de barras agrupadas**, no una torta. Pedilo en **Frequencies → Independent Samples**, dentro de **Plots**: activá **Bar Plot**, poné los porcentajes en el eje y las barras lado a lado (*side by side*) por grupo. Cuando lo corrés, compará la altura de la barra de "aprobó" entre quienes trabajan y quienes no; esa diferencia de alturas es la misma que leés en los porcentajes por fila. La torta obligaría a comparar porciones y, con eso, escondería una diferencia de casi quince puntos que en barras se ve de inmediato; el @sec-pensar-graficos desarrolla por qué.
+
 ## Cómo leer el output e informarlo en APA
 
 > La situación laboral no se asoció de manera concluyente con la aprobación del parcial, χ²(1, *N* = 70) = 1.54, *p* = .214, V = .15. Aprobó el 64.7 % de quienes no trabajaban y el 50.0 % de quienes trabajaban.

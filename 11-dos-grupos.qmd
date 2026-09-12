@@ -50,6 +50,10 @@ Con `taller-organizacion-prepost` (n = 32), cada estudiante aporta un puntaje an
 
 La diferencia promedio es de 2.58 puntos (después menos antes), con *t*(31) = 7.83, *p* < .001, IC 95 % de la diferencia [1.90, 3.25] y *d* de Cohen = 1.38.
 
+## Leer el gráfico
+
+Para la t independiente, el gráfico es el boxplot de `procrastinacion` partido por `trabaja`: en **Exploration → Descriptives**, poné `procrastinacion` en **Variables**, `trabaja` en **Split by** y activá **Box plot**. Verás dos cajas lado a lado. Cuando lo corrés, compará la altura de las dos medianas y cuánto se solapan las cajas: un solapamiento chico acompaña la diferencia significativa del ejemplo; uno grande pediría cautela. Para la t pareada, el gráfico informativo es la distribución de las diferencias (post menos pre): interesa si se corren hacia el lado de la mejora y si algún caso va a contramano. El @sec-pensar-graficos explica por qué la posición sobre un eje común hace legible esta comparación.
+
 ## Cómo leer el output e informarlo en APA
 
 jamovi te da todos los números; el párrafo tenés que armarlo vos, con la misma frase con huecos que escribiste en el @sec-plan. Para muestras independientes:

@@ -32,12 +32,12 @@ No confundas “dos variables” con “relación”. Una comparación entre dos
 ::: {.table-responsive}
 | Si tu pregunta es… | Y tus variables son… | El análisis central es… | Capítulo |
 |---|---|---|---|
-| ¿Un promedio difiere de un valor? | Un resultado continuo y un valor de referencia | t de una muestra | @sec-t-una-muestra |
-| ¿Dos grupos distintos difieren? | Resultado continuo; agrupamiento con dos categorías | t de muestras independientes | @sec-dos-grupos |
-| ¿Las mismas personas cambiaron? | Dos mediciones continuas de cada caso | t de muestras pareadas | @sec-dos-grupos |
-| ¿Tres o más grupos difieren? | Resultado continuo; agrupamiento con tres o más categorías | ANOVA de un factor | @sec-anova |
-| ¿Dos cantidades se relacionan? | Dos variables continuas | Correlación | @sec-correlacion |
-| ¿Dos categorías se asocian? | Dos variables categóricas | Chi-cuadrado de independencia | @sec-chi |
+| ¿Un promedio difiere de un valor? | Un resultado continuo y un valor de referencia | t de una muestra (one-sample *t* test) | @sec-t-una-muestra |
+| ¿Dos grupos distintos difieren? | Resultado continuo; agrupamiento con dos categorías | t de muestras independientes (independent samples *t* test) | @sec-dos-grupos |
+| ¿Las mismas personas cambiaron? | Dos mediciones continuas de cada caso | t de muestras pareadas (paired samples *t* test) | @sec-dos-grupos |
+| ¿Tres o más grupos difieren? | Resultado continuo; agrupamiento con tres o más categorías | ANOVA de un factor (one-way ANOVA) | @sec-anova |
+| ¿Dos cantidades se relacionan? | Dos variables continuas | Correlación (correlation) | @sec-correlacion |
+| ¿Dos categorías se asocian? | Dos variables categóricas | Chi-cuadrado de independencia (chi-square) | @sec-chi |
 :::
 
 Esa tabla cubre el núcleo de la materia, no todas las preguntas posibles. Si querés predecir un resultado con varias variables, controlar covariables o analizar diseños más complejos, mirá el apéndice cuando ya domines esta lógica.
@@ -48,9 +48,17 @@ Descargá el [árbol de decisión para análisis básicos](plantillas/arbol-de-d
 
 Tomemos la encuesta de estudiantes. La variable `procrastinacion` es continua. Si preguntás si cambia entre `trabaja = sí` y `trabaja = no`, comparás dos grupos distintos con una t independiente. Si preguntás si cambia entre `turno = mañana`, `tarde` y `noche`, comparás tres grupos mediante ANOVA. El resultado es el mismo, pero la cantidad de grupos cambia la herramienta.
 
-Si, en cambio, preguntás si `horas_estudio` se relaciona con `procrastinacion`, cada estudiante aporta dos cantidades. La herramienta es una correlación. Y si querés saber si `trabaja` se asocia con `aprobo_parcial`, ambas variables son categorías. Armás una tabla de contingencia y usás chi-cuadrado.
+Si, en cambio, preguntás si `horas_estudio` se relaciona con `procrastinacion`, cada estudiante aporta dos cantidades. La herramienta es una correlación. Y si querés saber si `trabaja` se asocia con `aprobo_parcial`, ambas variables son categorías. Armás una tabla de contingencia (contingency table) y usás chi-cuadrado.
 
 Una misma base permite responder varias preguntas. En tu proyecto vas a seguir las que definiste en el plan, con el análisis adecuado para cada una.
+
+## En el fondo, un solo modelo
+
+El árbol enumera herramientas con nombres distintos, y eso puede dar la impresión de que cada análisis es un aparato separado con sus propias reglas. No lo es. Todos responden la misma pregunta de base: **¿el valor de una variable cambia según el valor de otra?** Cambia la forma de la variable que usás para explicar, no la pregunta.
+
+Pensalo con dos análisis que parecen muy distintos. La t de muestras independientes pregunta si la media de `procrastinacion` cambia entre dos categorías, quienes trabajan y quienes no. La correlación pregunta si `procrastinacion` cambia a medida que suben las `horas_estudio`. En los dos casos hay una variable de resultado y otra que la explica; lo único que cambia es que la explicativa es una categoría de dos niveles en un caso y una cantidad continua en el otro. De hecho, si codificás el grupo como 0 y 1 y corrés una correlación, obtenés la misma información que la t: no son dos mundos, son la misma idea vista desde dos entradas. La ANOVA extiende eso a una explicativa con tres o más categorías, y todas descomponen lo mismo: cuánta de la variación del resultado acompaña a la variable explicativa y cuánta queda sin explicar.
+
+Chi-cuadrado queda un paso al costado, porque compara frecuencias en lugar de promedios, pero comparte la pregunta de fondo: ¿estas dos variables se mueven de forma independiente o no? En estadística esta unidad se formaliza bajo la idea de un modelo lineal general, que excede el alcance del libro. Para tu trabajo alcanza con quedarte con la intuición: elegís una herramienta u otra por la forma de tus variables y por cómo vas a interpretar el resultado, no porque sean teorías rivales. Por eso el árbol no te pide adivinar un test, sino definir bien tu resultado y tu variable explicativa; con eso, el análisis casi se elige solo.
 
 ## Tres desvíos frecuentes
 

@@ -11,7 +11,9 @@ Usalos dentro de la carpeta que organizaste en @sec-proyecto. Antes de recolecta
 - [Ficha y registro del proyecto](plantillas/ficha-del-proyecto.md). Para ubicar los archivos vigentes y registrar las decisiones y los próximos pasos.
 - [Plan de análisis en una página](plantillas/plan-de-analisis.md). Para definir pregunta, hipótesis, variables, análisis previsto, supuestos y resultado esperado.
 - [Diccionario de datos](plantillas/diccionario-de-datos.csv). Planilla con una fila por variable que podés abrir en Excel, LibreOffice u otra planilla de cálculo.
+- [Registro de preparación de la base](plantillas/preparacion-de-la-base.md). Para anotar las recodificaciones, los cálculos, los faltantes y los filtros al preparar la base en jamovi.
 - [Frases de reporte APA con huecos](plantillas/frases-de-reporte-apa.md). Modelos para t, ANOVA, correlación y chi-cuadrado. Completá el que corresponda a tu análisis con tus propios resultados.
+- [Reporte de resultados](plantillas/reporte-de-resultados.md). Estructura del apartado de resultados, de los descriptivos a la interpretación, para redactar en `informe/`.
 
 Guardá la ficha, el plan y el diccionario completos en `documentos/`. Usá las frases para redactar el texto que vas a guardar en `informe/`. Los enlaces de la ficha te van a ayudar a encontrar la base y los análisis correspondientes.
 
@@ -28,6 +30,15 @@ Estas listas ayudan a detectar omisiones, como una variable sin definición, un 
 Descargá el [árbol de decisión para análisis básicos](plantillas/arbol-de-decision.md). Resume las opciones de la Parte II y te ayuda a reconocer qué capítulo corresponde a tu pregunta.
 
 Tenelo al lado mientras escribís el plan, no después de obtener el resultado. El árbol confirma que la herramienta responde tu pregunta; no reemplaza la definición de las variables ni la revisión de supuestos.
+
+## Referencias rápidas
+
+Al final del libro hay apéndices para consultar sin releer un capítulo entero.
+
+- [Guía rápida: qué análisis y qué gráfico](a4-guia-rapida.qmd). Una carilla que cruza la pregunta y el tipo de variable con el análisis y su gráfico.
+- [Glosario bilingüe](a3-glosario-bilingue.qmd). Los términos del libro con su equivalente en inglés y una definición breve.
+- [Paletas de colores accesibles](a2-paletas-accesibles.qmd). Colores listos para distinguir grupos en un gráfico.
+- [Instalar jamovi y sus módulos](a5-instalar-jamovi.qmd). Descarga, instalación y agregado de módulos como jmvplots y jjstatsplot.
 
 ## Datos de práctica
 

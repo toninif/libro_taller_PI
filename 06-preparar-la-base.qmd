@@ -23,13 +23,13 @@ Seleccioná `horas_trabajo` y pulsá **Data → Transform**. En la nueva variabl
 
 **Compute** crea una variable a partir de una fórmula que puede usar una o varias columnas. Se usa para sumar los ítems de una escala en un puntaje total, para calcular una diferencia (`organizacion_post` − `organizacion_pre`) o para derivar cualquier cantidad que no viene directamente del instrumento.
 
-En jamovi, pulsá **Data → Compute** para crear una variable calculada. Escribís la fórmula con el selector de variables y funciones (`SUM`, `MEAN`, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.
+En jamovi, pulsá **Data → Compute** para crear una variable calculada (computed variable). Escribís la fórmula con el selector de variables y funciones (`SUM`, `MEAN`, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.
 
 Transform y Compute resuelven problemas distintos. Transform recodifica una variable en categorías; Compute calcula un valor a partir de una fórmula. Si dudás cuál te corresponde, preguntate si estás agrupando valores existentes (Transform) o calculando uno nuevo (Compute).
 
 ## Declarar los datos faltantes
 
-En la base de este libro, dos respuestas sin completar en `horas_trabajo` se registran como `-99`. Ese código es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes es decirle a jamovi qué valores no cuentan como datos.
+En la base de este libro, dos respuestas sin completar en `horas_trabajo` se registran como `-99`. Ese código es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes (missing values) es decirle a jamovi qué valores no cuentan como datos.
 
 En jamovi, hacé doble clic en el encabezado de la columna, abrí **Missing Values** y agregá la condición para tratar `-99` como faltante. Esos casos quedan excluidos de los cálculos de esa variable. Las filas siguen visibles en **Data** y disponibles para analizar las otras variables que sí hayan respondido.
 

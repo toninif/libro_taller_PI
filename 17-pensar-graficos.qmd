@@ -1,0 +1,67 @@
+# Pensar los gráficos {#sec-pensar-graficos}
+
+::: {.callout-tip}
+## La idea en una línea
+Un gráfico traduce tus variables en propiedades que el ojo puede ver. Elegir bien un gráfico es elegir qué propiedad visual representa cada variable, para que la comparación que te importa salte a la vista sin que nadie tenga que esforzarse.
+:::
+
+A lo largo del libro fuiste pidiendo gráficos en cada análisis: el histograma del @sec-describir, el gráfico Q-Q del @sec-supuestos, el diagrama de dispersión del @sec-correlacion. En cada capítulo te dijimos qué mirar. Este cierre reúne esas piezas y te da el marco que las ordena, ahora que ya viste todos los gráficos del recorrido. La idea es que puedas decidir, frente a una variable nueva, qué gráfico la muestra mejor y por qué.
+
+## La gramática de un gráfico
+
+Todo gráfico hace lo mismo: toma una variable y la convierte en una propiedad visual. La posición sobre un eje, el largo de una barra, el color, el tamaño, la forma de un punto. Cuando entendés que un gráfico es ese mapeo de variables a propiedades, dejás de elegirlo por costumbre y empezás a elegirlo por lo que querés que se lea.
+
+Un diagrama de dispersión mapea dos variables continuas a dos posiciones, una en el eje horizontal y otra en el vertical; por eso sirve para ver una relación. Un gráfico de barras mapea una categoría a la posición horizontal y una cantidad al largo de la barra; por eso sirve para comparar cantidades entre grupos. Un boxplot mapea la distribución de una variable a un conjunto de posiciones (mediana, cuartiles, extremos); por eso sirve para comparar formas y detectar valores alejados. La pregunta útil, antes de abrir el menú, no es "¿qué gráfico hago?", sino "¿qué variable quiero que se lea en la posición, cuál en el largo, cuál en el color?".
+
+## Qué percibe bien el ojo
+
+No todas las propiedades visuales se leen con la misma precisión. Cuando dos cosas están alineadas sobre un mismo eje, comparamos sus posiciones con mucha exactitud: vemos enseguida cuál está más arriba y por cuánto. La longitud sobre una base común, como la altura de dos barras que arrancan de la misma línea, también se estima bien. En cambio, estimamos con mucho más error los ángulos, las áreas y las intensidades de color. Podemos decir que un área es "más grande", pero no cuánto más.
+
+Ese hecho, y no una cuestión de gusto, es lo que decide entre un gráfico y otro. De ahí sale el caso más conocido.
+
+### Por qué el gráfico de torta casi nunca conviene
+
+Una torta representa cada categoría como una porción, es decir, como un ángulo y un área. Le pide al ojo justo lo que peor estima. Para comparar dos porciones parecidas tenés que juzgar dos ángulos, y ahí nos equivocamos. Las mismas cantidades en un gráfico de barras se convierten en alturas sobre un eje común, que es lo que mejor leemos: la comparación se vuelve inmediata. Con dos o tres categorías la torta todavía se defiende; con cinco, seis o más porciones se vuelve casi ilegible y la gente termina leyendo los números impresos encima, lo que significa que el gráfico ya no está haciendo su trabajo.
+
+No se trata de una prohibición suelta ("nunca uses torta"), sino de un ejemplo del principio general: elegí la propiedad visual que el ojo lee con precisión para la comparación que te importa. Casi siempre, para comparar cantidades entre categorías, esa propiedad es la longitud de una barra sobre un eje común.
+
+## Otros "no hagas esto", con su porqué
+
+Los errores frecuentes en gráficos comparten una raíz: distorsionan el mapeo entre el dato y lo que se ve. Conviene reconocerlos por la razón, no como reglas sueltas.
+
+| Práctica a evitar | Por qué distorsiona |
+|---|---|
+| Cortar el eje vertical para que no arranque en cero | Exagera diferencias: una brecha real de dos puntos puede parecer enorme, porque el largo de la barra deja de ser proporcional a la cantidad. |
+| Agregar profundidad o efectos 3D | La perspectiva cambia áreas y ángulos según la posición; dos valores iguales se ven distintos y ninguno se lee bien. |
+| Amontonar demasiadas categorías o series | El ojo pierde el hilo cuando hay que rastrear diez colores o veinte barras; el gráfico deja de responder una pregunta y pasa a ser un volcado de datos. |
+| Usar color solo para decorar | Si el color no codifica ninguna variable, agrega ruido y compite con la información que sí importa. |
+
+En todos los casos el criterio es el mismo: si un elemento visual no representa un dato o no ayuda a leer una comparación, está de más.
+
+## Decisiones honestas
+
+Diseñar un gráfico honesto es, sobre todo, no engañar al ojo, ni siquiera sin querer. El color es la decisión más delicada. Informa cuando codifica una variable (por ejemplo, un color por turno de cursada) y distrae cuando es puramente decorativo. Si vas a usar color para distinguir grupos, usá una paleta accesible, pensada para que quien no distingue el rojo del verde igual pueda separar las categorías; en el @sec-paletas-accesibles tenés paletas listas para eso. Una regla simple ayuda: que el gráfico no dependa solo del color, sino que las categorías también se distingan por posición, etiqueta o forma.
+
+El otro criterio es la contención. Un gráfico se explica solo cuando tiene lo mínimo necesario para entenderlo: ejes rotulados con la variable y su unidad, una escala que arranca donde corresponde, y nada más. Cada grilla, sombra o borde que agregás compite con los datos. Antes de sumar un elemento, preguntate qué dato representa; si la respuesta es "ninguno", sacalo.
+
+## El gráfico como parte del razonamiento
+
+En este libro el gráfico nunca fue un adorno que se pega al final del informe. Fue una herramienta para pensar. Mirás el histograma antes del test para ver la forma de la distribución; mirás el diagrama de dispersión antes de leer *r* para descartar que una curva o un solo caso estén gobernando el resultado; mirás el gráfico Q-Q para decidir si el supuesto de normalidad es razonable. El gráfico entra en la decisión, no la ilustra después de tomada. Cuando lo pensás así, elegirlo bien deja de ser una cuestión estética y pasa a ser parte del análisis.
+
+## Graficar en jamovi: de fábrica y con plugins
+
+jamovi ya trae, sin instalar nada, los gráficos que usaste en todo el libro. En **Exploration → Descriptives**, dentro de **Plots**, están las barras para categóricas, los histogramas y las curvas de densidad para continuas, los boxplots para comparar grupos y el diagrama de dispersión. Los análisis, además, ofrecen sus propios gráficos en **Assumption Checks** y **Plots**, como el Q-Q plot o el gráfico de medias del ANOVA. Para el recorrido de esta materia, eso alcanza.
+
+Si querés más control o gráficos listos para publicar, jamovi tiene módulos que se instalan en un par de clics desde **Modules → jamovi library**, sin reiniciar el programa. Dos son especialmente útiles. **jmvplots**, oficial, es un envoltorio de *ggplot2* que te deja armar gráficos personalizados con más opciones de formato. **jjstatsplot**, basado en *ggstatsplot*, produce gráficos "listos para publicar" que integran en una sola imagen el gráfico, el resultado del test y el tamaño de efecto. Son un buen paso siguiente cuando el gráfico va a un póster o a un artículo, pero no los necesitás para completar los capítulos de este libro.
+
+## En tu proyecto
+
+Revisá los gráficos que ya exportaste a `resultados/`. Para cada uno, preguntate qué variable está en la posición, cuál en el largo y cuál en el color, y si esa elección hace visible la comparación de tu pregunta. Si alguno usa una torta para comparar más de dos categorías, un eje cortado o color decorativo, rehacelo con el criterio de este capítulo y dejá anotado en el registro por qué lo cambiaste. Comprobá también que la paleta sea accesible.
+
+## Autochequeo
+
+1. Para tu gráfico principal, ¿podés decir qué variable representa cada propiedad visual (posición, largo, color)?
+2. La comparación que te importa, ¿se apoya en longitud o posición sobre un eje común, y no en ángulos o áreas?
+3. ¿El eje de cantidades arranca en cero y ningún efecto visual exagera las diferencias?
+4. Si usás color, ¿codifica una variable y la paleta es accesible, o es solo decorativo?
+5. ¿Cada elemento del gráfico representa un dato, de modo que se explique solo?

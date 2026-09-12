@@ -1,0 +1,27 @@
+# Guía rápida: qué análisis y qué gráfico {#sec-guia-rapida .appendix}
+
+Una carilla para tener al lado mientras planificás. Resume el razonamiento central del libro: la pregunta y el tipo de tus variables definen el análisis, y cada análisis tiene un gráfico que lo acompaña. No reemplaza los capítulos; te ayuda a ubicarte y a saber adónde ir.
+
+## De la pregunta al análisis y al gráfico
+
+::: {.table-responsive}
+| Tu pregunta es… | Variable de resultado | Otra variable | Análisis | Gráfico que lo acompaña | Capítulo |
+|---|---|---|---|---|---|
+| ¿Un promedio difiere de un valor de referencia? | Continua | Un valor fijo (no una variable) | t de una muestra | Histograma y gráfico Q-Q | @sec-t-una-muestra |
+| ¿Difieren dos grupos de personas distintas? | Continua | Categórica de 2 categorías | t de muestras independientes | Diagrama de caja por grupo | @sec-dos-grupos |
+| ¿Cambiaron las mismas personas entre dos momentos? | Continua (dos medidas por caso) | — | t de muestras pareadas | Distribución de las diferencias | @sec-dos-grupos |
+| ¿Difieren tres o más grupos? | Continua | Categórica de 3 o más categorías | ANOVA de un factor | Gráfico de medias con barras de error | @sec-anova |
+| ¿Se relacionan dos cantidades? | Continua | Continua | Correlación | Diagrama de dispersión | @sec-correlacion |
+| ¿Se asocian dos categorías? | Categórica | Categórica | Chi-cuadrado de independencia | Barras agrupadas | @sec-chi |
+| ¿Cómo es una variable, antes de comparar o relacionar? | Cualquiera | — | Descriptivos | Histograma, barras o diagrama de caja | @sec-describir |
+:::
+
+## Cómo usar esta guía
+
+1. Escribí tu pregunta en una oración y decidí si querés **comparar**, **describir** o **buscar una relación** (@sec-arbol).
+2. Fijate el **nivel de medida** de tus variables en el diccionario (@sec-diccionario): continua, nominal u ordinal.
+3. Cruzá ambas cosas en la tabla para ubicar el análisis y su gráfico.
+4. Antes de correrlo, revisá los **supuestos** (@sec-supuestos). Si no se cumplen, la fila del análisis te remite a la alternativa del capítulo.
+5. Para elegir y leer bien el gráfico, mirá @sec-pensar-graficos.
+
+La herramienta se elige por la pregunta y las variables, nunca por el resultado que preferirías obtener.

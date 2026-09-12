@@ -39,7 +39,7 @@ La tercera pregunta conecta esta base con el plan de análisis del @sec-plan. Un
 
 Un número puede ser una cantidad, una etiqueta o un código. Por eso `1 = mañana`, `2 = tarde` y `3 = noche` no convierten al turno en una variable continua. Por eso, sumar estos códigos o calcular su promedio no tiene sentido. Antes de hacer cuentas, preguntate si la distancia entre los valores representa algo real.
 
-En jamovi conviene separar dos decisiones. El **tipo de dato** describe cómo se guarda el valor, como entero, decimal o texto. El **nivel de medida** indica cómo debe tratarse en el análisis, como nominal, ordinal, continua o ID. Al importar una base, jamovi hace una estimación automática; revisarla es parte de preparar la base, no un detalle técnico.
+En jamovi conviene separar dos decisiones. El **tipo de dato** (data type) describe cómo se guarda el valor, como entero, decimal o texto. El **nivel de medida** (measure type) indica cómo debe tratarse en el análisis, como nominal, ordinal, continua o ID. Al importar una base, jamovi hace una estimación automática; revisarla es parte de preparar la base, no un detalle técnico.
 
 ::: {.table-responsive}
 | Nivel de medida | Qué representa | Ejemplo | Qué no conviene hacer |

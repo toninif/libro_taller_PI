@@ -1,0 +1,77 @@
+# Glosario bilingüe {#sec-glosario .appendix}
+
+Este glosario cumple dos funciones. Como glosario, reúne los términos que usa el libro con una definición breve. Como mapa de equivalencias español-inglés, te da el nombre en inglés que vas a encontrar en la interfaz de jamovi (que está en inglés) y en los artículos que leas. La definición va siempre en español; el término en inglés es el que necesitás reconocer, no traducir.
+
+## Interfaz y gestión de datos
+
+| Término (ES) | Término (EN) | Definición |
+|---|---|---|
+| Base de datos, base | Data set, data | Conjunto rectangular de casos (filas) y variables (columnas) con el que trabajás. |
+| Datos | Data | Pestaña de jamovi donde ves y editás la planilla de casos y variables. |
+| Análisis | Analyses | Pestaña de jamovi donde elegís y configurás los análisis. |
+| Caso, fila | Case, row | Cada unidad observada; en el libro, cada estudiante. |
+| Variable | Variable | Cada característica registrada en una columna. |
+| Nivel de medida | Measure type | Clasificación de una variable que define qué análisis y estadísticos tienen sentido. |
+| Continua | Continuous | Variable numérica que admite valores intermedios, como un puntaje. |
+| Nominal | Nominal | Variable de categorías sin orden, como el turno de cursada. |
+| Ordinal | Ordinal | Variable de categorías con un orden, pero sin distancias iguales entre ellas. |
+| Dato faltante | Missing value | Valor no registrado; debe declararse para que no se compute como un número real. |
+| Filtro | Filter | Condición que incluye o excluye casos del análisis sin borrarlos. |
+| Variable calculada, transformación | Computed variable, transform | Variable nueva derivada de otras mediante una fórmula. |
+
+## Estadística descriptiva
+
+| Término (ES) | Término (EN) | Definición |
+|---|---|---|
+| Media | Mean (*M*) | Promedio aritmético de una variable continua. |
+| Mediana | Median | Valor que deja la mitad de los casos por debajo y la mitad por encima. |
+| Desvío estándar | Standard deviation (*SD*, *DE*) | Medida de cuánto se dispersan los valores alrededor de la media. |
+| Mínimo, máximo | Minimum, maximum | Valor más bajo y más alto observados en una variable. |
+| Frecuencia, conteo | Frequency, count | Cantidad de casos en una categoría. |
+| Distribución | Distribution | Forma en que se reparten los valores de una variable. |
+
+## Inferencia
+
+| Término (ES) | Término (EN) | Definición |
+|---|---|---|
+| Hipótesis nula | Null hypothesis | Afirmación de ausencia de diferencia o relación que el test pone a prueba. |
+| Valor *p* | *p* value | Probabilidad de observar un resultado al menos tan extremo como el obtenido si la hipótesis nula fuera cierta. |
+| Nivel de significación | Significance level, alpha (*α*) | Umbral fijado de antemano para decidir sobre la hipótesis nula, habitualmente .05. |
+| Intervalo de confianza | Confidence interval (*CI*, *IC*) | Rango de valores compatibles con los datos para el parámetro estimado. |
+| Tamaño de efecto | Effect size | Medida de la magnitud de una diferencia o relación, independiente del tamaño de la muestra. |
+| Grados de libertad | Degrees of freedom (*df*, *gl*) | Número de valores libres de variar en el cálculo de un estadístico. |
+| Error estándar | Standard error (*SE*) | Dispersión esperada de un estadístico entre muestras. |
+| Supuesto | Assumption | Condición bajo la cual un análisis y su valor *p* se comportan como se espera. |
+
+## Análisis del libro
+
+| Término (ES) | Término (EN) | Definición |
+|---|---|---|
+| Prueba t | *t* test | Familia de pruebas que compara medias. |
+| t de una muestra | One-sample *t* test | Compara la media de un grupo con un valor de referencia. |
+| t de muestras independientes | Independent samples *t* test | Compara las medias de dos grupos de personas distintas. |
+| t de muestras pareadas | Paired samples *t* test | Compara dos mediciones de las mismas personas. |
+| ANOVA de un factor | One-way ANOVA | Compara las medias de tres o más grupos independientes. |
+| Comparaciones post hoc | Post-hoc comparisons | Comparaciones entre pares de grupos después de un ANOVA significativo. |
+| Correlación | Correlation | Describe cuánto y en qué dirección se relacionan dos variables continuas. |
+| Coeficiente de Pearson | Pearson's *r* | Coeficiente que mide la fuerza y el signo de una relación lineal. |
+| Coeficiente de Spearman | Spearman's *rho* | Coeficiente de correlación basado en rangos, para relaciones monótonas u ordinales. |
+| Chi-cuadrado | Chi-square (*χ²*) | Prueba que evalúa si dos variables categóricas son independientes. |
+| Tabla de contingencia | Contingency table | Tabla de frecuencias que cruza dos variables categóricas. |
+| Homogeneidad de varianzas | Homogeneity of variance | Supuesto de que los grupos comparados tienen dispersiones similares. |
+| Prueba de Levene | Levene's test | Prueba que evalúa la homogeneidad de varianzas. |
+| Normalidad | Normality | Supuesto de que la distribución se aproxima a la normal. |
+| Prueba de Shapiro-Wilk | Shapiro-Wilk test | Prueba que evalúa la normalidad de una variable. |
+| *d* de Cohen | Cohen's *d* | Tamaño de efecto para la diferencia entre dos medias. |
+| Eta cuadrado | Eta squared (*η²*) | Tamaño de efecto para el ANOVA; proporción de varianza asociada al factor. |
+| *V* de Cramér | Cramér's *V* | Tamaño de efecto para la asociación entre variables categóricas. |
+
+## Gráficos
+
+| Término (ES) | Término (EN) | Definición |
+|---|---|---|
+| Gráfico de barras | Bar chart, bar plot | Representa cantidades por categoría con la altura de barras sobre un eje común. |
+| Histograma | Histogram | Muestra la distribución de una variable continua en intervalos. |
+| Diagrama de caja | Box plot | Resume la distribución con mediana, cuartiles y valores alejados. |
+| Diagrama de dispersión | Scatter plot | Ubica cada caso por sus valores en dos variables continuas para ver su relación. |
+| Gráfico Q-Q | Q-Q plot | Compara los datos con una distribución normal para evaluar el supuesto de normalidad. |

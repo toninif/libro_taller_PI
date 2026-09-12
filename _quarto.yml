@@ -44,8 +44,13 @@ book:
       chapters:
         - 15-informar-en-apa.qmd
         - 16-caja-de-herramientas.qmd
+        - 17-pensar-graficos.qmd
   appendices:
     - a1-para-ir-mas-lejos.qmd
+    - a2-paletas-accesibles.qmd
+    - a3-glosario-bilingue.qmd
+    - a4-guia-rapida.qmd
+    - a5-instalar-jamovi.qmd
 
 format:
   html:

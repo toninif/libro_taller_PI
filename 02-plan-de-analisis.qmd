@@ -106,12 +106,12 @@ Puede parecer suficiente guardar la base en el escritorio y el informe en Descar
 Creá una carpeta con un nombre que reconozcas, como `procrastinacion-y-trabajo`. Dentro de ella, armá esta estructura sencilla. Las carpetas pueden estar vacías al comienzo; las vas a completar a medida que avances.
 
 ```text
-procrastinacion-y-trabajo/
-  documentos/
-  datos-originales/
-  trabajo/
-  resultados/
-  informe/
+📁 procrastinacion-y-trabajo/
+   📄 documentos/
+   📦 datos-originales/
+   🧰 trabajo/
+   📊 resultados/
+   📝 informe/
 ```
 
 En `documentos/` guardá la pregunta, el plan de análisis, los instrumentos y el diccionario. Agregá la [ficha y registro del proyecto](plantillas/ficha-del-proyecto.md) en el formato que uses para escribir. Ahí vas a indicar cuáles son los archivos vigentes y anotar la fecha, qué cambiaste, por qué y a qué archivo afecta.

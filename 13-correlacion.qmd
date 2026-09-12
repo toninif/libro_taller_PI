@@ -31,6 +31,10 @@ Elevar *r* al cuadrado da aproximadamente .14. En este ejemplo, cerca del 14 % d
 
 Tampoco podés invertir la flecha causal. Tal vez estudiar más ayuda a organizarse; tal vez quienes procrastinan menos encuentran más tiempo para estudiar; tal vez una tercera variable influye en ambas. El diseño de esta encuesta no puede separar esas posibilidades. La correlación te permite describir la relación que aparece, no adjudicar una causa.
 
+## Leer el gráfico
+
+El gráfico propio de la correlación es el diagrama de dispersión, que ya activaste en el paso anterior. Cada punto es un estudiante, ubicado por sus horas de estudio (eje horizontal) y su procrastinación (eje vertical). Cuando lo corrés, leé tres cosas en este orden: la dirección de la nube (acá desciende, coherente con el signo negativo de *r*), cuán apretada está alrededor de una línea imaginaria (más apretada, relación más fuerte) y si algún punto aislado, lejos del resto, está tironeando la tendencia. Una nube en forma de U o de curva puede dar un *r* cercano a 0 aunque exista una relación clara, porque Pearson solo mide lo lineal. El @sec-pensar-graficos explica por qué este gráfico, de dos posiciones, es el que mejor muestra una relación.
+
 ## Cómo leer el output e informarlo en APA
 
 > Las horas de estudio semanal se relacionaron negativamente con la procrastinación académica, *r*(70) = −.38, *p* = .001, IC 95 % [−.56, −.16]. En esta muestra, quienes informaron más horas de estudio tendieron a presentar menor procrastinación.
@@ -40,6 +44,41 @@ La frase incluye dirección, tamaño de la relación, grados de libertad, *p* e 
 ### Correlación no es predicción ni causalidad
 
 Una correlación de dos variables no ajusta otras explicaciones ni produce una predicción individual confiable. Para eso harían falta preguntas y modelos distintos, como regresión con covariables, que no forman parte del núcleo de este libro. Al escribir, indicá que las variables *se relacionan*, *se asocian* o *varían juntas*; no digas que una “produce”, “explica” o “determina” la otra.
+
+## Un juego para interpretar correlaciones
+
+Leer una correlación se entrena. Este juego tiene tres rondas cortas; jugá primero, anotá tu respuesta y después abrí las soluciones.
+
+**Ronda 1. ¿Positiva o negativa?** Sin números, solo con el sentido común, decidí qué signo esperás para *r* en cada par.
+
+1. Horas de sueño y nivel de cansancio al día siguiente.
+2. Páginas leídas en el cuatrimestre y cantidad de palabras nuevas aprendidas.
+3. Temperatura del día y tazas de café caliente vendidas.
+4. Clases a las que faltás y nota final de la cursada.
+
+**Ronda 2. Ordená la fuerza.** Tres diagramas de dispersión muestran estas nubes. Ordenalas de la relación más débil a la más fuerte y estimá un *r* para cada una.
+
+- Nube A: los puntos forman casi una línea recta ascendente.
+- Nube B: se nota una tendencia ascendente, pero con bastante dispersión alrededor.
+- Nube C: una mancha redondeada, sin dirección clara.
+
+**Ronda 3. ¿La lectura es correcta?** Para cada frase, decidí si la interpretación se sostiene o dónde falla.
+
+1. "*r* = .80 entre helados vendidos y casos de insolación, así que vender helado causa insolación."
+2. "*r* = .02 entre horas de pantalla y ánimo, así que no hay ninguna relación entre esas variables."
+3. "*r* = .30, es poca cosa, no vale la pena informarlo."
+
+::: {.callout-note collapse="true"}
+## Soluciones
+
+**Ronda 1.** (1) Negativa: más sueño, menos cansancio. (2) Positiva: más lectura, más vocabulario. (3) Negativa: con más calor se vende menos café caliente. (4) Negativa: más ausencias suelen acompañar notas más bajas. Lo que importa acá es el signo y su porqué, no un número exacto.
+
+**Ronda 2.** De más débil a más fuerte: C, B, A. Valores plausibles: C cerca de *r* = .05 (casi sin relación lineal), B alrededor de *r* = .5 (relación moderada con dispersión) y A cerca de *r* = .95 (relación fuerte, casi lineal).
+
+**Ronda 3.** Las tres fallan. (1) Confunde correlación con causa: una tercera variable, el calor del verano, empuja las dos. (2) Un *r* cercano a 0 solo descarta una relación *lineal*; podría haber una relación en forma de U que Pearson no capta, como viste en @sec-supuestos. (3) La magnitud no se juzga con una etiqueta automática: un *r* = .30 puede ser relevante según la pregunta, las consecuencias y la precisión del intervalo; se informa igual, con su IC.
+:::
+
+Para entrenar el ojo con la parte visual, que en papel no se puede practicar, probá el juego en línea [Guess the Correlation](https://www.guessthecorrelation.com/): te muestra una nube de puntos y tenés que estimar su *r*. Es una buena forma de calibrar cuánto se parece tu intuición a lo que dice el coeficiente.
 
 ## En tu proyecto
 

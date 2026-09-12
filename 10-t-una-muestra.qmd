@@ -27,13 +27,19 @@ Con la base `encuesta-estudiantes-limpia` (@sec-jamovi), los 72 casos tienen `or
 |---|---|---|---|
 | 72 | 24.39 | 4.04 | 24 |
 
-La comparación da *t*(71) = 0.82, *p* = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto *d* de Cohen = 0.10. El intervalo de confianza incluye el 24, en concordancia con el resultado no significativo de esta prueba bilateral.
+La comparación da *t*(71) = 0.82, *p* = .415, con una diferencia de apenas 0.39 puntos respecto del valor de referencia (IC 95 % de la media [23.44, 25.34]) y un tamaño de efecto (effect size) *d* de Cohen = 0.10. El intervalo de confianza incluye el 24, en concordancia con el resultado no significativo de esta prueba bilateral.
+
+## Leer el gráfico
+
+Acá el gráfico que acompaña el análisis es el **Q-Q Plot** de `organizacion`, junto con su histograma. El Q-Q lo pedís en **Assumption Checks**; el histograma, en **Exploration → Descriptives → Plots**. Sirven para decidir si la comparación de la media con el valor de referencia se apoya en una distribución razonable.
+
+Cuando los corrés, en el histograma mirá si la forma es una campana más o menos centrada y sin dos picos, y dónde cae el valor de referencia 24 respecto del grueso de los casos. En el Q-Q, mirá si los puntos siguen la diagonal; un despegue marcado en las puntas te avisa de asimetría o extremos antes de confiar en la *t*. El @sec-pensar-graficos ordena esta forma de leer.
 
 ## Cómo leer el output e informarlo en APA
 
 > El puntaje promedio de organización de la muestra (*M* = 24.39, *DE* = 4.04) no difirió significativamente del punto medio teórico de la escala, *t*(71) = 0.82, *p* = .415, IC 95 % [23.44, 25.34], *d* = 0.10.
 
-Informá también los resultados no significativos con su estimación, *t*, *p* e intervalo. El intervalo de confianza muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.
+Informá también los resultados no significativos con su estimación, *t*, *p* e intervalo. El intervalo de confianza (confidence interval) muestra un rango de valores de la media poblacional compatibles con los datos y los supuestos del análisis. Acá va de 23.44 a 25.34 e incluye el valor de referencia. El 95 % describe la cobertura del procedimiento al repetir el muestreo, no una probabilidad asignada a la media dentro de este intervalo particular. Reportar el intervalo permite evaluar la precisión de la estimación.
 
 Un error frecuente es interpretar *p* > .05 como "se demostró que la organización es igual a 24". Un test de hipótesis no prueba la igualdad; solo dice que no hay evidencia suficiente para rechazar el valor de referencia con estos datos.
 
