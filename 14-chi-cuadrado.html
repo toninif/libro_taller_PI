@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -376,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="paso-a-paso-en-jamovi" class="level2" data-number="14.2">
 <h2 data-number="14.2" class="anchored" data-anchor-id="paso-a-paso-en-jamovi"><span class="header-section-number">14.2</span> Paso a paso en jamovi</h2>
-<p>Abrí <code>Analyses → Frequencies → Independent Samples</code>. Pasá <code>trabaja</code> a <strong>Rows</strong> y <code>aprobo_parcial</code> a <strong>Columns</strong>. En <strong>Statistics</strong>, pedí <strong>χ²</strong> y <strong>Phi and Cramer’s V</strong>. Para reproducir este ejemplo, dejá desmarcada <strong>χ² continuity correction</strong>. Informamos Pearson sin corrección de continuidad. En <strong>Cells</strong>, pedí <strong>Observed counts</strong>, <strong>Expected counts</strong> y <strong>Row</strong> dentro de los porcentajes.</p>
+<p>Abrí <code>Análisis → Frecuencias → Muestras Independientes</code>. Pasá <code>trabaja</code> a <strong>Filas</strong> y <code>aprobo_parcial</code> a <strong>Columnas</strong>. En <strong>Estadísticas</strong>, pedí <strong>χ²</strong> y <strong>Phi y V de Cramer</strong>. Para reproducir este ejemplo, dejá desmarcada <strong>χ² con corrección de continuidad</strong>. Informamos Pearson sin corrección de continuidad. En <strong>Celdas</strong>, pedí <strong>Frecuencias observadas</strong>, <strong>Frecuencias esperadas</strong> y <strong>Fila</strong> dentro de los porcentajes.</p>
 <p>Los porcentajes por fila muestran qué proporción aprobó dentro de cada grupo laboral. Los conteos esperados, en cambio, sirven para revisar el supuesto técnico. En una tabla 2 × 2 como esta, si las frecuencias esperadas son muy pequeñas, la aproximación de χ² puede ser mala y Fisher es una alternativa más adecuada.</p>
 <p>No uses porcentajes sin mirar los conteos. Un 100 % calculado sobre dos casos puede verse impresionante y no aportar evidencia suficiente para una conclusión.</p>
 </section>
@@ -413,12 +416,32 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 <p>Las frecuencias esperadas van de 14.57 a 20.57; todas superan ampliamente cinco. La prueba de independencia da χ²(1) = 1.54, <em>p</em> = .214, con V de Cramer = .15. En estos datos hay una diferencia descriptiva de porcentajes, pero no evidencia suficiente para concluir que situación laboral y aprobación estén asociadas.</p>
+<div id="fig-frecuencias-esperadas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-frecuencias-esperadas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/14-frecuencias-esperadas.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;14.1: Frecuencias esperadas para las cuatro celdas de la tabla. La línea punteada marca la referencia de cinco casos; todas las barras quedan claramente por encima."><img src="figuras/14-frecuencias-esperadas.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-frecuencias-esperadas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;14.1: Frecuencias esperadas para las cuatro celdas de la tabla. La línea punteada marca la referencia de cinco casos; todas las barras quedan claramente por encima.
+</figcaption>
+</figure>
+</div>
 <p>Con esta muestra y esta tabla, no hay evidencia concluyente de asociación. Eso no demuestra que “trabajar no influye” ni permite descartar todas las asociaciones posibles. Además, el diseño de la encuesta no permite atribuir efectos causales al trabajo.</p>
 <p>V de Cramer resume el tamaño de la asociación y, en una tabla 2 × 2, coincide numéricamente con Phi. Un V = .15 es pequeño en términos descriptivos, pero la importancia práctica siempre depende de la pregunta, las consecuencias y la precisión disponible; no de una etiqueta automática.</p>
 </section>
 <section id="leer-el-gráfico" class="level2" data-number="14.4">
 <h2 data-number="14.4" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">14.4</span> Leer el gráfico</h2>
-<p>Para dos variables categóricas, el gráfico es un <strong>gráfico de barras agrupadas</strong>, no una torta. Pedilo en <strong>Frequencies → Independent Samples</strong>, dentro de <strong>Plots</strong>: activá <strong>Bar Plot</strong>, poné los porcentajes en el eje y las barras lado a lado (<em>side by side</em>) por grupo. Cuando lo corrés, compará la altura de la barra de “aprobó” entre quienes trabajan y quienes no; esa diferencia de alturas es la misma que leés en los porcentajes por fila. La torta obligaría a comparar porciones y, con eso, escondería una diferencia de casi quince puntos que en barras se ve de inmediato; el <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> desarrolla por qué.</p>
+<p>Para dos variables categóricas, el gráfico es un <strong>gráfico de barras agrupadas</strong>, no una torta. Pedilo en <strong>Frecuencias → Muestras Independientes</strong>, dentro de <strong>Tramas</strong>: activá <strong>Trama de Barra</strong>, poné los porcentajes en el eje y elegí <strong>Al lado</strong> para mostrar las barras de cada grupo una junto a la otra. Cuando lo corrés, compará la altura de la barra de “aprobó” entre quienes trabajan y quienes no; esa diferencia de alturas es la misma que leés en los porcentajes por fila. La torta obligaría a comparar porciones y, con eso, escondería una diferencia de casi quince puntos que en barras se ve de inmediato; el <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> desarrolla por qué.</p>
+<div id="fig-barras-aprobacion" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-barras-aprobacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/14-barras-agrupadas.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figura&nbsp;14.2: Porcentaje de aprobación dentro de cada grupo laboral. Las barras agrupadas permiten comparar sobre el mismo eje a quienes aprobaron y no aprobaron."><img src="figuras/14-barras-agrupadas.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-barras-aprobacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;14.2: Porcentaje de aprobación dentro de cada grupo laboral. Las barras agrupadas permiten comparar sobre el mismo eje a quienes aprobaron y no aprobaron.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="14.5">
 <h2 data-number="14.5" class="anchored" data-anchor-id="cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">14.5</span> Cómo leer el output e informarlo en APA</h2>
@@ -428,7 +451,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Nombrar los porcentajes evita que un χ² sin dirección quede abstracto. Informar <em>N</em> deja claro que dos casos con información laboral faltante no entraron en esta comparación. “No significativo” describe la evidencia de esta muestra, no una verdad definitiva sobre la población.</p>
 <section id="si-las-frecuencias-esperadas-son-bajas" class="level3">
 <h3 class="anchored" data-anchor-id="si-las-frecuencias-esperadas-son-bajas">Si las frecuencias esperadas son bajas</h3>
-<p>No mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí <strong>Fisher’s exact test</strong> en jamovi. Si hay muchas categorías con pocos casos, quizá necesites más datos o una pregunta menos fragmentada.</p>
+<p>No mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí <strong>Test exacto de Fisher</strong> en jamovi. Si hay muchas categorías con pocos casos, quizá necesites más datos o una pregunta menos fragmentada.</p>
 </section>
 </section>
 <section id="en-tu-proyecto" class="level2" data-number="14.6">
@@ -870,6 +893,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

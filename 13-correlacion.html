@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -377,7 +380,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="paso-a-paso-en-jamovi" class="level2" data-number="13.2">
 <h2 data-number="13.2" class="anchored" data-anchor-id="paso-a-paso-en-jamovi"><span class="header-section-number">13.2</span> Paso a paso en jamovi</h2>
-<p>Abrí <code>Analyses → Regression → Correlation Matrix</code>. Pasá <code>horas_estudio</code> y <code>procrastinacion</code> a <strong>Variables</strong>. En <strong>Correlation Coefficients</strong>, dejá tildado <strong>Pearson</strong>; en <strong>Additional Options</strong>, pedí el valor <em>p</em>, <em>N</em> e intervalo de confianza. Activá el gráfico de correlación o revisá un diagrama de dispersión antes de leer el coeficiente.</p>
+<p>Abrí <code>Análisis → Regresión → Matriz de correlación</code>. Pasá <code>horas_estudio</code> y <code>procrastinacion</code> a <strong>Variables</strong>. En <strong>Coeficientes de Correlación</strong>, dejá tildado <strong>Pearson</strong>; en <strong>Opciones Adicionales</strong>, pedí el valor <em>p</em>, <em>N</em> e intervalo de confianza. Activá el gráfico de correlación o revisá un diagrama de dispersión antes de leer el coeficiente.</p>
 <p>El gráfico permite ver si la relación es aproximadamente lineal, si un único caso está empujando el resultado o si hay grupos ocultos. Una nube con forma de U puede tener un <em>r</em> cercano a 0 aunque haya una relación clara, porque Pearson resume una relación lineal.</p>
 <p>Si los datos son ordinales, si la relación es monótona pero no lineal o si los extremos hacen que Pearson sea poco representativo, considerá Spearman. Justificá la elección por las características de los datos e informá qué coeficiente usaste y por qué, como pide el <a href="09-supuestos.html" class="quarto-xref"><span>Capítulo 9</span></a>.</p>
 </section>
@@ -391,6 +394,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="leer-el-gráfico" class="level2" data-number="13.4">
 <h2 data-number="13.4" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">13.4</span> Leer el gráfico</h2>
 <p>El gráfico propio de la correlación es el diagrama de dispersión, que ya activaste en el paso anterior. Cada punto es un estudiante, ubicado por sus horas de estudio (eje horizontal) y su procrastinación (eje vertical). Cuando lo corrés, leé tres cosas en este orden: la dirección de la nube (acá desciende, coherente con el signo negativo de <em>r</em>), cuán apretada está alrededor de una línea imaginaria (más apretada, relación más fuerte) y si algún punto aislado, lejos del resto, está tironeando la tendencia. Una nube en forma de U o de curva puede dar un <em>r</em> cercano a 0 aunque exista una relación clara, porque Pearson solo mide lo lineal. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> explica por qué este gráfico, de dos posiciones, es el que mejor muestra una relación.</p>
+<div id="fig-correlacion-estudio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-correlacion-estudio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/13-correlacion.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;13.1: Diagrama de dispersión de horas de estudio y procrastinación. Cada punto representa a un estudiante y la línea naranja resume la tendencia lineal descendente."><img src="figuras/13-correlacion.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-correlacion-estudio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;13.1: Diagrama de dispersión de horas de estudio y procrastinación. Cada punto representa a un estudiante y la línea naranja resume la tendencia lineal descendente.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="13.5">
 <h2 data-number="13.5" class="anchored" data-anchor-id="cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">13.5</span> Cómo leer el output e informarlo en APA</h2>
@@ -884,6 +897,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

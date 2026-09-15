@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -392,11 +395,11 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>En jamovi, abrí <strong>Analyses → Exploration → Descriptives</strong>. Movés las variables a la casilla <strong>Variables</strong>, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico en <strong>Plots</strong>. Verificá el nivel de medida, porque las opciones disponibles dependen de él. Un código numérico de una categoría no convierte su promedio en un resumen interpretable.</p>
+<p>En jamovi, abrí <strong>Análisis → Exploración → Descriptivas</strong>. Movés las variables a la casilla <strong>Variables</strong>, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico en <strong>Tramas</strong>. Verificá el nivel de medida, porque las opciones disponibles dependen de él. Un código numérico de una categoría no convierte su promedio en un resumen interpretable.</p>
 </section>
 <section id="la-tabla-que-ya-habías-bosquejado" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="la-tabla-que-ya-habías-bosquejado"><span class="header-section-number">7.2</span> La tabla que ya habías bosquejado</h2>
-<p>Si en tu plan de análisis (<a href="02-plan-de-analisis.html" class="quarto-xref"><span>Capítulo 2</span></a>) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que <strong>Descriptives</strong> puede darte antes de correr ningún test. Agregá <code>trabaja</code> en la casilla <strong>Split by</strong> y jamovi devuelve la media, el desvío y el <em>n</em> de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.</p>
+<p>Si en tu plan de análisis (<a href="02-plan-de-analisis.html" class="quarto-xref"><span>Capítulo 2</span></a>) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que <strong>Descriptivas</strong> puede darte antes de correr ningún test. Agregá <code>trabaja</code> en la casilla <strong>Separa por</strong> y jamovi devuelve la media, el desvío y el <em>n</em> de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.</p>
 <p>Todavía sin tener los números, ya podés anticipar la forma de esa tabla:</p>
 <table class="caption-top table">
 <thead>
@@ -422,7 +425,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Compará tu boceto con lo que jamovi genera al aplicar <strong>Split by</strong>. Si tiene una fila o una columna de más, revisá si elegiste las variables y los grupos que habías previsto.</p>
+<p>Compará tu boceto con lo que jamovi genera al aplicar <strong>Separa por</strong>. Si tiene una fila o una columna de más, revisá si elegiste las variables y los grupos que habías previsto.</p>
 <p>Lo mismo vale para el gráfico. Un diagrama de caja (<em>boxplot</em>) partido por grupo permite observar la distribución de cada grupo. La línea dentro de la caja marca la mediana (median), los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. Elegí el gráfico según lo que querés mostrar de tus variables.</p>
 <table class="caption-top table">
 <colgroup>
@@ -455,10 +458,20 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>Elegí el gráfico que permita ver la comparación o la relación que estás estudiando.</p>
+<div id="fig-mapa-graficos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-graficos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/07-mapa-graficos.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;7.1: Cuatro elecciones gráficas con las variables de la encuesta del libro. El histograma muestra la forma de organización; el boxplot compara procrastinación entre quienes trabajan y quienes no; el diagrama de dispersión relaciona horas de estudio y procrastinación; las barras cuentan estudiantes por turno."><img src="figuras/07-mapa-graficos.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-graficos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7.1: Cuatro elecciones gráficas con las variables de la encuesta del libro. El histograma muestra la forma de organización; el boxplot compara procrastinación entre quienes trabajan y quienes no; el diagrama de dispersión relaciona horas de estudio y procrastinación; las barras cuentan estudiantes por turno.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="leer-el-gráfico" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">7.3</span> Leer el gráfico</h2>
-<p>El gráfico central de este capítulo es el boxplot partido por grupo. Lo pedís en <strong>Exploration → Descriptives</strong>, moviendo la variable continua a <strong>Variables</strong>, la categórica a <strong>Split by</strong> y activando <strong>Box plot</strong> en <strong>Plots</strong>. Para una sola variable continua, el histograma cumple el mismo papel.</p>
+<p>El gráfico central de este capítulo es el boxplot partido por grupo. Lo pedís en <strong>Exploración → Descriptivas</strong>, moviendo la variable continua a <strong>Variables</strong>, la categórica a <strong>Separa por</strong> y activando <strong>Diagrama de caja</strong> en <strong>Tramas</strong>. Para una sola variable continua, el histograma cumple el mismo papel.</p>
 <p>Cuando lo corrés, mirá la línea dentro de cada caja (la mediana), el alto de la caja (dónde se concentra la mitad central de los casos) y los puntos que quedan más allá de los bigotes (los valores alejados que conviene revisar). Si comparás dos grupos, fijate cuánto se solapan las cajas: dos cajas que apenas se tocan anticipan una diferencia; dos cajas muy encimadas, que quizás no la haya. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> explica por qué estos gráficos, basados en posición, se leen mejor que otros.</p>
 </section>
 <section id="qué-mirar-antes-de-cualquier-test" class="level2" data-number="7.4">
@@ -908,6 +921,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

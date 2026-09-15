@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -376,9 +379,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="paso-a-paso-en-jamovi" class="level2" data-number="12.2">
 <h2 data-number="12.2" class="anchored" data-anchor-id="paso-a-paso-en-jamovi"><span class="header-section-number">12.2</span> Paso a paso en jamovi</h2>
-<p>Abrí <code>Analyses → ANOVA → One-Way ANOVA</code>. Pasá <code>procrastinacion</code> a <strong>Dependent Variables</strong> y <code>turno</code> a <strong>Grouping Variable</strong>. En <strong>Additional Statistics</strong>, pedí <strong>Descriptives table</strong> y <strong>Descriptives plots</strong> para ver los grupos antes del test.</p>
-<p>En <strong>Assumption Checks</strong>, tildá <strong>Normality test</strong>, <strong>Q-Q Plot</strong> y <strong>Homogeneity test</strong> (Levene). En <strong>Variances</strong>, para reproducir el ANOVA clásico del ejemplo, marcá <strong>Assume equal (Fisher’s)</strong>; Welch aparece seleccionado por defecto. En <strong>Post-Hoc Tests</strong>, elegí <strong>Tukey (equal variances)</strong>. Este panel ya toma el factor de <strong>Grouping Variable</strong>, no pide volver a agregar <code>turno</code>. Si usás Welch por varianzas desiguales, la alternativa es <strong>Games-Howell (unequal variances)</strong>.</p>
-<p>El panel simplificado no ofrece eta cuadrado. Para obtener η² del ANOVA clásico, abrí también <code>Analyses → ANOVA → ANOVA</code>, colocá <code>procrastinacion</code> en <strong>Dependent Variable</strong> y <code>turno</code> en <strong>Fixed Factors</strong>, y marcá <strong>η²</strong> en <strong>Effect Size</strong>. Con este único factor, el <em>F</em> coincide con el de Fisher del panel anterior. Esta ruta adicional permite reproducir el tamaño de efecto del reporte.</p>
+<p>Abrí <code>Análisis → ANOVA → ANOVA de Un Factor</code>. Pasá <code>procrastinacion</code> a <strong>Variables Dependientes</strong> y <code>turno</code> a <strong>Agrupar Variable</strong>. En <strong>Estadísticas Adicionales</strong>, pedí <strong>Tabla de descriptivas</strong> y <strong>Gráficas descriptivas</strong> para ver los grupos antes del test.</p>
+<p>En <strong>Comprobaciones de Supuestos</strong>, tildá <strong>Prueba de Normalidad</strong>, <strong>Gráfica Q-Q</strong> y <strong>Prueba de homogeneidad</strong> (Levene). En <strong>Varianzas</strong>, para reproducir el ANOVA clásico del ejemplo, marcá <strong>Asumir iguales (Fisher)</strong>; Welch aparece seleccionado por defecto. En <strong>Pruebas Post-Hoc</strong>, elegí <strong>Tukey (varianzas iguales)</strong>. Este panel ya toma el factor de <strong>Agrupar Variable</strong>, no pide volver a agregar <code>turno</code>. Si usás Welch por varianzas desiguales, la alternativa es <strong>Games-Howell (varianzas diferentes)</strong>.</p>
+<p>El panel simplificado no ofrece eta cuadrado. Para obtener η² del ANOVA clásico, abrí también <code>Análisis → ANOVA → ANOVA</code>, colocá <code>procrastinacion</code> en <strong>Variable Dependiente</strong> y <code>turno</code> en <strong>Factores Fijos</strong>, y marcá <strong>η²</strong> en <strong>Magnitud del efecto</strong>. Con este único factor, el <em>F</em> coincide con el de Fisher del panel anterior. Esta ruta adicional permite reproducir el tamaño de efecto del reporte.</p>
 <p>Primero interpretá la prueba global y después examiná las comparaciones entre pares que correspondan. Mantené las comparaciones previstas en el plan y el ajuste adecuado, aunque algún par parezca más distinto a simple vista.</p>
 </section>
 <section id="ejemplo-trabajado" class="level2" data-number="12.3">
@@ -420,7 +423,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="leer-el-gráfico" class="level2" data-number="12.4">
 <h2 data-number="12.4" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">12.4</span> Leer el gráfico</h2>
-<p>El gráfico de este análisis es el de medias por grupo, que pedís con <strong>Descriptives plots</strong> en la One-Way ANOVA. Muestra un punto por turno (la media) con una barra de error alrededor. Cuando lo corrés, leé primero la altura de los tres puntos para ver el orden de los turnos, y después el largo de las barras de error: si las de dos turnos casi no se superponen, esa es la diferencia que después confirman las comparaciones de Tukey; si se superponen mucho, como pasa entre tarde y noche, el par probablemente no difiera. Un boxplot por turno complementa la mirada sobre la dispersión de cada grupo. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> da el marco para leerlo.</p>
+<p>El gráfico de este análisis es el de medias por grupo, que pedís con <strong>Gráficas descriptivas</strong> en <strong>ANOVA de Un Factor</strong>. Muestra un punto por turno (la media) con una barra de error alrededor. Cuando lo corrés, leé primero la altura de los tres puntos para ver el orden de los turnos, y después el largo de las barras de error: si las de dos turnos casi no se superponen, esa es la diferencia que después confirman las comparaciones de Tukey; si se superponen mucho, como pasa entre tarde y noche, el par probablemente no difiera. Un boxplot por turno complementa la mirada sobre la dispersión de cada grupo. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> da el marco para leerlo.</p>
+<div id="fig-anova-turnos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-anova-turnos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/12-anova.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;12.1: Procrastinación por turno. A la izquierda se muestran las medias y sus intervalos de confianza del 95 %; a la derecha, los boxplots permiten comparar medianas, dispersión y valores alejados antes de interpretar ANOVA."><img src="figuras/12-anova.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-anova-turnos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;12.1: Procrastinación por turno. A la izquierda se muestran las medias y sus intervalos de confianza del 95 %; a la derecha, los boxplots permiten comparar medianas, dispersión y valores alejados antes de interpretar ANOVA.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="12.5">
 <h2 data-number="12.5" class="anchored" data-anchor-id="cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">12.5</span> Cómo leer el output e informarlo en APA</h2>
@@ -872,6 +885,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

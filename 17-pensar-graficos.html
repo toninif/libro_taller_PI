@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -373,6 +376,16 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="17.1" class="anchored" data-anchor-id="la-gramática-de-un-gráfico"><span class="header-section-number">17.1</span> La gramática de un gráfico</h2>
 <p>Todo gráfico hace lo mismo: toma una variable y la convierte en una propiedad visual. La posición sobre un eje, el largo de una barra, el color, el tamaño, la forma de un punto. Cuando entendés que un gráfico es ese mapeo de variables a propiedades, dejás de elegirlo por costumbre y empezás a elegirlo por lo que querés que se lea.</p>
 <p>Un diagrama de dispersión mapea dos variables continuas a dos posiciones, una en el eje horizontal y otra en el vertical; por eso sirve para ver una relación. Un gráfico de barras mapea una categoría a la posición horizontal y una cantidad al largo de la barra; por eso sirve para comparar cantidades entre grupos. Un boxplot mapea la distribución de una variable a un conjunto de posiciones (mediana, cuartiles, extremos); por eso sirve para comparar formas y detectar valores alejados. La pregunta útil, antes de abrir el menú, no es “¿qué gráfico hago?”, sino “¿qué variable quiero que se lea en la posición, cuál en el largo, cuál en el color?”.</p>
+<div id="fig-gramatica-grafica" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gramatica-grafica-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/17-gramatica-grafica.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;17.1: Tres mapeos gráficos. El diagrama de dispersión usa dos posiciones para mostrar una relación; las barras convierten cantidades en largos; los boxplots ubican mediana, cuartiles y extremos sobre una escala común."><img src="figuras/17-gramatica-grafica.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gramatica-grafica-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;17.1: Tres mapeos gráficos. El diagrama de dispersión usa dos posiciones para mostrar una relación; las barras convierten cantidades en largos; los boxplots ubican mediana, cuartiles y extremos sobre una escala común.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="qué-percibe-bien-el-ojo" class="level2" data-number="17.2">
 <h2 data-number="17.2" class="anchored" data-anchor-id="qué-percibe-bien-el-ojo"><span class="header-section-number">17.2</span> Qué percibe bien el ojo</h2>
@@ -382,6 +395,16 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="por-qué-el-gráfico-de-torta-casi-nunca-conviene">Por qué el gráfico de torta casi nunca conviene</h3>
 <p>Una torta representa cada categoría como una porción, es decir, como un ángulo y un área. Le pide al ojo justo lo que peor estima. Para comparar dos porciones parecidas tenés que juzgar dos ángulos, y ahí nos equivocamos. Las mismas cantidades en un gráfico de barras se convierten en alturas sobre un eje común, que es lo que mejor leemos: la comparación se vuelve inmediata. Con dos o tres categorías la torta todavía se defiende; con cinco, seis o más porciones se vuelve casi ilegible y la gente termina leyendo los números impresos encima, lo que significa que el gráfico ya no está haciendo su trabajo.</p>
 <p>No se trata de una prohibición suelta (“nunca uses torta”), sino de un ejemplo del principio general: elegí la propiedad visual que el ojo lee con precisión para la comparación que te importa. Casi siempre, para comparar cantidades entre categorías, esa propiedad es la longitud de una barra sobre un eje común.</p>
+<div id="fig-barras-vs-torta" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-barras-vs-torta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/17-barras-vs-torta.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figura&nbsp;17.2: Los mismos cuatro porcentajes representados como torta y como barras. En las barras, las categorías comparten una línea de base y la diferencia se estima con mayor precisión."><img src="figuras/17-barras-vs-torta.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-barras-vs-torta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;17.2: Los mismos cuatro porcentajes representados como torta y como barras. En las barras, las categorías comparten una línea de base y la diferencia se estima con mayor precisión.
+</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="otros-no-hagas-esto-con-su-porqué" class="level2" data-number="17.3">
@@ -418,6 +441,16 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>En todos los casos el criterio es el mismo: si un elemento visual no representa un dato o no ayuda a leer una comparación, está de más.</p>
+<div id="fig-ejes-honestos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ejes-honestos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/17-ejes-honestos.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figura&nbsp;17.3: Los porcentajes de aprobación del ejemplo de chi-cuadrado con dos escalas verticales. El eje que comienza en cero conserva la proporción entre los valores; el eje truncado exagera visualmente la diferencia."><img src="figuras/17-ejes-honestos.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ejes-honestos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;17.3: Los porcentajes de aprobación del ejemplo de chi-cuadrado con dos escalas verticales. El eje que comienza en cero conserva la proporción entre los valores; el eje truncado exagera visualmente la diferencia.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="decisiones-honestas" class="level2" data-number="17.4">
 <h2 data-number="17.4" class="anchored" data-anchor-id="decisiones-honestas"><span class="header-section-number">17.4</span> Decisiones honestas</h2>
@@ -430,8 +463,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="graficar-en-jamovi-de-fábrica-y-con-plugins" class="level2" data-number="17.6">
 <h2 data-number="17.6" class="anchored" data-anchor-id="graficar-en-jamovi-de-fábrica-y-con-plugins"><span class="header-section-number">17.6</span> Graficar en jamovi: de fábrica y con plugins</h2>
-<p>jamovi ya trae, sin instalar nada, los gráficos que usaste en todo el libro. En <strong>Exploration → Descriptives</strong>, dentro de <strong>Plots</strong>, están las barras para categóricas, los histogramas y las curvas de densidad para continuas, los boxplots para comparar grupos y el diagrama de dispersión. Los análisis, además, ofrecen sus propios gráficos en <strong>Assumption Checks</strong> y <strong>Plots</strong>, como el Q-Q plot o el gráfico de medias del ANOVA. Para el recorrido de esta materia, eso alcanza.</p>
-<p>Si querés más control o gráficos listos para publicar, jamovi tiene módulos que se instalan en un par de clics desde <strong>Modules → jamovi library</strong>, sin reiniciar el programa. Dos son especialmente útiles. <strong>jmvplots</strong>, oficial, es un envoltorio de <em>ggplot2</em> que te deja armar gráficos personalizados con más opciones de formato. <strong>jjstatsplot</strong>, basado en <em>ggstatsplot</em>, produce gráficos “listos para publicar” que integran en una sola imagen el gráfico, el resultado del test y el tamaño de efecto. Son un buen paso siguiente cuando el gráfico va a un póster o a un artículo, pero no los necesitás para completar los capítulos de este libro.</p>
+<p>jamovi ya trae, sin instalar nada, los gráficos que usaste en todo el libro. En <strong>Exploración → Descriptivas</strong>, dentro de <strong>Tramas</strong>, están las barras para categóricas, los histogramas y las curvas de densidad para continuas, los boxplots para comparar grupos y el diagrama de dispersión. Los análisis, además, ofrecen sus propios gráficos en <strong>Comprobaciones de Supuestos</strong> y <strong>Tramas</strong>, como la gráfica Q-Q o el gráfico de medias del ANOVA. Para el recorrido de esta materia, eso alcanza.</p>
+<p>Si querés más control o gráficos listos para publicar, jamovi tiene módulos que se instalan en un par de clics desde <strong>Módulos → Biblioteca jamovi</strong>, sin reiniciar el programa. Dos son especialmente útiles. <strong>jmvplots</strong>, oficial, es un envoltorio de <em>ggplot2</em> que te deja armar gráficos personalizados con más opciones de formato. <strong>jjstatsplot</strong>, basado en <em>ggstatsplot</em>, produce gráficos “listos para publicar” que integran en una sola imagen el gráfico, el resultado del test y el tamaño de efecto. Son un buen paso siguiente cuando el gráfico va a un póster o a un artículo, pero no los necesitás para completar los capítulos de este libro.</p>
 </section>
 <section id="en-tu-proyecto" class="level2" data-number="17.7">
 <h2 data-number="17.7" class="anchored" data-anchor-id="en-tu-proyecto"><span class="header-section-number">17.7</span> En tu proyecto</h2>
@@ -869,6 +902,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

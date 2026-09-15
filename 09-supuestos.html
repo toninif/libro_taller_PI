@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -423,10 +426,20 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 <p>No todos estos puntos aplican a todos los análisis. Pedir todas las pruebas “por las dudas” suele producir una pantalla llena de resultados que no cambian ninguna decisión.</p>
+<div id="fig-comprobacion-supuestos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-comprobacion-supuestos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/09-comprobacion-supuestos.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;9.1: Comprobaciones gráficas con los datos de práctica. El Q-Q ayuda a revisar normalidad; los boxplots permiten comparar dispersiones; el diagrama de dispersión muestra si la relación es lineal; las barras presentan las frecuencias esperadas y la referencia de cinco casos. La independencia no aparece en un gráfico: se evalúa desde el diseño."><img src="figuras/09-comprobacion-supuestos.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-comprobacion-supuestos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9.1: Comprobaciones gráficas con los datos de práctica. El Q-Q ayuda a revisar normalidad; los boxplots permiten comparar dispersiones; el diagrama de dispersión muestra si la relación es lineal; las barras presentan las frecuencias esperadas y la referencia de cinco casos. La independencia no aparece en un gráfico: se evalúa desde el diseño.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="dónde-pedirlos-en-jamovi" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="dónde-pedirlos-en-jamovi"><span class="header-section-number">9.3</span> Dónde pedirlos en jamovi</h2>
-<p>En los capítulos de análisis vamos a indicar las casillas exactas, pero la lógica es siempre la misma. En las t independientes y en ANOVA, buscá <strong>Assumption Checks</strong> para pedir normalidad, gráficos Q-Q y homogeneidad de varianzas (homogeneity of variance). En una t de una muestra o pareada, la atención está en la distribución de la variable o de las diferencias, no en comparar varianzas de grupos distintos.</p>
+<p>En los capítulos de análisis vamos a indicar las casillas exactas, pero la lógica es siempre la misma. En las t independientes y en ANOVA, buscá <strong>Comprobaciones de Supuestos</strong> para pedir normalidad, gráficos Q-Q y homogeneidad de varianzas (homogeneity of variance). En una t de una muestra o pareada, la atención está en la distribución de la variable o de las diferencias, no en comparar varianzas de grupos distintos.</p>
 <p>Para correlación, empezá por el gráfico de dispersión. Necesitás ver si la relación sigue una línea aproximada y si un solo caso está empujando todo el resultado. Para chi-cuadrado, revisá la tabla de contingencia y las frecuencias esperadas. jamovi puede calcular esas verificaciones; vos tenés que decidir qué implican para la pregunta.</p>
 <p>Interpretá las pruebas junto con los gráficos y dejá escrita la decisión que tomaste.</p>
 </section>
@@ -484,7 +497,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="leer-el-gráfico" class="level2" data-number="9.6">
 <h2 data-number="9.6" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">9.6</span> Leer el gráfico</h2>
-<p>El gráfico más útil para revisar normalidad es el <strong>Q-Q Plot</strong>, que pedís en <strong>Assumption Checks</strong>. No es abstracto: en el eje horizontal pone los valores que esperarías si los datos fueran exactamente normales y, en el vertical, tus datos reales. Si la distribución se aproxima a la normal, los puntos caen cerca de la línea diagonal. Cuando corrés esto, mirá los extremos: si los puntos de las puntas se despegan de la diagonal formando una curva o una “S”, tenés colas más pesadas o una asimetría que Shapiro-Wilk por sí solo no muestra.</p>
+<p>El gráfico más útil para revisar normalidad es la <strong>Gráfica Q-Q</strong>, que pedís en <strong>Comprobaciones de Supuestos</strong>. No es abstracto: en el eje horizontal pone los valores que esperarías si los datos fueran exactamente normales y, en el vertical, tus datos reales. Si la distribución se aproxima a la normal, los puntos caen cerca de la línea diagonal. Cuando corrés esto, mirá los extremos: si los puntos de las puntas se despegan de la diagonal formando una curva o una “S”, tenés colas más pesadas o una asimetría que Shapiro-Wilk por sí solo no muestra.</p>
 <p>Para la linealidad de una correlación, el gráfico equivalente es el diagrama de dispersión: buscás que la nube siga una recta y no una curva. En ambos casos el gráfico concreta lo que un número resume, y a veces lo contradice. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> ordena esta forma de mirar.</p>
 </section>
 <section id="dejar-escrito-el-plan-b" class="level2" data-number="9.7">
@@ -929,6 +942,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -380,10 +383,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="paso-a-paso-en-jamovi" class="level2" data-number="11.2">
 <h2 data-number="11.2" class="anchored" data-anchor-id="paso-a-paso-en-jamovi"><span class="header-section-number">11.2</span> Paso a paso en jamovi</h2>
-<p>Para <strong>muestras independientes</strong>, abrí <code>Analyses → T-Tests → Independent Samples T-Test</code>. Movés la variable de resultado continua (<code>procrastinacion</code>) a <strong>Dependent Variables</strong> y la variable de agrupamiento (<code>trabaja</code>) a <strong>Grouping Variable</strong>. En <strong>Assumption Checks</strong>, tildá <strong>Homogeneity test</strong> (Levene), <strong>Normality test</strong> y <strong>Q-Q plot</strong>. En <strong>Additional Statistics</strong>, pedí <strong>Descriptives</strong>, <strong>Mean difference</strong>, su <strong>Confidence interval</strong> al 95 % y <strong>Effect size</strong>.</p>
-<p>jamovi resta el primer nivel de <code>trabaja</code> menos el segundo. El archivo descargable trae <code>no</code> antes de <code>sí</code>. Para reproducir los signos positivos de este capítulo, abrí el editor de la variable y ordená los niveles con <code>sí</code> primero y <code>no</code> después. Si conservás el orden original, obtenés <em>t</em> = −2.70, diferencia = −2.75 e IC [−4.79, −0.72], con el mismo <em>p</em> bilateral. Verificá el orden en los descriptivos y mantené <strong>Group 1 ≠ Group 2</strong>.</p>
-<p>Para <strong>muestras pareadas</strong>, abrí <code>Analyses → T-Tests → Paired Samples T-Test</code>. Movés las dos variables del mismo caso como un par a <strong>Paired Variables</strong>. jamovi calcula <strong>Measure 1 menos Measure 2</strong>, en ese orden. Para expresar el cambio como después menos antes, cargá primero <code>organizacion_post</code> (Measure 1) y después <code>organizacion_pre</code> (Measure 2). Así una mejora aparece con signo positivo. Si las cargás al revés, el signo se invierte y tenés que interpretarlo con ese orden. En <strong>Assumption Checks</strong>, tildá <strong>Normality test</strong> sobre las diferencias. No hay homogeneidad de varianzas que revisar, porque no hay dos grupos distintos.</p>
-<p>En pareadas, mantené <strong>Measure 1 ≠ Measure 2</strong> y pedí también <strong>Descriptives</strong>, <strong>Mean difference</strong>, su intervalo al 95 % y <strong>Effect size</strong>. En los dos análisis, estas casillas agregan las columnas necesarias para el reporte; no aparecen todas por defecto. El intervalo debajo de <strong>Effect size</strong> corresponde a <em>d</em>.</p>
+<p>Para <strong>muestras independientes</strong>, abrí <code>Análisis → Pruebas t → Prueba t para Muestras Independientes</code>. Movés la variable de resultado continua (<code>procrastinacion</code>) a <strong>Variables Dependientes</strong> y la variable de agrupamiento (<code>trabaja</code>) a <strong>Agrupar Variable</strong>. En <strong>Comprobaciones de Supuestos</strong>, tildá <strong>Prueba de homogeneidad</strong> (Levene), <strong>Prueba de Normalidad</strong> y <strong>Trama Q-Q</strong>. En <strong>Estadísticas Adicionales</strong>, pedí <strong>Descriptivas</strong>, <strong>Diferencia de medias</strong>, su <strong>Intervalo de confianza</strong> al 95 % y <strong>Magnitud del efecto</strong>.</p>
+<p>jamovi resta el primer nivel de <code>trabaja</code> menos el segundo. El archivo descargable trae <code>no</code> antes de <code>sí</code>. Para reproducir los signos positivos de este capítulo, abrí el editor de la variable y ordená los niveles con <code>sí</code> primero y <code>no</code> después. Si conservás el orden original, obtenés <em>t</em> = −2.70, diferencia = −2.75 e IC [−4.79, −0.72], con el mismo <em>p</em> bilateral. Verificá el orden en los descriptivos y mantené <strong>Grupo 1 ≠ Grupo 2</strong>.</p>
+<p>Para <strong>muestras pareadas</strong>, abrí <code>Análisis → Pruebas t → Prueba t para Muestras Pareadas</code>. Movés las dos variables del mismo caso como un par a <strong>Variables Apareadas</strong>. jamovi calcula <strong>Medida 1 menos Medida 2</strong>, en ese orden. Para expresar el cambio como después menos antes, cargá primero <code>organizacion_post</code> (Medida 1) y después <code>organizacion_pre</code> (Medida 2). Así una mejora aparece con signo positivo. Si las cargás al revés, el signo se invierte y tenés que interpretarlo con ese orden. En <strong>Comprobaciones de Supuestos</strong>, tildá <strong>Prueba de Normalidad</strong> sobre las diferencias. No hay homogeneidad de varianzas que revisar, porque no hay dos grupos distintos.</p>
+<p>En pareadas, mantené <strong>Medida 1 ≠ Medida 2</strong> y pedí también <strong>Descriptivas</strong>, <strong>Diferencia de medias</strong>, su intervalo al 95 % y <strong>Magnitud del efecto</strong>. En los dos análisis, estas casillas agregan las columnas necesarias para el reporte; no aparecen todas por defecto. El intervalo debajo de <strong>Magnitud del efecto</strong> corresponde a <em>d</em>.</p>
 <p>jamovi ofrece Student por defecto y Welch como opción adicional en independientes. Elegí según el plan, los tamaños de grupo y las dispersiones. Un Levene no significativo no demuestra igualdad de varianzas. Welch también es una opción válida prevista de antemano, especialmente si dudás de la homogeneidad; no elijas entre filas según cuál dé un <em>p</em> más conveniente.</p>
 </section>
 <section id="ejemplo-trabajado" class="level2" data-number="11.3">
@@ -449,7 +452,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="leer-el-gráfico" class="level2" data-number="11.4">
 <h2 data-number="11.4" class="anchored" data-anchor-id="leer-el-gráfico"><span class="header-section-number">11.4</span> Leer el gráfico</h2>
-<p>Para la t independiente, el gráfico es el boxplot de <code>procrastinacion</code> partido por <code>trabaja</code>: en <strong>Exploration → Descriptives</strong>, poné <code>procrastinacion</code> en <strong>Variables</strong>, <code>trabaja</code> en <strong>Split by</strong> y activá <strong>Box plot</strong>. Verás dos cajas lado a lado. Cuando lo corrés, compará la altura de las dos medianas y cuánto se solapan las cajas: un solapamiento chico acompaña la diferencia significativa del ejemplo; uno grande pediría cautela. Para la t pareada, el gráfico informativo es la distribución de las diferencias (post menos pre): interesa si se corren hacia el lado de la mejora y si algún caso va a contramano. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> explica por qué la posición sobre un eje común hace legible esta comparación.</p>
+<p>Para la t independiente, el gráfico es el boxplot de <code>procrastinacion</code> partido por <code>trabaja</code>: en <strong>Exploración → Descriptivas</strong>, poné <code>procrastinacion</code> en <strong>Variables</strong>, <code>trabaja</code> en <strong>Separa por</strong> y activá <strong>Diagrama de caja</strong>. Verás dos cajas lado a lado. Cuando lo corrés, compará la altura de las dos medianas y cuánto se solapan las cajas: un solapamiento chico acompaña la diferencia significativa del ejemplo; uno grande pediría cautela. Para la t pareada, el gráfico informativo es la distribución de las diferencias (post menos pre): interesa si se corren hacia el lado de la mejora y si algún caso va a contramano. El <a href="17-pensar-graficos.html" class="quarto-xref"><span>Capítulo 17</span></a> explica por qué la posición sobre un eje común hace legible esta comparación.</p>
+<div id="fig-dos-grupos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dos-grupos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figuras/11-dos-grupos.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;11.1: Dos diseños, dos gráficos. Los boxplots comparan la procrastinación de grupos independientes; los puntos muestran las diferencias de organización de cada participante, calculadas como después menos antes. La línea naranja marca la diferencia media y la línea punteada indica ausencia de cambio."><img src="figuras/11-dos-grupos.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dos-grupos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11.1: Dos diseños, dos gráficos. Los boxplots comparan la procrastinación de grupos independientes; los puntos muestran las diferencias de organización de cada participante, calculadas como después menos antes. La línea naranja marca la diferencia media y la línea punteada indica ausencia de cambio.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="cómo-leer-el-output-e-informarlo-en-apa" class="level2" data-number="11.5">
 <h2 data-number="11.5" class="anchored" data-anchor-id="cómo-leer-el-output-e-informarlo-en-apa"><span class="header-section-number">11.5</span> Cómo leer el output e informarlo en APA</h2>
@@ -902,6 +915,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
