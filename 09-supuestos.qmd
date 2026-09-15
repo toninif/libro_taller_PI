@@ -28,9 +28,11 @@ Los demás supuestos sí se pueden explorar con los datos. Pero explorar no sign
 
 No todos estos puntos aplican a todos los análisis. Pedir todas las pruebas “por las dudas” suele producir una pantalla llena de resultados que no cambian ninguna decisión.
 
+![Comprobaciones gráficas con los datos de práctica. El Q-Q ayuda a revisar normalidad; los boxplots permiten comparar dispersiones; el diagrama de dispersión muestra si la relación es lineal; las barras presentan las frecuencias esperadas y la referencia de cinco casos. La independencia no aparece en un gráfico: se evalúa desde el diseño.](figuras/09-comprobacion-supuestos.svg){#fig-comprobacion-supuestos}
+
 ## Dónde pedirlos en jamovi
 
-En los capítulos de análisis vamos a indicar las casillas exactas, pero la lógica es siempre la misma. En las t independientes y en ANOVA, buscá **Assumption Checks** para pedir normalidad, gráficos Q-Q y homogeneidad de varianzas (homogeneity of variance). En una t de una muestra o pareada, la atención está en la distribución de la variable o de las diferencias, no en comparar varianzas de grupos distintos.
+En los capítulos de análisis vamos a indicar las casillas exactas, pero la lógica es siempre la misma. En las t independientes y en ANOVA, buscá **Comprobaciones de Supuestos** para pedir normalidad, gráficos Q-Q y homogeneidad de varianzas (homogeneity of variance). En una t de una muestra o pareada, la atención está en la distribución de la variable o de las diferencias, no en comparar varianzas de grupos distintos.
 
 Para correlación, empezá por el gráfico de dispersión. Necesitás ver si la relación sigue una línea aproximada y si un solo caso está empujando todo el resultado. Para chi-cuadrado, revisá la tabla de contingencia y las frecuencias esperadas. jamovi puede calcular esas verificaciones; vos tenés que decidir qué implican para la pregunta.
 
@@ -60,7 +62,7 @@ Tampoco confundas normalidad con independencia. Podés tener una distribución q
 
 ## Leer el gráfico
 
-El gráfico más útil para revisar normalidad es el **Q-Q Plot**, que pedís en **Assumption Checks**. No es abstracto: en el eje horizontal pone los valores que esperarías si los datos fueran exactamente normales y, en el vertical, tus datos reales. Si la distribución se aproxima a la normal, los puntos caen cerca de la línea diagonal. Cuando corrés esto, mirá los extremos: si los puntos de las puntas se despegan de la diagonal formando una curva o una "S", tenés colas más pesadas o una asimetría que Shapiro-Wilk por sí solo no muestra.
+El gráfico más útil para revisar normalidad es la **Gráfica Q-Q**, que pedís en **Comprobaciones de Supuestos**. No es abstracto: en el eje horizontal pone los valores que esperarías si los datos fueran exactamente normales y, en el vertical, tus datos reales. Si la distribución se aproxima a la normal, los puntos caen cerca de la línea diagonal. Cuando corrés esto, mirá los extremos: si los puntos de las puntas se despegan de la diagonal formando una curva o una "S", tenés colas más pesadas o una asimetría que Shapiro-Wilk por sí solo no muestra.
 
 Para la linealidad de una correlación, el gráfico equivalente es el diagrama de dispersión: buscás que la nube siga una recta y no una curva. En ambos casos el gráfico concreta lo que un número resume, y a veces lo contradice. El @sec-pensar-graficos ordena esta forma de mirar.
 

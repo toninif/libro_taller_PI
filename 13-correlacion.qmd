@@ -15,7 +15,7 @@ El coeficiente de Pearson, *r*, va de −1 a 1. Un valor positivo indica que val
 
 ## Paso a paso en jamovi
 
-Abrí `Analyses → Regression → Correlation Matrix`. Pasá `horas_estudio` y `procrastinacion` a **Variables**. En **Correlation Coefficients**, dejá tildado **Pearson**; en **Additional Options**, pedí el valor *p*, *N* e intervalo de confianza. Activá el gráfico de correlación o revisá un diagrama de dispersión antes de leer el coeficiente.
+Abrí `Análisis → Regresión → Matriz de correlación`. Pasá `horas_estudio` y `procrastinacion` a **Variables**. En **Coeficientes de Correlación**, dejá tildado **Pearson**; en **Opciones Adicionales**, pedí el valor *p*, *N* e intervalo de confianza. Activá el gráfico de correlación o revisá un diagrama de dispersión antes de leer el coeficiente.
 
 El gráfico permite ver si la relación es aproximadamente lineal, si un único caso está empujando el resultado o si hay grupos ocultos. Una nube con forma de U puede tener un *r* cercano a 0 aunque haya una relación clara, porque Pearson resume una relación lineal.
 
@@ -34,6 +34,8 @@ Tampoco podés invertir la flecha causal. Tal vez estudiar más ayuda a organiza
 ## Leer el gráfico
 
 El gráfico propio de la correlación es el diagrama de dispersión, que ya activaste en el paso anterior. Cada punto es un estudiante, ubicado por sus horas de estudio (eje horizontal) y su procrastinación (eje vertical). Cuando lo corrés, leé tres cosas en este orden: la dirección de la nube (acá desciende, coherente con el signo negativo de *r*), cuán apretada está alrededor de una línea imaginaria (más apretada, relación más fuerte) y si algún punto aislado, lejos del resto, está tironeando la tendencia. Una nube en forma de U o de curva puede dar un *r* cercano a 0 aunque exista una relación clara, porque Pearson solo mide lo lineal. El @sec-pensar-graficos explica por qué este gráfico, de dos posiciones, es el que mejor muestra una relación.
+
+![Diagrama de dispersión de horas de estudio y procrastinación. Cada punto representa a un estudiante y la línea naranja resume la tendencia lineal descendente.](figuras/13-correlacion.svg){#fig-correlacion-estudio}
 
 ## Cómo leer el output e informarlo en APA
 

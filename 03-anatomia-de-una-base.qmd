@@ -27,7 +27,7 @@ No hace falta memorizar esa tabla. Sí hace falta poder leerla en voz alta: “e
 
 ## Tres preguntas por columna
 
-Para cada variable, respondé estas preguntas antes de abrir *Analyses*:
+Para cada variable, respondé estas preguntas antes de abrir **Análisis**:
 
 1. **¿Qué mide o clasifica?** `turno` clasifica el horario de cursada; `horas_estudio` mide una cantidad.
 2. **¿Qué valores puede tomar y qué significan?** “Sí” y “no” son claros; `1` y `2` no lo son si nadie dejó anotado cuál es cuál.
@@ -54,7 +54,7 @@ El nivel de medida te permite anticipar qué resumen tiene sentido pedir. Para u
 
 ## Cómo mirarlo en jamovi
 
-En la planilla de jamovi, cada encabezado de columna muestra un símbolo que resume el nivel de medida. Si algo no coincide con tu variable, abrí el editor de variables: podés hacerlo desde **Data → Setup** o con doble clic sobre el encabezado. Ahí revisás el nombre, la etiqueta, el tipo de dato, el nivel de medida y los valores de las categorías.
+En la planilla de jamovi, cada encabezado de columna muestra un símbolo que resume el nivel de medida. Si algo no coincide con tu variable, abrí el editor de variables: podés hacerlo desde **Datos → Configuración** o con doble clic sobre el encabezado. Ahí revisás el nombre, la etiqueta, el tipo de dato, el nivel de medida y los valores de las categorías.
 
 No cambies una columna a “continua” para forzar un análisis que querés hacer. Primero definí la variable; después elegí la herramienta que respeta esa definición. Si la base está bien armada, jamovi te ayuda a no ofrecerte combinaciones sin sentido. Si está mal armada, puede producir un número igual de prolijo y mucho menos defendible.
 

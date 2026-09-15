@@ -10,7 +10,7 @@ Guardá esta planilla en `documentos/` y completala mientras preparás la base e
 | Base de trabajo vigente | `trabajo/` |
 | Diccionario de datos | `documentos/` |
 
-## Recodificaciones (Transform)
+## Recodificaciones (Transformar)
 
 Cada variable nueva creada a partir de categorizar otra.
 
@@ -18,7 +18,7 @@ Cada variable nueva creada a partir de categorizar otra.
 |---|---|---|---|
 | | | | |
 
-## Variables calculadas (Compute)
+## Variables calculadas (Calcular)
 
 Cada variable derivada de una fórmula.
 
@@ -26,13 +26,13 @@ Cada variable derivada de una fórmula.
 |---|---|---|---|
 | | | | |
 
-## Datos faltantes (Missing Values)
+## Datos faltantes (Valores perdidos)
 
 | Variable | Código declarado como faltante | Cantidad de casos afectados |
 |---|---|---|
 | | | |
 
-## Filtros (Filters)
+## Filtros
 
 | Condición del filtro | Qué casos deja fuera | ¿Activo al analizar? |
 |---|---|---|

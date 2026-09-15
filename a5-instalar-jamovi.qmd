@@ -6,17 +6,17 @@ jamovi es gratuito y de código abierto. Este apéndice reúne los pasos de inst
 
 1. Entrá a [jamovi.org](https://www.jamovi.org/) y abrí la sección de descargas.
 2. Elegí la versión para tu sistema operativo (Windows, macOS o Linux). Para trabajar sin conexión, descargá la versión de escritorio (*desktop*), no la de la nube.
-3. Instalá el archivo descargado como cualquier programa y abrilo. La primera pantalla ya muestra la planilla vacía, con las pestañas **Data** (Datos) y **Analyses** (Análisis) arriba.
+3. Instalá el archivo descargado como cualquier programa y abrilo. La primera pantalla ya muestra la planilla vacía, con las pestañas **Datos** y **Análisis** arriba.
 
-jamovi ofrece una traducción al español que se activa en **Preferences** (el botón de opciones, arriba a la derecha). El libro usa los nombres en inglés porque es el idioma por defecto y el que vas a encontrar en la mayoría de los tutoriales y capturas; si activás el español, algunas etiquetas cambian de nombre.
+Este libro usa los comandos de la interfaz en español. Si jamovi aparece en otro idioma, abrí el botón de opciones de arriba a la derecha y elegí **Preferencias → Idioma → Español**. El cambio se aplica a las pestañas, los menús de análisis y las opciones de cada panel.
 
 ## Agregar módulos
 
 Los análisis básicos vienen de fábrica. Para funciones adicionales, como gráficos personalizados, jamovi usa **módulos** que se instalan en unos clics, sin reiniciar el programa.
 
-1. Hacé clic en el botón **Modules** (el signo `+` grande, arriba a la derecha).
-2. Elegí **jamovi library**. Se abre el catálogo de módulos disponibles.
-3. Buscá el módulo por su nombre y pulsá **Install**. Al acabar, sus análisis aparecen como una opción nueva en el menú **Analyses**.
+1. Hacé clic en el botón **Módulos** (el signo `+` grande, arriba a la derecha).
+2. Elegí **Biblioteca jamovi**. Se abre el catálogo de módulos disponibles.
+3. Buscá el módulo por su nombre y pulsá **Instalar**. Al acabar, sus análisis aparecen como una opción nueva en el menú **Análisis**.
 
 ### Módulos de visualización recomendados
 
@@ -30,4 +30,4 @@ No necesitás estos módulos para completar los capítulos del libro; son un bue
 ## Si algo falla
 
 - Si la descarga no arranca, probá con otro navegador o revisá los permisos de instalación de tu equipo.
-- Si un módulo no aparece tras instalarlo, cerrá y volvé a abrir el catálogo de **jamovi library**; la conexión a internet es necesaria solo para instalarlo, no para usarlo después.
+- Si un módulo no aparece tras instalarlo, cerrá y volvé a abrir el catálogo de **Biblioteca jamovi**; la conexión a internet es necesaria solo para instalarlo, no para usarlo después.

@@ -15,7 +15,7 @@ El test compara los conteos observados con los conteos que esperarías si las va
 
 ## Paso a paso en jamovi
 
-Abrí `Analyses → Frequencies → Independent Samples`. Pasá `trabaja` a **Rows** y `aprobo_parcial` a **Columns**. En **Statistics**, pedí **χ²** y **Phi and Cramer's V**. Para reproducir este ejemplo, dejá desmarcada **χ² continuity correction**. Informamos Pearson sin corrección de continuidad. En **Cells**, pedí **Observed counts**, **Expected counts** y **Row** dentro de los porcentajes.
+Abrí `Análisis → Frecuencias → Muestras Independientes`. Pasá `trabaja` a **Filas** y `aprobo_parcial` a **Columnas**. En **Estadísticas**, pedí **χ²** y **Phi y V de Cramer**. Para reproducir este ejemplo, dejá desmarcada **χ² con corrección de continuidad**. Informamos Pearson sin corrección de continuidad. En **Celdas**, pedí **Frecuencias observadas**, **Frecuencias esperadas** y **Fila** dentro de los porcentajes.
 
 Los porcentajes por fila muestran qué proporción aprobó dentro de cada grupo laboral. Los conteos esperados, en cambio, sirven para revisar el supuesto técnico. En una tabla 2 × 2 como esta, si las frecuencias esperadas son muy pequeñas, la aproximación de χ² puede ser mala y Fisher es una alternativa más adecuada.
 
@@ -34,13 +34,17 @@ En `encuesta-estudiantes-limpia` (@sec-jamovi), dos casos no tienen `trabaja` po
 
 Las frecuencias esperadas van de 14.57 a 20.57; todas superan ampliamente cinco. La prueba de independencia da χ²(1) = 1.54, *p* = .214, con V de Cramer = .15. En estos datos hay una diferencia descriptiva de porcentajes, pero no evidencia suficiente para concluir que situación laboral y aprobación estén asociadas.
 
+![Frecuencias esperadas para las cuatro celdas de la tabla. La línea punteada marca la referencia de cinco casos; todas las barras quedan claramente por encima.](figuras/14-frecuencias-esperadas.svg){#fig-frecuencias-esperadas}
+
 Con esta muestra y esta tabla, no hay evidencia concluyente de asociación. Eso no demuestra que “trabajar no influye” ni permite descartar todas las asociaciones posibles. Además, el diseño de la encuesta no permite atribuir efectos causales al trabajo.
 
 V de Cramer resume el tamaño de la asociación y, en una tabla 2 × 2, coincide numéricamente con Phi. Un V = .15 es pequeño en términos descriptivos, pero la importancia práctica siempre depende de la pregunta, las consecuencias y la precisión disponible; no de una etiqueta automática.
 
 ## Leer el gráfico
 
-Para dos variables categóricas, el gráfico es un **gráfico de barras agrupadas**, no una torta. Pedilo en **Frequencies → Independent Samples**, dentro de **Plots**: activá **Bar Plot**, poné los porcentajes en el eje y las barras lado a lado (*side by side*) por grupo. Cuando lo corrés, compará la altura de la barra de "aprobó" entre quienes trabajan y quienes no; esa diferencia de alturas es la misma que leés en los porcentajes por fila. La torta obligaría a comparar porciones y, con eso, escondería una diferencia de casi quince puntos que en barras se ve de inmediato; el @sec-pensar-graficos desarrolla por qué.
+Para dos variables categóricas, el gráfico es un **gráfico de barras agrupadas**, no una torta. Pedilo en **Frecuencias → Muestras Independientes**, dentro de **Tramas**: activá **Trama de Barra**, poné los porcentajes en el eje y elegí **Al lado** para mostrar las barras de cada grupo una junto a la otra. Cuando lo corrés, compará la altura de la barra de "aprobó" entre quienes trabajan y quienes no; esa diferencia de alturas es la misma que leés en los porcentajes por fila. La torta obligaría a comparar porciones y, con eso, escondería una diferencia de casi quince puntos que en barras se ve de inmediato; el @sec-pensar-graficos desarrolla por qué.
+
+![Porcentaje de aprobación dentro de cada grupo laboral. Las barras agrupadas permiten comparar sobre el mismo eje a quienes aprobaron y no aprobaron.](figuras/14-barras-agrupadas.svg){#fig-barras-aprobacion}
 
 ## Cómo leer el output e informarlo en APA
 
@@ -50,7 +54,7 @@ Nombrar los porcentajes evita que un χ² sin dirección quede abstracto. Inform
 
 ### Si las frecuencias esperadas son bajas
 
-No mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí **Fisher's exact test** en jamovi. Si hay muchas categorías con pocos casos, quizá necesites más datos o una pregunta menos fragmentada.
+No mezcles categorías solo para que una casilla supere cinco. Primero preguntate si unirlas tiene sentido teórico y si esa decisión estaba prevista. Para una tabla 2 × 2 con frecuencias esperadas pequeñas, pedí **Test exacto de Fisher** en jamovi. Si hay muchas categorías con pocos casos, quizá necesites más datos o una pregunta menos fragmentada.
 
 ## En tu proyecto
 

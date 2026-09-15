@@ -7,7 +7,7 @@ La pregunta, las variables y el diseño de tu proyecto te permiten elegir el an�
 
 ## El test viene después de la pregunta
 
-Cuando abrís *Analyses*, jamovi ofrece muchas posibilidades. Para decidir cuál usar, retomá la pregunta de tu proyecto y las definiciones del diccionario. Con esos documentos podés revisar qué análisis corresponde.
+Cuando abrís **Análisis**, jamovi ofrece muchas posibilidades. Para decidir cuál usar, retomá la pregunta de tu proyecto y las definiciones del diccionario. Con esos documentos podés revisar qué análisis corresponde.
 
 El árbol de decisión no reemplaza lo que aprendiste en estadística. Te ayuda a convertir una pregunta cotidiana en una estructura que jamovi pueda analizar. Antes de usarlo, abrí tu plan de análisis y escribí tres cosas:
 

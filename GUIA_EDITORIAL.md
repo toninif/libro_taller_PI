@@ -31,7 +31,7 @@ Los capítulos de análisis 10–14 mantienen siempre este orden:
 7. Ejercicios de autochequeo.
 8. Recursos para el trabajo, cuando hagan falta.
 
-Cada ruta de jamovi se escribe como texto, por ejemplo: `Analyses → T-Tests → Independent Samples T-Test`. No usar capturas salvo que una interfaz no pueda explicarse de forma clara con texto. Antes de publicar, verificar las rutas en la versión de jamovi declarada en el capítulo.
+Cada ruta de jamovi se escribe con las etiquetas de la interfaz en español, por ejemplo: `Análisis → Pruebas t → Prueba t para Muestras Independientes`. No agregar la etiqueta inglesa entre paréntesis. No usar capturas salvo que una interfaz no pueda explicarse de forma clara con texto. Antes de publicar, verificar las rutas en la versión de jamovi declarada en el capítulo.
 
 ## Ejemplos, términos y recursos
 

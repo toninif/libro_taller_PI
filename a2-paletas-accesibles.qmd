@@ -31,7 +31,7 @@ Cuando el color representa una cantidad y no una categoría, cambia el criterio.
 
 ## Cómo aplicarlas en jamovi
 
-Los gráficos de fábrica de **Exploration → Descriptives** traen colores fijos y no siempre editables. Cuando necesites controlar la paleta, los módulos que instalás desde **Modules → jamovi library** (@sec-pensar-graficos) te dan esa opción: **jmvplots** y **jjstatsplot** se apoyan en *ggplot2*, donde podés fijar los colores con los códigos de arriba o pedir una paleta de ColorBrewer. Si exportás el gráfico para retocarlo en otra herramienta, copiá estos códigos hexadecimales tal cual.
+Los gráficos de fábrica de **Exploración → Descriptivas** traen colores fijos y no siempre editables. Cuando necesites controlar la paleta, los módulos que instalás desde **Módulos → Biblioteca jamovi** (@sec-pensar-graficos) te dan esa opción: **jmvplots** y **jjstatsplot** se apoyan en *ggplot2*, donde podés fijar los colores con los códigos de arriba o pedir una paleta de ColorBrewer. Si exportás el gráfico para retocarlo en otra herramienta, copiá estos códigos hexadecimales tal cual.
 
 ## Autochequeo
 

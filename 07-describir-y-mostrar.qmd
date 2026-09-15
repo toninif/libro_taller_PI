@@ -14,11 +14,11 @@ El nivel de medida que fijaste en el @sec-anatomia determina qué estadístico t
 | Continua | Media (mean), desvío estándar (standard deviation), mínimo, máximo; histograma (histogram) | `procrastinacion`, `horas_estudio` |
 | Nominal | Frecuencias (frequencies) y porcentajes; gráfico de barras (bar chart) | `turno`, `trabaja`, `aprobo_parcial` |
 
-En jamovi, abrí **Analyses → Exploration → Descriptives**. Movés las variables a la casilla **Variables**, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico en **Plots**. Verificá el nivel de medida, porque las opciones disponibles dependen de él. Un código numérico de una categoría no convierte su promedio en un resumen interpretable.
+En jamovi, abrí **Análisis → Exploración → Descriptivas**. Movés las variables a la casilla **Variables**, tildás los estadísticos que corresponden según la tabla anterior y activás el gráfico en **Tramas**. Verificá el nivel de medida, porque las opciones disponibles dependen de él. Un código numérico de una categoría no convierte su promedio en un resumen interpretable.
 
 ## La tabla que ya habías bosquejado
 
-Si en tu plan de análisis (@sec-plan) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que **Descriptives** puede darte antes de correr ningún test. Agregá `trabaja` en la casilla **Split by** y jamovi devuelve la media, el desvío y el *n* de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.
+Si en tu plan de análisis (@sec-plan) escribiste que ibas a comparar la media de procrastinación entre quienes trabajan y quienes no, ese es exactamente el resultado que **Descriptivas** puede darte antes de correr ningún test. Agregá `trabaja` en la casilla **Separa por** y jamovi devuelve la media, el desvío y el *n* de procrastinación para cada grupo, en la misma tabla que ya habías dibujado a mano.
 
 Todavía sin tener los números, ya podés anticipar la forma de esa tabla:
 
@@ -27,7 +27,7 @@ Todavía sin tener los números, ya podés anticipar la forma de esa tabla:
 | Trabaja | | | |
 | No trabaja | | | |
 
-Compará tu boceto con lo que jamovi genera al aplicar **Split by**. Si tiene una fila o una columna de más, revisá si elegiste las variables y los grupos que habías previsto.
+Compará tu boceto con lo que jamovi genera al aplicar **Separa por**. Si tiene una fila o una columna de más, revisá si elegiste las variables y los grupos que habías previsto.
 
 Lo mismo vale para el gráfico. Un diagrama de caja (*boxplot*) partido por grupo permite observar la distribución de cada grupo. La línea dentro de la caja marca la mediana (median), los bordes de la caja marcan dónde se concentra la mitad central de los casos, y los puntos que quedan fuera de los bigotes marcan los valores que se alejan del resto. Elegí el gráfico según lo que querés mostrar de tus variables.
 
@@ -40,9 +40,11 @@ Lo mismo vale para el gráfico. Un diagrama de caja (*boxplot*) partido por grup
 
 Elegí el gráfico que permita ver la comparación o la relación que estás estudiando.
 
+![Cuatro elecciones gráficas con las variables de la encuesta del libro. El histograma muestra la forma de organización; el boxplot compara procrastinación entre quienes trabajan y quienes no; el diagrama de dispersión relaciona horas de estudio y procrastinación; las barras cuentan estudiantes por turno.](figuras/07-mapa-graficos.svg){#fig-mapa-graficos}
+
 ## Leer el gráfico
 
-El gráfico central de este capítulo es el boxplot partido por grupo. Lo pedís en **Exploration → Descriptives**, moviendo la variable continua a **Variables**, la categórica a **Split by** y activando **Box plot** en **Plots**. Para una sola variable continua, el histograma cumple el mismo papel.
+El gráfico central de este capítulo es el boxplot partido por grupo. Lo pedís en **Exploración → Descriptivas**, moviendo la variable continua a **Variables**, la categórica a **Separa por** y activando **Diagrama de caja** en **Tramas**. Para una sola variable continua, el histograma cumple el mismo papel.
 
 Cuando lo corrés, mirá la línea dentro de cada caja (la mediana), el alto de la caja (dónde se concentra la mitad central de los casos) y los puntos que quedan más allá de los bigotes (los valores alejados que conviene revisar). Si comparás dos grupos, fijate cuánto se solapan las cajas: dos cajas que apenas se tocan anticipan una diferencia; dos cajas muy encimadas, que quizás no la haya. El @sec-pensar-graficos explica por qué estos gráficos, basados en posición, se leen mejor que otros.
 

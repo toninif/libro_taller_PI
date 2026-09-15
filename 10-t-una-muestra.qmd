@@ -15,9 +15,9 @@ Si tenés dos grupos o las mismas personas medidas dos veces, consultá el @sec-
 
 ## Paso a paso en jamovi
 
-`Analyses → T-Tests → One Sample T-Test`. Movés la variable continua (`organizacion`) a **Dependent Variables** y escribís el valor de referencia en **Test value** (acá, 24; el valor predeterminado de jamovi es 0, así que no te olvides de cambiarlo). Mantené la hipótesis bilateral **≠ Test value**. En **Assumption Checks**, tildá **Normality test** y **Q-Q Plot**; en **Additional Statistics**, pedí **Descriptives**, **Mean difference**, su **Confidence interval** al 95 % y **Effect size**. Solo hay una muestra, así que no corresponde revisar homogeneidad de varianzas entre grupos.
+`Análisis → Pruebas t → Prueba t de una Muestra`. Movés la variable continua (`organizacion`) a **Variables Dependientes** y escribís el valor de referencia en **Valor de prueba** (acá, 24; el valor predeterminado de jamovi es 0, así que no te olvides de cambiarlo). Mantené la hipótesis bilateral **≠ Valor de prueba**. En **Comprobaciones de Supuestos**, tildá **Prueba de Normalidad** y **Gráfica Q-Q**; en **Estadísticas Adicionales**, pedí **Descriptivas**, **Diferencia de medias**, su **Intervalo de confianza** al 95 % y **Magnitud del efecto**. Solo hay una muestra, así que no corresponde revisar homogeneidad de varianzas entre grupos.
 
-La tabla de resultados trae el estadístico *t*, los grados de libertad (*df*), el valor *p* y las columnas adicionales que pediste. El intervalo junto a **Mean difference** corresponde a la diferencia respecto de 24. En este ejemplo es [−0.56, 1.34]. Para expresar el IC de la media, sumá 24 a ambos límites y obtenés [23.44, 25.34]. La casilla de intervalo debajo de **Effect size** corresponde a *d*, no a la media.
+La tabla de resultados trae el estadístico *t*, los grados de libertad (*df*), el valor *p* y las columnas adicionales que pediste. El intervalo junto a **Diferencia de medias** corresponde a la diferencia respecto de 24. En este ejemplo es [−0.56, 1.34]. Para expresar el IC de la media, sumá 24 a ambos límites y obtenés [23.44, 25.34]. La casilla de intervalo debajo de **Magnitud del efecto** corresponde a *d*, no a la media.
 
 ## Ejemplo trabajado
 
@@ -31,9 +31,11 @@ La comparación da *t*(71) = 0.82, *p* = .415, con una diferencia de apenas 0.39
 
 ## Leer el gráfico
 
-Acá el gráfico que acompaña el análisis es el **Q-Q Plot** de `organizacion`, junto con su histograma. El Q-Q lo pedís en **Assumption Checks**; el histograma, en **Exploration → Descriptives → Plots**. Sirven para decidir si la comparación de la media con el valor de referencia se apoya en una distribución razonable.
+Acá el gráfico que acompaña el análisis es la **Gráfica Q-Q** de `organizacion`, junto con su histograma. El Q-Q lo pedís en **Comprobaciones de Supuestos**; el histograma, en **Exploración → Descriptivas → Tramas**. Sirven para decidir si la comparación de la media con el valor de referencia se apoya en una distribución razonable.
 
 Cuando los corrés, en el histograma mirá si la forma es una campana más o menos centrada y sin dos picos, y dónde cae el valor de referencia 24 respecto del grueso de los casos. En el Q-Q, mirá si los puntos siguen la diagonal; un despegue marcado en las puntas te avisa de asimetría o extremos antes de confiar en la *t*. El @sec-pensar-graficos ordena esta forma de leer.
+
+![Distribución de organización en la muestra. El histograma sitúa el valor de referencia 24 y el gráfico Q-Q compara los valores observados con los que se esperarían bajo una distribución normal.](figuras/10-normalidad-una-muestra.svg){#fig-normalidad-una-muestra}
 
 ## Cómo leer el output e informarlo en APA
 

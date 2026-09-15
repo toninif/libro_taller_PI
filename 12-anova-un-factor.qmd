@@ -15,11 +15,11 @@ ANOVA evita hacer muchas t entre pares. Con tres grupos hay tres comparaciones p
 
 ## Paso a paso en jamovi
 
-Abrí `Analyses → ANOVA → One-Way ANOVA`. Pasá `procrastinacion` a **Dependent Variables** y `turno` a **Grouping Variable**. En **Additional Statistics**, pedí **Descriptives table** y **Descriptives plots** para ver los grupos antes del test.
+Abrí `Análisis → ANOVA → ANOVA de Un Factor`. Pasá `procrastinacion` a **Variables Dependientes** y `turno` a **Agrupar Variable**. En **Estadísticas Adicionales**, pedí **Tabla de descriptivas** y **Gráficas descriptivas** para ver los grupos antes del test.
 
-En **Assumption Checks**, tildá **Normality test**, **Q-Q Plot** y **Homogeneity test** (Levene). En **Variances**, para reproducir el ANOVA clásico del ejemplo, marcá **Assume equal (Fisher's)**; Welch aparece seleccionado por defecto. En **Post-Hoc Tests**, elegí **Tukey (equal variances)**. Este panel ya toma el factor de **Grouping Variable**, no pide volver a agregar `turno`. Si usás Welch por varianzas desiguales, la alternativa es **Games-Howell (unequal variances)**.
+En **Comprobaciones de Supuestos**, tildá **Prueba de Normalidad**, **Gráfica Q-Q** y **Prueba de homogeneidad** (Levene). En **Varianzas**, para reproducir el ANOVA clásico del ejemplo, marcá **Asumir iguales (Fisher)**; Welch aparece seleccionado por defecto. En **Pruebas Post-Hoc**, elegí **Tukey (varianzas iguales)**. Este panel ya toma el factor de **Agrupar Variable**, no pide volver a agregar `turno`. Si usás Welch por varianzas desiguales, la alternativa es **Games-Howell (varianzas diferentes)**.
 
-El panel simplificado no ofrece eta cuadrado. Para obtener η² del ANOVA clásico, abrí también `Analyses → ANOVA → ANOVA`, colocá `procrastinacion` en **Dependent Variable** y `turno` en **Fixed Factors**, y marcá **η²** en **Effect Size**. Con este único factor, el *F* coincide con el de Fisher del panel anterior. Esta ruta adicional permite reproducir el tamaño de efecto del reporte.
+El panel simplificado no ofrece eta cuadrado. Para obtener η² del ANOVA clásico, abrí también `Análisis → ANOVA → ANOVA`, colocá `procrastinacion` en **Variable Dependiente** y `turno` en **Factores Fijos**, y marcá **η²** en **Magnitud del efecto**. Con este único factor, el *F* coincide con el de Fisher del panel anterior. Esta ruta adicional permite reproducir el tamaño de efecto del reporte.
 
 Primero interpretá la prueba global y después examiná las comparaciones entre pares que correspondan. Mantené las comparaciones previstas en el plan y el ajuste adecuado, aunque algún par parezca más distinto a simple vista.
 
@@ -41,7 +41,9 @@ Tukey aclara dónde están las diferencias. El turno noche presenta mayor procra
 
 ## Leer el gráfico
 
-El gráfico de este análisis es el de medias por grupo, que pedís con **Descriptives plots** en la One-Way ANOVA. Muestra un punto por turno (la media) con una barra de error alrededor. Cuando lo corrés, leé primero la altura de los tres puntos para ver el orden de los turnos, y después el largo de las barras de error: si las de dos turnos casi no se superponen, esa es la diferencia que después confirman las comparaciones de Tukey; si se superponen mucho, como pasa entre tarde y noche, el par probablemente no difiera. Un boxplot por turno complementa la mirada sobre la dispersión de cada grupo. El @sec-pensar-graficos da el marco para leerlo.
+El gráfico de este análisis es el de medias por grupo, que pedís con **Gráficas descriptivas** en **ANOVA de Un Factor**. Muestra un punto por turno (la media) con una barra de error alrededor. Cuando lo corrés, leé primero la altura de los tres puntos para ver el orden de los turnos, y después el largo de las barras de error: si las de dos turnos casi no se superponen, esa es la diferencia que después confirman las comparaciones de Tukey; si se superponen mucho, como pasa entre tarde y noche, el par probablemente no difiera. Un boxplot por turno complementa la mirada sobre la dispersión de cada grupo. El @sec-pensar-graficos da el marco para leerlo.
+
+![Procrastinación por turno. A la izquierda se muestran las medias y sus intervalos de confianza del 95 %; a la derecha, los boxplots permiten comparar medianas, dispersión y valores alejados antes de interpretar ANOVA.](figuras/12-anova.svg){#fig-anova-turnos}
 
 ## Cómo leer el output e informarlo en APA
 

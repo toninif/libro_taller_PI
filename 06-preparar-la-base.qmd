@@ -11,33 +11,33 @@ Vas a recodificar, calcular, declarar faltantes y filtrar sobre el archivo que g
 
 Anotá cada variable nueva en el diccionario de datos, con la fórmula o el criterio exacto que la generó. Si necesitás corregir un valor, registrá también qué consultaste para hacerlo.
 
-## Recodificar con Transform
+## Recodificar con Transformar
 
-**Transform** convierte los valores de una variable existente en categorías nuevas, sin tocar el original. Es la herramienta para pasar de una cantidad continua a un criterio categórico, como en el ejemplo que venimos siguiendo. `horas_trabajo` (continua) se convierte en `trabaja` (sí / no) con el corte en diez horas semanales.
+**Transformar** convierte los valores de una variable existente en categorías nuevas, sin tocar el original. Es la herramienta para pasar de una cantidad continua a un criterio categórico, como en el ejemplo que venimos siguiendo. `horas_trabajo` (continua) se convierte en `trabaja` (sí / no) con el corte en diez horas semanales.
 
 Antes de transformar, declará `-99` como faltante en `horas_trabajo`, siguiendo la sección de faltantes de este capítulo. Así evitás clasificar una falta de respuesta como "no trabaja".
 
-Seleccioná `horas_trabajo` y pulsá **Data → Transform**. En la nueva variable, comprobá **Source variable** y elegí **Create New Transform…** en el selector de transformación. Agregá condiciones con `$source`, que representa la columna de origen. `$source >= 10` asigna `'sí'` y `$source < 10` asigna `'no'`. Nombrá la variable `trabaja` y comprobá que sea nominal. Los casos 007 y 058 deben seguir faltantes en la variable nueva. Por ejemplo, el caso 013 respondió `horas_trabajo = 17` y queda como `sí`; el caso 002 respondió 6 y queda como `no`. La columna original conserva los valores recibidos.
+Seleccioná `horas_trabajo` y pulsá **Datos → Transformar**. En la nueva variable, comprobá **Variable origen** y elegí **Crear Nueva Transformación…** en el selector de transformación. Agregá condiciones con `$source`, que representa la columna de origen. `$source >= 10` asigna `'sí'` y `$source < 10` asigna `'no'`. Nombrá la variable `trabaja` y comprobá que sea nominal. Los casos 007 y 058 deben seguir faltantes en la variable nueva. Por ejemplo, el caso 013 respondió `horas_trabajo = 17` y queda como `sí`; el caso 002 respondió 6 y queda como `no`. La columna original conserva los valores recibidos.
 
-## Calcular con Compute
+## Calcular
 
-**Compute** crea una variable a partir de una fórmula que puede usar una o varias columnas. Se usa para sumar los ítems de una escala en un puntaje total, para calcular una diferencia (`organizacion_post` − `organizacion_pre`) o para derivar cualquier cantidad que no viene directamente del instrumento.
+**Calcular** crea una variable a partir de una fórmula que puede usar una o varias columnas. Se usa para sumar los ítems de una escala en un puntaje total, para calcular una diferencia (`organizacion_post` − `organizacion_pre`) o para derivar cualquier cantidad que no viene directamente del instrumento.
 
-En jamovi, pulsá **Data → Compute** para crear una variable calculada (computed variable). Escribís la fórmula con el selector de variables y funciones (`SUM`, `MEAN`, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.
+En jamovi, pulsá **Datos → Calcular** para crear una variable calculada. Escribís la fórmula con el selector de variables y funciones (`SUM`, `MEAN`, operadores aritméticos) y jamovi recalcula la columna cada vez que cambia un dato de origen. Guardá en el diccionario qué ítems se suman, con qué signo y cómo se tratan los faltantes. Esa información permite revisar el cálculo.
 
-Transform y Compute resuelven problemas distintos. Transform recodifica una variable en categorías; Compute calcula un valor a partir de una fórmula. Si dudás cuál te corresponde, preguntate si estás agrupando valores existentes (Transform) o calculando uno nuevo (Compute).
+**Transformar** y **Calcular** resuelven problemas distintos. **Transformar** recodifica una variable en categorías; **Calcular** obtiene un valor a partir de una fórmula. Si dudás cuál te corresponde, preguntate si estás agrupando valores existentes o calculando uno nuevo.
 
 ## Declarar los datos faltantes
 
 En la base de este libro, dos respuestas sin completar en `horas_trabajo` se registran como `-99`. Ese código es una convención que dejaste anotada en el diccionario de datos. Si jamovi lo tratara como un valor real, alteraría el promedio de horas de trabajo. Declarar los faltantes (missing values) es decirle a jamovi qué valores no cuentan como datos.
 
-En jamovi, hacé doble clic en el encabezado de la columna, abrí **Missing Values** y agregá la condición para tratar `-99` como faltante. Esos casos quedan excluidos de los cálculos de esa variable. Las filas siguen visibles en **Data** y disponibles para analizar las otras variables que sí hayan respondido.
+En jamovi, hacé doble clic en el encabezado de la columna, abrí **Valores perdidos** y agregá la condición para tratar `-99` como faltante. Esos casos quedan excluidos de los cálculos de esa variable. Las filas siguen visibles en **Datos** y disponibles para analizar las otras variables que sí hayan respondido.
 
 ## Filtrar sin borrar
 
 Un filtro deja temporalmente algunos casos fuera de los análisis, sin eliminarlos de la base. Usalo cuando necesites restringir el análisis a un subgrupo o excluir respuestas incompletas según lo previsto en el plan. Conservar las filas y registrar el criterio permite revisar qué casos entraron y por qué.
 
-En jamovi, pulsá **Data → Filters** y escribí la condición lógica (por ejemplo, `trabaja == 'sí'`). Los casos que no cumplen la condición se marcan en la planilla y quedan fuera de los análisis mientras el filtro esté activo, pero podés desactivarlo y volver a la base completa en cualquier momento. Desactivá este filtro antes de seguir los ejemplos que comparan quienes trabajan con quienes no.
+En jamovi, pulsá **Datos → Filtros** y escribí la condición lógica (por ejemplo, `trabaja == 'sí'`). Los casos que no cumplen la condición se marcan en la planilla y quedan fuera de los análisis mientras el filtro esté activo, pero podés desactivarlo y volver a la base completa en cualquier momento. Desactivá este filtro antes de seguir los ejemplos que comparan quienes trabajan con quienes no.
 
 ## En tu proyecto
 

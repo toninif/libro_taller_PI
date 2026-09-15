@@ -77,7 +77,7 @@ El plan se escribe **antes de recolectar** y puede requerir cambios. Si los dato
 >
 > **4. Análisis previsto:** comparación de medias entre dos grupos independientes (t de Student; @sec-dos-grupos).
 >
-> **5. Supuestos:** normalidad y homogeneidad de varianzas, con los *Assumption Checks* del propio análisis en jamovi. Plan B: Mann-Whitney.
+> **5. Supuestos:** normalidad y homogeneidad de varianzas, con las **Comprobaciones de Supuestos** del propio análisis en jamovi. Plan B: Mann-Whitney.
 >
 > **6. Resultado esperado:** tabla de medias y desvíos por grupo + la frase con huecos de la sección anterior.
 

@@ -43,7 +43,7 @@ Cuando el resultado global tiene comparaciones posteriores, como Tukey después 
 
 ## De la tabla de jamovi a una tabla APA
 
-Un párrafo no reemplaza una tabla cuando hay más de dos o tres grupos, o cuando el lector necesita comparar varios estadísticos a la vez. La tabla de **Descriptives** que jamovi genera ya viene sin líneas verticales, lo que facilita el formato. APA no usa cuadrícula completa, solo líneas horizontales que separan el encabezado del cuerpo y cierran la tabla.
+Un párrafo no reemplaza una tabla cuando hay más de dos o tres grupos, o cuando el lector necesita comparar varios estadísticos a la vez. La tabla de **Descriptivas** que jamovi genera ya viene sin líneas verticales, lo que facilita el formato. APA no usa cuadrícula completa, solo líneas horizontales que separan el encabezado del cuerpo y cierran la tabla.
 
 Lo que jamovi no pone y vos tenés que agregar:
 

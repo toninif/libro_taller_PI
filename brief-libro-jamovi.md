@@ -28,7 +28,7 @@ datos.
    - sobre todo, cómo leerlo (no un tutorial: "cuando corrés esto, mirá esto").
    - Incluir esta sección también en el capítulo de supuestos, donde hoy se
      menciona "ggplots" sin explicar qué son ni cómo se ven (ahí el gráfico
-     abstracto se vuelve un Q-Q plot / gráfico de residuos concreto).
+     abstracto se vuelve una gráfica Q-Q o un gráfico de residuos concreto).
 
 7. **Capítulo final independiente ("pensar gráficos")**: cierre que unifica y da el
    marco conceptual que las secciones transversales aplican. Va al final, cuando ya
@@ -47,12 +47,12 @@ datos.
      (daltonismo), lo mínimo necesario para que el gráfico se explique solo.
    - El gráfico como parte del razonamiento, no como decoración final.
    - Sección corta sobre plugins de jamovi para visualizar: qué viene de fábrica
-     (Exploration → Descriptives: barras, histogramas, densidades, boxplots,
+     (Exploración → Descriptivas: barras, histogramas, densidades, boxplots,
      dispersión), y qué instalar si se quiere más:
      - **jmvplots** (oficial, wrapper de ggplot2 para gráficos personalizados),
      - **jjstatsplot** (gráficos estadísticos "listos para publicar", basado en
        ggstatsplot; integra gráfico + test + tamaño de efecto).
-     - Aclarar que se instalan desde Modules → jamovi library, en un par de clics y
+     - Aclarar que se instalan desde Módulos → Biblioteca jamovi, en un par de clics y
        sin reiniciar.
 
 ## Apéndices
