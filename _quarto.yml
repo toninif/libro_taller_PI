@@ -20,6 +20,7 @@ book:
     search: true
   chapters:
     - index.qmd
+    - prefacio.qmd
     - part: "Apertura. Pensar el análisis antes de los datos"
       chapters:
         - 01-de-la-pregunta-al-analisis.qmd

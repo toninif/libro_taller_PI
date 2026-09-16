@@ -1,0 +1,42 @@
+# Presentación {.unnumbered}
+
+::: {.callout-note appearance="simple"}
+Este recurso está pensado para acompañar tu proyecto de Prácticas de Investigación desde las primeras decisiones hasta el informe. Podés empezar con una pregunta, aunque todavía no tengas datos. Cuando llegue el momento de analizar, vamos a trabajar con jamovi.
+:::
+
+## La idea central
+
+Me gustaría que se lleven la idea de que los análisis se piensan **antes** de tener los datos. El análisis empieza en el diseño, cuando decidís qué querés saber y cómo vas a estudiarlo. Los conocimientos de estadística ya los adquiriste en otras materias. Acá vamos a usarlos para tomar decisiones sobre tu proyecto. A fin de cuentas, la prueba estadística se hace con un par de clics. Lo que lleva trabajo es poder justificar por qué elegiste ese análisis y qué podés concluir con sus resultados.
+
+Por eso te propongo trabajar desde un proyecto durante todo el libro. Vas a ir reuniendo la pregunta, el plan, el diccionario, las bases y el informe en un mismo lugar. Me interesa que al final puedas retomar tu trabajo, explicar cómo llegaste a cada resultado y compartirlo con alguien que pueda entenderlo.
+
+## Qué vas a encontrar
+
+Vas a encontrar un recorrido para pasar de una pregunta a un resultado que puedas defender. Durante ese recorrido vas a trabajar en estas tareas.
+
+-   Definir una pregunta, unos objetivos e hipótesis y un plan de análisis antes de recolectar.
+-   Armar, documentar y preparar una base sin perder de vista qué representa cada variable.
+-   Elegir y ejecutar los análisis centrales de la materia (en este caso utilizando jamovi, pero hay otras opciones). Esto va desde los descriptivos hasta pruebas t, ANOVA de un factor, correlación y chi-cuadrado.
+-   Leer los resultados, entenderlos y comunicarlos utilizando un formato en específico (sí, normas APA), así como tablas y gráficos.
+
+Para los análisis vamos a usar jamovi. El plan y el informe los podés escribir en tu procesador de texto habitual, y el diccionario en una planilla. No hace falta saber programar (aunque es una habilidad deseable y te aliento a que la adquieras si te interesa). Sí hace falta saber qué opción responde tu pregunta y qué mirar después de seleccionarla. Los ejemplos usan datos sintéticos de estudiantes. Solo sirven para practicar el procedimiento, no para sacar conclusiones sobre una población real.
+
+## Recorrido
+
+La Apertura empieza con la pregunta (@sec-pregunta) y el plan de análisis (@sec-plan), y termina con la organización del proyecto (@sec-proyecto). En la Parte I vas a preparar y describir la base. La Parte II te ayuda a elegir un análisis, revisar sus supuestos e interpretar el resultado. La Parte III se ocupa del informe y de los recursos que acompañan el trabajo.
+
+El recorrido es acumulativo. Si estás empezando un trabajo práctico, seguí la Apertura y la Parte I mientras armás tu proyecto. Si ya tenés una pregunta y una base, revisá el @sec-plan y organizá los archivos como se propone en @sec-proyecto antes de continuar. Al llegar al @sec-arbol, elegí los capítulos de análisis que correspondan a tu pregunta. Podés practicar los demás con los ejemplos del libro, pero tu proyecto no necesita usar todas las pruebas.
+
+## Cómo usar este libro
+
+Trabajá con tu proyecto abierto. Cada capítulo incluye una sección **En tu proyecto** con una tarea concreta que vas a incorporar a tus archivos. Los autochequeos te ayudan a revisar ese avance. Las plantillas descargables te dan una estructura para empezar; completalas con las decisiones que surjan de tu pregunta, tus variables y la forma en que las mediste.
+
+Si todavía no tenés un proyecto propio, armá uno de práctica con la encuesta sintética del libro y elegí una de sus preguntas. Guardalo separado del trabajo de la materia para reconocer siempre de dónde salen los datos y qué resultados son ejercicios.
+
+Cuando llegues al análisis que necesita tu proyecto, retomá la pregunta y las variables del plan. Verificá los supuestos, ejecutá el análisis y escribí una frase de resultado. Guardá el archivo de jamovi y registrá cualquier cambio respecto de lo previsto, con su motivo. Si algo no encaja, revisá las definiciones y la preparación de la base antes de interpretar.
+
+El apéndice señala temas que quedan para una próxima edición. Con el recorrido central podés completar los proyectos que usan los análisis abordados en la materia.
+
+------------------------------------------------------------------------
+
+Dr. Fernando Tonini · [toninif.github.io](https://toninif.github.io) · ORCID [0000-0001-6435-8923](https://orcid.org/0000-0001-6435-8923)

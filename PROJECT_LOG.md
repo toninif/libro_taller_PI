@@ -171,6 +171,10 @@ Fernando aprobó el 2026-09-10 orientar todo el recorrido al proyecto del estudi
 
 ## Registro de actividad
 
+### Portada de ingreso — Codex — 2026-09-16
+
+**PORTADA | HECHO.** Pedido de Fernando: convertir el enlace de ingreso en botón y dar presencia de tapa a la acuarela. Alcance: `index.qmd` y `portada.css`. Imagen original conservada, con lomo, canto de hojas y sombra mediante CSS; título, subtítulo y autor tomados de los metadatos existentes en lugar del texto de prueba. Botón verde oliva hacia `prefacio.qmd`, con foco visible y navegación en la misma pestaña. Diseño en dos columnas en escritorio y una columna en celular. Validación: `quarto render` completo exitoso (24 páginas), inspección mediante `quarto preview` y capturas finales en Edge a 1440 y 390 px; sin desbordes horizontales, imagen cargada y navegación al prefacio comprobada. Preview detenido; turno de render libre.
+
 ### Tanda E / B5 — Iconitos en la estructura del proyecto (brief 2026-09-12) — Claude — 2026-09-12
 
 Fernando aclaró que B5 no es una imagen de portada, sino usar iconitos/emojis en la parte donde se muestra la estructura del proyecto, "nada muy elaborado". Alcance acotado a eso:
