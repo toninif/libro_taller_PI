@@ -1,0 +1,124 @@
+/* Paleta tomada de la acuarela de la portada. */
+:root {
+  --tinta-gato: #373b32;
+  --oliva-gato: #50583c;
+  --oliva-profundo: #3b422c;
+  --salvia-gato: #7d806a;
+  --arena-gato: #f4ead3;
+  --arena-clara: #fbf7ed;
+  --ocre-gato: #76572f;
+  --ocre-claro: #f7f0e2;
+  --arcilla-gato: #9a7467;
+  --bs-primary: #50583c;
+  --bs-primary-rgb: 80, 88, 60;
+  --bs-link-color: #50583c;
+  --bs-link-hover-color: #3b422c;
+  --bs-link-color-rgb: 80, 88, 60;
+  --bs-link-hover-color-rgb: 59, 66, 44;
+}
+
+a {
+  text-decoration-color: rgb(80 88 60 / 45%);
+  text-underline-offset: 0.14em;
+}
+a:hover { text-decoration-color: currentColor; }
+
+/* Código breve: ocre de los ojos y las sombras cálidas de la acuarela. */
+:not(pre) > code {
+  padding: 0.08em 0.28em;
+  border: 1px solid #e4d5b9;
+  border-radius: 0.2rem;
+  background-color: var(--ocre-claro) !important;
+  color: var(--ocre-gato);
+}
+
+.btn-primary,
+.btn-outline-primary:hover,
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary {
+  --bs-btn-bg: var(--oliva-gato);
+  --bs-btn-border-color: var(--oliva-gato);
+  --bs-btn-hover-bg: var(--oliva-profundo);
+  --bs-btn-hover-border-color: var(--oliva-profundo);
+  --bs-btn-active-bg: var(--oliva-profundo);
+  --bs-btn-active-border-color: var(--oliva-profundo);
+  --bs-btn-focus-shadow-rgb: 80, 88, 60;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--oliva-gato);
+  --bs-btn-border-color: var(--oliva-gato);
+  --bs-btn-hover-bg: var(--oliva-gato);
+  --bs-btn-hover-border-color: var(--oliva-gato);
+  --bs-btn-focus-shadow-rgb: 80, 88, 60;
+}
+
+.navbar,
+#quarto-header .navbar {
+  --bs-navbar-active-color: var(--oliva-gato);
+  --bs-navbar-hover-color: var(--oliva-gato);
+}
+
+#quarto-sidebar,
+#TOC {
+  --bs-link-color-rgb: 80, 88, 60;
+  --bs-link-hover-color-rgb: 59, 66, 44;
+}
+
+/* Estas áreas tienen reglas de Cosmo más específicas: se fijan explícitamente. */
+#quarto-header a,
+#quarto-sidebar a,
+#TOC .nav-link {
+  color: var(--oliva-gato) !important;
+}
+#quarto-header a:hover,
+#quarto-sidebar a:hover,
+#TOC .nav-link:hover {
+  color: var(--oliva-profundo) !important;
+}
+
+#quarto-sidebar .sidebar-item-container .active,
+#quarto-sidebar .sidebar-item-container .show > .nav-link,
+#TOC .nav-link.active,
+#TOC .nav-link:hover {
+  color: var(--oliva-gato);
+  font-weight: 600;
+}
+
+#quarto-sidebar .sidebar-item-container .active::before {
+  background-color: var(--oliva-gato);
+}
+
+.sidebar-navigation .sidebar-section .sidebar-item .sidebar-item-container .sidebar-item-text,
+.sidebar-navigation .sidebar-section .sidebar-item .sidebar-item-container a {
+  color: var(--tinta-gato);
+}
+
+.callout.callout-style-default .callout-header {
+  background-color: var(--arena-clara);
+}
+.callout.callout-style-default {
+  border-left-color: var(--salvia-gato);
+}
+.callout.callout-style-default .callout-icon-container,
+.callout.callout-style-default .callout-title-container {
+  color: var(--oliva-gato);
+}
+
+.callout-note { border-left-color: var(--oliva-gato) !important; }
+.callout-note .callout-header { background-color: #eef0e8 !important; }
+.callout-tip { border-left-color: var(--salvia-gato) !important; }
+.callout-tip .callout-header { background-color: #f1f0e6 !important; }
+.callout-warning { border-left-color: var(--arcilla-gato) !important; }
+.callout-warning .callout-header { background-color: #f8eee9 !important; }
+
+blockquote {
+  border-left-color: var(--salvia-gato);
+  color: #55584e;
+}
+
+::selection { background: #d9ddcc; color: var(--tinta-gato); }
+
+*:focus-visible {
+  outline-color: var(--oliva-gato) !important;
+}

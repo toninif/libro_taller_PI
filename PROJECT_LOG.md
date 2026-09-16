@@ -171,6 +171,14 @@ Fernando aprobó el 2026-09-10 orientar todo el recorrido al proyecto del estudi
 
 ## Registro de actividad
 
+### Ajuste de paleta: código y navegación — Codex — 2026-09-16
+
+**PALETA-2 | HECHO.** Ajuste pedido por Fernando: reemplazar el violeta del código en línea y forzar la paleta oliva en los enlaces de cabecera y ambos índices de navegación. Alcance: `libro.css`. El código breve usa ocre (`#76572f`) sobre arena clara; la cabecera, barra lateral y tabla de contenidos se fuerzan a oliva, inclusive en el ítem activo. Validación: `quarto render` completo exitoso (24 páginas); verificación en Edge de colores calculados, sin azul anterior en las tres zonas de navegación y sin desborde. Turno de render libre.
+
+### Paleta global del libro — Codex — 2026-09-16
+
+**PALETA | HECHO.** Pedido de Fernando: reemplazar los acentos azules del tema por los colores de la acuarela de portada. Alcance: `_quarto.yml` y nuevo `libro.css`; se preservan tipografía, estructura y contenido. Aplicados oliva (`#50583c`) en enlaces, acciones, navegación activa y foco; salvia (`#7d806a`) en guías y notas; arena en fondos de callouts; arcilla (`#9a7467`) en advertencias. Validación: `quarto render` completo exitoso (24 páginas), capturas en Edge de escritorio y móvil del capítulo 02 sin desborde horizontal y comprobación de que 02, 05 y 13 no conservan elementos visibles con el azul primario anterior. Turno de render libre.
+
 ### Portada de ingreso — Codex — 2026-09-16
 
 **PORTADA | HECHO.** Pedido de Fernando: convertir el enlace de ingreso en botón y dar presencia de tapa a la acuarela. Alcance: `index.qmd` y `portada.css`. Imagen original conservada, con lomo, canto de hojas y sombra mediante CSS; título, subtítulo y autor tomados de los metadatos existentes en lugar del texto de prueba. Botón verde oliva hacia `prefacio.qmd`, con foco visible y navegación en la misma pestaña. Diseño en dos columnas en escritorio y una columna en celular. Validación: `quarto render` completo exitoso (24 páginas), inspección mediante `quarto preview` y capturas finales en Edge a 1440 y 390 px; sin desbordes horizontales, imagen cargada y navegación al prefacio comprobada. Preview detenido; turno de render libre.
