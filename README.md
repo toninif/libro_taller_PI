@@ -8,6 +8,9 @@ Este libro propone una manera de trabajar centrada pensar el análisis antes de 
 Está dirigido principalmente a estudiantes que empiezan a analizar datos y necesitan conectar las decisiones de su proyecto con lo que luego harán en jamovi.
 
 El objetivo no es enseñar una colección de pruebas aisladas ni mucho menos estadística (eso ya lo deben saber *recuerdos de guerra*).
+
+![](meme_readme.png)
+
 El recorrido planteado intenta acompañar al estudiante de el momento en que formula una pregunta, define qué se quiere comparar o relacionar, organiza y documenta la base, 
 selecciona un análisis, revisa sus supuestos, interpreta la salida y comunica el resultado.
 
