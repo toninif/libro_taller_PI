@@ -11,7 +11,6 @@ El objetivo no es enseñar una colección de pruebas aisladas ni mucho menos est
 
 <p align="center">
   <img src="meme_readme.png" alt="Perro con anteojos frente a fórmulas matemáticas" width="280">
-  <p> *recuerdos de guerra* </p>
 </p>
 
 El recorrido planteado intenta acompañar al estudiante de el momento en que formula una pregunta, define qué se quiere comparar o relacionar, organiza y documenta la base, 
