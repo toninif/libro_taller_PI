@@ -7,10 +7,11 @@
 Este libro propone una manera de trabajar centrada pensar el análisis antes de tener los datos o abrir el programa. 
 Está dirigido principalmente a estudiantes que empiezan a analizar datos y necesitan conectar las decisiones de su proyecto con lo que luego harán en jamovi.
 
-El objetivo no es enseñar una colección de pruebas aisladas ni mucho menos estadística (eso ya lo deben saber *recuerdos de guerra*).
+El objetivo no es enseñar una colección de pruebas aisladas ni mucho menos estadística. Eso ya lo deberían saber......
 
 <p align="center">
   <img src="meme_readme.png" alt="Perro con anteojos frente a fórmulas matemáticas" width="280">
+  <p> *recuerdos de guerra* </p>
 </p>
 
 El recorrido planteado intenta acompañar al estudiante de el momento en que formula una pregunta, define qué se quiere comparar o relacionar, organiza y documenta la base, 
