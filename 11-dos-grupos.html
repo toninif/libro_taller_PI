@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -44,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -395,6 +395,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Para <strong>muestras pareadas</strong>, abrí <code>Análisis → Pruebas t → Prueba t para Muestras Pareadas</code>. Movés las dos variables del mismo caso como un par a <strong>Variables Apareadas</strong>. jamovi calcula <strong>Medida 1 menos Medida 2</strong>, en ese orden. Para expresar el cambio como después menos antes, cargá primero <code>organizacion_post</code> (Medida 1) y después <code>organizacion_pre</code> (Medida 2). Así una mejora aparece con signo positivo. Si las cargás al revés, el signo se invierte y tenés que interpretarlo con ese orden. En <strong>Comprobaciones de Supuestos</strong>, tildá <strong>Prueba de Normalidad</strong> sobre las diferencias. No hay homogeneidad de varianzas que revisar, porque no hay dos grupos distintos.</p>
 <p>En pareadas, mantené <strong>Medida 1 ≠ Medida 2</strong> y pedí también <strong>Descriptivas</strong>, <strong>Diferencia de medias</strong>, su intervalo al 95 % y <strong>Magnitud del efecto</strong>. En los dos análisis, estas casillas agregan las columnas necesarias para el reporte; no aparecen todas por defecto. El intervalo debajo de <strong>Magnitud del efecto</strong> corresponde a <em>d</em>.</p>
 <p>jamovi ofrece Student por defecto y Welch como opción adicional en independientes. Elegí según el plan, los tamaños de grupo y las dispersiones. Un Levene no significativo no demuestra igualdad de varianzas. Welch también es una opción válida prevista de antemano, especialmente si dudás de la homogeneidad; no elijas entre filas según cuál dé un <em>p</em> más conveniente.</p>
+<p>Podés ver cómo se hace la <strong>t de muestras independientes</strong> (versión paramétrica) en este video:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Jr79Ii70q9o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Si no se cumplen los supuestos del <a href="09-supuestos.html" class="quarto-xref"><span>Capítulo 9</span></a> (por ejemplo, la normalidad con grupos pequeños o una variable ordinal), la alternativa es la <strong>versión no paramétrica</strong> (U de Mann-Whitney), que se pide desde el mismo menú. Este video muestra cómo ejecutarla e interpretarla:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/s71cnGltRaw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="ejemplo-trabajado" class="level2" data-number="11.3">
 <h2 data-number="11.3" class="anchored" data-anchor-id="ejemplo-trabajado"><span class="header-section-number">11.3</span> Ejemplo trabajado</h2>
