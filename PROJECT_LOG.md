@@ -171,6 +171,18 @@ Fernando aprobó el 2026-09-10 orientar todo el recorrido al proyecto del estudi
 
 ## Registro de actividad
 
+### Videos de correlación, ANOVA y t independiente — Claude — 2026-10-06
+
+**VIDEOS | HECHO.** Pedido de Fernando: incorporar cuatro videos de YouTube. Alcance autorizado por Fernando para esta tarea: `11-dos-grupos.qmd` (t independiente paramétrica y no paramétrica, tras «Paso a paso en jamovi»), `12-anova-un-factor.qmd` y `13-correlacion.qmd`. Se usa el shortcode `{{< video >}}` del capítulo 05. En el capítulo 11 se añadió una frase que presenta la versión no paramétrica (U de Mann-Whitney) como alternativa cuando fallan los supuestos; el texto del capítulo no la desarrollaba. Validación: `quarto render` completo exitoso (24 páginas) y los iframes de YouTube aparecen en las tres páginas. Pendiente: Fernando debe confirmar que el contenido de los videos coincide con la descripción (no pude verlos). Turno de render libre.
+
+### Meme del README — Codex — 2026-09-16
+
+**README-MEME | HECHO.** Pedido de Fernando: presentar `meme_readme.png` en tamaño pequeño dentro del `README.md`. Alcance: `README.md`; imagen original conservada y mostrada centrada a 280 px de ancho, con texto alternativo. Validación: sintaxis compatible con GitHub, `git diff --check` y `quarto render` completo exitoso (24 páginas).
+
+### README público del repositorio — Codex — 2026-09-16
+
+**README | HECHO.** Pedido de Fernando: reemplazar las instrucciones internas del `README.md` por una presentación breve y pública del libro, su intención, recorrido, recursos y forma de reproducir el sitio. Alcance: `README.md`. Se retiraron las indicaciones privadas de coordinación, aprobación, publicación e integración con el sitio personal. El nuevo texto presenta el propósito, destinatarios, contenidos, estructura, materiales, enlace de lectura y comandos mínimos de Quarto. Validación: revisión del Markdown, enlaces y rutas; `quarto render` completo exitoso (24 páginas). Turno de render libre.
+
 ### Ajuste de paleta: código y navegación — Codex — 2026-09-16
 
 **PALETA-2 | HECHO.** Ajuste pedido por Fernando: reemplazar el violeta del código en línea y forzar la paleta oliva en los enlaces de cabecera y ambos índices de navegación. Alcance: `libro.css`. El código breve usa ocre (`#76572f`) sobre arena clara; la cabecera, barra lateral y tabla de contenidos se fuerzan a oliva, inclusive en el ítem activo. Validación: `quarto render` completo exitoso (24 páginas); verificación en Edge de colores calculados, sin azul anterior en las tres zonas de navegación y sin desborde. Turno de render libre.

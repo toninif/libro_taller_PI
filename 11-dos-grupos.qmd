@@ -26,6 +26,14 @@ En pareadas, mantené **Medida 1 ≠ Medida 2** y pedí también **Descriptivas*
 
 jamovi ofrece Student por defecto y Welch como opción adicional en independientes. Elegí según el plan, los tamaños de grupo y las dispersiones. Un Levene no significativo no demuestra igualdad de varianzas. Welch también es una opción válida prevista de antemano, especialmente si dudás de la homogeneidad; no elijas entre filas según cuál dé un *p* más conveniente.
 
+Podés ver cómo se hace la **t de muestras independientes** (versión paramétrica) en este video:
+
+{{< video https://youtu.be/Jr79Ii70q9o aspect-ratio="16x9" >}}
+
+Si no se cumplen los supuestos del @sec-supuestos (por ejemplo, la normalidad con grupos pequeños o una variable ordinal), la alternativa es la **versión no paramétrica** (U de Mann-Whitney), que se pide desde el mismo menú. Este video muestra cómo ejecutarla e interpretarla:
+
+{{< video https://youtu.be/s71cnGltRaw aspect-ratio="16x9" >}}
+
 ## Ejemplo trabajado
 
 ### Procrastinación según la situación laboral

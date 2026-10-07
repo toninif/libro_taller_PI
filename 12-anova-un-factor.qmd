@@ -23,6 +23,10 @@ El panel simplificado no ofrece eta cuadrado. Para obtener η² del ANOVA clási
 
 Primero interpretá la prueba global y después examiná las comparaciones entre pares que correspondan. Mantené las comparaciones previstas en el plan y el ajuste adecuado, aunque algún par parezca más distinto a simple vista.
 
+Podés ver el procedimiento completo en este video:
+
+{{< video https://youtu.be/rKw8wCs4KoQ aspect-ratio="16x9" >}}
+
 ## Ejemplo trabajado
 
 Con `encuesta-estudiantes-limpia` (@sec-jamovi), hay 24 estudiantes en cada turno. Los descriptivos muestran una diferencia visible:

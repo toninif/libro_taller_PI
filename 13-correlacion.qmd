@@ -21,6 +21,10 @@ El gráfico permite ver si la relación es aproximadamente lineal, si un único 
 
 Si los datos son ordinales, si la relación es monótona pero no lineal o si los extremos hacen que Pearson sea poco representativo, considerá Spearman. Justificá la elección por las características de los datos e informá qué coeficiente usaste y por qué, como pide el @sec-supuestos.
 
+Podés ver cómo se hace una correlación en jamovi en este video:
+
+{{< video https://youtu.be/Cx2jH4C8t0k aspect-ratio="16x9" >}}
+
 ## Ejemplo trabajado
 
 En `encuesta-estudiantes-limpia` (@sec-jamovi), los 72 estudiantes tienen horas de estudio y puntaje de procrastinación. Antes del test, revisá los descriptivos. Las horas de estudio van de 1.0 a 10.9 por semana (*M* = 6.48), y la procrastinación de 19.4 a 43.7 (*M* = 32.75).
